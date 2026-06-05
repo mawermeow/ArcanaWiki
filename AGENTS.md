@@ -28,11 +28,48 @@
 
 Expected repository structure:
 
-txt raw/   tarot/     rider-waite/     symbols/     spreads/     psychology/     buddhism/     cases/  wiki/   cards/   concepts/   emotions/   relationships/   patterns/   index.md   log.md  relations/   graph.json  embeddings/   vector-cache.json  app/   Next.js Tarot App
+```
+raw/
+  tarot/
+    rider-waite/
+    symbols/
+    spreads/
+    psychology/
+    buddhism/
+    cases/
+
+wiki/
+  cards/
+  concepts/
+  emotions/
+  relationships/
+  patterns/
+  index.md
+  log.md
+
+relations/
+  graph.json
+
+embeddings/
+  vector-cache.json
+
+app/
+  Next.js Tarot App
+```
 
 ### Runtime Retrieval Flow
 
-txt 1. 載入 BM25 index 2. 載入 vector cache 3. 對使用者問題產生 embedding 4. BM25 與 vector search 各取 topK 5. merge / rerank / deduplicate 6. graph expansion 7. 組合 prompt 8. 呼叫 OpenAI Chat API 9. 回傳占卜解讀
+```
+1. 載入 BM25 index
+2. 載入 vector cache
+3. 對使用者問題產生 embedding
+4. BM25 與 vector search 各取 topK
+5. merge / rerank / deduplicate
+6. graph expansion
+7. 組合 prompt
+8. 呼叫 OpenAI Chat API
+9. 回傳占卜解讀
+```
 
 ## LLM Wiki Rules
 
@@ -134,10 +171,23 @@ txt 1. 載入 BM25 index 2. 載入 vector cache 3. 對使用者問題產生 embe
 
 Recommended environment variables:
 
-txt OPENAI_API_KEY= OPENAI_CHAT_MODEL= OPENAI_EMBEDDING_MODEL=  LINE_CHANNEL_ACCESS_TOKEN= LINE_CHANNEL_SECRET= LINE_ALLOWED_USER_IDS=  TAROT_APP_MODE=local TAROT_DEBUG_RETRIEVAL=false TAROT_BM25_TOP_K=10 TAROT_VECTOR_TOP_K=10 TAROT_FINAL_CONTEXT_TOP_K=8
+```
+OPENAI_API_KEY=
+OPENAI_CHAT_MODEL=
+OPENAI_EMBEDDING_MODEL=
+
+LINE_CHANNEL_ACCESS_TOKEN=
+LINE_CHANNEL_SECRET=
+LINE_ALLOWED_USER_IDS=
+
+TAROT_APP_MODE=local
+TAROT_DEBUG_RETRIEVAL=false
+TAROT_BM25_TOP_K=10
+TAROT_VECTOR_TOP_K=10
+TAROT_FINAL_CONTEXT_TOP_K=8
+```
 
 Rules:
-
 - OPENAI_API_KEY 不加此前綴，方便與 SDK / CLI 相容。
 - LINE secrets 不可提交。
 - LINE_ALLOWED_USER_IDS 可用逗號分隔。
@@ -148,7 +198,46 @@ Rules:
 
 These commands may be adjusted after package scripts are implemented.
 
-txt Install:   pnpm install  Start dev app:   pnpm dev  Build app:   pnpm build  Lint:   pnpm lint  Typecheck:   pnpm typecheck  Test:   pnpm test  Compile wiki:   pnpm wiki:compile  Lint wiki:   pnpm wiki:lint  Build BM25 index:   pnpm index:bm25  Build vector cache:   pnpm index:vector  Build all retrieval assets:   pnpm index:build  Run local LINE webhook:   pnpm dev:line  Run retrieval smoke test:   pnpm test:retrieval
+```
+Install:
+  pnpm install
+
+Start dev app:
+  pnpm dev
+
+Build app:
+  pnpm build
+
+Lint:
+  pnpm lint
+
+Typecheck:
+  pnpm typecheck
+
+Test:
+  pnpm test
+
+Compile wiki:
+  pnpm wiki:compile
+
+Lint wiki:
+  pnpm wiki:lint
+
+Build BM25 index:
+  pnpm index:bm25
+
+Build vector cache:
+  pnpm index:vector
+
+Build all retrieval assets:
+  pnpm index:build
+
+Run local LINE webhook:
+  pnpm dev:line
+
+Run retrieval smoke test:
+  pnpm test:retrieval
+```
 
 ## Testing Expectations
 
@@ -192,15 +281,44 @@ txt Install:   pnpm install  Start dev app:   pnpm dev  Build app:   pnpm build 
 
 ### Wiki Chunk
 
-ts export type WikiChunk = {   id: string;   pageId: string;   title: string;   content: string;   tags: string[];   cardIds?: string[];   topics?: string[];   sourceRefs?: string[]; };
+```ts
+export type WikiChunk = {
+  id: string;
+  pageId: string;
+  title: string;
+  content: string;
+  tags: string[];
+  cardIds?: string[];
+  topics?: string[];
+  sourceRefs?: string[];
+};
+```
 
 ### Retrieval Result
 
-ts export type RetrievalResult = {   chunk: WikiChunk;   score: number;   source: 'bm25' | 'vector' | 'graph';   debug?: Record<string, unknown>; };
+```ts
+export type RetrievalResult = {
+  chunk: WikiChunk;
+  score: number;
+  source: 'bm25' | 'vector' | 'graph';
+  debug?: Record<string, unknown>;
+};
+```
 
 ### Tarot Chat Request
 
-ts export type TarotChatRequest = {   question: string;   cards?: Array<{     cardId: string;     orientation?: 'upright' | 'reversed' | 'unknown';     position?: string;   }>;   spreadId?: string;   mode?: 'gentle' | 'direct' | 'reflective'; };
+```ts
+export type TarotChatRequest = {
+  question: string;
+  cards?: Array<{
+    cardId: string;
+    orientation?: 'upright' | 'reversed' | 'unknown';
+    position?: string;
+  }>;
+  spreadId?: string;
+  mode?: 'gentle' | 'direct' | 'reflective';
+};
+```
 
 ## Production Hardening Backlog
 
@@ -239,3 +357,8 @@ source_env_if_exists ~/Secrets/ArcanaWiki/dev.env
 - 不要建立 .env.example 以外的 secrets 檔案。
 - 不要在 logs、tests、debug output 中輸出完整 secrets。
 - 若需要 debug，請使用 masked values。
+
+
+## Installed Skills
+
+- karpathy-llm-wiki
