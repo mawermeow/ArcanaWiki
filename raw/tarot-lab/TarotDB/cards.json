@@ -1,0 +1,634 @@
+[
+    {
+        "name": "The Fool 愚人",
+        "description": "愚人牌描繪了一個快樂地走向世界的青年。他正在邁出他的第一步，他充滿活力，快樂，興奮。除了一個小袋子，他什麼都沒帶，對路上可能出現的危險毫不在意。事實上，他很快就會遇到這些可能的危險中的第一個，因為如果他再多走一步，他就會從他前方的懸崖上跌落。但這似乎與他無關——我們不確定他是天真還是幼稚。跟在他身後的狗吠叫著警告他，如果他不盡快意識到周圍的環境，他可能永遠經歷他夢想遇到的所有冒險。",
+        "normal": "新的開始，新的旅程，自由，純真，無限潛力，冒險，理想主義，自發性",
+        "reversed": "魯莽，粗心，心煩意亂，幼稚，愚蠢，容易上當受騙，古板，沈悶",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/the-fool-meaning-major-arcana-tarot-card-meanings",
+        "link": "Fool.jpg"
+    },
+    {
+        "name": "The Magician 魔術師",
+        "description": "魔術師是一張充滿象徵意義的塔羅牌。中央人物描繪了一個人，一隻手指向天空，另一隻手指向地面，彷彿在說“天上如是，地上亦然”（\"as above, so below.\"）。這是一個比較複雜的說法，但概括來說就是地反映天，外部反映內在，微觀反映宏觀。在這裡也可以解釋為，魔術師象徵著在天上世界和人類世界之間充當中間人的能力。在他的桌子上，魔術師也擺放著所有的塔羅花色。這象徵著由這位魔術師連接的四種元素——風，火，水和土。他頭上的無窮大標誌，預示著用意志可以創造無限可能。",
+        "normal": "意志力，慾望，足智多謀，強大的技巧與能力，注意力，積極行動，願望實現",
+        "reversed": "操縱，狡猾，詭計，幻覺，欺騙，才能被浪費或用到錯誤的方向",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/the-magician-meaning-major-arcana-tarot-card-meanings",
+        "link": "Magician.jpg"
+    },
+    {
+        "name": "The High Priestess 女祭司",
+        "description": "女祭司坐在所羅門聖殿，雅斤和波阿斯兩根柱子之間的立方石之上。雅斤（右）通常被稱為建立之柱，波阿斯（左）是力量之柱。柱子描繪了自然的二元性：男性與女性，善與惡，消極與積極。女祭司位於兩者之間，這表明她有責任充當現實深處的調解人。她是第三根支柱——兩者之間的路徑。她認為這兩個支柱是平等的，並且在這兩個世界中都有知識需要學習。你還會注意到她戴著伊希斯的王冠，這可能意味著她是魔法的信徒。佩戴太陽十字架的女祭司表明她與地球的季節和地球本身有關。她腳下的新月也出現在許多對聖母瑪利亞的描繪中，這意味著她對自己的情緒有著完全的把握。背後的石榴則代表了女祭司的抱負。",
+        "normal": "直覺，神秘，靈性，更高的力量，更高的智慧，內心的聲音，平衡，調和",
+        "reversed": "被壓抑的直覺，隱藏的動機，膚淺，混亂，認知失調",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/the-high-priestess-meaning-major-arcana-tarot-card-meanings",
+        "link": "High_Priestess.jpg"
+    },
+    {
+        "name": "The Empress 女皇",
+        "description": "女皇牌描繪了一個坐在寶座上的女人。從她周圍豐富的大自然中，我們可以假設這個女人代表了地球母親的原型，即生育女神。她的世界由金星統治，這意味著在這位女神的恩典下，有完整的愛，和諧，生育和奢華。這位女士本人有一頭金色的頭髮，上面飾有星星，表明她與神秘領域的神聖聯繫。她穿著代表生育能力的石榴圖案長袍，坐在繡有金星標誌的墊子上。她被一片迷人的綠色森林所包圍，一條河流穿過這片森林，這象徵著蓬勃的生命力。女皇牌為抽中她的人帶來繁榮和祝福。",
+        "normal": "神聖的女性，充足的活力，感官的享受，生育能力，孕育，創造力，美，豐富，自然",
+        "reversed": "不安全感，霸道，過強的控制欲，疏忽，缺乏成長，缺乏感受能力",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/the-empress-meaning-major-arcana-tarot-card-meanings",
+        "link": "Empress.jpg"
+    },
+    {
+        "name": "The Emperor 皇帝",
+        "description": "在皇帝塔羅牌中，可以看到一個堅忍的統治者形象。寶座上上面裝飾著四隻公羊的頭，代表他的星座——白羊座。一方面，他手持權杖，代表他的統治；另一方面，他拿著一個球體，象徵著他所守護的王國。皇帝的長鬍子代表著他豐富的閱歷。他身後的荒山，彰顯著他的決心，更上一層樓的雄心和領導能力。皇帝用勇氣，力量和權威來統治。",
+        "normal": "世俗力量，自律，穩定，實用，權威，控制，紀律",
+        "reversed": "暴君，霸道，死板，固執，缺乏紀律，缺乏自律，缺乏掌控，魯莽",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/the-emperor-meaning-major-arcana-tarot-card-meanings",
+        "link": "Emperor.jpg"
+    },
+    {
+        "name": "The Hierophant 教皇",
+        "description": "這張卡片描繪了一個宗教人物，他端坐在教堂的信眾前。他穿著三件精心設計的法衣，分別代表三個不同的世界。他的右手正確地舉起，表示祝福的手勢——這與魔術師舉起的手是同一隻手。他頭戴三重皇冠，象徵著身心靈三個層次。另一方面，他帶著三重十字架，十字架上的三根橫槓被認為代表了聖父，聖子和聖靈。在他的下方，坐著兩名侍僧，代表著機構內神聖知識的轉移。通過這些追隨者，這張牌也代表了通往知識和教育的道路。",
+        "normal": "傳統，社會規範，教育，知識，信仰",
+        "reversed": "叛逆，打破常規，不循規蹈矩，新方法，無知",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/the-hierophant-meaning-major-arcana-tarot-card-meanings",
+        "link": "Hierophant.jpg"
+    },
+    {
+        "name": "The Lovers 戀人",
+        "description": "在戀人牌中，圖上的男人和女人正受到上方天使的保護和祝福。這對戀人似乎在他們的家中安全和快樂，這裡似乎是伊甸園。女人身後有蛇的果樹是對聖經故事的指稱，它講述了人類陷入誘惑，陷入肉體和慾望的境界。這裡描繪的天使是拉斐爾，風之天使——他與這張牌所關聯的星座相同：雙子座。風與心理活動有關，尤其是溝通，這是健康關係的基礎。他的祝福似乎給這張牌帶來了一種平衡與和諧的感覺，象徵著兩種對立力量之間在宏大和普遍意義上的聯合。",
+        "normal": "被祝福的愛，平衡、調和的關係，浪漫，暗示可以開展新的關係或關係的新階段。",
+        "reversed": "不和諧、不平衡的關係，關係的停滯，衝突，分離，錯誤選擇，優柔寡斷",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/the-lovers-meaning-major-arcana-tarot-card-meanings",
+        "link": "Lovers.jpg"
+    },
+    {
+        "name": "The Chariot 戰車",
+        "description": "戰車牌描繪了一個人坐在一輛由兩個黑白獅身人面像駕駛的車輛內。整張牌有點天籟之氣；這個人物坐在一個由白色星星裝飾的藍色天篷下。在他的肩膀上，他帶著新月的標誌，代表引導著他的精神因素。他的頭上戴著一頂王冠，這意味著他是開悟的，他的意志是純潔的。在他的胸前印有一個正方形，表示地球的元素，物質世界的元素，這是他和他的行動的基礎。獅身人面像以黑色和白色著色，象徵著戰車夫必須學會控制相互對抗的力量。戰車的身後是城堡，這代表著他的初心——他要守護的家園。",
+        "normal": "訓練有素的心智，前進的力量，守護初心，控制相互對抗的力量，協調衝突，成功",
+        "reversed": "未解決的衝突，矛盾，情緒的失衡，受到阻礙，忘記初心，忘記要守護的東西。",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/the-chariot-meaning-major-arcana-tarot-card-meanings",
+        "link": "Chariot.jpg"
+    },
+    {
+        "name": "Strength 力量",
+        "description": "在這張塔羅牌中，你會看到一個女人從容地握著成年獅子的下顎。儘管獅子看起來凶猛而強壯，但女人似乎對它有統治力。令人著迷的是她如何優雅地控制獅子。她鎮定自若，這代表著控制和紀律，尤其是在逆境中。她握著獅子的下巴，這也表明她有勇氣。她對獅子的控制並不粗暴，而是表現出愛和同情心。群山之上的藍色背景顯示了穩定和穩定帶來的那種平靜。",
+        "normal": "內心平靜而柔和的力量，理智的力量，愛的力量，勇氣，信心，同情心，自信",
+        "reversed": "軟弱，恐懼，無力感，缺乏自信",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/strength-meaning-major-arcana-tarot-card-meanings",
+        "link": "Strength.jpg"
+    },
+    {
+        "name": "The Hermit 隱士",
+        "description": "隱士牌描繪了一位老人獨自站在山頂，一手拿著燈籠，一手拿著杖。山代表成就、發展和成功。隱士已經獲得了很高的精神知識水平，他準備下山，將這種知識傳授給每個人。他對自己的目標有著堅定的決心，並且對自己所走的道路有著堅定的認識。在燈籠內，你會看到一顆六角星，它也被稱為所羅門的印章。這個符號代表智慧。他持有的權杖描繪了權威和權力。隱士牌中沒有明亮的色彩，這反而能讓他看見生命中幽微的事物。",
+        "normal": "獨處，內省，沈思，尋找自我，尋找智慧",
+        "reversed": "缺乏省思，迷失方向，孤獨，回歸社會",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/the-hermit-meaning-major-arcana-tarot-card-meanings",
+        "link": "Hermit.jpg"
+    },
+    {
+        "name": "The Wheel of Fortune 命運之輪",
+        "description": "命運之輪是塔羅牌中最具象徵意義的牌之一，充滿了意義不同的符號。在牌的中心，有一個巨大的輪子，上面覆蓋著深奧的符號。輪子周圍四種有不同的生物：天使、鷹、公牛和獅子。它們與十二生肖中的四個固定星座有關——獅子座、金牛座、天蠍座和水瓶座。這四隻動物也是基督教傳統中四位福音傳道者的代表，這也許是它們都長有翅膀的原因。每個生物拿著的書籍代表了傳達智慧和自我理解的《托拉》。蛇表示下降到物質世界的行為。在輪子上面騎著一個獅身人面像，輪子下面的生物看起來要麼是魔鬼，要麼是阿努比斯本人。這兩個埃及形象既代表了神和國王的智慧（獅身人面像），也代表了冥界（阿努比斯）。它們永遠在循環中旋轉，當一個上升時，另一個下降。",
+        "normal": "改變，新的開始，命運，時來運轉，意外事件",
+        "reversed": "時機未到，壞運氣，當前的課題還未完成，重復",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/the-wheel-of-fortune-meaning-major-arcana-tarot-card-meanings",
+        "link": "Wheel_of_Fortune.jpg"
+    },
+    {
+        "name": "Justice 正義",
+        "description": "正義牌是真理、公平和法律的象徵。當法官坐在椅子上時，她用左手的天平代表直覺應該如何平衡邏輯。她用右手的雙刃劍象徵著公正。她所戴的王冠上的正方形象徵著主持正義所需的清晰思路。在她的身後，有一件紫色的鬥篷和直立的灰色柱子。在紅色鬥篷下面，她露出了一隻白鞋的鞋尖。這是在提醒台下眾人，她所傳達的是他們行動的結果。",
+        "normal": "正義，公正，誠實，平衡，法律，真理，承擔責任，付出將有公正的回報",
+        "reversed": "不公正，不誠實，腐敗，不平衡，逃避責任",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/justice-meaning-major-arcana-tarot-card-meanings",
+        "link": "Justice.jpg"
+    },
+    {
+        "name": "The Hanged Man 倒吊人",
+        "description": "這張牌描繪了一個被倒吊著的人，他的腳被吊在世界樹上。這棵樹扎根於冥界深處，眾所周知，它能支撐起天體。人們相信，被吊著的人實際上是遵從他自己的自由意志而安置在那裡的。我們相信這一點是因為他臉上的表情很平靜。他的右腳被綁在樹枝上，但他的左腳仍然完全自由。同時，他的雙手在背後握著，形成一個倒三角形。他穿的紅色褲子代表著肉體和人類的激情，而他襯衫上的藍色則代表著平靜的情緒，這種顏色組合在聖人身上很常見。他的鞋子、頭髮和光環的黃色象徵著他的智力。",
+        "normal": "換個角度看問題，靜心省思，等待，犧牲，順從命運安排，平靜從容",
+        "reversed": "停滯不前，不感興趣，視角受限，鑽牛角尖",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/the-hanged-man-meaning-major-arcana-tarot-card-meanings",
+        "link": "Hanged_Man.jpg"
+    },
+    {
+        "name": "Death 死亡",
+        "description": "在圖上，我們看到死神騎著一匹漂亮的白馬，手舉著一面繪有白色玫瑰的黑旗。他穿著盔甲，這賦予了他無敵的能力——這表明沒有人可以摧毀死亡。他所騎的白馬代表著純潔，因為死亡淨化了所有人。在他的身下，所有階級的人類都躺在泥土中——一個國王和一個貧民，旨在提醒我們死亡不區分階級、種族和性別。 然而，我們還是可以看到遠處冉冉升起的太陽，這代表著重生，帶來新的開始和新的希望。",
+        "normal": "結局，新生，放手，順從於改變",
+        "reversed": "畏懼改變，抵制變化，不肯放手，停滯不前，衰敗",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/death-meaning-major-arcana-tarot-card-meanings",
+        "link": "Death.jpg"
+    },
+    {
+        "name": "Temperance 節制",
+        "description": "在節制牌上，有一個長著翅膀的天使，其性別並不明顯，這表明兩性之間存在著一種平衡。天使的一隻腳在水中，代表潛意識，而另一隻腳在地上，代表現實世界。在她的袍子上，有一個正方形，裡面刻有一個三角形，是對有形的地球與神聖的三位一體的一種呼應。她拿著兩個杯子，在被子里她可以將水混合，這代表了超意識和潛意識的融合。水在它們之間流動，暗示著聯合和無限。這張牌的一切都代表著平衡，完美的和諧來自於二元性的結合。她帶來的建議是，在跳入深淵之前，先探測任何新的水域。",
+        "normal": "平衡，和平，耐心，節制，平靜，安寧，和諧，調和，溝通",
+        "reversed": "偏執，極端，不節制，不和諧，魯莽，草率",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/temperance-meaning-major-arcana-tarot-card-meanings",
+        "link": "Temperance.jpg"
+    },
+    {
+        "name": "The Devil 魔鬼",
+        "description": "這張牌中的魔鬼以他最著名的薩梯爾（Satyr）形式現身，也就是所謂的巴弗滅（Baphomet）。除了半羊半人的身軀外，這魔鬼還有蝙蝠的翅膀和額頭上的倒五角星。他站在一個基座上，上面拴著裸體的一男一女，這似乎要表明魔鬼對他們有統治權。男人和女人都有角，似乎表明他們與魔鬼相處的時間越長，他們就越不像人。鎖鏈使他們看起來好像被魔鬼俘虜了。男人的尾巴上有一團火焰，而女人的尾巴上有一碗葡萄，這分別象徵著他們對權力和生活中美好事物的沈迷。 仔細看，男人和女人看起來都不高興。他們的個人權力已被奪走，這讓他們暴露在赤裸之中並感到羞恥。",
+        "normal": "慾望的枷鎖，不純粹、被束縛的關係，窒息或無力感，成癮，痴迷",
+        "reversed": "獨立，自由，釋放，奪回掌控權，理性戰勝慾望",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/the-devil-meaning-major-arcana-tarot-card-meanings",
+        "link": "Devil.jpg"
+    },
+    {
+        "name": "The Tower 高塔",
+        "description": "高塔牌描繪了一個依偎在山頂上的高尖塔。一道閃電擊中了塔樓，使其燃燒起來。火焰在窗戶上爆開，人們從窗戶跳出來，這是一種絕望的行為。他們想逃離內部的動蕩和破壞。塔是一個象徵，象徵著建立在錯誤前提下的野心。塔的毀滅必須發生，以便清除舊的方式，迎接新的東西。",
+        "normal": "突然的、無可避免的改變，破壞性、爆發性的事件，災難，混亂",
+        "reversed": "可能表示抗拒改變，拒絕放開你所壓抑的東西，但這可能會帶來更大的爆發。改變遲早要發生",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/the-tower-meaning-major-arcana-tarot-card-meanings",
+        "link": "Tower.jpg"
+    },
+    {
+        "name": "The Star 星星",
+        "description": "這張星星牌描繪一個女人跪在一個小池塘的邊緣。她拿著兩個裝水的容器。一個容器將水倒向乾涸的土地，似乎是為了滋養它，確保它的肥力。她周圍鬱鬱蔥蔥的土地似乎在說，它正在發揮作用。一隻腳在水里，這顯示了這個女人的精神能力和內在力量。另一隻腳踩在地上，顯示了她的實際能力和力量。在她身後，有一顆中央大星，周圍有七顆小星，代表脈輪。有一隻鳥站在樹枝上，是代表思想和智慧的聖朱䴉。這張牌的星座對應的是水瓶座。",
+        "normal": "希望，靈感，寧靜，和平，療癒，創造力，生命力",
+        "reversed": "失去潛意識的能量，失去保持內在平和和信心的能力，失去創造力和靈感，失去希望",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/the-star-meaning-major-arcana-tarot-card-meanings",
+        "link": "Star.jpg"
+    },
+    {
+        "name": "The Moon 月亮",
+        "description": "當我們抽到月亮時，我們看到一條通向遠方的道路。小路的兩邊站著一隻狼和一隻狗，代表我們的獸性——馴化的和未馴化的。有一隻小龍蝦正從池塘里爬出來，若隱若現的龍蝦象徵著比恐懼更深層次的面對未知和詭異的不安情緒。在遠處，我們可以看到中央小路兩側的兩座塔，對立兩端的塔樓代表著善與惡的力量，而塔樓相似的外觀可能暗示我們在區分善惡時面臨的困難。這張牌中的一切似乎都在相互呼應，似乎在暗指兩種可能性。當我們走在這條路上時，我們走在有意識和無意識之間，走在狗的文明馴服和狼的自然野性之間的窄道上。",
+        "normal": "恐懼，不安，瘋狂，錯覺，不確定性，混亂。指導你通過夢或是想象探索你的潛意識，正視你的恐懼和不安。",
+        "reversed": "拒絕對潛意識的探索，對事件的認識停留在表面。隱藏的事物逐漸浮現，因而恐懼、不安的情緒有所減弱。",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/the-moon-meaning-major-arcana-tarot-card-meanings",
+        "link": "Moon.jpg"
+    },
+    {
+        "name": "The Sun 太陽",
+        "description": "太陽牌呈現出一種樂觀和滿足的感覺。這張牌代表著在最黑暗的夜晚之後出現的黎明。太陽是我們星球上所有生命的源泉，它代表生命能量本身。牌中有一個孩子，在前景中快樂地玩耍。它是我們純真的象徵，代表著當你與真正的自我保持一致時的快樂。孩子是赤裸的，意味著他完全沒有什麼可隱藏的。這張牌還描繪了童年的純真和絕對的純潔。這一點通過孩子所騎的白馬得到了特別強調。這裡的馬也是力量和高貴的象徵。",
+        "normal": "光明，幸福，成功，樂觀，活力，歡樂，純真，滿足",
+        "reversed": "過度熱情，悲觀，不切實際的期望，自負，較小的成功，或成功了仍不滿足。可能是烏雲暫時遮住了陽光，仍有一些恐懼、懷疑和困難尚未克服。",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/the-sun-meaning-major-arcana-tarot-card-meanings",
+        "link": "Sun.jpg"
+    },
+    {
+        "name": "Judgement 審判",
+        "description": "這張牌描繪了人們想象中的最終審判在許多神話中採取的各種形式。審判牌中的圖像顯示，婦女、男子和兒童正從墳墓中站起來，響應加百列的號角聲。他們伸出的手臂象徵著他們已經準備好接受宇宙的審判。他們即將見到他們的造物主，他們的行為會被評估，併發現他們將在哪裡度過余下的永恆：在天堂或在地獄。背景中的巨大潮汐標誌著審判是不可避免的，而且這種審判將是最終的。審判是由冥王掌管的，他是冥界的統治者。這張牌與死亡牌交相呼應，因為它們都提醒我們，一切都會結束，新的開始即將到來。",
+        "normal": "自我評判，覺醒，更新，清算，清晰的判斷力。審判指示你將過去經驗做出結論，以此作為超越它的步驟。",
+        "reversed": "抗拒人生的轉變，抗拒命運的召喚。可能做出錯誤的決定或錯過重要的訊息，需多加防範。",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/judgement-meaning-major-arcana-tarot-card-meanings",
+        "link": "Judgement.jpg"
+    },
+    {
+        "name": "The World 世界",
+        "description": "世界牌中心有一個跳舞的人物。牌上的舞蹈人物一條腿交叉在另一條腿上，兩手拿著魔杖。她象徵著運動中的平衡和進化。她所代表的圓滿和統一不是靜態的，而是不斷變化的，動態的和永恆的。圍繞中心人物的綠色花環是成功的象徵，而環繞花環的紅色絲帶則讓人聯想到無窮。牌的每個角上都有四個數字——它們與命運之輪中的數字相同。這四個數字代表天蠍座、獅子座、水瓶座和金牛座——代表宇宙的四個角落、四個元素和四個福音傳道者。他們一起象徵著所有能量的大和諧。",
+        "normal": "完成，完滿，和諧，發自內心的快樂滿足和持久的成功。可能暗示旅行。",
+        "reversed": "不完滿，空虛，不持久的成功，旅行",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/the-world-meaning-major-arcana-tarot-card-meanings",
+        "link": "World.jpg"
+    },
+    {
+        "name": "The World 世界",
+        "description": "世界牌中心有一個跳舞的人物。牌上的舞蹈人物一條腿交叉在另一條腿上，兩手拿著魔杖。她象徵著運動中的平衡和進化。她所代表的圓滿和統一不是靜態的，而是不斷變化的，動態的和永恆的。圍繞中心人物的綠色花環是成功的象徵，而環繞花環的紅色絲帶則讓人聯想到無窮。牌的每個角上都有四個數字——它們與命運之輪中的數字相同。這四個數字代表天蠍座、獅子座、水瓶座和金牛座——代表宇宙的四個角落、四個元素和四個福音傳道者。他們一起象徵著所有能量的大和諧。——它們與命運之輪中的數字相同。這四個數字代表天蠍座、獅子座、水瓶座和金牛座——代表宇宙的四個角落、四個元素和四個福音傳道者。他們一起象徵著所有能量的大和諧。",
+        "normal": "完成，完滿，和諧，發自內心的快樂滿足和持久的成功。可能暗示旅行。",
+        "reversed": "不完滿，空虛，不持久的成功，旅行",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/the-world-meaning-major-arcana-tarot-card-meanings",
+        "link": "World.jpg"
+    },
+    {
+        "name": "Ace of Wands 權杖一",
+        "description": "權杖與火的能量有關，而權杖一是權杖牌組中火的核心代表。這張牌描繪的是一隻手從雲中伸出來，手中拿著一根權杖。當我們仔細看這張牌時，我們可以看到這只手中權杖還在生長。權杖上的一些葉子已經發芽，這意味著代表精神和物質的平衡和進步。遠處是一座城堡，象徵著未來的機會。",
+        "normal": "靈感，創意，新計劃，新激情，熱情，活力",
+        "reversed": "延緩，阻礙，缺乏激情，缺乏活力，猶豫不決，靈感枯竭",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/ace-of-wands-meaning-tarot-card-meanings",
+        "link": "Wands01.jpg"
+    },
+    {
+        "name": "Two of Wands 權杖二",
+        "description": "權杖二的圖景是一個男人站在一座城堡的頂部，右手拿著一個微型地球儀。從他站立的方式來看，這個人俯視著廣闊的地形，左側是海洋，右側是陸地。男子身穿橙色束腰外衣，頭戴紅色帽子，分別象徵著他對生活本身的熱情和對冒險的渴望。他手中的微型地球儀代表著他去探索更廣闊的生活的可能性。",
+        "normal": "制定計劃，邁出第一步，做出決定，離開舒適區，承擔風險",
+        "reversed": "糟糕的計劃，過度分析，不採取行動，謹慎行事，規避風險",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/two-of-wands-meaning-tarot-card-meanings",
+        "link": "Wands02.jpg"
+    },
+    {
+        "name": "Three of Wands 權杖三",
+        "description": "權杖三描繪了一個站在懸崖邊上的人，俯瞰大海和山脈。從懸崖邊上，他看清了他前方的一切。權杖被種植於他身旁的土地，他手握著其中一根。他似乎在展望未來，並思考他對自己計劃的承諾，以及執行的方法，以便把它們變成現實。",
+        "normal": "前進的勢頭，信心，擴張，增長，遠見，向前看，新的階段，將計劃付諸實踐",
+        "reversed": "限制，局限，缺乏進展，障礙，延誤，沮喪，反思",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/three-of-wands-meaning-tarot-card-meanings",
+        "link": "Wands03.jpg"
+    },
+    {
+        "name": "Four of Wands 權杖四",
+        "description": "權杖四描繪了一對夫婦在歡迎花環下跳舞，花環被綁在在四根權杖之間。似乎有一個正在進行的聚會，或者為這對夫婦舉行的某種歡迎儀式。你可以從圖上看到，這張牌代表了一個充滿了成就感的時刻，一個因為目標真正實現而帶來滿足的時刻。",
+        "normal": "社群，家庭，慶祝活動，團聚，聚會，穩定，歸屬感",
+        "reversed": "缺乏支持，不穩定，不受歡迎，短暫性，缺乏根基，家庭衝突",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/four-of-wands-meaning-tarot-card-meanings",
+        "link": "Wands04.jpg"
+    },
+    {
+        "name": "Five of Wands 權杖五",
+        "description": "權杖五描繪了五個人都拿著自己的權杖，在空中揮舞。就像塔羅牌中的大多數五一樣，它是關於問卜者所面臨的某種分歧。這種分歧可以被認為是這些人之間衝突的徵兆，也可以認為他們所有人都只是在享受這種衝突帶來的腎上腺素刺激。他們之間的競爭是一種善意的競爭，而不是憤怒。他們拿著權杖的輕鬆方式讓人感覺這場爭論可能只是一場表演，而不是一場激烈的鬥爭。",
+        "normal": "衝突，競爭，爭論，侵略性，緊張，對手，自我衝突",
+        "reversed": "結束衝突，合作，協議，休戰，避免衝突；也可能是不公平的競爭（欺詐、作弊等）",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/five-of-wands-meaning-tarot-card-meanings",
+        "link": "Wands05.jpg"
+    },
+    {
+        "name": "Six of Wands 權杖六",
+        "description": "權杖六描繪了一個男人，他頭戴勝利的花環，騎馬穿過一群正在歡呼的人。這匹馬是白色的，這是眾所周知的力量、純潔以及成功的象徵。歡呼的群眾表示大家對騎馬人成就的認可。該男子攜帶的權杖上還系著一個花環，進一步強調他的成功。該男子對所有這些關注並不害怕，也不害羞，而是為自己的成就感到自豪。對此，他周圍的人群做出了歡快和熱情的反應。",
+        "normal": "自信，成功，勝利，凱旋，好消息，好的進展，認可，贊美",
+        "reversed": "失敗，缺乏認可，缺乏成就感，過度驕傲自滿",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/six-of-wands-meaning-tarot-card-meanings",
+        "link": "Wands06.jpg"
+    },
+    {
+        "name": "Seven of Wands 權杖七",
+        "description": "權杖七描繪了一個人的形象，他站在高高的山上，受到下面對手的挑戰。他似乎在捍衛這個位置，並進行報復性的攻擊。有趣的是，在權杖七的描繪中，這個人穿的兩只鞋不是同一雙。這與牌面上的其它細節互相呼應，例如不平整的地面，以及主角沒有一個穩定的立足點。",
+        "normal": "面臨挑戰，遭到反對，衝突對立的局面，自衛反擊",
+        "reversed": "陷入焦慮，優柔寡斷，沒用勇氣面對挑戰，不利的局勢，放棄，承認失敗",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/seven-of-wands-meaning-tarot-card-meanings",
+        "link": "Wands07.jpg"
+    },
+    {
+        "name": "Eight of Wands 權杖八",
+        "description": "權杖八描繪了八根飛行的權杖，看起來好像它們懸浮在空中。他們飛行的背景是晴朗的天空，這代表著他們到達目的地的路上可能沒有任何障礙。這張牌展現了壯麗的景色，河水在流淌，水給畫面帶來了生命力。權杖看起來似乎即將降落，這標誌著漫長旅程的結束。",
+        "normal": "迅速，自由，旅行，自由流動、不受約束的能量",
+        "reversed": "進展過於迅速而失控，準備不充分；欲速則不達，進展受阻，延誤，等待",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/eight-of-wands-meaning-tarot-card-meanings",
+        "link": "Wands08.jpg"
+    },
+    {
+        "name": "Nine of Wands 權杖九",
+        "description": "權杖九顯示一個看起來很虛弱的人抓著一根魔杖，後面竪著另外8根魔杖。這個人看起來受傷了，但他似乎仍然準備好了再戰，並且強烈地渴望勝利。他的臉上有一種希望和決心，應該可以幫助他完成最後一場戰鬥。這是一張顯示挑戰、希望和勝利的混合牌。",
+        "normal": "最後一搏，堅持，勇氣，韌性，毅力，接近成功，疲勞",
+        "reversed": "固執，死板，防禦，拒絕妥協，放棄",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/nine-of-wands-meaning-tarot-card-meanings",
+        "link": "Wands09.jpg"
+    },
+    {
+        "name": "Ten of Wands 權杖十",
+        "description": "畫面中，一名男子背著一捆重重的木頭，十根捆成一捆的權杖，向不遠處的房子走去。權杖十上的這個形象，表明一個人已經在生活中奮鬥並取得了收穫，他現在正帶著收成到達他的最終目的地。此時他承受著巨大的壓力，因此顯得疲累萬分。但不遠處的房子表示終點已並不遙遠，一步一個腳印向前就能成功。",
+        "normal": "負擔，責任，職責，壓力，義務，精疲力竭，掙扎，奮鬥",
+        "reversed": "承擔過多的責任，壓力過大，崩潰",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/ten-of-wands-meaning-tarot-card-meanings",
+        "link": "Wands10.jpg"
+    },
+    {
+        "name": "Page of Wands 權杖侍衛",
+        "description": "一個衣著光鮮的年輕人大膽地拿著一根權杖站在一片荒蕪的土地上。他的衣衫上有一個像蠑螈一樣的圖案，這是一個從壞到好的轉變的象徵。這個年輕人是一個熱情的倡導者，他不斷地傳播精神和社會進步的理念，提升他的同伴。他身後背景中的沙漠既表示他的元素——火，也代表他生活在一個還沒有結出果實的世界。因此，他的想法完全是假設性的。然而，如果他選擇實踐這些想法，並開始他的旅程，他純潔的心可以使他找到更好的財富。",
+        "normal": "冒險，興奮，新鮮的想法，開朗，熱情，活潑，天真，坦率，精力充沛，無所畏懼，性格外向",
+        "reversed": "三分鐘熱度，頑皮，缺乏想法，懶惰，無聊",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/page-of-wands-meaning-tarot-card-meanings",
+        "link": "Wands11.jpg"
+    },
+    {
+        "name": "Knight of Wands 權杖騎士",
+        "description": "權杖騎士騎在他的馬上，馬匹揚起頭顱，準備好了行動。從騎士的衣服和盔甲，以及他的馬來看，他已經為未來做好了準備。他在金屬盔甲上穿著一件黃色圖案的襯衫。他還戴著一個頭盔，上面插著紅色的羽翼。他似乎已經做好了戰鬥的準備，只是他拿著一根大權杖而不是一把劍。他的馬是橙色的，鬃毛看起來像火焰。當你看著權杖騎士的臉時，你會看到想要在他的努力中取得成功的決心。火是權杖騎士象徵意義的主要因素。掛在他手臂和背上的裝飾性流蘇，還有馬鬃，都是火焰的顏色。他還穿著一件印有火蠑螈符號的黃色襯衫。",
+        "normal": "勇敢的，迷人的，英雄氣概的，自由的精神，性格火熱、充滿活力的行動派",
+        "reversed": "傲慢的，魯莽的，沒有耐心的，缺乏自我控制，消極，易怒，霸道",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/knight-of-wands-meaning-tarot-card-meanings",
+        "link": "Wands12.jpg"
+    },
+    {
+        "name": "Queen of Wands 權杖王后",
+        "description": "權杖王后所描繪的圖像顯示，一位王后驕傲地坐在寶座上，同時面向前方，這顯然是力量和火的象徵。她的左手拿著一朵向日葵，王座上也雕刻著向日葵的形象——這意味著幸福、滿足和肥沃。她的右手拿著發芽的權杖，象徵著生命。在她的積極示人的一面，權杖王后可以與忠誠、寄託和溫暖聯繫在一起。她腳下的黑貓暗示了她隱秘的一面。黑貓在傳統上是巫術和神秘主義的象徵，但也可以指出她運用深刻直覺來把握的能力。",
+        "normal": "自信，熱情，堅定，有魅力，陽光開朗，樂觀，富有靈感，直覺靈敏，強大的內心，豐收，財運，",
+        "reversed": "專橫，善妒，欺軟怕硬，不夠自信，控制欲，內心力量的匱乏",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/queen-of-wands-meaning-tarot-card-meanings",
+        "link": "Wands13.jpg"
+    },
+    {
+        "name": "King of Wands 權杖國王",
+        "description": "權杖國王描繪了一個人，他的手中握著一根抽芽的權杖，這代表著創造力和生活的激情。他的寶座以及他的鬥篷上都裝飾著火蠑螈和獅子，它們是火和力量的象徵。咬著他尾巴的蠑螈代表著無限以及穿越所有障礙的動力。他的袍子是明亮的橙色，類似於火焰，而皇冠的形狀像火舌。這些都表明這位國王富有能量和威權。",
+        "normal": "領導力，遠見，大局觀，控制，大膽的決定，野心，幹勁，創造力",
+        "reversed": "一個可能是暴虐也可能萎靡的人，但終究是因為自己內心能量不足，無法掌控身邊的事物。",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/king-of-wands-meaning-tarot-card-meanings",
+        "link": "Wands14.jpg"
+    },
+    {
+        "name": "Ace of Cups 聖杯一",
+        "description": "在聖杯一中，有一隻手從雲中伸出來，拿著一個杯子，似乎是在向問卜者提議喝水。這只杯子里溢出了閃閃發光的水，象徵著純潔和質樸的情感。如果你接受這個提議，喝下這杯水肯定會給你帶來情感和精神上的滿足。杯子中有五條水流從杯口溢出。這五條水流代表了直覺的力量，表明傾聽你內心聲音的重要性。為了獲得聖杯王牌所描繪的那種情感或精神上的滿足，問卜者需要遵循這種內在的聲音，並且無論在什麼情況下，都要忠實於它。這需要情緒上的約束，但是這張牌本身就暗示了它所能帶來的回報：洋溢的快樂和幸福。",
+        "normal": "情感上的滿足，新情感的開端，創造力，靈性，直覺，收穫快樂、愛和喜悅",
+        "reversed": "冷漠，空虛，情感挫折，創造力受阻，感覺不到被愛，心情陰鬱",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/ace-of-cups-meaning-tarot-card-meanings",
+        "link": "Cups01.jpg"
+    },
+    {
+        "name": "Two of Cups 聖杯二",
+        "description": "這張牌顯示了一個男人和一個女人的形象，他們正在進行某種交換杯子的儀式。中間有赫爾墨斯的節杖標誌，這通常與談判、貿易、宇宙能量、保護、適當的行為和雙重性有關。聖杯二想要揭示的是相當積極的事情——它是塔羅牌中最吉利的牌之一，適合戀愛、商業或其他關係。它暗示著一種新的合作關係正在醖釀之中，它將建立在平衡、尊重和榮譽的前提下。在節杖上方是一隻奇美拉，象徵著火和激情也影響著這種夥伴關係。",
+        "normal": "團結，夥伴關係，戀愛，相互吸引，聯繫，聯合，相互尊重",
+        "reversed": "關係中不和諧的因素，不平等的關係，溝通不暢，分離、分手",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/two-of-cups-meaning-tarot-card-meanings",
+        "link": "Cups02.jpg"
+    },
+    {
+        "name": "Three of Cups 聖杯三",
+        "description": "當你抽到聖杯三，你會看到三位女士將她們的杯子舉向天空，進行某種慶祝。可以看出空氣中洋溢著美好的氛圍，因為這三位女士的頭髮上戴著花環。花環通常與成功和勝利有關，所以她們的幸福是顯而易見的。這三位女士還站在一圈鮮花和水果的之中，進一步增加了這張牌的歡快氣氛。可以想見，女士之間正互相分享著美好、歡快的感受。",
+        "normal": "友誼，團聚，聚會，慶祝活動",
+        "reversed": "流言蜚語，醜聞，孤立，孤獨，不和諧、不穩定的團隊，合作失敗，友誼破裂",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/three-of-cups-meaning-tarot-card-meanings",
+        "link": "Cups03.jpg"
+    },
+    {
+        "name": "Four of Cups 聖杯四",
+        "description": "聖杯四顯示一個年輕人坐在山頂的一棵樹下，遠離他人。他似乎在沈思和冥想。在他面前有三隻聖杯躺在草地上，而空中的一隻手給他拿來了剩下的一隻聖杯。這個人手腳交叉，低頭看著這三隻聖杯，不為所動，以至於他看不到那只伸過來的手遞給他的聖杯。聖杯四代表我們傾向於認為我們所擁有的東西是理所當然的，使我們很難看到宇宙呈現給我們的寶藏。我們傾向於在我們身邊找到解決煩惱的答案，但過度關注我們所缺少的東西。",
+        "normal": "冷漠，沈思，失去連結，憂鬱，無聊，拒絕，漠不關心，失落",
+        "reversed": "清醒，覺察，接受，重燃熱情",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/four-of-cups-meaning-tarot-card-meanings",
+        "link": "Cups04.jpg"
+    },
+    {
+        "name": "Five of Cups 聖杯五",
+        "description": "有些塔羅牌會讓人立刻聯想到負面情緒，而聖杯五就有這樣的效果。這張牌象徵著損失，以及由這種特定損失帶來的痛苦挑戰。這張牌描繪了一個穿著黑色鬥篷的人物。這個人把自己的臉藏起來，似乎很絕望的樣子。地上有五個杯子，其中三個已經倒下，另外兩個仍然站著。然而，這個人似乎沒有注意到有兩個站著的杯子，因為他正忙著為那些倒下的杯子感到哀傷。有一條洶湧的河流在他和遠處的城堡之間流淌，表明情感的洪流已經把他和家分開。",
+        "normal": "悲傷、失落、失望。但提醒我們意識到身後仍有退路（支持、希望）。",
+        "reversed": "當事人意識到自己仍保有的部分，從悲傷中走出來投入新的生活；重拾信心，看見積極的方面；知足常樂",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/five-of-cups-meaning-tarot-card-meanings",
+        "link": "Cups05.jpg"
+    },
+    {
+        "name": "Six of Cups 聖杯六",
+        "description": "聖杯六象徵著懷舊的樂趣，家庭的舒適和童年的純真。牌中有六個杯子，裡面都裝著白花。前景中描繪了兩個孩子，其中一個正把杯子遞給另一個。男孩把花遞給女孩，表明記憶的傳遞和快樂的團聚。孩子們似乎在一個類似於城堡的地方，可以想見這會給他們一種安全感和舒適感。",
+        "normal": "童年，懷舊，回憶，思鄉，照顧、安全和保障",
+        "reversed": "沈溺於過去，不安，被拋棄、被忽視，向前看，離家，獨立",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/six-of-cups-meaning-tarot-card-meanings",
+        "link": "Cups06.jpg"
+    },
+    {
+        "name": "Seven of Cups 聖杯七",
+        "description": "聖杯七象徵著想象力、選擇、一廂情願的想法、幻覺和幻想。這張牌顯示人背對著我們，沈思著從杯子里浮現出來的7種圖景，這些圖景都漂浮在雲端。雲是夢想、幻覺和想象力的代表。有許多幻想正從杯子里出現，這代表了人們在做夢時看到的許多幻象。聖杯七可能意味著你有很多選擇可以選擇。",
+        "normal": "幻象，夢境，不切實際的幻想，許多選擇，迷茫",
+        "reversed": "缺乏目標，混亂，分心；雲開霧散，看清內心，做出選擇，夢想成真",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/seven-of-cups-meaning-tarot-card-meanings",
+        "link": "Cups07.jpg"
+    },
+    {
+        "name": "Eight of Cups 聖杯八",
+        "description": "在聖杯八中，我們面臨著過渡的時刻。我們看到一個披著鬥篷的人走到一片荒蕪的土地上，留下了八個金杯。他已經厭倦了那些他花了很多時間收集的杯子，現在正著手尋求一個更高的目標。這可能是由於意識到他在生活中一直在尋找的東西並不像他曾經想象的那樣令人愉快或滿意而感到無聊或不快。進行這次旅行的人也可能象徵著在未知的地方尋求刺激。他所前往的荒山野嶺，也可能象徵著要面臨的新的挑戰。它們的空曠似乎表明，它們在等待一個人的到來和塑造。他可能是為了嘗試新事物而進行旅行，這些新事物有可能幫助一個人在精神和心靈上成長。這張牌還表明願意將自己與他人分離開來，以便自己能夠致力於自我完善、自我理解和成長。",
+        "normal": "拋棄，放手，跳脫出舊有的功績（或束縛），追尋更高的境界",
+        "reversed": "停滯不前，單調乏味，拒絕突破，拒絕離開現有的環境",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/eight-of-cups-meaning-tarot-card-meanings",
+        "link": "Cups08.jpg"
+    },
+    {
+        "name": "Nine of Cups 聖杯九",
+        "description": "在這張牌中，一個中年男子坐在木椅上，雙臂交叉，臉上流露出相當程度的滿足感。他穿著優雅，有一種真正的滿富足。他頭上的頭飾是紅色的，是他活躍思維的寫照。在他的背後，你會發現有九個排列整齊有序的金杯。聖杯九象徵著精神和物質上的滿足和成功。這個人在實現他內心深處的願望後，顯出了成功的表情。",
+        "normal": "榮耀，成功，夢想成真，成就感，滿足，享樂，幸福圓滿",
+        "reversed": "不快樂，缺乏成就感，失望；可能期望通過世俗的享樂或成功來彌補內心的空虛或是愛的缺失，然而並不會成功。",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/nine-of-cups-meaning-tarot-card-meanings",
+        "link": "Cups09.jpg"
+    },
+    {
+        "name": "Ten of Cups 聖杯十",
+        "description": "在聖杯十的畫面上，有一對夫婦摟著彼此，面前是美麗的房屋和綠色的原野。在他們旁邊，有兩個孩子在歡樂地玩耍。這對夫婦以一種充滿愛和浪漫的方式擁抱著彼此，而孩子們在自由地玩耍。這對夫婦似乎關係穩定，同時也得到了舒適的家和美麗的孩子。綠色的土地象徵著肥沃，而河流顯示了這對夫婦的感情是多麼自由地流淌，這意味著他們的關係是相當和諧的。在天上，有十個杯子擺成弧形，意為來自天堂的祝福。他們身後的彩虹顯示了艱苦歲月和悲傷的結束，以及新的幸福生活的到來，每個家庭成員都將享受其中。聖杯十的牌描繪了“擁有一切”。",
+        "normal": "幸福，歸家，團圓，家庭和睦",
+        "reversed": "家庭不和，關係不和；或是個人脫離團體、離群索居、拒絕他人的愛",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/ten-of-cups-meaning-tarot-card-meanings",
+        "link": "Cups10.jpg"
+    },
+    {
+        "name": "Page of Cups 聖杯侍衛",
+        "description": "聖杯侍衛代表的是來自無意識的意外靈感，也許是通過我們可能還無法真正理解的方式。在這張牌中，一個在海邊的青年穿著一件藍色的外衣，上面裝飾著花紋，拿著一個金杯。她還戴著一頂看起來很波西米亞的貝雷帽，以及一條飄逸的長圍巾。她被一條從杯子里跳出來的魚嚇了一跳，這條魚彷彿是從童話故事中跳出來迎接她。她既不能喝酒，也不能用杯子敬酒，因為那條魚盯著她，似乎想和她打交道。",
+        "normal": "理想主義，情感細膩，好奇，想象力豐富，天真、純真、童真",
+        "reversed": "情感脆弱，不成熟，天馬行空而不切實際；因缺乏安全感而過度提防，拒絕他人善意",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/page-of-cups-meaning-tarot-card-meanings",
+        "link": "Cups11.jpg"
+    },
+    {
+        "name": "Knight of Cups 聖杯騎士",
+        "description": "聖杯騎士這張牌描繪了一個年輕的騎士，他光榮地騎著一匹白馬，同時拿著一個杯子，好像他是某種信使。與權杖騎士或寶劍騎士不同的是，這位騎士並沒有騎著馬衝鋒陷陣。相反，他正緩慢地向前移動，這為整個環境提供了一個平和的整體印象。眾所周知，馬代表著一個人的動力、能量和權力。馬的顏色是白色，這是一個精神、光明和純潔的象徵。",
+        "normal": "理想主義者，迷人，藝術，優雅，夢想家，浪漫",
+        "reversed": "失望，發脾氣，情緒化，虛榮，花心，不切實際",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/knight-of-cups-meaning-tarot-card-meanings",
+        "link": "Cups12.jpg"
+    },
+    {
+        "name": "Queen of Cups 聖杯王后",
+        "description": "聖杯王后掌管情感領域。她的寶座就在海的邊緣，而水通常指向無意識和感覺的領域。她在岸邊的位置表明她位於陸地和海洋之間，是感覺和思想交融的地方。她拿著一個杯子，杯子的把手形狀像一個天使。這個杯子是封閉的，這就是為什麼聖杯皇后象徵著我們無意識的思想。王后獨自坐著，這使她可以思考。水和天空的平靜象徵著王后寧靜的心靈。她的腳沒有接觸到水，這代表她從外面（也即客觀的角度）審視著自己的想法和感受。",
+        "normal": "憐憫，溫暖，仁慈，敏感細膩，直覺，療癒",
+        "reversed": "不安全感，付出太多，過度敏感，情緒化，脆弱，依賴，殉道者",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/queen-of-cups-meaning-tarot-card-meanings",
+        "link": "Cups13.jpg"
+    },
+    {
+        "name": "King of Cups 聖杯國王",
+        "description": "聖杯國王是塔羅牌中代表慷慨、控制和情緒平衡的一張牌。這張牌本身描繪了一個坐在寶座上的國王，他有一個魚狀的護身符，代表他的創造力和精神在他周圍平靜的水中茁壯成長。我們可以從背景中看到，在意識和無意識之間存在著穩定的平衡。在國王身後，右手邊是一條跳出海面的魚，左邊是一艘船，分別代表情感和物質世界。聖杯國王表明你沒有壓抑你的衝動，而是學會了以平衡調和的方式處理它們。",
+        "normal": "慈愛，溫和體貼，寬容，慷慨，奉獻，情感成熟，智慧，富有耐心",
+        "reversed": "不知所措，焦慮，冷漠，壓抑，退縮，控制欲強，自私",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/king-of-cups-meaning-tarot-card-meanings",
+        "link": "Cups14.jpg"
+    },
+    {
+        "name": "Ace of Swords 寶劍一",
+        "description": "寶劍一顯示一隻手從雲中伸出，揮舞著一把雙刃劍。這把雙刃劍帶著一頂金皇冠，同時被花環所環繞。長期以來，花環一直與勝利、成功和偉大的成就有關。皇冠被用作皇室和皇室所帶來的統治權的象徵。寶劍的背後是山和海洋，它們被用來象徵劍可以用來征服的廣闊範圍和遙遠土地，以及雄心。",
+        "normal": "廣闊的視野，力量，專注，決心，真理，突破",
+        "reversed": "敵意，爭吵，傷害，破壞，野蠻，混亂",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/ace-of-swords-meaning-tarot-card-meanings",
+        "link": "Swords01.jpg"
+    },
+    {
+        "name": "Two of Swords 寶劍二",
+        "description": "寶劍二象徵著我們在被迫做出艱難選擇時面臨的困惑。在寶劍二牌中，有一個坐著的女人，她被蒙著眼睛，雙手各拿著一把劍。在背景中，有一個大海，周圍有峭壁和岩石，作為船隻和船舶的障礙，阻礙了前進和行動。牌中被蒙住眼睛的女人代表了一種情況，這種情況使她無法清晰地看到問題和解決方案。她兩手握著的劍表明有兩種選擇，分別通向不同的方向，而且是相互排斥的。這也可能描繪了一個僵局，這意味著應該用邏輯和理性的思維來解決這個問題。月亮位於牌的右邊，表示可能象徵著幻想和欺騙為這位女士做出選擇所帶來的困難。",
+        "normal": "僵局，困難的選擇，逃避，抗拒，被蒙蔽",
+        "reversed": "猶豫不決，焦慮不安，信息太多，沒有正確的選擇；打破僵局，真相大白",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/two-of-swords-meaning-tarot-card-meanings",
+        "link": "Swords02.jpg"
+    },
+    {
+        "name": "Three of Swords 寶劍三",
+        "description": "作為塔羅牌中最有代表性的圖像之一，寶劍三展示了一顆漂浮在空中的心被三把劍刺穿。背景中陰雲密布，下著傾盆大雨。牌的象徵意義是不明確的，但它的情感效果是相當直接的。心臟是溫暖的，是情感和精神的所在；而三把劍表示傷害的力量，它們給這顆心臟造成痛苦。這是一個悲痛、損傷和心碎的形象。雲和雨描繪了周圍嚴峻的形勢。所有這些符號都表明寶劍三顯示了一個人生命中的低谷。",
+        "normal": "心碎，分離，悲傷，孤立，損失，創傷，淚水",
+        "reversed": "愈合，寬恕，恢復，和解；壓抑的情緒，封閉自己",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/three-of-swords-meaning-tarot-card-meanings",
+        "link": "Swords03.jpg"
+    },
+    {
+        "name": "Four of Swords 寶劍四",
+        "description": "寶劍四中有一種安靜的樣態，一種與寶劍三中的痛苦形成強烈對比的平靜的和平感。在一個教堂里，有一位騎士的雕塑，他躺在墳墓上，上面掛著三把劍，而第四把劍放在他的下方。這三把劍是提醒他在寶劍三中所承受的痛苦。第四把劍的位置似乎是一個信號，表明戰鬥已經結束。雕像後面的彩色玻璃處描繪了一個孩子和一個女人，讓人感覺到撤退後的溫暖和歡迎的場景。騎士的雙手合十，彷彿在祈禱。",
+        "normal": "休養，放鬆，和平，避難所，自我保護，恢復活力",
+        "reversed": "恢復，覺醒，重新投入生活，積極入世；倦怠，不安",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/four-of-swords-meaning-tarot-card-meanings",
+        "link": "Swords04.jpg"
+    },
+    {
+        "name": "Five of Swords 寶劍五",
+        "description": "寶劍五這張牌描繪了一個年輕人，他的臉上有一種明顯的輕蔑。他正看著自己成功征服的敵人。他擁有五把劍——這是他從牌上的其他人那裡奪來的。另外兩個人物正以緩慢的方式從他身邊走過，帶著一種失落和悲傷的感覺。在他們上方，天空波瀾不驚，陰雲密布，這表明儘管戰鬥已經結束，但並非一切順利。",
+        "normal": "爭論，糾紛，攻擊，欺凌，恐嚇，衝突，敵意，自私",
+        "reversed": "和解，妥協，報復，失敗，遺憾，悔恨，及時止損",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/five-of-swords-meaning-tarot-card-meanings",
+        "link": "Swords05.jpg"
+    },
+    {
+        "name": "Six of Swords 寶劍六",
+        "description": "在寶劍六的牌面上，船夫將載有女人和孩子的船划向彼岸。我們可以從圖中猜測，這個女人和孩子離去時一定將某些東西拋在了身後，因為他們的背對著我們。女人的頭被鬥篷遮住了——也許她在逃離什麼，而且必須在別人不知道她真實身份的情況下離開。正因如此，她正經歷著巨大的損失或悲傷。寶劍六的象徵意義是指損失或變化，以及走向比我們離開的那個未來更有希望的未來。船邊的六把劍象徵著理性思維的強大力量，而不是直覺和心靈。",
+        "normal": "繼續向前，離去，離開舒適圈，接受教訓",
+        "reversed": "沈溺於過去，不願改變，逃避問題，被困住",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/six-of-swords-meaning-tarot-card-meanings",
+        "link": "Swords06.jpg"
+    },
+    {
+        "name": "Seven of Swords 寶劍七",
+        "description": "在寶劍七牌上，有一個人從某個營地偷偷跑出來，手裡拿著五把劍。在他身後，還有兩把劍立在地上。從這張牌中，我們可以推斷出，寶劍七是關於隱秘的，逃脫的，欺騙或背叛的。這個人臉上的表情顯示出相當大的自信，他似乎確信自己偷劍的任務一定會成功。但不幸的是，左邊似乎有一群士兵發現了這起盜竊案，其中一名士兵實際上正在舉起旗幟或武器，似乎在向他發出追擊的信號。",
+        "normal": "謊言，詭計，陰謀，戰略，可能失敗的計劃，陰險，狡猾",
+        "reversed": "懺悔，良心發現，合作商討",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/seven-of-swords-meaning-tarot-card-meanings",
+        "link": "Swords07.jpg"
+    },
+    {
+        "name": "Eight of Swords 寶劍八",
+        "description": "在寶劍八上有一個被捆綁和蒙上眼睛的女人。有八把劍戰略性地放在她周圍，限制了她的行動，好像她在某種陷阱或監獄里。然而，似乎建造陷阱的人有點懶惰或草率，留下了一些她可以逃脫的空隙。但是，由於蒙住了眼睛，使這個女人看不見，她沒有辦法找到走出這個陷阱的方法。她周圍的貧瘠土地可能意味著缺乏某種創造力，而背景中的灰色天空可能意味著絕望，因為在那裡她覺得她沒有希望掙脫她被束縛的那種處境。只要她能摘掉眼罩，她就會發現她可以輕鬆走出這種狀況。",
+        "normal": "被困，被限制，被陷害，無助，被蒙蔽，看不到可能的出路",
+        "reversed": "自由，釋放，覺醒，掌控局面，幸存",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/eight-of-swords-meaning-tarot-card-meanings",
+        "link": "Swords08.jpg"
+    },
+    {
+        "name": "Nine of Swords 寶劍九",
+        "description": "寶劍九描繪了一個雙手捂著臉坐在床上的女人。這個女人似乎剛剛從一個非常糟糕的噩夢中醒來。她似乎很不安、焦慮和恐懼。她的牆上掛著九把劍，在她的床上可以看到一個雕刻，描繪了一個被另一個人打敗的人。被子上裝飾著各種占星術符號和玫瑰花。在這裡，我們看到的是先前在寶劍八中看到的那個女人——也許，她終於被釋放了，但卻被她被拋棄和遺棄時所承受的痛苦的噩夢所困擾。",
+        "normal": "恐懼，焦慮，消極，崩潰，絕望，噩夢",
+        "reversed": "噩夢結束，恢復精神，重拾信心，學會應對恐懼",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/nine-of-swords-meaning-tarot-card-meanings",
+        "link": "Swords09.jpg"
+    },
+    {
+        "name": "Ten of Swords 寶劍十",
+        "description": "一張最醒目和不祥的牌。寶劍十顯示一個人平躺在地上，臉朝向泥土。他從腰部到腿部都被一塊紅布所覆蓋。十把長劍刺入他的背部，他可能沒有看到這個結局。空氣中瀰漫著可怕的寂靜：他頭頂上的天空是黑色的，陰雲密布，表明與死亡有關的恐懼和消極情緒。他面前的水是靜止的，沒有任何漣漪——為這張牌增添了陰森的靜止和終局氣質。向東方的地平線看去，太陽正在升起，儘管黑暗，但天氣似乎非常平靜。寶劍十似乎暗示這是一個人生命中的最低谷，不可能比這更糟。但至少，即使在這種狀態下，太陽依然緩緩升起。",
+        "normal": "毀滅，失敗，苦澀，崩潰，受害，背叛",
+        "reversed": "幸存，改善，痊癒，吸取經驗教訓",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/ten-of-swords-meaning-tarot-card-meanings",
+        "link": "Swords10.jpg"
+    },
+    {
+        "name": "Page of Swords 寶劍侍衛",
+        "description": "寶劍侍衛牌的出現代表一個人在生活中表現出豐富的能量。在風和雲朵的簇擁中，一個青年驕傲地站在岩石的懸崖上。這個精力充沛的青年手中拿著一把劍。他的表情是堅定的，也許還有一點挑釁的意味——他似乎準備好了一言不合就撲上去。",
+        "normal": "好奇，機智，思維敏捷，健談，善於溝通，靈感，警覺",
+        "reversed": "散漫，憤世嫉俗，諷刺，流言蜚語，侮辱，粗魯，缺乏規劃",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/page-of-swords-meaning-tarot-card-meanings",
+        "link": "Swords11.jpg"
+    },
+    {
+        "name": "Knight of Swords 寶劍騎士",
+        "description": "我們看到的這位騎士是多麼的匆忙啊！寶劍騎士描繪了一個身穿盔甲的年輕人，騎著一匹強壯的白馬進入戰鬥之中。他的白馬指向整體的純潔和智慧的能量，激勵著這位年輕的騎手。他身後的天空有暴風雨般的雲彩，以及被強風吹得歪倒的樹木。馬的馬具上也裝飾著鳥和蝴蝶的圖像。騎士的披風上也有這些鳥的裝飾。這都突出了他的風屬性。",
+        "normal": "自信，直接，急性子，聰明，大膽，專注，完美主義，雄心勃勃",
+        "reversed": "粗魯，蠻橫，欺凌，侵略性，牙尖嘴利，惡毒，無情，傲慢",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/knight-of-swords-meaning-tarot-card-meanings",
+        "link": "Swords12.jpg"
+    },
+    {
+        "name": "Queen of Swords 寶劍王后",
+        "description": "寶劍王后坐在高高的寶座上，帶著嚴厲的表情向遠方眺望。作為寶劍所代表的風元素的王后，她在雲中的位置表明沒有人可以欺騙或愚弄她。她右手中的劍指向天空，而左手則伸出來，像是在施予什麼。寶劍王后給了我們判斷日常決策的天賦，並具有吸取他人經驗的靈活性。",
+        "normal": "誠實，獨立，有原則，公平，冷靜理智，批評建議，客觀，敏銳，洞察力，決斷力",
+        "reversed": "悲觀，苛刻，痛苦，鐵石心腸，譏諷，殘忍，孤獨，分離",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/queen-of-swords-meaning-tarot-card-meanings",
+        "link": "Swords13.jpg"
+    },
+    {
+        "name": "King of Swords 寶劍國王",
+        "description": "寶劍國王顯示一個坐在寶座上的國王，而他的右手拿著一把向上的雙刃劍。寶劍國王散髮出智慧的力量、清晰的思維和真理和權威。他明白權力意味著巨大的責任。國王穿的藍色外衣是他精神理解的象徵。他的寶座後面的蝴蝶是表示轉變。",
+        "normal": "理智，權威，紀律，律法，誠信，道德，嚴肅，嚴格",
+        "reversed": "不理智，獨裁，壓迫，不人道，控制，冷酷，不誠實",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/king-of-swords-meaning-tarot-card-meanings",
+        "link": "Swords14.jpg"
+    },
+    {
+        "name": "Ace of Pentacles 星幣一",
+        "description": "在這張牌中，有一隻神秘的手從雲中伸出來，拿著一個看起來像金幣的東西，表面刻著一個五角星。這個五角星與土元素有關，被視為財富和所有物質、世俗事物的標誌。手的下方是一個花園，裡面似乎正盛開著鮮花和其他種類的植物——散髮出肥沃、成長和繁榮的氣息。遠處的山代表了推動人們尋找星幣的雄心壯志。",
+        "normal": "新機會，資源，財富，豐富，繁榮，安全，穩定",
+        "reversed": "錯失機會，稀缺，匱乏，不穩定，吝嗇，投資失敗，虧空，支出",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/ace-of-pentacles-meaning-tarot-card-meanings",
+        "link": "Pents01.jpg"
+    },
+    {
+        "name": "Two of Pentacles 星幣二",
+        "description": "星幣二牌描繪了一個正在跳舞的人，他手中玩弄著兩個大金幣。星幣的周圍有一個無限的標誌，表示這個人可以處理所有問題，他可以優雅地掌控自己的生活。在背景中，你會注意到有兩艘船正在乘著巨浪，它們強調了這個人維持平衡的難度——他在波濤洶湧的水域中，但必須設法保持平衡。星幣二描繪了一個人生活中通常發生的起伏。儘管周圍一片混亂，這個人卻過著非常無憂無慮的生活，因為他在跳舞，並快樂地處理所有來到他身邊的事情。",
+        "normal": "平衡，適應，足智多謀，靈活，娛樂",
+        "reversed": "失衡，無組織，不知所措，混亂，古板僵化，不懂變通",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/two-of-pentacles-meaning-tarot-card-meanings",
+        "link": "Pents02.jpg"
+    },
+    {
+        "name": "Three of Pentacles 星幣三",
+        "description": "星幣三描繪一個在大教堂工作的年輕學徒。在他面前有兩個人，一個是牧師，一個是某位貴族，他們正拿著羊皮紙上的大教堂建築圖稿。我們可以從學徒抬頭的方式看出，他正在介紹他建造大教堂的進展。另外兩個人正仔細地聽他說話，以便更清楚地瞭解需要他們做什麼，以及他們如何提供指導。儘管學徒的經驗較少，但其他兩個人都聽他的，因為他們知道學徒的想法和經驗是成功完成整個建築的根本。因此，星幣三代表了不同種類的知識聚集在一起，以便共同造就一些東西。",
+        "normal": "團隊合作，共同目標，協作，學徒制，計劃，知識和經驗",
+        "reversed": "缺乏凝聚力，缺乏團隊精神，團隊不和，經驗或能力不足，計劃不周",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/three-of-pentacles-meaning-tarot-card-meanings",
+        "link": "Pents03.jpg"
+    },
+    {
+        "name": "Four of Pentacles 星幣四",
+        "description": "這張牌描繪了一個坐在凳子上的人，他正以一種非常緊張和防禦性的姿態守護著他的星幣，似乎很害怕失去它們。一個星幣在他的頭上岌岌可危，另一個星幣被他自己的雙手緊緊攥住，還有兩個星幣被穩穩地踩在他腳下。他要確保絕對沒有人能碰他的星幣。顯然，他無法移動，因為他要緊緊守護這些星幣。換句話說，他被限制了行動，因為他對自己的財產抓得太緊。對某些人來說，金錢並不總是帶來自由。",
+        "normal": "佔有欲，不安全感，警戒，囤積，吝嗇，穩定，安全，儲蓄，物欲，財富，節儉，守成",
+        "reversed": "慷慨，給予，支出，開放，財務不安全，亂花錢，虧損",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/four-of-pentacles-meaning-tarot-card-meanings",
+        "link": "Pents04.jpg"
+    },
+    {
+        "name": "Five of Pentacles 星幣五",
+        "description": "和其它牌組的五一樣，星幣五象徵著逆境。它描繪了兩個在大雪中行走的人。他們不僅寒冷，而且還生病、貧窮、疲憊和飢餓。看起來他們似乎缺乏生活的基本必需品。牌上一個人拄著拐杖，而另一個人則用披肩遮住頭部，赤腳走在雪地上。背景是一面黑色的牆，上面有一扇彩色玻璃窗，窗上有五個五角星的圖案，說明這是一座教堂。通常情況下，星幣五是一個壞兆頭。然而，不用著急，因為它的含義可以根據它在牌陣中的位置而發生改變。",
+        "normal": "困難，損失，被拋棄感，逆境，掙扎，失業，疏遠，恥辱，相互扶持",
+        "reversed": "混亂，毀滅，絕望；化險為夷，克服逆境",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/five-of-pentacles-meaning-tarot-card-meanings",
+        "link": "Pents05.jpg"
+    },
+    {
+        "name": "Six of Pentacles 星幣六",
+        "description": "在星幣六的圖像中，有一個身穿紅色長袍的人。紅色象徵的是這個人的地位和財富。他的一隻手拿著一個天平，代表著平等和公正。這讓我們想起了正義塔羅牌，它暗示著因果報應、因果關係，以及種瓜得瓜，種豆得豆的道理。他的另一隻手正在給兩個跪在他腳下的乞丐發錢。星幣六暗示你有足夠的安全感，可以在不影響自己穩定的情況下給予他人。",
+        "normal": "慷慨，慈善，幫助，支持，分享，感恩",
+        "reversed": "吝嗇，過於慷慨，有條件的好處，不平等，勒索",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/six-of-pentacles-meaning-tarot-card-meanings",
+        "link": "Pents06.jpg"
+    },
+    {
+        "name": "Seven of Pentacles 星幣七",
+        "description": "星幣七描繪了一個年輕人，他似乎暫時停下了艱苦的勞動，欣賞起花園裡的果實和花朵。他撐在他的鏟子上，欣賞著掛在鬱鬱蔥蔥的植物上的七個星幣。他把頭伏在手上的樣子似乎暗示了一種疲勞——他努力工作以確保今年的莊稼是個好收成。因為他專注於長期目標，所以他現在不能收穫他的成果，只能為自己保留一個星幣，而繼續培育其他的。通過他的努力，他希望他的作物能夠持續結果。",
+        "normal": "收穫，回報，結果，成長，進步，毅力，耐心，計劃，耕耘",
+        "reversed": "未完成的工作，拖延，缺少努力，浪費，缺乏成長，挫折，急躁，回報不令人滿意，還未到收穫的時候",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/seven-of-pentacles-meaning-tarot-card-meanings",
+        "link": "Pents07.jpg"
+    },
+    {
+        "name": "Eight of Pentacles 星幣八",
+        "description": "星幣八描繪了一個年輕人在八枚金幣上刻下五角星的形狀。這張牌象徵著一個完全專注於自己所做事情的人。背景中遠處的小鎮意味著他成功地將自己與使人分心的事物隔離開來，這樣他就能完全專注於自己的任務。星幣八指的是你生活中專心致志地完成某項任務的時刻。你完全沈浸其中，並致力於表現出最好的水平。",
+        "normal": "技巧，才能，勤奮，專注，高標準，精益求精，勤學苦練，付出",
+        "reversed": "低質量，工作倉促，偷工減料，聲譽不佳，缺乏動力，平庸，懶惰，水平低下，無前途的工作，過於勞累",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/eight-of-pentacles-meaning-tarot-card-meanings",
+        "link": "Pents08.jpg"
+    },
+    {
+        "name": "Nine of Pentacles 星幣九",
+        "description": "星幣九描繪了一個在葡萄園中的女人。這個女人穿著一件豪華的長裙，上面裝飾著向日葵。她似乎是一個富人家的一員，因為在遠處的背景中，我們看到了一座城堡。一隻獵鷹安詳地坐在她的左手上玩耍。她身後的葡萄樹上掛滿了葡萄和金幣，表明她的事業非常成功，取得了豐收。",
+        "normal": "成功，成就，休閒，物質保障，獨立，物質或精神富足，生活充實，付出收到回報，自信",
+        "reversed": "戒備心強，生活無度，經濟困難，生活來源不穩定，亂花錢，膚淺",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/nine-of-pentacles-meaning-tarot-card-meanings",
+        "link": "Pents09.jpg"
+    },
+    {
+        "name": "Ten of Pentacles 星幣十",
+        "description": "星幣十中，有一位老人坐在通往一個大莊園的拱門裡。他似乎是一家之主，因為他周圍都是年輕的親人。他穿著一件長袍，上面有月牙和葡萄藤的裝飾——表示精神和物質的結合。他帶著他的家人和狗。在他前面有一對幸福的夫婦，估計是他的後輩。在這對夫婦後面有一個俏皮的孩子，是他的孫子。孩子俏皮地伸出手去撫摸狗。",
+        "normal": "遺產，根基穩固，家庭，祖先，繼承，富裕，穩定，持久的事業",
+        "reversed": "家庭糾紛，破產，債務，轉瞬即逝的成功，財產糾紛，不穩定，打破傳統",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/ten-of-pentacles-meaning-tarot-card-meanings",
+        "link": "Pents10.jpg"
+    },
+    {
+        "name": "Page of Pentacles 星幣侍衛",
+        "description": "星幣侍衛描繪了一個青年獨自站在一片寬闊的田野上，周圍長滿了鮮花。在背景中，你還會注意到幾棵鬱鬱蔥蔥的樹和一塊開墾過的田地。這個年輕人似乎走得很慢，並且忽視了周圍的環境，因為他的注意力完全被他手中的星幣所吸引。他沈迷於星幣所代表的一切：野心、安全、財富、自然和感性。星幣侍衛象徵著一個腳踏實地、忠誠和勤奮的人。",
+        "normal": "雄心勃勃，勤奮，目標導向，計劃性強，始終如一，勤奮好學，腳踏實地，忠誠，可靠，親近自然",
+        "reversed": "愚蠢，不成熟，不負責任，懶惰，心浮氣躁，成績不佳，拖延，錯過機會，前景灰暗",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/page-of-pentacles-meaning-tarot-card-meanings",
+        "link": "Pents11.jpg"
+    },
+    {
+        "name": "Knight of Pentacles 星幣騎士",
+        "description": "與星幣牌陣的其他宮廷牌一樣，星幣騎士的主題圍繞著工作、努力和責任。星幣騎士坐在田野里的一匹黑馬上。不像其他騎士總是去參加這樣那樣的冒險，這位騎士決定留在家裡，專注於耕種田地。他在為下一次收穫做準備——他相信這片土地是他發揮的最佳場所。在他的手中，有一枚金幣，他凝視著它。在他的眼中，我們看到了一種審慎的考慮。也許他正夢想著它能給他帶來什麼。其他騎士可能認為他有點無聊，但這位騎士更關心他的王國的長遠未來。",
+        "normal": "實事求是，可靠，高效，堅忍不拔，慢條斯理，勤奮，投入，耐心，保守",
+        "reversed": "工作狂，懶惰，沈悶，無聊，被動，小氣，不負責任，賭徒，風險投資",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/knight-of-pentacles-meaning-tarot-card-meanings",
+        "link": "Pents12.jpg"
+    },
+    {
+        "name": "Queen of Pentacles 星幣王后",
+        "description": "星幣女王描繪了一個美麗的女人坐在一個花紋繁復的寶座上，手裡拿著一枚金幣。她周身圍繞著美麗的花木和綠色的花圃。她的寶座上裝飾著各種大地的野獸，將她與自然和豐收緊密聯繫在一起。在牌的底部右側，一隻兔子好像要跳出牌框，這象徵著她充盈的能量和生育能力。因此，星幣女王描繪了某種程度的成功和繁榮。",
+        "normal": "慷慨、有愛心，養育，戀家，良好的商業意識，理財，實用主義，溫柔寬厚，安慰，熱情，繁榮",
+        "reversed": "自私，嫉妒，缺乏安全感，貪婪，物質(adj.)，嚴苛，自以為是",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/queen-of-pentacles-meaning-tarot-card-meanings",
+        "link": "Pents13.jpg"
+    },
+    {
+        "name": "King of Pentacles 星幣國王",
+        "description": "星幣國王指的是一個野心勃勃、物質上滿足和世俗上成功的人。星幣國王坐在一個裝飾著葡萄藤和牛頭的寶座上，他身上的長袍上繡著許多葡萄藤的圖案。他看起來很成熟，很有威嚴。他的周圍還有不同類型的植物、藤蔓和花朵，描繪了這位國王在物質方面取得的成功。他的右手拿著權杖，左手拿著刻有五角星的硬幣。在他身後可以看到城堡，這象徵著他的決心和努力。",
+        "normal": "富足，繁榮，安穩，雄心勃勃，持之以恆，勤奮刻苦，事業有成，慷慨，穩重，可靠",
+        "reversed": "貪婪，自私，物質(adj.)，大男子主義，理財失敗，賭徒，佔有欲強",
+        "detail": "https://labyrinthos.co/blogs/tarot-card-meanings-list/king-of-pentacles-meaning-tarot-card-meanings",
+        "link": "Pents14.jpg"
+    }
+]

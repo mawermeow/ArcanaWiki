@@ -1,0 +1,5 @@
+# 默認忽略的文件
+/shelf/
+/workspace.xml
+# 基於編輯器的 HTTP 客戶端請求
+/httpRequests/
