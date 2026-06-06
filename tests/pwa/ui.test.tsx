@@ -111,6 +111,10 @@ test("submit flow renders answer and selected source summary", async () => {
   assert.ok(view.getByText("逆位意義"));
   assert.ok(view.getByText("關係中不和諧的因素,不平等的關係,溝通不暢,分離、分手。"));
   assert.ok(view.getByText("[來源: cups-02#cups-02::逆位意義]"));
+  assert.equal(
+    (view.getByAltText("聖杯二（Two of Cups）") as HTMLImageElement).getAttribute("src"),
+    "/cards/Cups02.jpg"
+  );
 
   restore();
 });
@@ -204,6 +208,13 @@ test("auto draw option submits flag and renders generated reading", async () => 
 
   assert.match(seenBody, /"autoDraw":true/);
   assert.ok(view.getByText("目前關係狀態 · 逆位"));
+  assert.equal(
+    (view.getByAltText("聖杯二（Two of Cups）") as HTMLImageElement).getAttribute("src"),
+    "/cards/Cups02.jpg"
+  );
+  assert.ok(
+    (view.getByAltText("聖杯二（Two of Cups）") as HTMLImageElement).className.includes("reversed")
+  );
 
   restore();
 });

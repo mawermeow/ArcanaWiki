@@ -3,6 +3,7 @@
 import React, { useMemo, useState, type FormEvent } from "react";
 import type { ChatApiResponse } from "../lib/pwa/chat-api.ts";
 import type { TarotCardOption } from "../lib/pwa/card-catalog.ts";
+import { TarotCardThumb } from "./tarot-card-thumb.tsx";
 
 type CardDraft = {
   id: string;
@@ -283,12 +284,19 @@ export function TarotChatClient({
                 </p>
                 <ul className="source-list">
                   {result.generatedReading.cards.map((card) => (
-                    <li key={`${card.cardId}-${card.position}`}>
-                      <strong>{card.title}</strong>
-                      <span>
-                        {card.position ?? "未指定位置"} · {card.orientation === "reversed" ? "逆位" : "正位"}
-                      </span>
-                      <code>{card.cardId}</code>
+                    <li className="source-list-item" key={`${card.cardId}-${card.position}`}>
+                      <TarotCardThumb
+                        cardId={card.cardId}
+                        orientation={card.orientation}
+                        title={card.title}
+                      />
+                      <div className="source-list-body">
+                        <strong>{card.title}</strong>
+                        <span>
+                          {card.position ?? "未指定位置"} · {card.orientation === "reversed" ? "逆位" : "正位"}
+                        </span>
+                        <code>{card.cardId}</code>
+                      </div>
                     </li>
                   ))}
                 </ul>
@@ -300,14 +308,20 @@ export function TarotChatClient({
               {result.selectedSources.length > 0 ? (
                 <ul className="source-list">
                   {result.selectedSources.map((source) => (
-                    <li key={`${source.pageId}-${source.sectionTitle ?? "overview"}`}>
-                      <strong>{source.title}</strong>
-                      <span>{source.sectionTitle ?? "Overview"}</span>
-                      <code>
-                        [來源: {source.pageId}
-                        {source.chunkId ? `#${source.chunkId}` : ""}]
-                      </code>
-                      {source.summary ? <p className="source-summary">{source.summary}</p> : null}
+                    <li
+                      className="source-list-item"
+                      key={`${source.pageId}-${source.sectionTitle ?? "overview"}`}
+                    >
+                      <TarotCardThumb cardId={source.pageId} title={source.title} />
+                      <div className="source-list-body">
+                        <strong>{source.title}</strong>
+                        <span>{source.sectionTitle ?? "Overview"}</span>
+                        <code>
+                          [來源: {source.pageId}
+                          {source.chunkId ? `#${source.chunkId}` : ""}]
+                        </code>
+                        {source.summary ? <p className="source-summary">{source.summary}</p> : null}
+                      </div>
                     </li>
                   ))}
                 </ul>

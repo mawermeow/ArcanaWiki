@@ -37,6 +37,42 @@ const COURT_RANK: Record<string, string> = {
   "14": "king"
 };
 
+const ID_TO_SUIT_PREFIX = Object.fromEntries(
+  Object.entries(SUIT_PREFIX).map(([filenamePrefix, cardIdPrefix]) => [cardIdPrefix, filenamePrefix])
+) as Record<string, string>;
+
+const COURT_RANK_TO_FILENAME: Record<string, string> = {
+  page: "11",
+  knight: "12",
+  queen: "13",
+  king: "14"
+};
+
+const ID_TO_MAJOR_FILENAME = Object.fromEntries(
+  Object.entries(MAJOR_LINK_TO_ID).map(([filename, cardId]) => [cardId, filename])
+) as Record<string, string>;
+
+export function cardIdToImageFilename(cardId: string): string | undefined {
+  const normalized = cardId.trim();
+  if (!normalized) {
+    return undefined;
+  }
+
+  const majorFilename = ID_TO_MAJOR_FILENAME[normalized];
+  if (majorFilename) {
+    return majorFilename;
+  }
+
+  const match = normalized.match(/^(wands|cups|swords|pentacles)-(page|knight|queen|king|\d{2})$/);
+  if (!match) {
+    return undefined;
+  }
+
+  const suitPrefix = ID_TO_SUIT_PREFIX[match[1]];
+  const rank = COURT_RANK_TO_FILENAME[match[2]] ?? match[2];
+  return `${suitPrefix}${rank}.jpg`;
+}
+
 export function linkFilenameToCardId(link: string): string | undefined {
   const filename = link.trim();
   if (MAJOR_LINK_TO_ID[filename]) {
