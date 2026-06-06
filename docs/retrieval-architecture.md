@@ -6,8 +6,9 @@
 
 - `wiki -> BM25 -> retrieval`
 - `wiki chunks -> vector-cache -> vector search`
+- `BM25 + vector + relations/graph.json -> hybrid retrieval + rerank`
 
-仍不包含 graph DB、web server、hybrid merge、answer generation。
+仍不包含 graph DB、web server、answer generation。
 
 ## Module Layout
 
@@ -31,6 +32,14 @@
   讀取 query vector 後做 cosine similarity 排序，輸出 vector results 與 diagnostics。
 - `lib/retrieval/vector-evaluation.ts`
   讀取 evaluation dataset，計算 top1 / top3 / top5 / topic / card recall。
+- `lib/retrieval/graph-loader.ts`
+  讀取 `relations/graph.json`，提供 graph expansion 所需資料。
+- `lib/retrieval/hybrid-normalization.ts`
+  負責 BM25 / cosine / graph score 的 0..1 normalization。
+- `lib/retrieval/hybrid-searcher.ts`
+  執行 hybrid search、score normalization、merge、dedupe、rerank、graph expansion、diagnostics。
+- `lib/retrieval/hybrid-evaluation.ts`
+  執行 hybrid retrieval evaluation，輸出 report / summary，並可比對既有 BM25 / vector report。
 
 ## Chunking Strategy
 
@@ -80,18 +89,72 @@
 - CLI 層 `search:vector` 預設不打 API，必須明確傳 `--live-query-embedding`。
 - `eval:vector` 預設使用 live query embedding，因此也需要 `OPENAI_API_KEY`。
 
-## Future Vector Retrieval
+## Hybrid Retrieval Flow
 
-未來若要接 vector retrieval，建議保持以下邊界：
+```txt
+query
+-> BM25 topK
+-> Vector topK
+-> score normalization
+-> merge by chunkId
+-> deduplicate
+-> weighted rerank
+-> optional graph expansion
+-> final topK
+```
 
-1. BM25 與 vector index 各自獨立建檔。
-2. query diagnostics 保留 `bm25 topK` 與 `vector topK`。
-3. merge/rerank 在獨立模組完成，不回寫 BM25 index。
-4. relations/graph expansion 只在 BM25 + vector 合併後做有限擴張。
+預設權重：
 
-## Hybrid Preparation
+- `bm25: 0.45`
+- `vector: 0.55`
+- `graph: 0.15`
 
-- 共用型別：
-  - `RetrievalSource = "bm25" | "vector" | "graph"`
-  - `RetrievalResult`
-- BM25 與 vector results 都可直接進入未來的 merge/rerank 層。
+## Rerank Rules
+
+- 不使用 LLM reranker。
+- direct signals：
+  - normalized BM25 score
+  - normalized vector cosine score
+  - query keyword overlap
+- lexical / metadata boosts：
+  - exact card match
+  - exact orientation match
+  - topic match
+  - tag match
+- graph signals：
+  - relation type weight
+  - seed result strength
+  - 1-hop distance penalty
+
+## Graph Expansion Rules
+
+- 只從 merged top direct results 擴張。
+- 只做 1 hop。
+- 預設最多補 3 個 graph-only results。
+- relation type 目前支援：
+  - `symbolic`
+  - `emotional`
+  - `archetype`
+  - `narrative`
+  - `contrast`
+- graph-only results 會被排在 direct BM25/vector hits 後面，避免 graph domination。
+
+## Diagnostics
+
+- hybrid diagnostics 固定保留：
+  - `bm25Results`
+  - `vectorResults`
+  - `normalizedScores`
+  - `mergedResults`
+  - `graphExpandedResults`
+  - `rejectedResults`
+  - `finalResults`
+  - `weights`
+  - `topK`
+  - `timingMs`
+
+## Determinism
+
+- merge / dedupe / rerank / graph expansion 全部使用 deterministic 排序規則。
+- 同分時以 `chunkId` 做穩定 tie-break。
+- 不使用 LLM 做 rerank 或 answer selection。

@@ -217,6 +217,124 @@ export type VectorSearchResponse = {
   diagnostics: VectorSearchDiagnostics;
 };
 
+export type GraphRelationType =
+  | "symbolic"
+  | "emotional"
+  | "archetype"
+  | "narrative"
+  | "contrast";
+
+export type RelationGraphNode = {
+  id: string;
+  type: string;
+  title: string;
+  path: string;
+};
+
+export type RelationGraphRelationship = {
+  source: string;
+  target: string;
+  type: GraphRelationType;
+  reason: string;
+  evidence?: {
+    page?: string;
+    section?: string;
+  };
+};
+
+export type RelationGraph = {
+  generatedAt?: string;
+  nodes: RelationGraphNode[];
+  relationships: RelationGraphRelationship[];
+};
+
+export type HybridSearchWeights = {
+  bm25: number;
+  vector: number;
+  graph: number;
+};
+
+export type HybridSourceScores = {
+  bm25?: number;
+  vector?: number;
+  graph?: number;
+};
+
+export type HybridSearchResult = {
+  chunkId: string;
+  pageId: string;
+  title: string;
+  sectionTitle: string;
+  finalScore: number;
+  sourceScores: HybridSourceScores;
+  sources: RetrievalSource[];
+  matchedTerms?: string[];
+  metadata: Record<string, unknown>;
+};
+
+export type HybridRejectedResult = {
+  pageId: string;
+  chunkId: string;
+  stage: "bm25" | "vector" | "graph" | "final";
+  reason: string;
+  score?: number;
+};
+
+export type HybridNormalizedScore = {
+  source: RetrievalSource;
+  pageId: string;
+  chunkId: string;
+  rawScore: number;
+  normalizedScore: number;
+};
+
+export type HybridDiagnostics = {
+  bm25Results: SearchResult[];
+  vectorResults: VectorSearchResult[];
+  normalizedScores: HybridNormalizedScore[];
+  mergedResults: HybridSearchResult[];
+  graphExpandedResults: HybridSearchResult[];
+  rejectedResults: HybridRejectedResult[];
+  finalResults: HybridSearchResult[];
+  weights: HybridSearchWeights;
+  topK: number;
+  timingMs: {
+    bm25: number;
+    vector: number;
+    merge: number;
+    graph: number;
+    total: number;
+  };
+  queryTokens: string[];
+};
+
+export type HybridSearchResponse = {
+  query: string;
+  results: HybridSearchResult[];
+  diagnostics: HybridDiagnostics;
+};
+
+export type HybridSearchOptions = {
+  topK?: number;
+  bm25TopK?: number;
+  vectorTopK?: number;
+  graphTopK?: number;
+  minBm25Score?: number;
+  minVectorScore?: number;
+  graphExpansion?: boolean;
+  weights?: Partial<HybridSearchWeights>;
+  indexPath?: string;
+  cachePath?: string;
+  graphPath?: string;
+  index?: BM25Index;
+  cache?: VectorCache;
+  graph?: RelationGraph;
+  queryVector?: number[];
+  liveQueryEmbedding?: boolean;
+  embeddingModel?: string;
+  embedQuery?: (text: string, model: string) => Promise<number[]>;
+};
+
 export type EvaluationEntry = {
   query: string;
   expected_topics: string[];

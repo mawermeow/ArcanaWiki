@@ -238,8 +238,14 @@ Build vector cache:
 Search vector cache:
   pnpm search:vector -- "對方最近很冷淡" --live-query-embedding
 
+Search hybrid retrieval:
+  pnpm search:hybrid -- "聖杯二逆位 感情"
+
 Run vector evaluation:
   pnpm eval:vector
+
+Run hybrid evaluation:
+  pnpm eval:hybrid
 
 Build all retrieval assets:
   pnpm index:build
