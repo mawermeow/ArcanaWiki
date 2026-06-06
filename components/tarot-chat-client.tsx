@@ -20,6 +20,10 @@ type TarotChatClientProps = {
   requestChat?: (payload: RequestInit) => Promise<Response>;
 };
 
+function buildPublicWikiHref(pageId: string): string {
+  return `/wiki/${encodeURIComponent(pageId)}`;
+}
+
 const EMPTY_CARD = (): CardDraft => ({
   id: globalThis.crypto?.randomUUID?.() ?? `${Date.now()}-${Math.random()}`,
   cardId: "",
@@ -355,7 +359,16 @@ export function TarotChatClient({
                       />
                       <div className="citation-copy">
                         <div className="citation-meta">
-                          <strong>{source.title}</strong>
+                          <strong>
+                            <a
+                              className="citation-link"
+                              href={buildPublicWikiHref(source.pageId)}
+                              rel="noreferrer"
+                              target="_blank"
+                            >
+                              {source.title}
+                            </a>
+                          </strong>
                           <span className="citation-section">
                             {source.sectionTitle ?? "Overview"}
                           </span>

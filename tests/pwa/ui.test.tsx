@@ -111,6 +111,9 @@ test("submit flow renders answer and selected source summary", async () => {
   assert.ok(view.getByText("逆位意義"));
   assert.ok(view.getByText("關係中不和諧的因素,不平等的關係,溝通不暢,分離、分手。"));
   assert.ok(view.getByText("cups-02#cups-02::逆位意義"));
+  const sourceLink = view.getByRole("link", { name: "聖杯二（Two of Cups）" });
+  assert.equal(sourceLink.getAttribute("href"), "/wiki/cups-02");
+  assert.equal(sourceLink.getAttribute("target"), "_blank");
   assert.equal(
     (view.getByAltText("聖杯二（Two of Cups）") as HTMLImageElement).getAttribute("src"),
     "/cards/Cups02.jpg"
