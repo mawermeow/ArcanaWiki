@@ -226,6 +226,12 @@ Lint wiki:
 Build BM25 index:
   pnpm index:bm25
 
+Search BM25 index:
+  pnpm search:bm25 -- --query="聖杯二逆位"
+
+Run BM25 evaluation:
+  pnpm eval:bm25
+
 Build vector cache:
   pnpm index:vector
 

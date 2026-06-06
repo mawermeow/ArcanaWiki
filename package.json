@@ -1,10 +1,15 @@
 {
   "name": "ArcanaWiki",
   "version": "1.0.0",
-  "description": "",
+  "description": "Tarot LLM Wiki with offline BM25 retrieval",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "index:bm25": "node lib/retrieval/cli/build-bm25-index.ts",
+    "search:bm25": "node lib/retrieval/cli/search-bm25.ts",
+    "eval:bm25": "node lib/retrieval/cli/eval-bm25.ts",
+    "test:retrieval": "node --test tests/retrieval/bm25.test.ts",
+    "test": "node --test"
   },
   "private": true
 }
