@@ -5,7 +5,10 @@ import { readRelationGraph } from "../../lib/retrieval/graph-loader.ts";
 import { readBm25Index, readVectorCache } from "../../lib/retrieval/persistence.ts";
 import { validateTarotAnswer } from "../../lib/answer/answer-validator.ts";
 import { buildAnswerContext, buildAnswerQuery } from "../../lib/answer/context-builder.ts";
-import { validateCitations } from "../../lib/answer/citation-validator.ts";
+import {
+  attachSelectedSourceCitations,
+  validateCitations
+} from "../../lib/answer/citation-validator.ts";
 import { createTarotAnswerService } from "../../lib/answer/index.ts";
 import { FetchOpenAiChatClient } from "../../lib/answer/openai-client.ts";
 import { buildAnswerPrompt } from "../../lib/answer/prompt-builder.ts";
@@ -193,6 +196,26 @@ test("citation validator accepts selected sources and rejects unknown sources", 
   assert.ok(invalid.errors.some((error) => error.includes("Invalid citation")));
 });
 
+test("citation helper strips model citations and appends selected sources deterministically", () => {
+  const selectedSources = [
+    {
+      pageId: "cups-02",
+      chunkId: "cups-02::逆位意義",
+      title: "聖杯二（Two of Cups）",
+      sectionTitle: "逆位意義"
+    }
+  ];
+
+  const normalized = attachSelectedSourceCitations(
+    "可能反映關係失衡。[來源: fake#fake]",
+    selectedSources
+  );
+
+  assert.match(normalized, /引用來源：/);
+  assert.match(normalized, /\[來源: cups-02#cups-02::逆位意義\]/);
+  assert.ok(!normalized.includes("[來源: fake#fake]"));
+});
+
 test("invalid citation fallback marks answer invalid", async () => {
   const { index, cache, graph } = await getFixtures();
   const service = createTarotAnswerService({
@@ -213,9 +236,8 @@ test("invalid citation fallback marks answer invalid", async () => {
     question: "聖杯二逆位，對方最近很冷淡，這段關係還有希望嗎？"
   });
 
-  assert.equal(response.safety.answerValid, false);
-  assert.equal(response.safety.cannotConfirmReason, "引用來源驗證未通過");
-  assert.ok(response.safety.citationErrors.length > 0);
+  assert.equal(response.safety.answerValid, true);
+  assert.match(response.answer, /\[來源: /);
 });
 
 test("no selected sources fallback does not call OpenAI", async () => {

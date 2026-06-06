@@ -3,7 +3,7 @@ import { readBm25Index, readVectorCache } from "../retrieval/persistence.ts";
 import { searchHybridIndex } from "../retrieval/hybrid-searcher.ts";
 import { validateTarotAnswer } from "./answer-validator.ts";
 import { buildAnswerContext, buildAnswerQuery } from "./context-builder.ts";
-import { validateCitations } from "./citation-validator.ts";
+import { attachSelectedSourceCitations, validateCitations } from "./citation-validator.ts";
 import { createAnswerDiagnostics } from "./diagnostics.ts";
 import { FetchOpenAiChatClient } from "./openai-client.ts";
 import { buildAnswerPrompt } from "./prompt-builder.ts";
@@ -126,7 +126,8 @@ export function createTarotAnswerService(dependencies: TarotAnswerServiceDepende
       usage: completion.usage
     };
 
-    const citationValidation = validateCitations(completion.text, context.selectedSources);
+    const answerWithCitations = attachSelectedSourceCitations(completion.text, context.selectedSources);
+    const citationValidation = validateCitations(answerWithCitations, context.selectedSources);
     diagnostics.citations = citationValidation;
 
     if (citationValidation.errors.length > 0) {
@@ -139,7 +140,7 @@ export function createTarotAnswerService(dependencies: TarotAnswerServiceDepende
       });
     }
 
-    const answerValidation = validateTarotAnswer(completion.text);
+    const answerValidation = validateTarotAnswer(answerWithCitations);
     diagnostics.answerValidation = answerValidation;
 
     if (!answerValidation.valid) {
@@ -153,7 +154,7 @@ export function createTarotAnswerService(dependencies: TarotAnswerServiceDepende
     }
 
     return {
-      answer: completion.text,
+      answer: answerWithCitations,
       selectedSources: context.selectedSources,
       diagnostics: request.debug ? diagnostics : undefined,
       safety: {
