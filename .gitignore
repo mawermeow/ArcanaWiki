@@ -1,3 +1,17 @@
 .idea/
+.DS_Store
+
+# Local env files
 .env
-DS_Store/
+.env.local
+.env.*.local
+
+# Node / package manager
+node_modules/
+
+# Generated retrieval artifacts
+reports/
+debug/retrieval/*.json
+
+# Local caches and logs
+*.log
