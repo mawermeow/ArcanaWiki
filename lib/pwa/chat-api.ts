@@ -1,4 +1,5 @@
 import { answerTarotQuestion } from "../answer/index.ts";
+import { formatAnswerForDisplay } from "../answer/citation-validator.ts";
 import { buildAnswerContext } from "../answer/context-builder.ts";
 import type {
   TarotAnswerRequest,
@@ -168,7 +169,7 @@ function sanitizeAnswerResponse(
   sourceSummaries?: Map<string, string>
 ): ChatApiResponse {
   return {
-    answer: response.answer,
+    answer: formatAnswerForDisplay(response.answer),
     selectedSources: response.selectedSources.map((source) => ({
       pageId: source.pageId,
       title: source.title,

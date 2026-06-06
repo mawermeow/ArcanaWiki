@@ -40,6 +40,40 @@ test("chat API validation rejects empty question", async () => {
   assert.equal(payload.error, "Invalid request body.");
 });
 
+test("chat API strips citation block from displayed answer", async () => {
+  const response = await handleChatRequest(
+    createRequest({
+      question: "聖杯二逆位"
+    }),
+    {
+      answer: async () => ({
+        answer: [
+          "可能象徵關係裡的失衡。[來源: cups-02#cups-02::逆位意義]",
+          "",
+          "引用來源：",
+          "- 聖杯二（Two of Cups） / 逆位意義 [來源: cups-02#cups-02::逆位意義]"
+        ].join("\n"),
+        selectedSources: [
+          {
+            pageId: "cups-02",
+            chunkId: "cups-02::逆位意義",
+            title: "聖杯二（Two of Cups）",
+            sectionTitle: "逆位意義"
+          }
+        ],
+        safety: {
+          answerValid: true,
+          citationErrors: []
+        }
+      }),
+      debugEnabled: false
+    }
+  );
+
+  const payload = await readJson(response);
+  assert.equal(payload.answer, "可能象徵關係裡的失衡。");
+});
+
 test("chat API hides diagnostics by default", async () => {
   let seenDebug = true;
 

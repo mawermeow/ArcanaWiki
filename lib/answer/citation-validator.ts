@@ -15,6 +15,50 @@ export function stripSourceCitations(answer: string): string {
     .trim();
 }
 
+function isCitationHeading(line: string): boolean {
+  return new RegExp(`^${CITATION_BLOCK_HEADING}\\s*[:：]?\\s*$`).test(line.trim());
+}
+
+function isCitationListLine(line: string): boolean {
+  return /^\s*-\s+/.test(line);
+}
+
+export function stripCitationBlock(answer: string): string {
+  const lines = answer.split(/\r?\n/);
+  const cleaned: string[] = [];
+  let index = 0;
+
+  while (index < lines.length) {
+    const line = lines[index];
+
+    if (isCitationHeading(line)) {
+      index += 1;
+
+      while (index < lines.length && isCitationListLine(lines[index])) {
+        index += 1;
+      }
+
+      while (index < lines.length && lines[index].trim() === "") {
+        index += 1;
+      }
+
+      continue;
+    }
+
+    cleaned.push(line);
+    index += 1;
+  }
+
+  return cleaned
+    .join("\n")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}
+
+export function formatAnswerForDisplay(answer: string): string {
+  return stripCitationBlock(stripSourceCitations(answer));
+}
+
 export function renderCitationBlock(selectedSources: TarotAnswerSelectedSource[]): string {
   if (selectedSources.length === 0) {
     return "";
@@ -32,7 +76,7 @@ export function attachSelectedSourceCitations(
   answer: string,
   selectedSources: TarotAnswerSelectedSource[]
 ): string {
-  const stripped = stripSourceCitations(answer);
+  const stripped = stripCitationBlock(stripSourceCitations(answer));
   const citationBlock = renderCitationBlock(selectedSources);
 
   if (!citationBlock) {

@@ -7,6 +7,7 @@ import { validateTarotAnswer } from "../../lib/answer/answer-validator.ts";
 import { buildAnswerContext, buildAnswerQuery } from "../../lib/answer/context-builder.ts";
 import {
   attachSelectedSourceCitations,
+  formatAnswerForDisplay,
   validateCitations
 } from "../../lib/answer/citation-validator.ts";
 import { createTarotAnswerService } from "../../lib/answer/index.ts";
@@ -194,6 +195,80 @@ test("citation validator accepts selected sources and rejects unknown sources", 
 
   const invalid = validateCitations("可能反映關係失衡。[來源: fake#fake]", selectedSources);
   assert.ok(invalid.errors.some((error) => error.includes("Invalid citation")));
+});
+
+test("formatAnswerForDisplay removes inline citations and trailing citation block", () => {
+  const answer = [
+    "可能反映關係失衡。[來源: cups-02#cups-02::逆位意義]",
+    "",
+    "引用來源：",
+    "- 聖杯二（Two of Cups） / 逆位意義 [來源: cups-02#cups-02::逆位意義]"
+  ].join("\n");
+
+  assert.equal(formatAnswerForDisplay(answer), "可能反映關係失衡。");
+});
+
+test("formatAnswerForDisplay removes citation blocks without deleting later interpretation sections", () => {
+  const answer = [
+    "先從壓力感開始看。",
+    "",
+    "引用來源：",
+    "- 寶劍九（Nine of Swords） / 工作 [來源: swords-09#swords-09::情境解讀::工作]",
+    "",
+    "與問題的關聯",
+    "這段關係目前比較像需要重新整理節奏。",
+    "",
+    "引用來源：",
+    "- 命運之輪（The Wheel of Fortune） / 適用範圍 [來源: major-10-wheel-of-fortune#major-10-wheel-of-fortune::適用範圍]"
+  ].join("\n");
+
+  assert.equal(
+    formatAnswerForDisplay(answer),
+    ["先從壓力感開始看。", "", "與問題的關聯", "這段關係目前比較像需要重新整理節奏。"].join("\n")
+  );
+});
+
+test("formatAnswerForDisplay removes duplicated citation blocks from model output", () => {
+  const answer = [
+    "先從壓力感開始看。",
+    "",
+    "引用來源：",
+    "- 寶劍九（Nine of Swords） / 工作 [來源: swords-09#swords-09::情境解讀::工作]",
+    "- 聖杯三（Three of Cups） / 核心關鍵字 [來源: cups-03#cups-03::核心關鍵字]",
+    "",
+    "引用來源：",
+    "- 命運之輪（The Wheel of Fortune） / 適用範圍 [來源: major-10-wheel-of-fortune#major-10-wheel-of-fortune::適用範圍]"
+  ].join("\n");
+
+  assert.equal(formatAnswerForDisplay(answer), "先從壓力感開始看。");
+});
+
+test("attachSelectedSourceCitations replaces model citation block with selected sources", () => {
+  const selectedSources = [
+    {
+      pageId: "cups-02",
+      chunkId: "cups-02::逆位意義",
+      title: "聖杯二（Two of Cups）",
+      sectionTitle: "逆位意義"
+    }
+  ];
+
+  const normalized = attachSelectedSourceCitations(
+    [
+      "可能反映關係失衡。",
+      "",
+      "引用來源：",
+      "- 寶劍九（Nine of Swords） / 工作 [來源: swords-09#swords-09::情境解讀::工作]"
+    ].join("\n"),
+    selectedSources
+  );
+
+  assert.equal(
+    formatAnswerForDisplay(normalized),
+    "可能反映關係失衡。"
+  );
+  assert.match(normalized, /引用來源：/);
+  assert.match(normalized, /\[來源: cups-02#cups-02::逆位意義\]/);
 });
 
 test("citation helper strips model citations and appends selected sources deterministically", () => {

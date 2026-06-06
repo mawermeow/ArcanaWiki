@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useMemo, useState, type FormEvent } from "react";
+import { formatAnswerForDisplay } from "../lib/answer/citation-validator.ts";
 import type { ChatApiResponse } from "../lib/pwa/chat-api.ts";
 import type { TarotCardOption } from "../lib/pwa/card-catalog.ts";
 import { TarotCardThumb } from "./tarot-card-thumb.tsx";
@@ -261,72 +262,105 @@ export function TarotChatClient({
 
       <section className="panel response-panel" aria-live="polite">
         <div className="response-header">
-          <h2>回應</h2>
-          <p>回答只會顯示使用到的來源摘要，不直接曝露內部檢索內容。</p>
+          <div>
+            <p className="eyebrow">Reading</p>
+            <h2>回應</h2>
+          </div>
+          <p>先看你抽到的牌，再閱讀解讀與引用來源。</p>
         </div>
 
         {error ? <p className="error-banner">{error}</p> : null}
 
-        {result ? (
-          <div className="response-content">
-            <article className="answer-card">
-              <h3>直接解讀</h3>
-              <p>{result.answer}</p>
-            </article>
+        {loading ? (
+          <div className="response-placeholder response-loading" aria-busy="true">
+            <p className="response-placeholder-title">解讀整理中</p>
+            <p className="muted">系統正在整理牌義與可引用的 wiki 來源。</p>
+          </div>
+        ) : null}
 
+        {!loading && result ? (
+          <div className="response-content">
             {result.generatedReading ? (
-              <article className="sources-card">
-                <h3>這次自動抽到的牌陣</h3>
-                <p className="muted">
-                  <strong>{result.generatedReading.spreadTitle}</strong>
-                  {" · "}
-                  <code>{result.generatedReading.spreadId}</code>
-                </p>
-                <ul className="source-list">
+              <article className="response-section spread-section">
+                <div className="response-section-heading">
+                  <p className="response-section-eyebrow">Spread</p>
+                  <h3>這次自動抽到的牌陣</h3>
+                </div>
+                <div className="spread-meta">
+                  <span className="spread-badge">{result.generatedReading.spreadTitle}</span>
+                  <span className="spread-id">{result.generatedReading.spreadId}</span>
+                </div>
+                <div className="spread-card-grid">
                   {result.generatedReading.cards.map((card) => (
-                    <li className="source-list-item" key={`${card.cardId}-${card.position}`}>
+                    <div className="spread-card-tile" key={`${card.cardId}-${card.position}`}>
                       <TarotCardThumb
                         cardId={card.cardId}
+                        className="spread-card-image"
                         orientation={card.orientation}
                         title={card.title}
                       />
-                      <div className="source-list-body">
+                      <div className="spread-card-copy">
+                        <span className="spread-card-position">{card.position ?? "未指定位置"}</span>
                         <strong>{card.title}</strong>
-                        <span>
-                          {card.position ?? "未指定位置"} · {card.orientation === "reversed" ? "逆位" : "正位"}
+                        <span
+                          className={`orientation-badge${card.orientation === "reversed" ? " reversed" : ""}`}
+                        >
+                          {card.orientation === "reversed" ? "逆位" : "正位"}
                         </span>
-                        <code>{card.cardId}</code>
                       </div>
-                    </li>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </article>
             ) : null}
 
-            <article className="sources-card">
-              <h3>引用來源與摘要</h3>
+            <article className="response-section answer-section">
+              <div className="response-section-heading">
+                <p className="response-section-eyebrow">Interpretation</p>
+                <h3>直接解讀</h3>
+              </div>
+              <div className="answer-body">
+                <p>{formatAnswerForDisplay(result.answer)}</p>
+              </div>
+            </article>
+
+            <article className="response-section sources-section">
+              <div className="response-section-heading">
+                <p className="response-section-eyebrow">Sources</p>
+                <h3>引用來源與摘要</h3>
+              </div>
               {result.selectedSources.length > 0 ? (
-                <ul className="source-list">
+                <ul className="citation-list">
                   {result.selectedSources.map((source) => (
                     <li
-                      className="source-list-item"
+                      className="citation-item"
                       key={`${source.pageId}-${source.sectionTitle ?? "overview"}`}
                     >
-                      <TarotCardThumb cardId={source.pageId} title={source.title} />
-                      <div className="source-list-body">
-                        <strong>{source.title}</strong>
-                        <span>{source.sectionTitle ?? "Overview"}</span>
-                        <code>
-                          [來源: {source.pageId}
-                          {source.chunkId ? `#${source.chunkId}` : ""}]
-                        </code>
-                        {source.summary ? <p className="source-summary">{source.summary}</p> : null}
+                      <TarotCardThumb
+                        cardId={source.pageId}
+                        className="citation-card-image"
+                        title={source.title}
+                      />
+                      <div className="citation-copy">
+                        <div className="citation-meta">
+                          <strong>{source.title}</strong>
+                          <span className="citation-section">
+                            {source.sectionTitle ?? "Overview"}
+                          </span>
+                        </div>
+                        <span className="citation-ref">
+                          {source.pageId}
+                          {source.chunkId ? `#${source.chunkId}` : ""}
+                        </span>
+                        {source.summary ? <p className="citation-summary">{source.summary}</p> : null}
                       </div>
                     </li>
                   ))}
                 </ul>
               ) : (
-                <p className="muted">這次沒有足夠的選取來源，因此系統只回傳保守 fallback。</p>
+                <p className="response-empty-note">
+                  這次沒有足夠的選取來源，因此系統只回傳保守 fallback。
+                </p>
               )}
             </article>
 
@@ -337,9 +371,14 @@ export function TarotChatClient({
               </details>
             ) : null}
           </div>
-        ) : (
-          <p className="placeholder">送出問題後，這裡會顯示回答與來源摘要。</p>
-        )}
+        ) : null}
+
+        {!loading && !result ? (
+          <div className="response-placeholder">
+            <p className="response-placeholder-title">等待你的問題</p>
+            <p className="muted">送出問題後，這裡會依序顯示牌陣、解讀與引用來源摘要。</p>
+          </div>
+        ) : null}
       </section>
     </div>
   );
