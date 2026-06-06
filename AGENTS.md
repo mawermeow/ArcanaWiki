@@ -213,6 +213,9 @@ Start dev app:
 Build app:
   pnpm build
 
+Run production app:
+  pnpm start
+
 Lint:
   pnpm lint
 
@@ -275,6 +278,9 @@ Run retrieval smoke test:
 
 Run answer generation tests:
   pnpm test:answer
+
+Run PWA tests:
+  pnpm test:pwa
 ```
 
 ## Testing Expectations

@@ -33,9 +33,39 @@ pnpm eval:bm25
 pnpm eval:vector
 pnpm eval:hybrid
 pnpm eval:hybrid -- --live-query-embedding
+pnpm dev
+pnpm build
+pnpm test:pwa
 pnpm test:answer
 pnpm test
 ```
+
+## PWA
+
+- runtime：Next.js App Router + TypeScript
+- user entry：`/`
+- chat API：`POST /api/chat`
+- developer retrieval inspector：`/dev/retrieval`，僅在 `TAROT_DEBUG_RETRIEVAL=true` 時可用
+- PWA assets：`public/manifest.webmanifest`、`app/icon.svg`
+
+### Chat API Contract
+
+- request：
+  - `question`
+  - `cards[]` with `cardId`, optional `orientation`, optional `position`
+  - optional `mode`
+  - optional `debug`
+- response：
+  - `answer`
+  - `selectedSources[]` with `pageId`, `title`, `sectionTitle`
+  - `safety`
+  - `diagnostics` 只有在 `debug=true` 且 `TAROT_DEBUG_RETRIEVAL=true` 時才會回傳
+
+### UX Boundaries
+
+- 一般使用者只會看到回答與來源摘要，不會看到 raw prompt、full diagnostics、internal stack trace。
+- source summary 只顯示 `page title`、`section title`、`page id`。
+- 若沒有 selected sources，介面只顯示保守 fallback，不顯示內部 chunk 內容。
 
 ## Answer Generation
 

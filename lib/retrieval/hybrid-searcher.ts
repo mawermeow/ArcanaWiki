@@ -25,6 +25,7 @@ import type {
   RetrievalSource,
   SearchResult,
   VectorCache,
+  VectorSearchResponse,
   VectorSearchResult
 } from "./types.ts";
 
@@ -290,7 +291,7 @@ function indexGraphRelationships(graph: RelationGraph): Map<string, RelationGrap
   return map;
 }
 
-function createEmptyVectorResponse(query: string) {
+function createEmptyVectorResponse(query: string): VectorSearchResponse {
   return {
     query,
     results: [] as VectorSearchResult[],

@@ -1,9 +1,9 @@
 import type {
   AnswerDiagnostics,
-  HybridSearchResponse,
   SafetyAssessment,
   TarotAnswerRequest
 } from "./types.ts";
+import type { HybridSearchResponse } from "../retrieval/types.ts";
 
 export function createAnswerDiagnostics(options: {
   request: TarotAnswerRequest;

@@ -8,6 +8,9 @@
 
 # Node / package manager
 node_modules/
+.next/
+.pnpm-store/
+tsconfig.tsbuildinfo
 
 # Generated retrieval artifacts
 reports/

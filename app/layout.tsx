@@ -1,0 +1,37 @@
+import type { Metadata, Viewport } from "next";
+import type { ReactNode } from "react";
+import React from "react";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "ArcanaWiki Tarot PWA",
+  description: "本機與小範圍測試用的 Tarot Wiki ChatBot。",
+  manifest: "/manifest.webmanifest",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "ArcanaWiki"
+  },
+  icons: {
+    icon: "/icon.svg",
+    apple: "/icon.svg"
+  }
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#efe6d1"
+};
+
+export default function RootLayout({
+  children
+}: Readonly<{
+  children: ReactNode;
+}>) {
+  return (
+    <html lang="zh-Hant">
+      <body>{children}</body>
+    </html>
+  );
+}

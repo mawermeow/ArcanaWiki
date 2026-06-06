@@ -14,8 +14,10 @@ import {
 } from "../../lib/retrieval/hybrid-normalization.ts";
 import type {
   BM25Index,
+  HybridNormalizedScore,
   RelationGraph,
   RetrievalDocument,
+  RetrievalSource,
   SearchResult,
   VectorCache,
   VectorSearchResult
@@ -180,7 +182,7 @@ test("graph expansion does not dominate direct hits", async () => {
       sectionTitle: mergedDocument.sectionTitle,
       finalScore: 0.95,
       sourceScores: { bm25: 1, vector: 0.8 },
-      sources: ["bm25", "vector"] as const,
+      sources: ["bm25", "vector"] as RetrievalSource[],
       matchedTerms: ["聖杯二逆位"],
       metadata: {
         pageType: mergedDocument.pageType,
@@ -199,7 +201,13 @@ test("graph expansion does not dominate direct hits", async () => {
       directHit: true
     }
   ];
-  const normalizedScores = [];
+  const normalizedScores: Array<{
+    pageId: string;
+    chunkId: string;
+    source: RetrievalSource;
+    rawScore: number;
+    normalizedScore: number;
+  }> = [];
 
   const expanded = applyGraphExpansion({
     mergedResults,

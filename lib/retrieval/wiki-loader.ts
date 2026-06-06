@@ -40,6 +40,7 @@ function parseFrontmatter(raw: string): {
   }
 
   const frontmatter: WikiPageFrontmatter = {};
+  const mutableFrontmatter = frontmatter as Record<string, unknown>;
   let currentKey: keyof WikiPageFrontmatter | null = null;
   for (const line of match[1].split("\n")) {
     const keyMatch = line.match(/^([A-Za-z0-9_]+):\s*(.*)$/);
@@ -47,10 +48,10 @@ function parseFrontmatter(raw: string): {
       const key = keyMatch[1] as keyof WikiPageFrontmatter;
       const value = keyMatch[2];
       if (value === "") {
-        frontmatter[key] = [];
+        mutableFrontmatter[key] = [];
         currentKey = key;
       } else {
-        frontmatter[key] = value as never;
+        mutableFrontmatter[key] = value;
         currentKey = null;
       }
       continue;

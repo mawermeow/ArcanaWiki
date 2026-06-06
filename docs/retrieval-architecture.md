@@ -9,7 +9,8 @@
 - `BM25 + vector + relations/graph.json -> hybrid retrieval + rerank`
 - `hybrid retrieval -> prompt builder -> OpenAI answer -> citation validation`
 
-仍不包含 graph DB、web server、LINE Bot、PWA UI。
+仍不包含 graph DB、完整帳號系統、LINE Bot 後台。
+目前已包含第一版 Next.js PWA、chat route 與 dev-only retrieval inspector page。
 
 ## Module Layout
 
@@ -57,6 +58,14 @@
   偵測高風險 query，將 answer generation 降級到更嚴格的安全模式。
 - `lib/answer/diagnostics.ts`
   整理 answer pipeline diagnostics，僅在 debug mode 回傳。
+- `lib/pwa/chat-api.ts`
+  Web-facing request validation layer。負責 `/api/chat` payload 驗證、debug gate、response sanitize。
+- `app/api/chat/route.ts`
+  Next.js Route Handler。將 user request 導到 `answerTarotQuestion` pipeline。
+- `app/page.tsx` + `components/tarot-chat-client.tsx`
+  第一版 Tarot PWA。提供問題輸入、可選牌卡、模式切換、回答與來源摘要。
+- `app/dev/retrieval/page.tsx`
+  只在 `TAROT_DEBUG_RETRIEVAL=true` 時可用的 developer retrieval inspector page。
 
 ## Chunking Strategy
 
@@ -188,6 +197,21 @@ question + optional cards/spread
 -> answer safety validation
 -> final answer or safe fallback
 ```
+
+## PWA Web Flow
+
+```txt
+PWA form
+-> POST /api/chat
+-> validate request
+-> answerTarotQuestion(request)
+-> sanitize response
+-> render answer + selected source summary
+```
+
+- `debug=true` 不足以取得 diagnostics。
+- 只有在 `TAROT_DEBUG_RETRIEVAL=true` 時，web layer 才會把 diagnostics 往外回傳。
+- user-facing response 不回傳 raw prompt、完整 retrieval internals、API secrets、internal stack trace。
 
 ## Answer Safety Rules
 

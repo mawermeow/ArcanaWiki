@@ -9,6 +9,7 @@ import { FetchOpenAiChatClient } from "./openai-client.ts";
 import { buildAnswerPrompt } from "./prompt-builder.ts";
 import { createSafetyFallback, detectSafetyGuardrails } from "./safety.ts";
 import type {
+  AnswerDiagnostics,
   OpenAiChatClient,
   TarotAnswerRequest,
   TarotAnswerResponse,

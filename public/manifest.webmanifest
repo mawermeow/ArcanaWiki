@@ -1,0 +1,17 @@
+{
+  "name": "ArcanaWiki Tarot PWA",
+  "short_name": "ArcanaWiki",
+  "description": "本機與小範圍測試用的 Tarot Wiki ChatBot。",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5efe1",
+  "theme_color": "#efe6d1",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
