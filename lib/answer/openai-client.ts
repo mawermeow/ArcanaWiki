@@ -36,6 +36,21 @@ function parseNumberEnv(rawValue: string | undefined, fallback: number): number 
   return Number.isFinite(value) && value > 0 ? value : fallback;
 }
 
+function parseModelEnv(rawValue: string | undefined, fallback: string): string {
+  if (!rawValue) {
+    return fallback;
+  }
+
+  const value = rawValue.trim();
+  const prefix = "OPENAI_CHAT_MODEL=";
+
+  if (value.startsWith(prefix)) {
+    return value.slice(prefix.length).trim() || fallback;
+  }
+
+  return value;
+}
+
 function shouldRetry(responseStatus: number): boolean {
   return responseStatus === 408 || responseStatus === 429 || responseStatus >= 500;
 }
@@ -73,7 +88,9 @@ export class FetchOpenAiChatClient implements OpenAiChatClient {
   } = {}) {
     this.apiKey = requireOpenAiApiKey(options.apiKey);
     this.fetchImpl = options.fetchImpl ?? fetch;
-    this.model = options.model ?? process.env.OPENAI_CHAT_MODEL ?? DEFAULT_CHAT_MODEL;
+    this.model =
+      options.model ??
+      parseModelEnv(process.env.OPENAI_CHAT_MODEL, DEFAULT_CHAT_MODEL);
     this.timeoutMs =
       (options.timeoutSeconds ??
         parseNumberEnv(process.env.OPENAI_REQUEST_TIMEOUT_SECONDS, DEFAULT_REQUEST_TIMEOUT_SECONDS)) *

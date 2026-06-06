@@ -339,3 +339,47 @@ test("OpenAI chat client wrapper sends request and parses response", async () =>
   assert.equal(result.text, "測試回答");
   assert.equal(result.usage?.totalTokens, 33);
 });
+
+test("OpenAI chat client normalizes malformed OPENAI_CHAT_MODEL env", async () => {
+  let requestBody = "";
+  const previousModel = process.env.OPENAI_CHAT_MODEL;
+  process.env.OPENAI_CHAT_MODEL = "OPENAI_CHAT_MODEL=gpt-4.1-mini";
+
+  try {
+    const client = new FetchOpenAiChatClient({
+      apiKey: "test-key",
+      fetchImpl: async (_url, init) => {
+        requestBody = String(init?.body ?? "");
+        return new Response(
+          JSON.stringify({
+            model: "gpt-4.1-mini",
+            choices: [
+              {
+                message: {
+                  content: "測試回答"
+                }
+              }
+            ]
+          }),
+          {
+            status: 200,
+            headers: { "content-type": "application/json" }
+          }
+        );
+      }
+    });
+
+    await client.generate([
+      { role: "system", content: "SYSTEM" },
+      { role: "user", content: "USER" }
+    ]);
+  } finally {
+    if (previousModel === undefined) {
+      delete process.env.OPENAI_CHAT_MODEL;
+    } else {
+      process.env.OPENAI_CHAT_MODEL = previousModel;
+    }
+  }
+
+  assert.match(requestBody, /"model":"gpt-4.1-mini"/);
+});
