@@ -1,0 +1,2471 @@
+{
+  "generatedAt": "2026-06-06",
+  "nodes": [
+    {
+      "id": "cups-01",
+      "type": "card",
+      "title": "聖杯一（Ace of Cups）",
+      "path": "wiki/cards/cups-01.md"
+    },
+    {
+      "id": "cups-02",
+      "type": "card",
+      "title": "聖杯二（Two of Cups）",
+      "path": "wiki/cards/cups-02.md"
+    },
+    {
+      "id": "cups-03",
+      "type": "card",
+      "title": "聖杯三（Three of Cups）",
+      "path": "wiki/cards/cups-03.md"
+    },
+    {
+      "id": "cups-04",
+      "type": "card",
+      "title": "聖杯四（Four of Cups）",
+      "path": "wiki/cards/cups-04.md"
+    },
+    {
+      "id": "cups-05",
+      "type": "card",
+      "title": "聖杯五（Five of Cups）",
+      "path": "wiki/cards/cups-05.md"
+    },
+    {
+      "id": "cups-06",
+      "type": "card",
+      "title": "聖杯六（Six of Cups）",
+      "path": "wiki/cards/cups-06.md"
+    },
+    {
+      "id": "cups-07",
+      "type": "card",
+      "title": "聖杯七（Seven of Cups）",
+      "path": "wiki/cards/cups-07.md"
+    },
+    {
+      "id": "cups-08",
+      "type": "card",
+      "title": "聖杯八（Eight of Cups）",
+      "path": "wiki/cards/cups-08.md"
+    },
+    {
+      "id": "cups-09",
+      "type": "card",
+      "title": "聖杯九（Nine of Cups）",
+      "path": "wiki/cards/cups-09.md"
+    },
+    {
+      "id": "cups-10",
+      "type": "card",
+      "title": "聖杯十（Ten of Cups）",
+      "path": "wiki/cards/cups-10.md"
+    },
+    {
+      "id": "cups-king",
+      "type": "card",
+      "title": "聖杯國王（King of Cups）",
+      "path": "wiki/cards/cups-king.md"
+    },
+    {
+      "id": "cups-knight",
+      "type": "card",
+      "title": "聖杯騎士（Knight of Cups）",
+      "path": "wiki/cards/cups-knight.md"
+    },
+    {
+      "id": "cups-page",
+      "type": "card",
+      "title": "聖杯侍衛（Page of Cups）",
+      "path": "wiki/cards/cups-page.md"
+    },
+    {
+      "id": "cups-queen",
+      "type": "card",
+      "title": "聖杯王后（Queen of Cups）",
+      "path": "wiki/cards/cups-queen.md"
+    },
+    {
+      "id": "major-00-fool",
+      "type": "card",
+      "title": "愚人（The Fool）",
+      "path": "wiki/cards/major-00-fool.md"
+    },
+    {
+      "id": "major-01-magician",
+      "type": "card",
+      "title": "魔術師（The Magician）",
+      "path": "wiki/cards/major-01-magician.md"
+    },
+    {
+      "id": "major-02-high-priestess",
+      "type": "card",
+      "title": "女祭司（The High Priestess）",
+      "path": "wiki/cards/major-02-high-priestess.md"
+    },
+    {
+      "id": "major-03-empress",
+      "type": "card",
+      "title": "女皇（The Empress）",
+      "path": "wiki/cards/major-03-empress.md"
+    },
+    {
+      "id": "major-04-emperor",
+      "type": "card",
+      "title": "皇帝（The Emperor）",
+      "path": "wiki/cards/major-04-emperor.md"
+    },
+    {
+      "id": "major-05-hierophant",
+      "type": "card",
+      "title": "教皇（The Hierophant）",
+      "path": "wiki/cards/major-05-hierophant.md"
+    },
+    {
+      "id": "major-06-lovers",
+      "type": "card",
+      "title": "戀人（The Lovers）",
+      "path": "wiki/cards/major-06-lovers.md"
+    },
+    {
+      "id": "major-07-chariot",
+      "type": "card",
+      "title": "戰車（The Chariot）",
+      "path": "wiki/cards/major-07-chariot.md"
+    },
+    {
+      "id": "major-08-strength",
+      "type": "card",
+      "title": "力量（Strength）",
+      "path": "wiki/cards/major-08-strength.md"
+    },
+    {
+      "id": "major-09-hermit",
+      "type": "card",
+      "title": "隱士（The Hermit）",
+      "path": "wiki/cards/major-09-hermit.md"
+    },
+    {
+      "id": "major-10-wheel-of-fortune",
+      "type": "card",
+      "title": "命運之輪（The Wheel of Fortune）",
+      "path": "wiki/cards/major-10-wheel-of-fortune.md"
+    },
+    {
+      "id": "major-11-justice",
+      "type": "card",
+      "title": "正義（Justice）",
+      "path": "wiki/cards/major-11-justice.md"
+    },
+    {
+      "id": "major-12-hanged-man",
+      "type": "card",
+      "title": "倒吊人（The Hanged Man）",
+      "path": "wiki/cards/major-12-hanged-man.md"
+    },
+    {
+      "id": "major-13-death",
+      "type": "card",
+      "title": "死亡（Death）",
+      "path": "wiki/cards/major-13-death.md"
+    },
+    {
+      "id": "major-14-temperance",
+      "type": "card",
+      "title": "節制（Temperance）",
+      "path": "wiki/cards/major-14-temperance.md"
+    },
+    {
+      "id": "major-15-devil",
+      "type": "card",
+      "title": "魔鬼（The Devil）",
+      "path": "wiki/cards/major-15-devil.md"
+    },
+    {
+      "id": "major-16-tower",
+      "type": "card",
+      "title": "高塔（The Tower）",
+      "path": "wiki/cards/major-16-tower.md"
+    },
+    {
+      "id": "major-17-star",
+      "type": "card",
+      "title": "星星（The Star）",
+      "path": "wiki/cards/major-17-star.md"
+    },
+    {
+      "id": "major-18-moon",
+      "type": "card",
+      "title": "月亮（The Moon）",
+      "path": "wiki/cards/major-18-moon.md"
+    },
+    {
+      "id": "major-19-sun",
+      "type": "card",
+      "title": "太陽（The Sun）",
+      "path": "wiki/cards/major-19-sun.md"
+    },
+    {
+      "id": "major-20-judgement",
+      "type": "card",
+      "title": "審判（Judgement）",
+      "path": "wiki/cards/major-20-judgement.md"
+    },
+    {
+      "id": "major-21-world",
+      "type": "card",
+      "title": "世界（The World）",
+      "path": "wiki/cards/major-21-world.md"
+    },
+    {
+      "id": "pentacles-01",
+      "type": "card",
+      "title": "星幣一（Ace of Pentacles）",
+      "path": "wiki/cards/pentacles-01.md"
+    },
+    {
+      "id": "pentacles-02",
+      "type": "card",
+      "title": "星幣二（Two of Pentacles）",
+      "path": "wiki/cards/pentacles-02.md"
+    },
+    {
+      "id": "pentacles-03",
+      "type": "card",
+      "title": "星幣三（Three of Pentacles）",
+      "path": "wiki/cards/pentacles-03.md"
+    },
+    {
+      "id": "pentacles-04",
+      "type": "card",
+      "title": "星幣四（Four of Pentacles）",
+      "path": "wiki/cards/pentacles-04.md"
+    },
+    {
+      "id": "pentacles-05",
+      "type": "card",
+      "title": "星幣五（Five of Pentacles）",
+      "path": "wiki/cards/pentacles-05.md"
+    },
+    {
+      "id": "pentacles-06",
+      "type": "card",
+      "title": "星幣六（Six of Pentacles）",
+      "path": "wiki/cards/pentacles-06.md"
+    },
+    {
+      "id": "pentacles-07",
+      "type": "card",
+      "title": "星幣七（Seven of Pentacles）",
+      "path": "wiki/cards/pentacles-07.md"
+    },
+    {
+      "id": "pentacles-08",
+      "type": "card",
+      "title": "星幣八（Eight of Pentacles）",
+      "path": "wiki/cards/pentacles-08.md"
+    },
+    {
+      "id": "pentacles-09",
+      "type": "card",
+      "title": "星幣九（Nine of Pentacles）",
+      "path": "wiki/cards/pentacles-09.md"
+    },
+    {
+      "id": "pentacles-10",
+      "type": "card",
+      "title": "星幣十（Ten of Pentacles）",
+      "path": "wiki/cards/pentacles-10.md"
+    },
+    {
+      "id": "pentacles-king",
+      "type": "card",
+      "title": "星幣國王（King of Pentacles）",
+      "path": "wiki/cards/pentacles-king.md"
+    },
+    {
+      "id": "pentacles-knight",
+      "type": "card",
+      "title": "星幣騎士（Knight of Pentacles）",
+      "path": "wiki/cards/pentacles-knight.md"
+    },
+    {
+      "id": "pentacles-page",
+      "type": "card",
+      "title": "星幣侍衛（Page of Pentacles）",
+      "path": "wiki/cards/pentacles-page.md"
+    },
+    {
+      "id": "pentacles-queen",
+      "type": "card",
+      "title": "星幣王后（Queen of Pentacles）",
+      "path": "wiki/cards/pentacles-queen.md"
+    },
+    {
+      "id": "spread-celtic-cross",
+      "type": "spread",
+      "title": "凱爾特牌陣",
+      "path": "wiki/patterns/spread-celtic-cross.md"
+    },
+    {
+      "id": "spread-either-or",
+      "type": "spread",
+      "title": "二選一牌陣",
+      "path": "wiki/patterns/spread-either-or.md"
+    },
+    {
+      "id": "spread-finding-partner",
+      "type": "spread",
+      "title": "尋找對象牌陣",
+      "path": "wiki/patterns/spread-finding-partner.md"
+    },
+    {
+      "id": "spread-four-elements",
+      "type": "spread",
+      "title": "四元素牌陣",
+      "path": "wiki/patterns/spread-four-elements.md"
+    },
+    {
+      "id": "spread-gypsy",
+      "type": "spread",
+      "title": "吉普賽牌陣",
+      "path": "wiki/patterns/spread-gypsy.md"
+    },
+    {
+      "id": "spread-hexagram",
+      "type": "spread",
+      "title": "六芒星牌陣",
+      "path": "wiki/patterns/spread-hexagram.md"
+    },
+    {
+      "id": "spread-love-greater-cross",
+      "type": "spread",
+      "title": "愛情大十字",
+      "path": "wiki/patterns/spread-love-greater-cross.md"
+    },
+    {
+      "id": "spread-love-tree",
+      "type": "spread",
+      "title": "愛情樹牌陣",
+      "path": "wiki/patterns/spread-love-tree.md"
+    },
+    {
+      "id": "spread-lover-reunion",
+      "type": "spread",
+      "title": "情人復合牌陣",
+      "path": "wiki/patterns/spread-lover-reunion.md"
+    },
+    {
+      "id": "spread-lovers-pyramid",
+      "type": "spread",
+      "title": "戀人金字塔",
+      "path": "wiki/patterns/spread-lovers-pyramid.md"
+    },
+    {
+      "id": "spread-sacred-triangle",
+      "type": "spread",
+      "title": "聖三角牌陣",
+      "path": "wiki/patterns/spread-sacred-triangle.md"
+    },
+    {
+      "id": "spread-three-card",
+      "type": "spread",
+      "title": "三張牌占卜法",
+      "path": "wiki/patterns/spread-three-card.md"
+    },
+    {
+      "id": "spread-time-flow",
+      "type": "spread",
+      "title": "時間流牌陣",
+      "path": "wiki/patterns/spread-time-flow.md"
+    },
+    {
+      "id": "spread-venus",
+      "type": "spread",
+      "title": "維納斯牌陣",
+      "path": "wiki/patterns/spread-venus.md"
+    },
+    {
+      "id": "spread-wealth-numbers",
+      "type": "spread",
+      "title": "財富之數",
+      "path": "wiki/patterns/spread-wealth-numbers.md"
+    },
+    {
+      "id": "spread-weekly-forecast",
+      "type": "spread",
+      "title": "周運勢牌陣",
+      "path": "wiki/patterns/spread-weekly-forecast.md"
+    },
+    {
+      "id": "swords-01",
+      "type": "card",
+      "title": "寶劍一（Ace of Swords）",
+      "path": "wiki/cards/swords-01.md"
+    },
+    {
+      "id": "swords-02",
+      "type": "card",
+      "title": "寶劍二（Two of Swords）",
+      "path": "wiki/cards/swords-02.md"
+    },
+    {
+      "id": "swords-03",
+      "type": "card",
+      "title": "寶劍三（Three of Swords）",
+      "path": "wiki/cards/swords-03.md"
+    },
+    {
+      "id": "swords-04",
+      "type": "card",
+      "title": "寶劍四（Four of Swords）",
+      "path": "wiki/cards/swords-04.md"
+    },
+    {
+      "id": "swords-05",
+      "type": "card",
+      "title": "寶劍五（Five of Swords）",
+      "path": "wiki/cards/swords-05.md"
+    },
+    {
+      "id": "swords-06",
+      "type": "card",
+      "title": "寶劍六（Six of Swords）",
+      "path": "wiki/cards/swords-06.md"
+    },
+    {
+      "id": "swords-07",
+      "type": "card",
+      "title": "寶劍七（Seven of Swords）",
+      "path": "wiki/cards/swords-07.md"
+    },
+    {
+      "id": "swords-08",
+      "type": "card",
+      "title": "寶劍八（Eight of Swords）",
+      "path": "wiki/cards/swords-08.md"
+    },
+    {
+      "id": "swords-09",
+      "type": "card",
+      "title": "寶劍九（Nine of Swords）",
+      "path": "wiki/cards/swords-09.md"
+    },
+    {
+      "id": "swords-10",
+      "type": "card",
+      "title": "寶劍十（Ten of Swords）",
+      "path": "wiki/cards/swords-10.md"
+    },
+    {
+      "id": "swords-king",
+      "type": "card",
+      "title": "寶劍國王（King of Swords）",
+      "path": "wiki/cards/swords-king.md"
+    },
+    {
+      "id": "swords-knight",
+      "type": "card",
+      "title": "寶劍騎士（Knight of Swords）",
+      "path": "wiki/cards/swords-knight.md"
+    },
+    {
+      "id": "swords-page",
+      "type": "card",
+      "title": "寶劍侍衛（Page of Swords）",
+      "path": "wiki/cards/swords-page.md"
+    },
+    {
+      "id": "swords-queen",
+      "type": "card",
+      "title": "寶劍王后（Queen of Swords）",
+      "path": "wiki/cards/swords-queen.md"
+    },
+    {
+      "id": "wands-01",
+      "type": "card",
+      "title": "權杖一（Ace of Wands）",
+      "path": "wiki/cards/wands-01.md"
+    },
+    {
+      "id": "wands-02",
+      "type": "card",
+      "title": "權杖二（Two of Wands）",
+      "path": "wiki/cards/wands-02.md"
+    },
+    {
+      "id": "wands-03",
+      "type": "card",
+      "title": "權杖三（Three of Wands）",
+      "path": "wiki/cards/wands-03.md"
+    },
+    {
+      "id": "wands-04",
+      "type": "card",
+      "title": "權杖四（Four of Wands）",
+      "path": "wiki/cards/wands-04.md"
+    },
+    {
+      "id": "wands-05",
+      "type": "card",
+      "title": "權杖五（Five of Wands）",
+      "path": "wiki/cards/wands-05.md"
+    },
+    {
+      "id": "wands-06",
+      "type": "card",
+      "title": "權杖六（Six of Wands）",
+      "path": "wiki/cards/wands-06.md"
+    },
+    {
+      "id": "wands-07",
+      "type": "card",
+      "title": "權杖七（Seven of Wands）",
+      "path": "wiki/cards/wands-07.md"
+    },
+    {
+      "id": "wands-08",
+      "type": "card",
+      "title": "權杖八（Eight of Wands）",
+      "path": "wiki/cards/wands-08.md"
+    },
+    {
+      "id": "wands-09",
+      "type": "card",
+      "title": "權杖九（Nine of Wands）",
+      "path": "wiki/cards/wands-09.md"
+    },
+    {
+      "id": "wands-10",
+      "type": "card",
+      "title": "權杖十（Ten of Wands）",
+      "path": "wiki/cards/wands-10.md"
+    },
+    {
+      "id": "wands-king",
+      "type": "card",
+      "title": "權杖國王（King of Wands）",
+      "path": "wiki/cards/wands-king.md"
+    },
+    {
+      "id": "wands-knight",
+      "type": "card",
+      "title": "權杖騎士（Knight of Wands）",
+      "path": "wiki/cards/wands-knight.md"
+    },
+    {
+      "id": "wands-page",
+      "type": "card",
+      "title": "權杖侍衛（Page of Wands）",
+      "path": "wiki/cards/wands-page.md"
+    },
+    {
+      "id": "wands-queen",
+      "type": "card",
+      "title": "權杖王后（Queen of Wands）",
+      "path": "wiki/cards/wands-queen.md"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "cups-01",
+      "target": "major-02-high-priestess",
+      "type": "symbolic",
+      "reason": "直覺與內在",
+      "evidence": {
+        "page": "wiki/cards/cups-01.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "cups-01",
+      "target": "major-06-lovers",
+      "type": "emotional",
+      "reason": "連結與情感",
+      "evidence": {
+        "page": "wiki/cards/cups-01.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "cups-02",
+      "target": "cups-03",
+      "type": "symbolic",
+      "reason": "慶祝與分享",
+      "evidence": {
+        "page": "wiki/cards/cups-02.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "cups-02",
+      "target": "major-06-lovers",
+      "type": "symbolic",
+      "reason": "選擇與價值對齊",
+      "evidence": {
+        "page": "wiki/cards/cups-02.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "cups-03",
+      "target": "cups-02",
+      "type": "emotional",
+      "reason": "親密連結",
+      "evidence": {
+        "page": "wiki/cards/cups-03.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "cups-03",
+      "target": "cups-04",
+      "type": "contrast",
+      "reason": "對照：退縮",
+      "evidence": {
+        "page": "wiki/cards/cups-03.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "cups-04",
+      "target": "cups-05",
+      "type": "emotional",
+      "reason": "失落與哀傷",
+      "evidence": {
+        "page": "wiki/cards/cups-04.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "cups-04",
+      "target": "major-09-hermit",
+      "type": "symbolic",
+      "reason": "內省",
+      "evidence": {
+        "page": "wiki/cards/cups-04.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "cups-05",
+      "target": "cups-06",
+      "type": "emotional",
+      "reason": "懷舊與療癒",
+      "evidence": {
+        "page": "wiki/cards/cups-05.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "cups-05",
+      "target": "major-13-death",
+      "type": "narrative",
+      "reason": "放手與轉化",
+      "evidence": {
+        "page": "wiki/cards/cups-05.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "cups-06",
+      "target": "cups-05",
+      "type": "emotional",
+      "reason": "失落之後",
+      "evidence": {
+        "page": "wiki/cards/cups-06.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "cups-06",
+      "target": "major-03-empress",
+      "type": "symbolic",
+      "reason": "滋養",
+      "evidence": {
+        "page": "wiki/cards/cups-06.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "cups-07",
+      "target": "cups-08",
+      "type": "symbolic",
+      "reason": "離開與追尋",
+      "evidence": {
+        "page": "wiki/cards/cups-07.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "cups-07",
+      "target": "major-18-moon",
+      "type": "symbolic",
+      "reason": "迷霧與錯覺",
+      "evidence": {
+        "page": "wiki/cards/cups-07.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "cups-08",
+      "target": "cups-05",
+      "type": "emotional",
+      "reason": "失落後的離開",
+      "evidence": {
+        "page": "wiki/cards/cups-08.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "cups-08",
+      "target": "major-09-hermit",
+      "type": "symbolic",
+      "reason": "獨行內省",
+      "evidence": {
+        "page": "wiki/cards/cups-08.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "cups-09",
+      "target": "cups-07",
+      "type": "symbolic",
+      "reason": "幻想與現實",
+      "evidence": {
+        "page": "wiki/cards/cups-09.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "cups-09",
+      "target": "cups-10",
+      "type": "emotional",
+      "reason": "家庭圓滿",
+      "evidence": {
+        "page": "wiki/cards/cups-09.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "cups-10",
+      "target": "major-03-empress",
+      "type": "emotional",
+      "reason": "家庭豐饒",
+      "evidence": {
+        "page": "wiki/cards/cups-10.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "cups-10",
+      "target": "major-06-lovers",
+      "type": "emotional",
+      "reason": "親密連結",
+      "evidence": {
+        "page": "wiki/cards/cups-10.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "cups-king",
+      "target": "cups-queen",
+      "type": "emotional",
+      "reason": "情感直覺",
+      "evidence": {
+        "page": "wiki/cards/cups-king.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "cups-king",
+      "target": "major-04-emperor",
+      "type": "contrast",
+      "reason": "結構與權威對照",
+      "evidence": {
+        "page": "wiki/cards/cups-king.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "cups-knight",
+      "target": "cups-page",
+      "type": "emotional",
+      "reason": "情感萌芽",
+      "evidence": {
+        "page": "wiki/cards/cups-knight.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "cups-knight",
+      "target": "cups-queen",
+      "type": "emotional",
+      "reason": "情感成熟",
+      "evidence": {
+        "page": "wiki/cards/cups-knight.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "cups-page",
+      "target": "cups-knight",
+      "type": "emotional",
+      "reason": "浪漫行動",
+      "evidence": {
+        "page": "wiki/cards/cups-page.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "cups-page",
+      "target": "major-00-fool",
+      "type": "narrative",
+      "reason": "天真起步",
+      "evidence": {
+        "page": "wiki/cards/cups-page.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "cups-queen",
+      "target": "cups-king",
+      "type": "emotional",
+      "reason": "情感平衡",
+      "evidence": {
+        "page": "wiki/cards/cups-queen.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "cups-queen",
+      "target": "major-02-high-priestess",
+      "type": "symbolic",
+      "reason": "內在智慧",
+      "evidence": {
+        "page": "wiki/cards/cups-queen.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-00-fool",
+      "target": "major-01-magician",
+      "type": "narrative",
+      "reason": "愚人踏出第一步後，魔術師象徵將意圖化為行動",
+      "evidence": {
+        "page": "wiki/cards/major-00-fool.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-00-fool",
+      "target": "major-04-emperor",
+      "type": "contrast",
+      "reason": "與愚人形成對比：結構、紀律與邊界",
+      "evidence": {
+        "page": "wiki/cards/major-00-fool.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-00-fool",
+      "target": "major-21-world",
+      "type": "narrative",
+      "reason": "大阿卡納旅程的終點；完滿後重新踏上新的一步",
+      "evidence": {
+        "page": "wiki/cards/major-00-fool.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-01-magician",
+      "target": "major-00-fool",
+      "type": "narrative",
+      "reason": "旅程起點之後的意圖與行動",
+      "evidence": {
+        "page": "wiki/cards/major-01-magician.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-01-magician",
+      "target": "major-02-high-priestess",
+      "type": "symbolic",
+      "reason": "內在直覺與外在行動的互補",
+      "evidence": {
+        "page": "wiki/cards/major-01-magician.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-02-high-priestess",
+      "target": "major-01-magician",
+      "type": "symbolic",
+      "reason": "外在行動與顯化",
+      "evidence": {
+        "page": "wiki/cards/major-02-high-priestess.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-02-high-priestess",
+      "target": "major-03-empress",
+      "type": "symbolic",
+      "reason": "從內在智慧到外在豐饒的流動",
+      "evidence": {
+        "page": "wiki/cards/major-02-high-priestess.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-03-empress",
+      "target": "major-02-high-priestess",
+      "type": "symbolic",
+      "reason": "內在智慧",
+      "evidence": {
+        "page": "wiki/cards/major-03-empress.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-03-empress",
+      "target": "major-04-emperor",
+      "type": "symbolic",
+      "reason": "滋養與結構的互補",
+      "evidence": {
+        "page": "wiki/cards/major-03-empress.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-04-emperor",
+      "target": "major-00-fool",
+      "type": "contrast",
+      "reason": "自由與結構的張力",
+      "evidence": {
+        "page": "wiki/cards/major-04-emperor.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-04-emperor",
+      "target": "major-03-empress",
+      "type": "symbolic",
+      "reason": "滋養與豐饒",
+      "evidence": {
+        "page": "wiki/cards/major-04-emperor.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-05-hierophant",
+      "target": "major-02-high-priestess",
+      "type": "contrast",
+      "reason": "內在直覺與外在教導的對照",
+      "evidence": {
+        "page": "wiki/cards/major-05-hierophant.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-05-hierophant",
+      "target": "major-04-emperor",
+      "type": "archetype",
+      "reason": "世俗權威與結構",
+      "evidence": {
+        "page": "wiki/cards/major-05-hierophant.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-06-lovers",
+      "target": "major-05-hierophant",
+      "type": "symbolic",
+      "reason": "社會規範與個人選擇",
+      "evidence": {
+        "page": "wiki/cards/major-06-lovers.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-06-lovers",
+      "target": "major-07-chariot",
+      "type": "narrative",
+      "reason": "做出選擇後的前進",
+      "evidence": {
+        "page": "wiki/cards/major-06-lovers.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-07-chariot",
+      "target": "major-06-lovers",
+      "type": "narrative",
+      "reason": "選擇之後的行動",
+      "evidence": {
+        "page": "wiki/cards/major-07-chariot.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-07-chariot",
+      "target": "major-08-strength",
+      "type": "symbolic",
+      "reason": "以柔和力量駕馭本能",
+      "evidence": {
+        "page": "wiki/cards/major-07-chariot.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-08-strength",
+      "target": "major-07-chariot",
+      "type": "symbolic",
+      "reason": "意志驅動的前進",
+      "evidence": {
+        "page": "wiki/cards/major-08-strength.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-08-strength",
+      "target": "major-09-hermit",
+      "type": "symbolic",
+      "reason": "內在智慧的沉澱",
+      "evidence": {
+        "page": "wiki/cards/major-08-strength.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-09-hermit",
+      "target": "major-08-strength",
+      "type": "symbolic",
+      "reason": "內在力量的修煉",
+      "evidence": {
+        "page": "wiki/cards/major-09-hermit.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-09-hermit",
+      "target": "major-10-wheel-of-fortune",
+      "type": "narrative",
+      "reason": "內省後面對生命週期轉動",
+      "evidence": {
+        "page": "wiki/cards/major-09-hermit.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-10-wheel-of-fortune",
+      "target": "major-00-fool",
+      "type": "narrative",
+      "reason": "週期中的新開始",
+      "evidence": {
+        "page": "wiki/cards/major-10-wheel-of-fortune.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-10-wheel-of-fortune",
+      "target": "major-09-hermit",
+      "type": "narrative",
+      "reason": "轉動前的內省",
+      "evidence": {
+        "page": "wiki/cards/major-10-wheel-of-fortune.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-11-justice",
+      "target": "major-10-wheel-of-fortune",
+      "type": "narrative",
+      "reason": "週期與時機",
+      "evidence": {
+        "page": "wiki/cards/major-11-justice.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-11-justice",
+      "target": "major-12-hanged-man",
+      "type": "narrative",
+      "reason": "暫停以換取新視角",
+      "evidence": {
+        "page": "wiki/cards/major-11-justice.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-12-hanged-man",
+      "target": "major-11-justice",
+      "type": "narrative",
+      "reason": "因果與承擔",
+      "evidence": {
+        "page": "wiki/cards/major-12-hanged-man.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-12-hanged-man",
+      "target": "major-13-death",
+      "type": "narrative",
+      "reason": "放手與轉化",
+      "evidence": {
+        "page": "wiki/cards/major-12-hanged-man.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-13-death",
+      "target": "major-12-hanged-man",
+      "type": "narrative",
+      "reason": "暫停與視角轉換",
+      "evidence": {
+        "page": "wiki/cards/major-13-death.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-13-death",
+      "target": "major-14-temperance",
+      "type": "narrative",
+      "reason": "轉化後的調和",
+      "evidence": {
+        "page": "wiki/cards/major-13-death.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-14-temperance",
+      "target": "major-13-death",
+      "type": "narrative",
+      "reason": "轉化之後的調和",
+      "evidence": {
+        "page": "wiki/cards/major-14-temperance.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-14-temperance",
+      "target": "major-15-devil",
+      "type": "contrast",
+      "reason": "失衡與束縛的對照",
+      "evidence": {
+        "page": "wiki/cards/major-14-temperance.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-15-devil",
+      "target": "major-14-temperance",
+      "type": "symbolic",
+      "reason": "調和與中道",
+      "evidence": {
+        "page": "wiki/cards/major-15-devil.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-15-devil",
+      "target": "major-16-tower",
+      "type": "symbolic",
+      "reason": "束縛結構的驟然崩塌",
+      "evidence": {
+        "page": "wiki/cards/major-15-devil.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-16-tower",
+      "target": "major-15-devil",
+      "type": "symbolic",
+      "reason": "束縛與壓抑",
+      "evidence": {
+        "page": "wiki/cards/major-16-tower.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-16-tower",
+      "target": "major-17-star",
+      "type": "narrative",
+      "reason": "動盪後的希望與療癒",
+      "evidence": {
+        "page": "wiki/cards/major-16-tower.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-17-star",
+      "target": "major-16-tower",
+      "type": "narrative",
+      "reason": "動盪之後的希望",
+      "evidence": {
+        "page": "wiki/cards/major-17-star.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-17-star",
+      "target": "major-18-moon",
+      "type": "symbolic",
+      "reason": "迷霧與清晰的交替",
+      "evidence": {
+        "page": "wiki/cards/major-17-star.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-18-moon",
+      "target": "major-17-star",
+      "type": "symbolic",
+      "reason": "希望與指引",
+      "evidence": {
+        "page": "wiki/cards/major-18-moon.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-18-moon",
+      "target": "major-19-sun",
+      "type": "narrative",
+      "reason": "迷霧散去後的光明",
+      "evidence": {
+        "page": "wiki/cards/major-18-moon.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-19-sun",
+      "target": "major-18-moon",
+      "type": "contrast",
+      "reason": "迷霧與光明的對照",
+      "evidence": {
+        "page": "wiki/cards/major-19-sun.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-19-sun",
+      "target": "major-20-judgement",
+      "type": "narrative",
+      "reason": "覺醒與更新",
+      "evidence": {
+        "page": "wiki/cards/major-19-sun.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-20-judgement",
+      "target": "major-13-death",
+      "type": "narrative",
+      "reason": "結束與轉化",
+      "evidence": {
+        "page": "wiki/cards/major-20-judgement.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-20-judgement",
+      "target": "major-21-world",
+      "type": "narrative",
+      "reason": "覺醒後的完滿",
+      "evidence": {
+        "page": "wiki/cards/major-20-judgement.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-21-world",
+      "target": "major-00-fool",
+      "type": "narrative",
+      "reason": "完滿後的新開始",
+      "evidence": {
+        "page": "wiki/cards/major-21-world.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-21-world",
+      "target": "major-10-wheel-of-fortune",
+      "type": "symbolic",
+      "reason": "週期與四元素",
+      "evidence": {
+        "page": "wiki/cards/major-21-world.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "major-21-world",
+      "target": "major-20-judgement",
+      "type": "narrative",
+      "reason": "覺醒後的整合",
+      "evidence": {
+        "page": "wiki/cards/major-21-world.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "pentacles-01",
+      "target": "major-03-empress",
+      "type": "symbolic",
+      "reason": "豐饒與物質",
+      "evidence": {
+        "page": "wiki/cards/pentacles-01.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "pentacles-01",
+      "target": "pentacles-02",
+      "type": "symbolic",
+      "reason": "平衡管理",
+      "evidence": {
+        "page": "wiki/cards/pentacles-01.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "pentacles-02",
+      "target": "pentacles-01",
+      "type": "symbolic",
+      "reason": "資源起點",
+      "evidence": {
+        "page": "wiki/cards/pentacles-02.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "pentacles-02",
+      "target": "pentacles-03",
+      "type": "symbolic",
+      "reason": "協作建造",
+      "evidence": {
+        "page": "wiki/cards/pentacles-02.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "pentacles-03",
+      "target": "pentacles-02",
+      "type": "symbolic",
+      "reason": "靈活應對",
+      "evidence": {
+        "page": "wiki/cards/pentacles-03.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "pentacles-03",
+      "target": "pentacles-08",
+      "type": "symbolic",
+      "reason": "技藝精進",
+      "evidence": {
+        "page": "wiki/cards/pentacles-03.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "pentacles-04",
+      "target": "major-04-emperor",
+      "type": "symbolic",
+      "reason": "結構與掌控",
+      "evidence": {
+        "page": "wiki/cards/pentacles-04.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "pentacles-04",
+      "target": "pentacles-05",
+      "type": "contrast",
+      "reason": "匱乏對照",
+      "evidence": {
+        "page": "wiki/cards/pentacles-04.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "pentacles-05",
+      "target": "cups-05",
+      "type": "emotional",
+      "reason": "失落情緒",
+      "evidence": {
+        "page": "wiki/cards/pentacles-05.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "pentacles-05",
+      "target": "pentacles-06",
+      "type": "symbolic",
+      "reason": "施予與援助",
+      "evidence": {
+        "page": "wiki/cards/pentacles-05.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "pentacles-06",
+      "target": "major-11-justice",
+      "type": "archetype",
+      "reason": "公平與因果",
+      "evidence": {
+        "page": "wiki/cards/pentacles-06.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "pentacles-06",
+      "target": "pentacles-05",
+      "type": "narrative",
+      "reason": "困境之後",
+      "evidence": {
+        "page": "wiki/cards/pentacles-06.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "pentacles-07",
+      "target": "pentacles-08",
+      "type": "symbolic",
+      "reason": "持續投入",
+      "evidence": {
+        "page": "wiki/cards/pentacles-07.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "pentacles-07",
+      "target": "wands-03",
+      "type": "symbolic",
+      "reason": "遠見擴張",
+      "evidence": {
+        "page": "wiki/cards/pentacles-07.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "pentacles-08",
+      "target": "pentacles-03",
+      "type": "symbolic",
+      "reason": "團隊工藝",
+      "evidence": {
+        "page": "wiki/cards/pentacles-08.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "pentacles-08",
+      "target": "pentacles-07",
+      "type": "narrative",
+      "reason": "耕耘階段",
+      "evidence": {
+        "page": "wiki/cards/pentacles-08.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "pentacles-09",
+      "target": "major-03-empress",
+      "type": "symbolic",
+      "reason": "豐饒",
+      "evidence": {
+        "page": "wiki/cards/pentacles-09.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "pentacles-09",
+      "target": "pentacles-10",
+      "type": "emotional",
+      "reason": "家族財富",
+      "evidence": {
+        "page": "wiki/cards/pentacles-09.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "pentacles-10",
+      "target": "cups-10",
+      "type": "emotional",
+      "reason": "家庭幸福",
+      "evidence": {
+        "page": "wiki/cards/pentacles-10.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "pentacles-10",
+      "target": "wands-04",
+      "type": "symbolic",
+      "reason": "慶祝根基",
+      "evidence": {
+        "page": "wiki/cards/pentacles-10.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "pentacles-king",
+      "target": "major-04-emperor",
+      "type": "archetype",
+      "reason": "權威結構",
+      "evidence": {
+        "page": "wiki/cards/pentacles-king.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "pentacles-king",
+      "target": "pentacles-queen",
+      "type": "symbolic",
+      "reason": "滋養面向",
+      "evidence": {
+        "page": "wiki/cards/pentacles-king.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "pentacles-knight",
+      "target": "pentacles-page",
+      "type": "symbolic",
+      "reason": "學習階段",
+      "evidence": {
+        "page": "wiki/cards/pentacles-knight.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "pentacles-knight",
+      "target": "pentacles-queen",
+      "type": "symbolic",
+      "reason": "滋養富足",
+      "evidence": {
+        "page": "wiki/cards/pentacles-knight.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "pentacles-page",
+      "target": "pentacles-01",
+      "type": "narrative",
+      "reason": "機會萌芽",
+      "evidence": {
+        "page": "wiki/cards/pentacles-page.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "pentacles-page",
+      "target": "pentacles-knight",
+      "type": "symbolic",
+      "reason": "持續耕耘",
+      "evidence": {
+        "page": "wiki/cards/pentacles-page.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "pentacles-queen",
+      "target": "major-03-empress",
+      "type": "symbolic",
+      "reason": "地球母親",
+      "evidence": {
+        "page": "wiki/cards/pentacles-queen.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "pentacles-queen",
+      "target": "pentacles-king",
+      "type": "archetype",
+      "reason": "物質權威",
+      "evidence": {
+        "page": "wiki/cards/pentacles-queen.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "spread-celtic-cross",
+      "target": "spread-either-or",
+      "type": "symbolic",
+      "reason": "決策",
+      "evidence": {
+        "page": "wiki/patterns/spread-celtic-cross.md",
+        "section": "相關牌陣"
+      }
+    },
+    {
+      "source": "spread-celtic-cross",
+      "target": "spread-hexagram",
+      "type": "symbolic",
+      "reason": "深度分析",
+      "evidence": {
+        "page": "wiki/patterns/spread-celtic-cross.md",
+        "section": "相關牌陣"
+      }
+    },
+    {
+      "source": "spread-either-or",
+      "target": "spread-celtic-cross",
+      "type": "symbolic",
+      "reason": "宏觀決策",
+      "evidence": {
+        "page": "wiki/patterns/spread-either-or.md",
+        "section": "相關牌陣"
+      }
+    },
+    {
+      "source": "spread-either-or",
+      "target": "spread-three-card",
+      "type": "narrative",
+      "reason": "通用基礎",
+      "evidence": {
+        "page": "wiki/patterns/spread-either-or.md",
+        "section": "相關牌陣"
+      }
+    },
+    {
+      "source": "spread-finding-partner",
+      "target": "spread-gypsy",
+      "type": "emotional",
+      "reason": "感情探索",
+      "evidence": {
+        "page": "wiki/patterns/spread-finding-partner.md",
+        "section": "相關牌陣"
+      }
+    },
+    {
+      "source": "spread-finding-partner",
+      "target": "spread-venus",
+      "type": "narrative",
+      "reason": "愛情未來",
+      "evidence": {
+        "page": "wiki/patterns/spread-finding-partner.md",
+        "section": "相關牌陣"
+      }
+    },
+    {
+      "source": "spread-four-elements",
+      "target": "major-01-magician",
+      "type": "symbolic",
+      "reason": "四元素象徵",
+      "evidence": {
+        "page": "wiki/patterns/spread-four-elements.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "spread-four-elements",
+      "target": "spread-hexagram",
+      "type": "symbolic",
+      "reason": "深度分析",
+      "evidence": {
+        "page": "wiki/patterns/spread-four-elements.md",
+        "section": "相關牌陣"
+      }
+    },
+    {
+      "source": "spread-gypsy",
+      "target": "spread-love-greater-cross",
+      "type": "emotional",
+      "reason": "情感深度",
+      "evidence": {
+        "page": "wiki/patterns/spread-gypsy.md",
+        "section": "相關牌陣"
+      }
+    },
+    {
+      "source": "spread-gypsy",
+      "target": "spread-venus",
+      "type": "narrative",
+      "reason": "未來指向",
+      "evidence": {
+        "page": "wiki/patterns/spread-gypsy.md",
+        "section": "相關牌陣"
+      }
+    },
+    {
+      "source": "spread-hexagram",
+      "target": "spread-celtic-cross",
+      "type": "symbolic",
+      "reason": "宏觀經典",
+      "evidence": {
+        "page": "wiki/patterns/spread-hexagram.md",
+        "section": "相關牌陣"
+      }
+    },
+    {
+      "source": "spread-hexagram",
+      "target": "spread-four-elements",
+      "type": "symbolic",
+      "reason": "多面向",
+      "evidence": {
+        "page": "wiki/patterns/spread-hexagram.md",
+        "section": "相關牌陣"
+      }
+    },
+    {
+      "source": "spread-love-greater-cross",
+      "target": "spread-lover-reunion",
+      "type": "symbolic",
+      "reason": "復合",
+      "evidence": {
+        "page": "wiki/patterns/spread-love-greater-cross.md",
+        "section": "相關牌陣"
+      }
+    },
+    {
+      "source": "spread-love-greater-cross",
+      "target": "spread-lovers-pyramid",
+      "type": "emotional",
+      "reason": "簡潔戀愛",
+      "evidence": {
+        "page": "wiki/patterns/spread-love-greater-cross.md",
+        "section": "相關牌陣"
+      }
+    },
+    {
+      "source": "spread-love-tree",
+      "target": "spread-lover-reunion",
+      "type": "symbolic",
+      "reason": "復合",
+      "evidence": {
+        "page": "wiki/patterns/spread-love-tree.md",
+        "section": "相關牌陣"
+      }
+    },
+    {
+      "source": "spread-love-tree",
+      "target": "spread-sacred-triangle",
+      "type": "symbolic",
+      "reason": "因果梳理",
+      "evidence": {
+        "page": "wiki/patterns/spread-love-tree.md",
+        "section": "相關牌陣"
+      }
+    },
+    {
+      "source": "spread-lover-reunion",
+      "target": "spread-love-greater-cross",
+      "type": "emotional",
+      "reason": "情感",
+      "evidence": {
+        "page": "wiki/patterns/spread-lover-reunion.md",
+        "section": "相關牌陣"
+      }
+    },
+    {
+      "source": "spread-lover-reunion",
+      "target": "spread-love-tree",
+      "type": "narrative",
+      "reason": "困境溯源",
+      "evidence": {
+        "page": "wiki/patterns/spread-lover-reunion.md",
+        "section": "相關牌陣"
+      }
+    },
+    {
+      "source": "spread-lovers-pyramid",
+      "target": "spread-love-greater-cross",
+      "type": "emotional",
+      "reason": "情感深度",
+      "evidence": {
+        "page": "wiki/patterns/spread-lovers-pyramid.md",
+        "section": "相關牌陣"
+      }
+    },
+    {
+      "source": "spread-lovers-pyramid",
+      "target": "spread-venus",
+      "type": "narrative",
+      "reason": "愛情未來",
+      "evidence": {
+        "page": "wiki/patterns/spread-lovers-pyramid.md",
+        "section": "相關牌陣"
+      }
+    },
+    {
+      "source": "spread-sacred-triangle",
+      "target": "spread-love-tree",
+      "type": "emotional",
+      "reason": "感情溯源",
+      "evidence": {
+        "page": "wiki/patterns/spread-sacred-triangle.md",
+        "section": "相關牌陣"
+      }
+    },
+    {
+      "source": "spread-sacred-triangle",
+      "target": "spread-time-flow",
+      "type": "narrative",
+      "reason": "時間基礎",
+      "evidence": {
+        "page": "wiki/patterns/spread-sacred-triangle.md",
+        "section": "相關牌陣"
+      }
+    },
+    {
+      "source": "spread-three-card",
+      "target": "spread-either-or",
+      "type": "symbolic",
+      "reason": "抉擇",
+      "evidence": {
+        "page": "wiki/patterns/spread-three-card.md",
+        "section": "相關牌陣"
+      }
+    },
+    {
+      "source": "spread-three-card",
+      "target": "spread-time-flow",
+      "type": "narrative",
+      "reason": "時間流向",
+      "evidence": {
+        "page": "wiki/patterns/spread-three-card.md",
+        "section": "相關牌陣"
+      }
+    },
+    {
+      "source": "spread-time-flow",
+      "target": "spread-sacred-triangle",
+      "type": "narrative",
+      "reason": "因果變形",
+      "evidence": {
+        "page": "wiki/patterns/spread-time-flow.md",
+        "section": "相關牌陣"
+      }
+    },
+    {
+      "source": "spread-time-flow",
+      "target": "spread-three-card",
+      "type": "narrative",
+      "reason": "通用基礎",
+      "evidence": {
+        "page": "wiki/patterns/spread-time-flow.md",
+        "section": "相關牌陣"
+      }
+    },
+    {
+      "source": "spread-venus",
+      "target": "spread-gypsy",
+      "type": "emotional",
+      "reason": "內心探索",
+      "evidence": {
+        "page": "wiki/patterns/spread-venus.md",
+        "section": "相關牌陣"
+      }
+    },
+    {
+      "source": "spread-venus",
+      "target": "spread-lovers-pyramid",
+      "type": "emotional",
+      "reason": "戀愛現況",
+      "evidence": {
+        "page": "wiki/patterns/spread-venus.md",
+        "section": "相關牌陣"
+      }
+    },
+    {
+      "source": "spread-wealth-numbers",
+      "target": "pentacles-01",
+      "type": "symbolic",
+      "reason": "物質機會",
+      "evidence": {
+        "page": "wiki/patterns/spread-wealth-numbers.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "spread-wealth-numbers",
+      "target": "spread-four-elements",
+      "type": "symbolic",
+      "reason": "物質面向",
+      "evidence": {
+        "page": "wiki/patterns/spread-wealth-numbers.md",
+        "section": "相關牌陣"
+      }
+    },
+    {
+      "source": "spread-weekly-forecast",
+      "target": "spread-three-card",
+      "type": "symbolic",
+      "reason": "簡短趨勢",
+      "evidence": {
+        "page": "wiki/patterns/spread-weekly-forecast.md",
+        "section": "相關牌陣"
+      }
+    },
+    {
+      "source": "spread-weekly-forecast",
+      "target": "spread-time-flow",
+      "type": "narrative",
+      "reason": "時間序列",
+      "evidence": {
+        "page": "wiki/patterns/spread-weekly-forecast.md",
+        "section": "相關牌陣"
+      }
+    },
+    {
+      "source": "swords-01",
+      "target": "major-01-magician",
+      "type": "symbolic",
+      "reason": "意志與專注",
+      "evidence": {
+        "page": "wiki/cards/swords-01.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "swords-01",
+      "target": "major-11-justice",
+      "type": "symbolic",
+      "reason": "真理與公平",
+      "evidence": {
+        "page": "wiki/cards/swords-01.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "swords-02",
+      "target": "major-06-lovers",
+      "type": "symbolic",
+      "reason": "選擇",
+      "evidence": {
+        "page": "wiki/cards/swords-02.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "swords-02",
+      "target": "major-18-moon",
+      "type": "symbolic",
+      "reason": "蒙蔽與不確定",
+      "evidence": {
+        "page": "wiki/cards/swords-02.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "swords-03",
+      "target": "cups-05",
+      "type": "emotional",
+      "reason": "失落與哀傷",
+      "evidence": {
+        "page": "wiki/cards/swords-03.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "swords-03",
+      "target": "major-16-tower",
+      "type": "symbolic",
+      "reason": "驟然衝擊",
+      "evidence": {
+        "page": "wiki/cards/swords-03.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "swords-04",
+      "target": "major-09-hermit",
+      "type": "symbolic",
+      "reason": "獨處修復",
+      "evidence": {
+        "page": "wiki/cards/swords-04.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "swords-04",
+      "target": "swords-03",
+      "type": "narrative",
+      "reason": "心痛之後",
+      "evidence": {
+        "page": "wiki/cards/swords-04.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "swords-05",
+      "target": "major-07-chariot",
+      "type": "symbolic",
+      "reason": "對立與推進",
+      "evidence": {
+        "page": "wiki/cards/swords-05.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "swords-05",
+      "target": "swords-06",
+      "type": "symbolic",
+      "reason": "離開衝突",
+      "evidence": {
+        "page": "wiki/cards/swords-05.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "swords-06",
+      "target": "cups-05",
+      "type": "narrative",
+      "reason": "悲傷之後",
+      "evidence": {
+        "page": "wiki/cards/swords-06.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "swords-06",
+      "target": "major-13-death",
+      "type": "narrative",
+      "reason": "過渡轉化",
+      "evidence": {
+        "page": "wiki/cards/swords-06.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "swords-07",
+      "target": "major-15-devil",
+      "type": "symbolic",
+      "reason": "欺瞞與束縛",
+      "evidence": {
+        "page": "wiki/cards/swords-07.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "swords-07",
+      "target": "swords-08",
+      "type": "contrast",
+      "reason": "困境對照",
+      "evidence": {
+        "page": "wiki/cards/swords-07.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "swords-08",
+      "target": "major-12-hanged-man",
+      "type": "narrative",
+      "reason": "視角轉換",
+      "evidence": {
+        "page": "wiki/cards/swords-08.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "swords-08",
+      "target": "swords-09",
+      "type": "symbolic",
+      "reason": "焦慮加深",
+      "evidence": {
+        "page": "wiki/cards/swords-08.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "swords-09",
+      "target": "major-18-moon",
+      "type": "emotional",
+      "reason": "恐懼與潛意識",
+      "evidence": {
+        "page": "wiki/cards/swords-09.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "swords-09",
+      "target": "swords-08",
+      "type": "symbolic",
+      "reason": "困境延續",
+      "evidence": {
+        "page": "wiki/cards/swords-09.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "swords-10",
+      "target": "major-13-death",
+      "type": "narrative",
+      "reason": "結束與轉化",
+      "evidence": {
+        "page": "wiki/cards/swords-10.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "swords-10",
+      "target": "major-16-tower",
+      "type": "symbolic",
+      "reason": "驟然崩塌",
+      "evidence": {
+        "page": "wiki/cards/swords-10.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "swords-king",
+      "target": "major-04-emperor",
+      "type": "archetype",
+      "reason": "結構與權威",
+      "evidence": {
+        "page": "wiki/cards/swords-king.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "swords-king",
+      "target": "swords-queen",
+      "type": "archetype",
+      "reason": "清晰判斷",
+      "evidence": {
+        "page": "wiki/cards/swords-king.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "swords-knight",
+      "target": "major-07-chariot",
+      "type": "symbolic",
+      "reason": "衝刺與意志",
+      "evidence": {
+        "page": "wiki/cards/swords-knight.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "swords-knight",
+      "target": "swords-queen",
+      "type": "archetype",
+      "reason": "成熟判斷",
+      "evidence": {
+        "page": "wiki/cards/swords-knight.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "swords-page",
+      "target": "major-01-magician",
+      "type": "symbolic",
+      "reason": "心智與溝通",
+      "evidence": {
+        "page": "wiki/cards/swords-page.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "swords-page",
+      "target": "swords-knight",
+      "type": "narrative",
+      "reason": "行動升級",
+      "evidence": {
+        "page": "wiki/cards/swords-page.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "swords-queen",
+      "target": "major-11-justice",
+      "type": "symbolic",
+      "reason": "公正與真理",
+      "evidence": {
+        "page": "wiki/cards/swords-queen.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "swords-queen",
+      "target": "swords-king",
+      "type": "archetype",
+      "reason": "權威判斷",
+      "evidence": {
+        "page": "wiki/cards/swords-queen.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "wands-01",
+      "target": "major-00-fool",
+      "type": "symbolic",
+      "reason": "新開始",
+      "evidence": {
+        "page": "wiki/cards/wands-01.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "wands-01",
+      "target": "major-01-magician",
+      "type": "symbolic",
+      "reason": "意志與顯化",
+      "evidence": {
+        "page": "wiki/cards/wands-01.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "wands-02",
+      "target": "major-07-chariot",
+      "type": "narrative",
+      "reason": "決心前進",
+      "evidence": {
+        "page": "wiki/cards/wands-02.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "wands-02",
+      "target": "wands-03",
+      "type": "symbolic",
+      "reason": "付諸實踐",
+      "evidence": {
+        "page": "wiki/cards/wands-02.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "wands-03",
+      "target": "wands-02",
+      "type": "narrative",
+      "reason": "規劃階段",
+      "evidence": {
+        "page": "wiki/cards/wands-03.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "wands-03",
+      "target": "wands-08",
+      "type": "symbolic",
+      "reason": "快速進展",
+      "evidence": {
+        "page": "wiki/cards/wands-03.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "wands-04",
+      "target": "cups-10",
+      "type": "emotional",
+      "reason": "家庭和諧",
+      "evidence": {
+        "page": "wiki/cards/wands-04.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "wands-04",
+      "target": "wands-03",
+      "type": "symbolic",
+      "reason": "努力後慶功",
+      "evidence": {
+        "page": "wiki/cards/wands-04.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "wands-05",
+      "target": "swords-05",
+      "type": "contrast",
+      "reason": "衝突對照",
+      "evidence": {
+        "page": "wiki/cards/wands-05.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "wands-05",
+      "target": "wands-07",
+      "type": "symbolic",
+      "reason": "捍衛立場",
+      "evidence": {
+        "page": "wiki/cards/wands-05.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "wands-06",
+      "target": "major-19-sun",
+      "type": "symbolic",
+      "reason": "光明成功",
+      "evidence": {
+        "page": "wiki/cards/wands-06.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "wands-06",
+      "target": "wands-07",
+      "type": "narrative",
+      "reason": "勝利後挑戰",
+      "evidence": {
+        "page": "wiki/cards/wands-06.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "wands-07",
+      "target": "wands-06",
+      "type": "narrative",
+      "reason": "勝利之後",
+      "evidence": {
+        "page": "wiki/cards/wands-07.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "wands-07",
+      "target": "wands-09",
+      "type": "symbolic",
+      "reason": "持續奮戰",
+      "evidence": {
+        "page": "wiki/cards/wands-07.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "wands-08",
+      "target": "swords-knight",
+      "type": "contrast",
+      "reason": "速度對照",
+      "evidence": {
+        "page": "wiki/cards/wands-08.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "wands-08",
+      "target": "wands-03",
+      "type": "symbolic",
+      "reason": "擴張行動",
+      "evidence": {
+        "page": "wiki/cards/wands-08.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "wands-09",
+      "target": "major-08-strength",
+      "type": "symbolic",
+      "reason": "柔和韌性",
+      "evidence": {
+        "page": "wiki/cards/wands-09.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "wands-09",
+      "target": "wands-10",
+      "type": "symbolic",
+      "reason": "負擔加重",
+      "evidence": {
+        "page": "wiki/cards/wands-09.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "wands-10",
+      "target": "major-04-emperor",
+      "type": "symbolic",
+      "reason": "責任與結構",
+      "evidence": {
+        "page": "wiki/cards/wands-10.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "wands-10",
+      "target": "wands-09",
+      "type": "symbolic",
+      "reason": "持續奮戰",
+      "evidence": {
+        "page": "wiki/cards/wands-10.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "wands-king",
+      "target": "major-04-emperor",
+      "type": "archetype",
+      "reason": "權威結構",
+      "evidence": {
+        "page": "wiki/cards/wands-king.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "wands-king",
+      "target": "wands-queen",
+      "type": "symbolic",
+      "reason": "熱情直覺",
+      "evidence": {
+        "page": "wiki/cards/wands-king.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "wands-knight",
+      "target": "major-07-chariot",
+      "type": "symbolic",
+      "reason": "衝刺意志",
+      "evidence": {
+        "page": "wiki/cards/wands-knight.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "wands-knight",
+      "target": "wands-queen",
+      "type": "archetype",
+      "reason": "成熟熱情",
+      "evidence": {
+        "page": "wiki/cards/wands-knight.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "wands-page",
+      "target": "major-00-fool",
+      "type": "narrative",
+      "reason": "冒險起步",
+      "evidence": {
+        "page": "wiki/cards/wands-page.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "wands-page",
+      "target": "wands-knight",
+      "type": "narrative",
+      "reason": "行動升級",
+      "evidence": {
+        "page": "wiki/cards/wands-page.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "wands-queen",
+      "target": "major-03-empress",
+      "type": "symbolic",
+      "reason": "豐饒與創造",
+      "evidence": {
+        "page": "wiki/cards/wands-queen.md",
+        "section": "相關牌卡"
+      }
+    },
+    {
+      "source": "wands-queen",
+      "target": "wands-king",
+      "type": "archetype",
+      "reason": "火元素王",
+      "evidence": {
+        "page": "wiki/cards/wands-queen.md",
+        "section": "相關牌卡"
+      }
+    }
+  ]
+}
