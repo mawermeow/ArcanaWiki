@@ -159,8 +159,10 @@ export async function loadPublicWikiPages(wikiRoot = "wiki"): Promise<PublicWiki
     drafts.map((page) => [
       page.id,
       {
+        id: page.id,
         href: page.href,
-        title: page.title
+        title: page.title,
+        category: page.category
       }
     ])
   );

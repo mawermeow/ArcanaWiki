@@ -1,6 +1,6 @@
 import React from "react";
 import { parseAnswerBody } from "../lib/answer/answer-body.ts";
-import { cn } from "../lib/ui/classes.ts";
+import { cn, contentSectionTitleClass } from "../lib/ui/classes.ts";
 
 type AnswerBodyProps = {
   text: string;
@@ -32,7 +32,10 @@ export function AnswerBody({ text, className }: AnswerBodyProps) {
         if (block.type === "section") {
           return (
             <h4
-              className="mt-6 mb-2 font-serif text-[1.28rem] leading-snug font-bold text-accent first:mt-0"
+              className={cn(
+                contentSectionTitleClass,
+                "mt-6 mb-2 first:mt-0"
+              )}
               key={`section-${index}`}
             >
               {block.title}

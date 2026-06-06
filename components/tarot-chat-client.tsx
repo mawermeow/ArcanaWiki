@@ -7,6 +7,7 @@ import type { TarotCardOption } from "../lib/pwa/card-catalog.ts";
 import { AnswerBody } from "./answer-body.tsx";
 import {
   cn,
+  contentSectionTitleClass,
   eyebrowClass,
   fieldClass,
   fieldLabelClass,
@@ -397,7 +398,7 @@ export function TarotChatClient({
             >
               <div className="grid gap-1">
                 <p className={sectionEyebrowClass}>Interpretation</p>
-                <h3>直接解讀</h3>
+                <h3 className={contentSectionTitleClass}>直接解讀</h3>
               </div>
               <div className="rounded-r-[14px] border-l-[3px] border-accent/42 bg-surface-muted px-5 py-[18px]">
                 <AnswerBody text={formatAnswerForDisplay(result.answer)} />

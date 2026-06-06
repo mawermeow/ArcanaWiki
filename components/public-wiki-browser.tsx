@@ -1,30 +1,26 @@
 "use client";
 
 import React, { useMemo, useState } from "react";
+import { TarotCardThumb } from "./tarot-card-thumb.tsx";
 import { filterPublicWikiPages } from "../lib/wiki-public/search.ts";
 import {
   PUBLIC_WIKI_CATEGORIES,
+  PUBLIC_WIKI_CATEGORY_LABELS,
   type PublicWikiBrowseData,
   type PublicWikiCategory,
   type PublicWikiPage
 } from "../lib/wiki-public/types.ts";
 import {
   cn,
+  contentSectionTitleClass,
   eyebrowClass,
   fieldClass,
   fieldLabelClass,
   heroClass,
   mutedTextClass,
-  panelPaddingClass
+  panelPaddingClass,
+  sectionEyebrowClass
 } from "../lib/ui/classes.ts";
-
-const CATEGORY_LABELS: Record<PublicWikiCategory, string> = {
-  cards: "牌卡",
-  concepts: "概念",
-  emotions: "情緒",
-  relationships: "關係",
-  patterns: "模式與牌陣"
-};
 
 const wikiChipClass =
   "rounded-full border border-line bg-surface-soft px-3.5 py-2 text-ink";
@@ -55,8 +51,8 @@ function PageList({
     <section className={cn(panelPaddingClass, "grid gap-[18px]")}>
       <div className="flex items-start justify-between gap-3.5 max-[920px]:flex-col max-[920px]:items-start">
         <div>
-          <p className={eyebrowClass}>Category</p>
-          <h2>{CATEGORY_LABELS[category]}</h2>
+          <p className={sectionEyebrowClass}>Category</p>
+          <h2 className={contentSectionTitleClass}>{PUBLIC_WIKI_CATEGORY_LABELS[category]}</h2>
         </div>
         <p>{pages.length} 篇</p>
       </div>
@@ -70,25 +66,32 @@ function PageList({
               className="grid gap-2.5 rounded-md border border-line bg-surface-muted p-[18px]"
               key={page.id}
             >
-              <p className="m-0 text-[0.8rem] font-bold tracking-[0.08em] text-accent uppercase">
-                {CATEGORY_LABELS[page.category]}
-              </p>
-              <h3 className="text-[1.08rem]">
-                <a className="no-underline" href={page.href}>
-                  {page.title}
-                </a>
-              </h3>
-              {page.summary ? (
-                <p className="m-0 text-muted">{page.summary}</p>
-              ) : (
-                <p className="m-0 text-muted">{page.contentText.slice(0, 120)}...</p>
-              )}
-              <div className="flex flex-wrap gap-2.5">
-                {(page.tags ?? []).slice(0, 3).map((tag) => (
-                  <span className={cn(wikiChipClass, "text-[0.92rem]")} key={tag}>
-                    {tag}
-                  </span>
-                ))}
+              <div className="flex items-start gap-3.5">
+                {page.category === "cards" ? (
+                  <TarotCardThumb cardId={page.id} className="shrink-0" size="sm" title={page.title} />
+                ) : null}
+                <div className="grid min-w-0 flex-1 gap-2.5">
+                  <p className="m-0 text-[0.8rem] font-bold tracking-[0.08em] text-accent uppercase">
+                    {PUBLIC_WIKI_CATEGORY_LABELS[page.category]}
+                  </p>
+                  <h3 className="text-[1.08rem]">
+                    <a className="no-underline" href={page.href}>
+                      {page.title}
+                    </a>
+                  </h3>
+                  {page.summary ? (
+                    <p className="m-0 text-muted">{page.summary}</p>
+                  ) : (
+                    <p className="m-0 text-muted">{page.contentText.slice(0, 120)}...</p>
+                  )}
+                  <div className="flex flex-wrap gap-2.5">
+                    {(page.tags ?? []).slice(0, 3).map((tag) => (
+                      <span className={cn(wikiChipClass, "text-[0.92rem]")} key={tag}>
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               </div>
             </article>
           ))}
@@ -160,7 +163,7 @@ export function PublicWikiBrowser({
               type="button"
               onClick={() => setCategory(item)}
             >
-              {CATEGORY_LABELS[item]} {countsByCategory[item]}
+              {PUBLIC_WIKI_CATEGORY_LABELS[item]} {countsByCategory[item]}
             </button>
           ))}
         </div>

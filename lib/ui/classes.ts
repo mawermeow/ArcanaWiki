@@ -16,6 +16,12 @@ export const eyebrowClass =
 export const sectionEyebrowClass =
   "m-0 text-[0.72rem] font-bold tracking-[0.14em] text-accent uppercase";
 
+export const contentSectionTitleClass =
+  "font-serif text-[1.28rem] leading-snug font-bold text-accent";
+
+export const wikiPageTitleClass =
+  "font-serif text-[clamp(2rem,4.8vw,3.2rem)] leading-[1.08] font-bold text-accent text-balance";
+
 export const mutedTextClass = "text-muted";
 
 export const ghostLinkClass =

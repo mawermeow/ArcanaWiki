@@ -132,7 +132,25 @@
   .wiki-prose h4,
   .wiki-prose h5,
   .wiki-prose h6 {
-    @apply mt-[1.8rem] mb-3;
+    @apply mt-[1.8rem] mb-3 font-serif leading-snug font-bold text-accent;
+  }
+
+  .wiki-prose h1 {
+    @apply text-[1.42rem];
+  }
+
+  .wiki-prose h2 {
+    @apply text-[1.28rem];
+  }
+
+  .wiki-prose h3 {
+    @apply text-[1.14rem];
+  }
+
+  .wiki-prose h4,
+  .wiki-prose h5,
+  .wiki-prose h6 {
+    @apply text-[1.02rem] text-accent-strong;
   }
 
   .wiki-prose h1:first-child,
@@ -171,5 +189,38 @@
 
   .wiki-prose code {
     @apply rounded-lg bg-ink/8 px-[0.34rem] py-[0.12rem] font-mono text-[0.92em];
+  }
+
+  .wiki-prose a.wiki-card-link {
+    @apply inline-flex max-w-full items-center gap-2.5 rounded-md border border-line bg-surface-soft px-2.5 py-1.5 align-middle no-underline transition duration-150 ease-in-out hover:-translate-y-px;
+  }
+
+  .wiki-prose ul.wiki-card-list {
+    @apply grid list-none gap-3.5 p-0;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+
+  .wiki-prose ul.wiki-card-list li {
+    @apply m-0 grid min-w-0 gap-2 self-stretch text-[0.94rem] leading-[1.6] text-muted;
+  }
+
+  .wiki-prose ul.wiki-card-list a.wiki-card-link {
+    @apply h-full w-full flex-col items-center px-3 py-3.5 text-center;
+  }
+
+  .wiki-prose .wiki-card-link__image {
+    @apply aspect-[5/8.6] w-9 shrink-0 rounded-md border border-line bg-cream object-cover shadow-card;
+  }
+
+  .wiki-prose ul.wiki-card-list .wiki-card-link__image {
+    @apply w-[72px];
+  }
+
+  .wiki-prose .wiki-card-link__label {
+    @apply min-w-0 font-sans text-[0.98rem] leading-[1.45] text-ink;
+  }
+
+  .wiki-prose ul.wiki-card-list .wiki-card-link__label {
+    @apply w-full;
   }
 }

@@ -1,7 +1,10 @@
 import type { PublicWikiPage } from "./types.ts";
+import { getCardImageSrc } from "../pwa/card-image.ts";
 
 type LinkResolver = {
-  resolveById: (pageId: string) => Pick<PublicWikiPage, "href" | "title"> | null;
+  resolveById: (
+    pageId: string
+  ) => Pick<PublicWikiPage, "href" | "title" | "category" | "id"> | null;
 };
 
 const HIDDEN_SECTION_TITLES = new Set([
@@ -62,15 +65,65 @@ function resolveHref(target: string, resolver: LinkResolver): { href: string } |
   return { href: page.href };
 }
 
+function isCardLinkTarget(target: string, resolver: LinkResolver): boolean {
+  if (target.startsWith("http://") || target.startsWith("https://")) {
+    return false;
+  }
+
+  const pageId = slugToPageId(target);
+  if (!pageId) {
+    return false;
+  }
+
+  const page = resolver.resolveById(pageId);
+  return page?.category === "cards";
+}
+
+function isCardListItemContent(raw: string, resolver: LinkResolver): boolean {
+  const trimmed = raw.trim();
+  const markdownLink = trimmed.match(/^\[([^\]]+)\]\(([^)]+)\)/);
+  if (markdownLink) {
+    return isCardLinkTarget(markdownLink[2], resolver);
+  }
+
+  const wikiLink = trimmed.match(/^\[\[([^\]]+)\]\]/);
+  if (wikiLink) {
+    const page = resolver.resolveById(wikiLink[1].trim());
+    return page?.category === "cards";
+  }
+
+  return false;
+}
+
+function renderWikiLink(
+  page: Pick<PublicWikiPage, "href" | "title" | "category" | "id">,
+  label: string,
+  pageId: string
+): string {
+  const cardImageSrc = page.category === "cards" ? getCardImageSrc(pageId) : undefined;
+
+  if (!cardImageSrc) {
+    return `<a href="${escapeHtml(page.href)}">${escapeHtml(label)}</a>`;
+  }
+
+  return [
+    `<a class="wiki-card-link" href="${escapeHtml(page.href)}">`,
+    `<img alt="" aria-hidden="true" class="wiki-card-link__image" height="62" loading="lazy" src="${escapeHtml(cardImageSrc)}" width="36" />`,
+    `<span class="wiki-card-link__label">${escapeHtml(label)}</span>`,
+    `</a>`
+  ].join("");
+}
+
 function renderInline(raw: string, resolver: LinkResolver): string {
   let html = escapeHtml(raw);
 
   html = html.replace(/\[\[([^\]]+)\]\]/g, (_match, pageId) => {
-    const page = resolver.resolveById(String(pageId).trim());
+    const normalizedPageId = String(pageId).trim();
+    const page = resolver.resolveById(normalizedPageId);
     if (!page) {
-      return escapeHtml(String(pageId).trim());
+      return escapeHtml(normalizedPageId);
     }
-    return `<a href="${escapeHtml(page.href)}">${escapeHtml(page.title)}</a>`;
+    return renderWikiLink(page, page.title, normalizedPageId);
   });
 
   html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_match, label, target) => {
@@ -78,8 +131,22 @@ function renderInline(raw: string, resolver: LinkResolver): string {
     if (!resolved) {
       return escapeHtml(String(label));
     }
-    const attrs = resolved.href.startsWith("http") ? ' target="_blank" rel="noreferrer"' : "";
-    return `<a href="${escapeHtml(resolved.href)}"${attrs}>${escapeHtml(String(label))}</a>`;
+
+    if (resolved.href.startsWith("http")) {
+      return `<a href="${escapeHtml(resolved.href)}" target="_blank" rel="noreferrer">${escapeHtml(String(label))}</a>`;
+    }
+
+    const pageId = slugToPageId(String(target));
+    if (!pageId) {
+      return `<a href="${escapeHtml(resolved.href)}">${escapeHtml(String(label))}</a>`;
+    }
+
+    const page = resolver.resolveById(pageId);
+    if (!page) {
+      return `<a href="${escapeHtml(resolved.href)}">${escapeHtml(String(label))}</a>`;
+    }
+
+    return renderWikiLink(page, String(label), pageId);
   });
 
   html = html.replace(/`([^`]+)`/g, (_match, code) => `<code>${escapeHtml(String(code))}</code>`);
@@ -203,16 +270,21 @@ export function renderPublicMarkdown(raw: string, resolver: LinkResolver): strin
     }
 
     if (line.trim().startsWith("- ") || line.trim().startsWith("* ")) {
-      const items: string[] = [];
+      const rawItems: string[] = [];
       while (index < lines.length) {
         const itemLine = lines[index].trim();
         if (!itemLine.startsWith("- ") && !itemLine.startsWith("* ")) {
           break;
         }
-        items.push(`<li>${renderInline(itemLine.slice(2).trim(), resolver)}</li>`);
+        rawItems.push(itemLine.slice(2).trim());
         index += 1;
       }
-      blocks.push(`<ul>${items.join("")}</ul>`);
+
+      const isCardList =
+        rawItems.length > 0 && rawItems.every((item) => isCardListItemContent(item, resolver));
+      const items = rawItems.map((item) => `<li>${renderInline(item, resolver)}</li>`);
+      const listClass = isCardList ? ' class="wiki-card-list"' : "";
+      blocks.push(`<ul${listClass}>${items.join("")}</ul>`);
       continue;
     }
 
