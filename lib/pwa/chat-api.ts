@@ -4,6 +4,7 @@ import type {
   TarotAnswerResponse,
   TarotCardInput
 } from "../answer/types.ts";
+import { generateAutoReading, type GeneratedReading } from "./auto-reading.ts";
 import { isRetrievalDebugEnabled } from "./env.ts";
 
 export type ChatApiRequest = {
@@ -12,6 +13,7 @@ export type ChatApiRequest = {
   spreadId?: string;
   mode?: "gentle" | "direct" | "reflective";
   debug?: boolean;
+  autoDraw?: boolean;
 };
 
 export type ChatApiResponse = {
@@ -23,11 +25,13 @@ export type ChatApiResponse = {
   }>;
   safety: TarotAnswerResponse["safety"];
   diagnostics?: TarotAnswerResponse["diagnostics"];
+  generatedReading?: GeneratedReading;
 };
 
 type ChatApiDependencies = {
   answer: (request: TarotAnswerRequest) => Promise<TarotAnswerResponse>;
   debugEnabled: boolean;
+  generateReading: (options: { question: string }) => Promise<GeneratedReading>;
 };
 
 type ValidationResult =
@@ -125,6 +129,10 @@ export function validateChatApiRequest(input: unknown): ValidationResult {
     issues.push("`debug` must be a boolean.");
   }
 
+  if (input.autoDraw !== undefined && typeof input.autoDraw !== "boolean") {
+    issues.push("`autoDraw` must be a boolean.");
+  }
+
   const cards = validateCards(input.cards, issues);
 
   if (issues.length > 0) {
@@ -141,14 +149,16 @@ export function validateChatApiRequest(input: unknown): ValidationResult {
       cards,
       spreadId,
       mode: mode as ChatApiRequest["mode"],
-      debug: input.debug as boolean | undefined
+      debug: input.debug as boolean | undefined,
+      autoDraw: input.autoDraw as boolean | undefined
     }
   };
 }
 
 function sanitizeAnswerResponse(
   response: TarotAnswerResponse,
-  allowDiagnostics: boolean
+  allowDiagnostics: boolean,
+  generatedReading?: GeneratedReading
 ): ChatApiResponse {
   return {
     answer: response.answer,
@@ -158,7 +168,8 @@ function sanitizeAnswerResponse(
       sectionTitle: source.sectionTitle
     })),
     safety: response.safety,
-    diagnostics: allowDiagnostics ? response.diagnostics : undefined
+    diagnostics: allowDiagnostics ? response.diagnostics : undefined,
+    generatedReading
   };
 }
 
@@ -168,6 +179,7 @@ export async function handleChatRequest(
 ): Promise<Response> {
   const answer = dependencies.answer ?? answerTarotQuestion;
   const debugEnabled = dependencies.debugEnabled ?? isRetrievalDebugEnabled();
+  const generateReading = dependencies.generateReading ?? generateAutoReading;
 
   let body: unknown;
   try {
@@ -195,12 +207,21 @@ export async function handleChatRequest(
   const allowDiagnostics = debugEnabled && validation.value.debug === true;
 
   try {
+    const generatedReading =
+      validation.value.autoDraw === true
+        ? await generateReading({
+            question: validation.value.question
+          })
+        : undefined;
+
     const response = await answer({
       ...validation.value,
+      cards: generatedReading?.cards ?? validation.value.cards,
+      spreadId: generatedReading?.spreadId ?? validation.value.spreadId,
       debug: allowDiagnostics
     });
 
-    return jsonResponse(sanitizeAnswerResponse(response, allowDiagnostics));
+    return jsonResponse(sanitizeAnswerResponse(response, allowDiagnostics, generatedReading));
   } catch (error) {
     const message = error instanceof Error ? error.message : "";
     const status = message.includes("OPENAI_API_KEY") ? 503 : 500;

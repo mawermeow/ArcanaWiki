@@ -125,6 +125,61 @@ test("debug diagnostics are gated by env flag", async () => {
   });
 });
 
+test("auto draw generates spread and cards before calling answer service", async () => {
+  let seenRequest: Record<string, unknown> | undefined;
+
+  const response = await handleChatRequest(
+    createRequest({
+      question: "對方最近很冷淡，我該怎麼理解這段關係？",
+      autoDraw: true
+    }),
+    {
+      answer: async (request) => {
+        seenRequest = request as unknown as Record<string, unknown>;
+        return {
+          answer: "先回看彼此目前的卡點。",
+          selectedSources: [],
+          safety: {
+            answerValid: true,
+            citationErrors: []
+          }
+        };
+      },
+      debugEnabled: false,
+      generateReading: async () => ({
+        spreadId: "spread-love-tree",
+        spreadTitle: "愛情樹牌陣",
+        cards: [
+          {
+            cardId: "cups-02",
+            title: "聖杯二（Two of Cups）",
+            orientation: "reversed",
+            position: "目前關係狀態"
+          }
+        ]
+      })
+    }
+  );
+
+  assert.equal(response.status, 200);
+  assert.deepEqual(seenRequest?.spreadId, "spread-love-tree");
+  assert.ok(Array.isArray(seenRequest?.cards));
+
+  const payload = await readJson(response);
+  assert.deepEqual(payload.generatedReading, {
+    spreadId: "spread-love-tree",
+    spreadTitle: "愛情樹牌陣",
+    cards: [
+      {
+        cardId: "cups-02",
+        title: "聖杯二（Two of Cups）",
+        orientation: "reversed",
+        position: "目前關係狀態"
+      }
+    ]
+  });
+});
+
 test("no selected sources fallback stays minimal", async () => {
   const response = await handleChatRequest(
     createRequest({

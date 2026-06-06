@@ -110,6 +110,36 @@ h3 {
   gap: 18px;
 }
 
+.auto-draw-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 14px;
+  align-items: start;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, rgba(219, 231, 223, 0.52), rgba(255, 250, 240, 0.9));
+}
+
+.auto-draw-card input {
+  width: auto;
+  margin-top: 4px;
+}
+
+.auto-draw-card strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.auto-draw-card span {
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.cards-block.disabled {
+  opacity: 0.62;
+}
+
 .field {
   display: grid;
   gap: 8px;

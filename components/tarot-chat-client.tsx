@@ -33,6 +33,7 @@ export function TarotChatClient({
   const [mode, setMode] = useState<"gentle" | "direct" | "reflective">("gentle");
   const [cards, setCards] = useState<CardDraft[]>([EMPTY_CARD()]);
   const [debug, setDebug] = useState(false);
+  const [autoDraw, setAutoDraw] = useState(false);
   const [result, setResult] = useState<ChatApiResponse | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
@@ -74,8 +75,9 @@ export function TarotChatClient({
         method: "POST",
         body: JSON.stringify({
           question,
-          cards: activeCards,
+          cards: autoDraw ? [] : activeCards,
           mode,
+          autoDraw,
           debug: debugEnabled ? debug : false
         })
       });
@@ -155,13 +157,29 @@ export function TarotChatClient({
             ))}
           </div>
 
-          <div className="cards-block">
+          <label className="auto-draw-card">
+            <input
+              checked={autoDraw}
+              type="checkbox"
+              onChange={(event) => setAutoDraw(event.target.checked)}
+            />
+            <div>
+              <strong>沒有手邊的牌，請系統幫我選牌陣並抽牌</strong>
+              <span>系統會根據問題挑一個合適的牌陣，再自動抽牌作為這次解讀的起點。</span>
+            </div>
+          </label>
+
+          <div className={`cards-block${autoDraw ? " disabled" : ""}`}>
             <div className="cards-header">
               <div>
                 <h2>可選牌卡</h2>
-                <p>如果你已經抽牌，可以補上牌名、正逆位與位置。</p>
+                <p>
+                  {autoDraw
+                    ? "已改用自動抽牌。若想手動輸入，先取消上方快捷選項。"
+                    : "如果你已經抽牌，可以補上牌名、正逆位與位置。"}
+                </p>
               </div>
-              <button className="secondary-button" type="button" onClick={addCard}>
+              <button className="secondary-button" disabled={autoDraw} type="button" onClick={addCard}>
                 新增牌卡
               </button>
             </div>
@@ -173,6 +191,7 @@ export function TarotChatClient({
                   <input
                     list="tarot-card-options"
                     value={card.cardId}
+                    disabled={autoDraw}
                     onChange={(event) => updateCard(card.id, { cardId: event.target.value })}
                     placeholder="例如：cups-02"
                   />
@@ -182,6 +201,7 @@ export function TarotChatClient({
                   <span>方向</span>
                   <select
                     value={card.orientation}
+                    disabled={autoDraw}
                     onChange={(event) =>
                       updateCard(card.id, {
                         orientation: event.target.value as CardDraft["orientation"]
@@ -198,6 +218,7 @@ export function TarotChatClient({
                   <span>位置</span>
                   <input
                     value={card.position}
+                    disabled={autoDraw}
                     onChange={(event) => updateCard(card.id, { position: event.target.value })}
                     placeholder="例如：現況"
                   />
@@ -206,7 +227,7 @@ export function TarotChatClient({
                 <button
                   aria-label={`移除第 ${index + 1} 張牌`}
                   className="ghost-button"
-                  disabled={cards.length === 1}
+                  disabled={cards.length === 1 || autoDraw}
                   type="button"
                   onClick={() => removeCard(card.id)}
                 >
@@ -251,6 +272,28 @@ export function TarotChatClient({
               <h3>直接解讀</h3>
               <p>{result.answer}</p>
             </article>
+
+            {result.generatedReading ? (
+              <article className="sources-card">
+                <h3>這次自動抽到的牌陣</h3>
+                <p className="muted">
+                  <strong>{result.generatedReading.spreadTitle}</strong>
+                  {" · "}
+                  <code>{result.generatedReading.spreadId}</code>
+                </p>
+                <ul className="source-list">
+                  {result.generatedReading.cards.map((card) => (
+                    <li key={`${card.cardId}-${card.position}`}>
+                      <strong>{card.title}</strong>
+                      <span>
+                        {card.position ?? "未指定位置"} · {card.orientation === "reversed" ? "逆位" : "正位"}
+                      </span>
+                      <code>{card.cardId}</code>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ) : null}
 
             <article className="sources-card">
               <h3>來源摘要</h3>

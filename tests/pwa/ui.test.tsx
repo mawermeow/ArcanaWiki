@@ -145,3 +145,61 @@ test("UI shows error state when submit fails", async () => {
 
   restore();
 });
+
+test("auto draw option submits flag and renders generated reading", async () => {
+  const restore = installDom();
+  let seenBody = "";
+
+  const view = render(
+    <TarotChatClient
+      cardOptions={[{ cardId: "cups-02", title: "聖杯二（Two of Cups）" }]}
+      debugEnabled={false}
+      requestChat={async (payload) => {
+        seenBody = String(payload.body ?? "");
+        return new Response(
+          JSON.stringify({
+            answer: "先從關係裡最卡住的地方開始看。",
+            selectedSources: [],
+            generatedReading: {
+              spreadId: "spread-love-tree",
+              spreadTitle: "愛情樹牌陣",
+              cards: [
+                {
+                  cardId: "cups-02",
+                  title: "聖杯二（Two of Cups）",
+                  orientation: "reversed",
+                  position: "目前關係狀態"
+                }
+              ]
+            },
+            safety: {
+              answerValid: true,
+              citationErrors: []
+            }
+          }),
+          {
+            status: 200,
+            headers: {
+              "content-type": "application/json"
+            }
+          }
+        );
+      }}
+    />
+  );
+
+  fireEvent.change(view.getByLabelText("問題"), {
+    target: { value: "對方最近很冷淡，我該怎麼理解這段關係？" }
+  });
+  fireEvent.click(view.getByRole("checkbox"));
+  fireEvent.submit(view.container.querySelector("form") as HTMLFormElement);
+
+  await waitFor(() => {
+    assert.ok(view.getByText("愛情樹牌陣"));
+  });
+
+  assert.match(seenBody, /"autoDraw":true/);
+  assert.ok(view.getByText("目前關係狀態 · 逆位"));
+
+  restore();
+});
