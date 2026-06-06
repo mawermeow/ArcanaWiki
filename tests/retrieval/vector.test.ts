@@ -5,7 +5,11 @@ import { tmpdir } from "node:os";
 import path from "node:path";
 
 import { cosineSimilarity } from "../../lib/retrieval/cosine.ts";
-import { requireOpenAiApiKey } from "../../lib/retrieval/embedding-client.ts";
+import {
+  createEmbeddingBatches,
+  estimateEmbeddingTokens,
+  requireOpenAiApiKey
+} from "../../lib/retrieval/embedding-client.ts";
 import { writeVectorCache, readVectorCache } from "../../lib/retrieval/persistence.ts";
 import { searchVectorCache } from "../../lib/retrieval/vector-searcher.ts";
 import {
@@ -106,6 +110,22 @@ test("stale chunk detection marks missing cache entries", async () => {
 
 test("missing API key behavior is explicit", () => {
   assert.throws(() => requireOpenAiApiKey(""), /Missing OPENAI_API_KEY/);
+});
+
+test("embedding batches split large requests while preserving order", () => {
+  const texts = [
+    "短句",
+    "x".repeat(1200),
+    "另一段".repeat(200),
+    "最後一段"
+  ];
+  const batches = createEmbeddingBatches(texts, {
+    maxTokens: estimateEmbeddingTokens(texts[0]) + estimateEmbeddingTokens(texts[1]) + 10,
+    maxItems: 2
+  });
+
+  assert.equal(batches.length >= 2, true);
+  assert.deepEqual(batches.flat(), texts);
 });
 
 test("buildVectorCache reuses, generates, and preserves stale entries", async () => {
