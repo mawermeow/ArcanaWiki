@@ -21,11 +21,17 @@ async function getIndex() {
 
 test("中文 query finds emotional relationship material", async () => {
   const index = await getIndex();
-  const response = searchBm25Index(index, "對方最近很冷淡", { topK: 5 });
+  const response = searchBm25Index(index, "對方最近很冷淡", { topK: 8 });
   assert.ok(response.results.length > 0);
   assert.ok(
     response.results.some((result) =>
-      ["cups-queen", "cups-king", "major-18-moon", "swords-02"].includes(result.pageId)
+      [
+        "relationship-emotional-distance",
+        "cups-queen",
+        "cups-king",
+        "major-18-moon",
+        "swords-02"
+      ].includes(result.pageId)
     )
   );
 });
@@ -59,13 +65,18 @@ test("relationship query surfaces reunion-related pages", async () => {
 
 test("emotional query surfaces escape and withdrawal material", async () => {
   const index = await getIndex();
-  const response = searchBm25Index(index, "逃避", { topK: 5 });
+  const response = searchBm25Index(index, "逃避", { topK: 8 });
   assert.ok(response.results.length > 0);
   assert.ok(
     response.results.some((result) =>
-      ["major-09-hermit", "cups-08", "major-12-hanged-man", "swords-02", "swords-06"].includes(
-        result.pageId
-      )
+      [
+        "relationship-emotional-distance",
+        "major-09-hermit",
+        "cups-08",
+        "major-12-hanged-man",
+        "swords-02",
+        "swords-06"
+      ].includes(result.pageId)
     )
   );
 });

@@ -4,6 +4,14 @@ import { promises as fs } from "node:fs";
 import { normalizeText, splitKeywordLine, stripMarkdown, uniqueSorted } from "./normalizer.ts";
 import type { WikiHeading, WikiPage, WikiPageFrontmatter } from "./types.ts";
 
+const RETRIEVAL_WIKI_DIRECTORIES = new Set([
+  "cards",
+  "concepts",
+  "emotions",
+  "relationships",
+  "patterns"
+]);
+
 async function walkMarkdownFiles(rootDir: string): Promise<string[]> {
   const entries = await fs.readdir(rootDir, { withFileTypes: true });
   const files = await Promise.all(
@@ -118,10 +126,16 @@ function extractInlineKeywords(content: string): string[] {
   return uniqueSorted(splitKeywordLine(stripMarkdown(section)));
 }
 
+function isRetrievalWikiFile(filePath: string, wikiRoot: string): boolean {
+  const relativePath = path.relative(wikiRoot, filePath);
+  const [topLevelDirectory] = relativePath.split(path.sep);
+  return RETRIEVAL_WIKI_DIRECTORIES.has(topLevelDirectory ?? "");
+}
+
 export async function loadWikiPages(wikiRoot = "wiki"): Promise<WikiPage[]> {
-  const files = (await walkMarkdownFiles(wikiRoot)).sort((a, b) =>
-    a.localeCompare(b, "en")
-  );
+  const files = (await walkMarkdownFiles(wikiRoot))
+    .filter((filePath) => isRetrievalWikiFile(filePath, wikiRoot))
+    .sort((a, b) => a.localeCompare(b, "en"));
 
   const pages = await Promise.all(
     files.map(async (filePath) => {

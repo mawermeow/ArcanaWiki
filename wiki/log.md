@@ -30,3 +30,15 @@
 - Updated: 愚人（The Fool）至星幣國王（King of Pentacles）全牌組
 
 ## [2026-06-06] ingest | 塔羅牌陣（16 種）
+
+## [2026-06-06] authoring | 公開 wiki 初版概念／情緒／關係頁
+- Added: `wiki/concepts/new-beginnings.md`
+- Added: `wiki/concepts/balance-and-boundaries.md`
+- Added: `wiki/concepts/transformation-and-release.md`
+- Added: `wiki/emotions/anxiety-and-overthinking.md`
+- Added: `wiki/emotions/grief-and-loss.md`
+- Added: `wiki/emotions/hope-and-healing.md`
+- Added: `wiki/relationships/trust-and-honesty.md`
+- Added: `wiki/relationships/emotional-distance.md`
+- Added: `wiki/relationships/commitment-and-readiness.md`
+- Updated: `wiki/index.md`

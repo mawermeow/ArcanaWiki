@@ -85,6 +85,36 @@
 | [星幣王后（Queen of Pentacles）](cards/pentacles-queen.md) | 務實滋養與富足照顧；溫暖理財。 | 2026-06-06 |
 | [星幣國王（King of Pentacles）](cards/pentacles-king.md) | 物質成功穩健領導；豐盛與責任並行。 | 2026-06-06 |
 
+## concepts
+
+塔羅概念頁：將多張牌共同指向的主題整理為可瀏覽、可交叉引用的知識頁。
+
+| Article | Summary | Updated |
+|---------|---------|---------|
+| [新開始與冒險](concepts/new-beginnings.md) | 當牌面反覆出現起點、躍遷、嘗試與未知時，提醒同時看見自由、風險與責任。 | 2026-06-06 |
+| [平衡與界線](concepts/balance-and-boundaries.md) | 平衡不是永遠中立，而是在不同需求與責任之間找到不讓自己失真的位置。 | 2026-06-06 |
+| [轉化與放下](concepts/transformation-and-release.md) | 有些結束不是失敗，而是舊結構不再適合現在的你。 | 2026-06-06 |
+
+## emotions
+
+塔羅情緒頁：整理常見情緒狀態，協助把牌義與當下感受更精確地連接起來。
+
+| Article | Summary | Updated |
+|---------|---------|---------|
+| [焦慮與過度思考](emotions/anxiety-and-overthinking.md) | 當情緒被擔憂與反覆推演佔滿時，提醒回到事實、節奏與可承受的下一步。 | 2026-06-06 |
+| [失落與哀傷](emotions/grief-and-loss.md) | 哀傷可能來自關係結束、期待破滅，或對過往版本自己的告別。 | 2026-06-06 |
+| [希望與療癒](emotions/hope-and-healing.md) | 希望不是否認痛苦，而是在混亂後仍願意相信自己能慢慢回暖。 | 2026-06-06 |
+
+## relationships
+
+關係模式頁：整理常見關係議題，讓使用者閱讀時不只看單張牌，也能理解互動結構。
+
+| Article | Summary | Updated |
+|---------|---------|---------|
+| [信任與坦誠](relationships/trust-and-honesty.md) | 信任是在誠實、穩定與可回應的互動裡逐步形成的安全感。 | 2026-06-06 |
+| [情感距離與退縮](relationships/emotional-distance.md) | 冷淡不一定等於沒有感情，也可能是防衛、疲憊或不知道如何說清楚。 | 2026-06-06 |
+| [承諾感與準備程度](relationships/commitment-and-readiness.md) | 關係能否往前，不只看吸引，也看雙方是否能承擔靠近後的現實。 | 2026-06-06 |
+
 ## patterns
 
 塔羅牌陣：佈局、適用範圍與解讀模式。
