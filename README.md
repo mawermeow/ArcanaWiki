@@ -1,58 +1,193 @@
 # ArcanaWiki
 
-Tarot LLM Wiki + retrieval playground。知識來源目前以 `wiki/` 為主，索引與 diagnostics 皆維持本地檔案。
+以 Karpathy-style LLM Wiki 管理的塔羅知識庫，搭配 Hybrid BM25 + Vector Search 檢索 compiled wiki，
+再交給 LLM 產生可引用、可追溯、非宿命論的塔羅解讀。目前以 Next.js PWA 為主要入口，適合自用或小範圍測試；
+索引與 diagnostics 皆以本地 JSON 檔案為主，不依赖 Postgres / pgvector / OpenSearch。
 
-## Retrieval
+## 目前範圍
 
-目前 retrieval 包含：
+- 以 `wiki/**/*.md` 作為 runtime 主要知識來源（compiled knowledge layer）。
+- 以 `raw/` 保存原始資料；wiki compile 與 runtime chat 分離。
+- 建立 deterministic BM25 index：`embeddings/bm25-index.json`。
+- 建立 incremental vector cache：`embeddings/vector-cache.json`。
+- 使用 `relations/graph.json` 做 graph expansion。
+- Hybrid retrieval：BM25 + vector + graph merge / rerank / dedupe。
+- Answer pipeline：prompt builder → OpenAI Chat API → citation validation → safety validation。
+- PWA 問答：`/` 提供問題輸入、手動選牌、自動抽牌陣、模式切換、回答與來源摘要。
+- 公開 Wiki：`/wiki`、`/wiki/[category]/[pageId]`，只顯示 public-safe 內容。
+- Chat API：`POST /api/chat`。
+- Developer retrieval inspector：`/dev/retrieval`（僅在 `TAROT_DEBUG_RETRIEVAL=true` 時可用）。
+- CLI：BM25 / vector / hybrid search、answer generation、retrieval eval、inspector reports。
 
-- 語言與 runtime：NodeJS + TypeScript
-- 索引來源：`wiki/**/*.md`
-- 索引輸出：`embeddings/bm25-index.json`
-- vector cache：`embeddings/vector-cache.json`
-- relations graph：`relations/graph.json`
-- evaluation dataset：`eval/retrieval/bm25-evaluation-dataset.json`
-- evaluation reports：`reports/bm25-eval.json`、`reports/bm25-summary.md`
-- vector reports：`reports/vector-eval.json`、`reports/vector-summary.md`
-- hybrid reports：`reports/hybrid-eval.json`、`reports/hybrid-summary.md`
-- inspector reports：`reports/inspector/latest-query.md`、`reports/inspector/latest-query.json`、`reports/inspector/retrieval-eval-inspection.md`、`reports/inspector/retrieval-eval-inspection.json`
-- inspector output：`debug/retrieval/latest-search.json`、`debug/retrieval/eval-traces.json`、`debug/retrieval/latest-vector-search.json`、`debug/retrieval/latest-hybrid-search.json`
+尚未包含：LINE Bot runtime、streaming chat、Postgres、外部 vector DB、LLM reranker、正式帳號系統。
 
-### Commands
+## 建議設定
+
+目前 MVP 的預設方向：
+
+- Embedding model：`text-embedding-3-small`
+- Chat model：`gpt-4.1-mini`（可由 `OPENAI_CHAT_MODEL` 覆寫）
+- Retrieval strategy：`hybrid`
+- Final context topK：預設 5 到 8 個 wiki chunks
+- Hybrid weights：`bm25=0.45`、`vector=0.55`、`graph=0.15`
+- Secrets：建議用 direnv 從 repo 外部載入，不要提交 `.env`
+
+更完整的模組說明見 [docs/retrieval-architecture.md](docs/retrieval-architecture.md)。
+
+## 快速開始
+
+前置需求：Node.js、pnpm、OpenAI API key（answer / live vector query 需要）。
 
 ```bash
-pnpm answer -- "聖杯二逆位，對方最近很冷淡，這段關係還有希望嗎？"
+pnpm install
 pnpm index:bm25
 pnpm index:vector
-pnpm search:bm25 -- --query="聖杯二逆位"
-pnpm search:vector -- "對方最近很冷淡" --live-query-embedding
-pnpm search:hybrid -- "聖杯二逆位 感情"
-pnpm inspect:retrieval -- "對方最近很冷淡"
-pnpm inspect:retrieval:eval
-pnpm eval:bm25
-pnpm eval:vector
-pnpm eval:hybrid
-pnpm eval:hybrid -- --live-query-embedding
 pnpm dev
-pnpm build
-pnpm test:wiki
-pnpm test:pwa
-pnpm test:answer
-pnpm test
 ```
 
-## PWA
+開啟 `http://localhost:3000` 使用 PWA 問答；公開 wiki 在 `http://localhost:3000/wiki`。
 
-- runtime：Next.js App Router + TypeScript
-- user entry：`/`
-- public wiki：`/wiki`、`/wiki/[category]/[pageId]`
-- chat API：`POST /api/chat`
-- developer retrieval inspector：`/dev/retrieval`，僅在 `TAROT_DEBUG_RETRIEVAL=true` 時可用
-- PWA assets：`public/manifest.webmanifest`、`app/icon.svg`
+若本機 secrets 放在 repo 外，可參考 AGENTS.md 使用 direnv：
 
-### Public Wiki
+```bash
+# .envrc
+source_env_if_exists ~/Secrets/ArcanaWiki/dev.env
+```
 
-- public loader：`lib/wiki-public/`
+先做一次 CLI smoke test：
+
+```bash
+pnpm search:hybrid -- "聖杯二逆位 感情"
+pnpm answer -- "聖杯二逆位，對方最近很冷淡，這段關係還有希望嗎？"
+```
+
+## 常用指令
+
+| 任務 | 指令 |
+| --- | --- |
+| 安裝依賴 | `pnpm install` |
+| 啟動開發伺服器 | `pnpm dev` |
+| 建置 production app | `pnpm build` |
+| 啟動 production app | `pnpm start` |
+| 建立 BM25 index | `pnpm index:bm25` |
+| 建立 vector cache | `pnpm index:vector` |
+| BM25 搜尋 | `pnpm search:bm25 -- --query="聖杯二逆位"` |
+| Vector 搜尋 | `pnpm search:vector -- "對方最近很冷淡" --live-query-embedding` |
+| Hybrid 搜尋 | `pnpm search:hybrid -- "聖杯二逆位 感情"` |
+| 產生塔羅解讀 | `pnpm answer -- "聖杯二逆位，對方最近很冷淡，這段關係還有希望嗎？"` |
+| 檢視單次 retrieval | `pnpm inspect:retrieval -- "對方最近很冷淡"` |
+| 檢視 eval retrieval | `pnpm inspect:retrieval:eval` |
+| BM25 eval | `pnpm eval:bm25` |
+| Vector eval | `pnpm eval:vector` |
+| Hybrid eval（離線） | `pnpm eval:hybrid` |
+| Hybrid eval（live embedding） | `pnpm eval:hybrid -- --live-query-embedding` |
+| Typecheck | `pnpm typecheck` |
+| Wiki 測試 | `pnpm test:wiki` |
+| Retrieval 測試 | `pnpm test:retrieval` |
+| Answer 測試 | `pnpm test:answer` |
+| PWA 測試 | `pnpm test:pwa` |
+| 全部測試 | `pnpm test` |
+
+## 設定
+
+環境變數不強制使用 `TAROT_` 前綴以外的統一命名，但下列項目最常用。
+
+回答與 embedding 必備（live answer / live query embedding）：
+
+- `OPENAI_API_KEY`
+- `OPENAI_CHAT_MODEL`
+- `OPENAI_EMBEDDING_MODEL`
+- `OPENAI_REQUEST_TIMEOUT_SECONDS`
+- `OPENAI_MAX_RETRIES`
+- `OPENAI_CHAT_MAX_COMPLETION_TOKENS`
+
+Retrieval 相關：
+
+- `TAROT_DEBUG_RETRIEVAL=true`：允許 PWA / dev page 回傳 diagnostics
+- `TAROT_BM25_TOP_K`
+- `TAROT_VECTOR_TOP_K`
+- `TAROT_FINAL_CONTEXT_TOP_K`
+- `TAROT_APP_MODE=local`
+
+LINE Bot（規劃中，尚未接 runtime）：
+
+- `LINE_CHANNEL_ACCESS_TOKEN`
+- `LINE_CHANNEL_SECRET`
+- `LINE_ALLOWED_USER_IDS`
+
+請勿提交 `.env`、OpenAI key、LINE secrets、embedding cache 中的敏感資料，也不要把私人占卜紀錄或 LINE userId 寫進 git。
+
+## 資料流程
+
+```text
+raw/
+  -> wiki compile / 人工維護 wiki/
+  -> chunking + tokenizer
+  -> embeddings/bm25-index.json
+  -> embeddings/vector-cache.json
+  -> relations/graph.json
+
+user question (+ optional cards / spread / autoDraw)
+  -> hybrid retrieval
+  -> select 5..8 wiki chunks
+  -> prompt builder
+  -> OpenAI Chat API
+  -> citation validation
+  -> safety validation
+  -> answer + selectedSources (+ optional diagnostics)
+```
+
+Public Wiki 是另一條只讀流程：直接讀 `wiki/**/*.md`，清洗 internal-only 欄位後渲染 HTML，
+不讀 `embeddings/`、`relations/graph.json` 或 answer diagnostics。
+
+## API 介面
+
+使用者面向：
+
+- `POST /api/chat`
+  - request：`question`、optional `cards[]`、optional `spreadId`、optional `mode`、optional `autoDraw`、optional `debug`
+  - response：`answer`、`selectedSources[]`、`safety`、optional `generatedReading`、optional `diagnostics`
+
+頁面路由：
+
+- `/`：Tarot PWA
+- `/wiki`：公開 wiki 列表
+- `/wiki/[category]/[pageId]`：公開 wiki 內容頁
+- `/dev/retrieval`：developer retrieval inspector（需 `TAROT_DEBUG_RETRIEVAL=true`）
+
+PWA 資產：
+
+- `app/icon.svg`：瀏覽器 favicon
+- `public/brand-mark.svg`：頁面 logo / manifest icon
+- `public/manifest.webmanifest`
+
+## 檢索與回答品質
+
+Hybrid retrieval 會保留 diagnostics，例如：
+
+- BM25 / vector / graph topK
+- normalized scores
+- merged / rejected / final results
+- selected wiki chunks
+- graph-expanded chunks
+
+Chat 回應的 `safety` 會暴露：
+
+- `answerValid`
+- `citationErrors`
+- optional `cannotConfirmReason`
+
+Citation 規則：
+
+- 回答中的引用格式固定為 `[來源: pageId#chunkId]`
+- 只能引用 selected sources
+- 若 citation 無效或 context 不足，回傳保守 fallback，而不是輸出可能幻覺的內容
+
+`diagnostics` 只有在 `debug=true` 且 `TAROT_DEBUG_RETRIEVAL=true` 時才會回傳；一般使用者不應看到 raw prompt、完整 retrieval scores 或 internal stack trace。
+
+## 公開 Wiki
+
+- loader：`lib/wiki-public/`
 - source：直接讀取 `wiki/**/*.md`
 - scope：只輸出 public-safe wiki page data，不建立 CMS、不引入資料庫
 - render support：
@@ -62,166 +197,41 @@ pnpm test
   - blockquotes
   - tables
   - internal wiki links，例如 `[[major-00-fool]]`
+  - 牌卡連結會附縮圖；相關牌卡清單以等寬 grid 顯示
 - safety boundaries：
   - 不顯示 `source_refs`、`raw_refs`、raw file paths、retrieval diagnostics、prompt hints、embeddings、graph score、lint comments
   - `<!-- internal --> ... <!-- /internal -->` 區塊不會對外顯示
-  - Public Wiki 只讀 compiled wiki，不讀 `embeddings/`、`relations/graph.json`、answer diagnostics
 
-### Chat API Contract
+## 測試
 
-- request：
-  - `question`
-  - `cards[]` with `cardId`, optional `orientation`, optional `position`
-  - optional `mode`
-  - optional `debug`
-- response：
-  - `answer`
-  - `selectedSources[]` with `pageId`, `title`, `sectionTitle`
-  - `safety`
-  - `diagnostics` 只有在 `debug=true` 且 `TAROT_DEBUG_RETRIEVAL=true` 時才會回傳
+開發時可先跑 focused tests，完成較大改動後再跑較廣的驗證：
 
-### UX Boundaries
-
-- 一般使用者只會看到回答與來源摘要，不會看到 raw prompt、full diagnostics、internal stack trace。
-- source summary 只顯示 `page title`、`section title`、`page id`。
-- 若沒有 selected sources，介面只顯示保守 fallback，不顯示內部 chunk 內容。
-
-## Answer Generation
-
-- module path：`lib/answer/`
-- scope：只處理 `Hybrid Retrieval -> Prompt Builder -> OpenAI Answer -> Citation Validation`
-- 不建立 LINE Bot、不建立 PWA UI、不做 streaming response
-- public API：`answerTarotQuestion(request)`
-- CLI：
-  - `pnpm answer -- "聖杯二逆位，對方最近很冷淡，這段關係還有希望嗎？"`
-  - `pnpm answer -- --debug "聖杯二逆位，對方最近很冷淡，這段關係還有希望嗎？"`
-
-### Pipeline
-
-```txt
-request
--> hybrid retrieval
--> select 5..8 wiki chunks
--> build prompt with SYSTEM / DEVELOPER / USER layers
--> call OpenAI Chat API
--> validate citations
--> validate safety language
--> return answer / fallback / diagnostics
+```bash
+pnpm test:retrieval
+pnpm test:answer
+pnpm test:pwa
+pnpm test:wiki
+pnpm test
+pnpm typecheck
+pnpm build
 ```
 
-### Environment
+Retrieval / answer 相關測試會使用 repo 內的 fixtures 與 `embeddings/` artifacts；若你更新了 wiki 內容，通常需要重建 index 後再跑 eval。
 
-- `OPENAI_API_KEY`
-- `OPENAI_CHAT_MODEL`
-- `OPENAI_REQUEST_TIMEOUT_SECONDS`
-- `OPENAI_MAX_RETRIES`
-- `OPENAI_CHAT_MAX_COMPLETION_TOKENS`
+## 邊界與部署備註
 
-### Citation Contract
+- 這不是命運預言系統，也不是心理診斷工具。
+- 解讀語氣應溫和、克制、可反思，避免醫療 / 法律 / 財務斷言。
+- MVP 以檔案型 wiki、BM25 JSON index、vector cache JSON 為主，適合小型、可控範疇的塔羅知識庫。
+- 目前沒有 Docker Compose / 正式 deploy checklist；若要上線，至少需要：
+  - 保護 `OPENAI_API_KEY`
+  - 關閉公開 debug retrieval
+  - 確認 `embeddings/` 與 `wiki/` 版本一致
+  - 規劃 index 重建流程
 
-- answer 中的引用格式固定為 `[來源: pageId#chunkId]`
-- cited source 必須存在於 selected sources
-- 若 citation 缺失或無效，pipeline 會回傳安全 fallback，而不是輸出可能幻覺內容
+後續 hardened backlog 優先順序見 [AGENTS.md](AGENTS.md)，包括 LINE allowlist、OpenAI budget guard、PWA auth、answer quality eval dataset 等。
 
-### Safety Notes
+## 相關文件
 
-- answer 只能根據 selected wiki context 解讀
-- 不可對醫療、法律、財務、自傷、暴力做斷言
-- 不可聲稱知道對方真實想法
-- 不可提供操控、監控、報復、測試對方的建議
-- 若 context 不足，必須明確回覆目前資料不足
-
-### Retrieval Inspector
-
-- module path：`lib/retrieval-inspector/`
-- scope：只做 developer diagnostics，不接正式 chat response、不接 LINE Bot
-- single query output：
-  - `reports/inspector/latest-query.md`
-  - `reports/inspector/latest-query.json`
-- eval output：
-  - `reports/inspector/retrieval-eval-inspection.md`
-  - `reports/inspector/retrieval-eval-inspection.json`
-- `inspect:retrieval` 會輸出：
-  - query / tokenized query
-  - BM25 / Vector / Hybrid / Graph-expanded results
-  - rejected results
-  - score breakdown / matched terms
-  - selected chunk previews
-  - possible issues
-- `inspect:retrieval:eval` 會輸出：
-  - expected cards / topics / keywords
-  - BM25 / Vector / Hybrid hit status
-  - top1 / top3 / top5 comparison
-  - failure cases and likely causes
-- vector mode：
-  - 預設 `auto`
-  - 若有 `OPENAI_API_KEY`，會嘗試做 query embedding 以檢查 vector / hybrid
-  - 若沒有 API key，會退回離線模式，report 仍會保留 vector unavailable diagnostics
-  - 可顯式使用 `--live-query-embedding` 或 `--offline`
-
-### Chunking Strategy
-
-- 以 markdown headings 為主，不做固定字數切塊。
-- `情境解讀` 會再拆成 `感情 / 工作 / 自我探索 / 靈性` 子 chunk。
-- 每個 chunk 都有穩定 `chunkId`、`pageId`、`sectionTitle`。
-
-### Tokenizer Strategy
-
-- 保留中英文混合 query。
-- 優先保護 tarot phrases，如 `女祭司`、`聖杯二逆位`、`The Hermit`、`reversed`。
-- 不做 aggressive normalization，也不做 stemming。
-
-### Vector Cache Strategy
-
-- `index:vector` 會沿用現有 wiki chunks，對每個 chunk 產生 embedding text 與 `contentHash`。
-- 若 `chunkId + contentHash + embeddingModel` 都沒變，會 reuse 舊 embedding。
-- 若 chunk 內容改變，才會重新呼叫 OpenAI embeddings API。
-- 若 chunk 已不存在，cache entry 會標記為 `stale: true`，search 會自動忽略。
-- `search:vector` 預設不打 OpenAI API；需要加 `--live-query-embedding` 才會對 query 做 live embedding。
-
-### Hybrid Retrieval
-
-- public API：`searchWikiHybrid(query, options?)`
-- pipeline：`BM25 topK -> Vector topK -> normalization -> merge -> dedupe -> rerank -> optional graph expansion -> final topK`
-- default weights：`bm25=0.45`、`vector=0.55`、`graph=0.15`
-- rerank signals：
-  - normalized BM25 / vector / graph score
-  - exact card match
-  - exact orientation match
-  - topic / tag match
-  - query keyword overlap
-  - graph relation boost
-- graph expansion：
-  - 只從 merged top results 展開
-  - 最多 1 hop
-  - 預設最多補 3 個 graph results
-  - graph-only results 不會排在 direct BM25/vector 命中之前
-- diagnostics：
-  - bm25 results
-  - vector results
-  - normalized scores
-  - merged results
-  - graph expanded results
-  - rejected results
-  - final results
-  - weights / topK / timing
-
-### Hybrid Evaluation
-
-- `pnpm eval:hybrid` 預設為離線模式。
-- 離線模式不會替 evaluation queries 產生新的 embeddings，因此不會打 embedding API。
-- 離線模式主要用來檢查：
-  - BM25 + graph merge/rerank 是否穩定
-  - diagnostics / report 輸出格式是否正確
-- 如果要評估真正的 hybrid `BM25 + vector + graph` 效果，必須明確執行：
-  - `pnpm eval:hybrid -- --live-query-embedding`
-- `--live-query-embedding` 會對 evaluation dataset 中的每個 query 做 embedding，因此需要：
-  - `OPENAI_API_KEY`
-  - 可用的 embedding API 網路環境
-- 小型測試專案通常先跑 `search:hybrid` spot checks，加上 `pnpm test:retrieval` 就足夠；不一定需要先跑 live `eval:hybrid`。
-
-### Boundaries
-
-- 不使用 LLM reranker。
-- 不引入 OpenSearch、PostgreSQL、pgvector、graph DB。
-- 此階段只處理 `BM25 + Vector + Graph -> Hybrid Retrieval -> Rerank`。
+- [AGENTS.md](AGENTS.md)：Agent / 開發規則、資料契約、測試期待
+- [docs/retrieval-architecture.md](docs/retrieval-architecture.md)：retrieval / answer / PWA 模組說明
