@@ -1,0 +1,316 @@
+{
+  "generatedAt": "2026-06-06",
+  "source": "current wiki pages under wiki/cards and wiki/patterns",
+  "categories": {
+    "感情問題": [
+      {
+        "query": "我們現在有好感，但關係一直停在曖昧沒有進展，該怎麼理解？",
+        "expected_topics": ["感情", "曖昧", "關係進展", "溝通"],
+        "expected_cards": ["cups-02", "cups-page", "major-06-lovers"],
+        "expected_keywords": ["曖昧", "好感", "連結", "關係進展", "溝通"]
+      },
+      {
+        "query": "分手後我還放不下，想知道這段關係還有沒有重新開始的可能。",
+        "expected_topics": ["感情", "復合", "放不下", "重啟"],
+        "expected_cards": ["cups-05", "cups-06", "major-20-judgement"],
+        "expected_keywords": ["分手", "復合", "懷舊", "放不下", "重新開始"]
+      },
+      {
+        "query": "對方最近忽冷忽熱，我很難判斷他是真心還是只是情緒化。",
+        "expected_topics": ["感情", "不確定", "情緒", "判斷"],
+        "expected_cards": ["major-18-moon", "cups-knight", "swords-02"],
+        "expected_keywords": ["忽冷忽熱", "真心", "情緒化", "不確定", "判斷"]
+      },
+      {
+        "query": "我在關係裡總是付出太多，最後反而覺得很累，這代表什麼？",
+        "expected_topics": ["感情", "界線", "過度付出", "疲憊"],
+        "expected_cards": ["cups-queen", "major-15-devil", "major-08-strength"],
+        "expected_keywords": ["付出太多", "界線", "疲憊", "依賴", "照顧"]
+      },
+      {
+        "query": "這段關係讓我越來越消耗，我是不是應該離開？",
+        "expected_topics": ["感情", "離開", "消耗", "轉化"],
+        "expected_cards": ["cups-08", "major-13-death", "major-15-devil"],
+        "expected_keywords": ["離開", "消耗", "放手", "束縛", "轉化"]
+      },
+      {
+        "query": "如果我想要的是長期穩定和家庭感，現在應該看什麼訊號？",
+        "expected_topics": ["感情", "長期承諾", "家庭", "穩定"],
+        "expected_cards": ["cups-10", "pentacles-10", "major-04-emperor"],
+        "expected_keywords": ["長期", "穩定", "家庭", "承諾", "根基"]
+      },
+      {
+        "query": "我們遠距離後誤會變多，總是講不清楚，這段關係卡在哪裡？",
+        "expected_topics": ["感情", "遠距離", "誤會", "溝通"],
+        "expected_cards": ["swords-01", "swords-page", "cups-02"],
+        "expected_keywords": ["遠距離", "誤會", "講不清楚", "溝通", "關係"]
+      },
+      {
+        "query": "我夾在兩個對象之間，不知道該選誰，怎麼看比較清楚？",
+        "expected_topics": ["感情", "選擇", "價值對齊", "兩難"],
+        "expected_cards": ["major-06-lovers", "swords-02", "swords-03"],
+        "expected_keywords": ["兩個對象", "選擇", "兩難", "價值", "心碎"]
+      },
+      {
+        "query": "我在感情裡很沒有安全感，常常怕自己不被愛。",
+        "expected_topics": ["感情", "安全感", "自我價值", "依附"],
+        "expected_cards": ["major-18-moon", "cups-queen", "pentacles-02"],
+        "expected_keywords": ["安全感", "不被愛", "焦慮", "依附", "失衡"]
+      },
+      {
+        "query": "這段關係現在比較像新開始，還是只是短暫心動？",
+        "expected_topics": ["感情", "新開始", "心動", "關係定義"],
+        "expected_cards": ["major-00-fool", "cups-01", "cups-page"],
+        "expected_keywords": ["新開始", "心動", "關係定義", "萌芽", "好感"]
+      }
+    ],
+    "工作問題": [
+      {
+        "query": "我準備開啟新專案，但不知道自己手上的資源夠不夠。",
+        "expected_topics": ["工作", "新專案", "資源", "行動"],
+        "expected_cards": ["major-01-magician", "wands-01", "pentacles-01"],
+        "expected_keywords": ["新專案", "資源", "準備", "行動", "啟動"]
+      },
+      {
+        "query": "我想轉職，可是又很怕離開熟悉環境後會後悔。",
+        "expected_topics": ["工作", "轉職", "變動", "新開始"],
+        "expected_cards": ["major-13-death", "major-00-fool", "wands-02"],
+        "expected_keywords": ["轉職", "變動", "離開", "新開始", "規劃"]
+      },
+      {
+        "query": "團隊合作一直卡住，大家各做各的，專案很難往前。",
+        "expected_topics": ["工作", "團隊協作", "衝突", "專案停滯"],
+        "expected_cards": ["pentacles-03", "swords-05", "major-11-justice"],
+        "expected_keywords": ["團隊", "合作", "卡住", "專案", "協作"]
+      },
+      {
+        "query": "工作量太重，我覺得快撐不住了，但又不敢停下來。",
+        "expected_topics": ["工作", "過勞", "壓力", "負擔"],
+        "expected_cards": ["wands-10", "major-08-strength", "pentacles-07"],
+        "expected_keywords": ["工作量", "撐不住", "壓力", "負擔", "堅持"]
+      },
+      {
+        "query": "我最近有機會被看見或升遷，想知道這是不是一個好的時機。",
+        "expected_topics": ["工作", "升遷", "曝光", "成功時機"],
+        "expected_cards": ["wands-06", "major-19-sun", "major-10-wheel-of-fortune"],
+        "expected_keywords": ["升遷", "被看見", "時機", "成功", "認可"]
+      },
+      {
+        "query": "現在的職場文化讓我很窒息，好像大家都被權力和恐懼綁住。",
+        "expected_topics": ["工作", "有毒文化", "控制", "壓抑"],
+        "expected_cards": ["major-15-devil", "major-16-tower", "swords-05"],
+        "expected_keywords": ["職場文化", "窒息", "權力", "恐懼", "控制"]
+      },
+      {
+        "query": "我同時要處理很多任務，整個節奏很亂，怎樣才算有效平衡？",
+        "expected_topics": ["工作", "多工", "平衡", "節奏"],
+        "expected_cards": ["pentacles-02", "wands-08", "major-07-chariot"],
+        "expected_keywords": ["很多任務", "平衡", "多工", "節奏", "調度"]
+      },
+      {
+        "query": "我想把專業能力練扎實，現在應該更重視學習還是直接上場？",
+        "expected_topics": ["工作", "技能養成", "學習", "實作"],
+        "expected_cards": ["pentacles-08", "pentacles-page", "major-01-magician"],
+        "expected_keywords": ["專業能力", "學習", "技能", "實作", "精進"]
+      },
+      {
+        "query": "最近公司狀況不好，我很怕失業或計畫突然被砍掉。",
+        "expected_topics": ["工作", "不穩定", "失業焦慮", "終局感"],
+        "expected_cards": ["pentacles-05", "swords-10", "major-10-wheel-of-fortune"],
+        "expected_keywords": ["公司狀況不好", "失業", "焦慮", "計畫被砍", "不穩定"]
+      },
+      {
+        "query": "我在兩個工作選擇之間搖擺，一個穩定一個有發展，該怎麼看？",
+        "expected_topics": ["工作", "選擇", "穩定", "發展"],
+        "expected_cards": ["swords-02", "major-06-lovers", "major-11-justice"],
+        "expected_keywords": ["兩個工作", "選擇", "穩定", "發展", "搖擺"]
+      }
+    ],
+    "自我探索": [
+      {
+        "query": "我最近很迷惘，不知道自己真正想要的是什麼。",
+        "expected_topics": ["自我探索", "迷惘", "內在需求", "方向"],
+        "expected_cards": ["major-09-hermit", "major-18-moon", "cups-07"],
+        "expected_keywords": ["迷惘", "真正想要", "方向", "內在", "選項"]
+      },
+      {
+        "query": "我想重新開始一段人生階段，但又不知道該從哪裡踏出第一步。",
+        "expected_topics": ["自我探索", "新開始", "起步", "行動"],
+        "expected_cards": ["major-00-fool", "major-01-magician", "major-20-judgement"],
+        "expected_keywords": ["重新開始", "第一步", "人生階段", "起步", "行動"]
+      },
+      {
+        "query": "我總是在關係和選擇裡重複同樣的模式，該怎麼理解這件事？",
+        "expected_topics": ["自我探索", "重複模式", "選擇", "因果"],
+        "expected_cards": ["major-06-lovers", "major-11-justice", "major-12-hanged-man"],
+        "expected_keywords": ["重複模式", "選擇", "同樣的模式", "因果", "關係"]
+      },
+      {
+        "query": "我知道應該走出去，但每次要離開舒適圈就退縮。",
+        "expected_topics": ["自我探索", "舒適圈", "勇氣", "前進"],
+        "expected_cards": ["wands-02", "major-07-chariot", "major-08-strength"],
+        "expected_keywords": ["舒適圈", "退縮", "勇氣", "前進", "規劃"]
+      },
+      {
+        "query": "我正在學著放下舊的身份認同，這種過程為什麼這麼不舒服？",
+        "expected_topics": ["自我探索", "身份轉化", "放下", "過渡"],
+        "expected_cards": ["major-13-death", "major-12-hanged-man", "major-14-temperance"],
+        "expected_keywords": ["身份認同", "放下", "轉化", "不舒服", "過渡"]
+      },
+      {
+        "query": "我很想自由，但又需要規律和結構，這兩件事能不能並存？",
+        "expected_topics": ["自我探索", "自由", "結構", "平衡"],
+        "expected_cards": ["major-00-fool", "major-04-emperor", "major-14-temperance"],
+        "expected_keywords": ["自由", "規律", "結構", "並存", "平衡"]
+      },
+      {
+        "query": "我常常懷疑自己沒有能力做好想做的事，怎麼看這種自我懷疑？",
+        "expected_topics": ["自我探索", "自我懷疑", "能力感", "信心"],
+        "expected_cards": ["major-01-magician", "major-08-strength", "major-17-star"],
+        "expected_keywords": ["自我懷疑", "能力", "信心", "做好", "才華"]
+      },
+      {
+        "query": "我發現自己很會分析，但很難感受內心，這代表我失衡了嗎？",
+        "expected_topics": ["自我探索", "理性與感受", "失衡", "內在連結"],
+        "expected_cards": ["swords-queen", "cups-queen", "major-02-high-priestess"],
+        "expected_keywords": ["分析", "感受內心", "失衡", "理性", "直覺"]
+      },
+      {
+        "query": "我想找到適合自己的生活節奏，而不是一直被外界推著走。",
+        "expected_topics": ["自我探索", "生活節奏", "耐心", "內在步調"],
+        "expected_cards": ["major-09-hermit", "major-14-temperance", "pentacles-07"],
+        "expected_keywords": ["生活節奏", "外界推著走", "耐心", "步調", "內在"]
+      },
+      {
+        "query": "我剛結束一段很耗能的階段，現在想知道下一步要怎麼整合自己。",
+        "expected_topics": ["自我探索", "整合", "階段完成", "重啟"],
+        "expected_cards": ["major-21-world", "major-00-fool", "major-17-star"],
+        "expected_keywords": ["耗能", "下一步", "整合", "階段完成", "重啟"]
+      }
+    ],
+    "情緒困惑": [
+      {
+        "query": "我最近一直失眠，腦中反覆想最壞的結果，完全停不下來。",
+        "expected_topics": ["情緒困惑", "焦慮", "失眠", "過度思考"],
+        "expected_cards": ["swords-09", "major-18-moon", "swords-08"],
+        "expected_keywords": ["失眠", "最壞的結果", "停不下來", "焦慮", "腦中反覆"]
+      },
+      {
+        "query": "心裡那種被刺到的痛一直還在，我知道事情過了但還是很受傷。",
+        "expected_topics": ["情緒困惑", "心碎", "受傷", "療癒"],
+        "expected_cards": ["swords-03", "cups-05", "major-17-star"],
+        "expected_keywords": ["很受傷", "心痛", "心碎", "療癒", "過了但還在"]
+      },
+      {
+        "query": "我不是特別難過，但整個人很麻木，對很多事都提不起勁。",
+        "expected_topics": ["情緒困惑", "麻木", "倦怠", "內省"],
+        "expected_cards": ["cups-04", "major-09-hermit", "swords-04"],
+        "expected_keywords": ["麻木", "提不起勁", "倦怠", "內省", "休養"]
+      },
+      {
+        "query": "我明明知道該放手，卻還是一直被同樣的人或情緒綁住。",
+        "expected_topics": ["情緒困惑", "放手困難", "束縛", "依附"],
+        "expected_cards": ["major-15-devil", "major-13-death", "major-12-hanged-man"],
+        "expected_keywords": ["放手", "綁住", "同樣的人", "依附", "束縛"]
+      },
+      {
+        "query": "我腦中有太多可能性，越想越亂，反而不知道怎麼做決定。",
+        "expected_topics": ["情緒困惑", "混亂", "選項過多", "決定困難"],
+        "expected_cards": ["cups-07", "major-18-moon", "swords-02"],
+        "expected_keywords": ["太多可能性", "越想越亂", "做決定", "幻想", "不確定"]
+      },
+      {
+        "query": "我最近很容易被小事激怒，情緒一上來就很難收回。",
+        "expected_topics": ["情緒困惑", "情緒失控", "怒氣", "調節"],
+        "expected_cards": ["wands-05", "major-08-strength", "major-14-temperance"],
+        "expected_keywords": ["激怒", "情緒", "收不回", "衝突", "調節"]
+      },
+      {
+        "query": "我常常覺得自己被困住，明明有路卻動不了。",
+        "expected_topics": ["情緒困惑", "無力感", "受困", "視角限制"],
+        "expected_cards": ["swords-08", "major-12-hanged-man", "major-08-strength"],
+        "expected_keywords": ["被困住", "動不了", "無力感", "限制", "視角"]
+      },
+      {
+        "query": "我一直反覆責怪自己以前做錯的決定，心裡很難放過自己。",
+        "expected_topics": ["情緒困惑", "自責", "反省", "寬恕"],
+        "expected_cards": ["major-20-judgement", "major-11-justice", "swords-09"],
+        "expected_keywords": ["責怪自己", "做錯決定", "放過自己", "反省", "自責"]
+      },
+      {
+        "query": "我覺得自己很孤單，也有一種被世界排除在外的感覺。",
+        "expected_topics": ["情緒困惑", "孤單", "被排除", "失落"],
+        "expected_cards": ["pentacles-05", "cups-05", "major-09-hermit"],
+        "expected_keywords": ["孤單", "被排除", "失落", "冷落", "孤立"]
+      },
+      {
+        "query": "經歷一場很大的動盪之後，我還有可能慢慢恢復希望嗎？",
+        "expected_topics": ["情緒困惑", "動盪後修復", "希望", "療癒"],
+        "expected_cards": ["major-16-tower", "major-17-star", "major-19-sun"],
+        "expected_keywords": ["動盪", "恢復", "希望", "療癒", "重建"]
+      }
+    ],
+    "靈性問題": [
+      {
+        "query": "我怎麼分辨那是直覺，還是只是我自己想太多的幻想？",
+        "expected_topics": ["靈性", "直覺", "幻想", "辨識"],
+        "expected_cards": ["major-02-high-priestess", "major-18-moon", "major-17-star"],
+        "expected_keywords": ["直覺", "幻想", "想太多", "辨識", "內在"]
+      },
+      {
+        "query": "如果我有靈性上的感受，怎麼把它真正落實到日常生活裡？",
+        "expected_topics": ["靈性", "落地實踐", "日常", "整合"],
+        "expected_cards": ["major-01-magician", "major-14-temperance", "major-04-emperor"],
+        "expected_keywords": ["靈性感受", "落實", "日常生活", "整合", "實踐"]
+      },
+      {
+        "query": "我像是在經歷一段黑暗期，不知道這種孤獨有沒有意義。",
+        "expected_topics": ["靈性", "黑暗期", "孤獨", "指引"],
+        "expected_cards": ["major-09-hermit", "major-18-moon", "major-17-star"],
+        "expected_keywords": ["黑暗期", "孤獨", "意義", "指引", "內省"]
+      },
+      {
+        "query": "最近命運好像一直在轉，我想知道這種生命週期該怎麼理解。",
+        "expected_topics": ["靈性", "生命週期", "轉折", "理解變化"],
+        "expected_cards": ["major-10-wheel-of-fortune", "major-13-death", "major-21-world"],
+        "expected_keywords": ["命運", "生命週期", "轉", "轉折", "變化"]
+      },
+      {
+        "query": "我想知道自己真正的召喚是什麼，但一直聽不清楚內在的聲音。",
+        "expected_topics": ["靈性", "召喚", "內在聲音", "覺醒"],
+        "expected_cards": ["major-20-judgement", "major-09-hermit", "major-00-fool"],
+        "expected_keywords": ["召喚", "內在聲音", "覺醒", "聽不清楚", "方向"]
+      },
+      {
+        "query": "我要怎麼在很現實的生活壓力裡，仍然保有靈性的覺察？",
+        "expected_topics": ["靈性", "現實與靈性", "覺察", "平衡"],
+        "expected_cards": ["major-04-emperor", "major-02-high-priestess", "major-14-temperance"],
+        "expected_keywords": ["現實", "生活壓力", "靈性", "覺察", "平衡"]
+      },
+      {
+        "query": "我最近很想做一些療癒或淨化，這種感受可能在提醒什麼？",
+        "expected_topics": ["靈性", "療癒", "淨化", "能量修復"],
+        "expected_cards": ["major-17-star", "cups-01", "major-14-temperance"],
+        "expected_keywords": ["療癒", "淨化", "提醒", "修復", "內在泉源"]
+      },
+      {
+        "query": "我對因果和責任有很多疑問，常分不清什麼是我該承擔的。",
+        "expected_topics": ["靈性", "因果", "責任", "承擔"],
+        "expected_cards": ["major-11-justice", "major-12-hanged-man", "major-20-judgement"],
+        "expected_keywords": ["因果", "責任", "承擔", "疑問", "判斷"]
+      },
+      {
+        "query": "我覺得自己被慾望、執著或依附卡住了，靈性上要怎麼鬆開？",
+        "expected_topics": ["靈性", "執著", "依附", "鬆綁"],
+        "expected_cards": ["major-15-devil", "major-08-strength", "major-14-temperance"],
+        "expected_keywords": ["慾望", "執著", "依附", "卡住", "鬆開"]
+      },
+      {
+        "query": "如果一段旅程已經告一段落，接下來要怎麼整合並走向新的循環？",
+        "expected_topics": ["靈性", "整合", "完成", "新循環"],
+        "expected_cards": ["major-21-world", "major-00-fool", "major-20-judgement"],
+        "expected_keywords": ["旅程", "告一段落", "整合", "新的循環", "完成"]
+      }
+    ]
+  }
+}
