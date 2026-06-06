@@ -34,10 +34,20 @@ body {
   font-family: var(--sans);
 }
 
+a {
+  color: inherit;
+}
+
 .page {
   width: min(1120px, calc(100vw - 32px));
   margin: 0 auto;
   padding: 32px 0 48px;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 4px 0 16px;
 }
 
 .shell,
@@ -100,6 +110,10 @@ h3 {
 .response-header p,
 .cards-header p {
   color: var(--muted);
+}
+
+.hero-link-row {
+  margin: 18px 0 0;
 }
 
 .chat-form,
@@ -261,6 +275,20 @@ select:focus {
   cursor: not-allowed;
   opacity: 0.55;
   transform: none;
+}
+
+.ghost-link {
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.ghost-link:hover {
+  border-color: currentColor;
+}
+
+.wiki-inline-button {
+  text-decoration: none;
 }
 
 .debug-toggle {
@@ -590,12 +618,182 @@ small {
   gap: 14px;
 }
 
+.wiki-hero,
+.wiki-detail-hero,
+.wiki-filters,
+.wiki-section,
+.wiki-detail-section,
+.wiki-detail-content,
+.wiki-missing-panel {
+  display: grid;
+  gap: 18px;
+}
+
+.wiki-category-row,
+.wiki-pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.wiki-category-chip,
+.wiki-pill {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.68);
+  color: var(--ink);
+  padding: 8px 14px;
+}
+
+.wiki-category-chip {
+  cursor: pointer;
+}
+
+.wiki-category-chip.active {
+  border-color: rgba(184, 92, 56, 0.38);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.wiki-pill {
+  font-size: 0.92rem;
+}
+
+.wiki-pill-topic {
+  background: rgba(219, 231, 223, 0.58);
+}
+
+.wiki-filter-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) repeat(2, minmax(180px, 1fr));
+  gap: 14px;
+}
+
+.wiki-section-header,
+.wiki-detail-actions {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.wiki-card-grid,
+.wiki-related-list {
+  display: grid;
+  gap: 14px;
+}
+
+.wiki-card-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.wiki-card,
+.wiki-related-link {
+  display: grid;
+  gap: 10px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.62);
+  text-decoration: none;
+}
+
+.wiki-card h3 {
+  font-size: 1.08rem;
+}
+
+.wiki-card h3 a,
+.wiki-related-link strong {
+  text-decoration: none;
+}
+
+.wiki-card p,
+.wiki-related-link span,
+.wiki-empty {
+  margin: 0;
+  color: var(--muted);
+}
+
+.wiki-card-meta {
+  margin: 0;
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.wiki-prose {
+  font-family: var(--serif);
+  font-size: 1.06rem;
+  line-height: 1.8;
+}
+
+.wiki-prose h1,
+.wiki-prose h2,
+.wiki-prose h3,
+.wiki-prose h4,
+.wiki-prose h5,
+.wiki-prose h6 {
+  margin: 1.8rem 0 0.75rem;
+}
+
+.wiki-prose h1:first-child,
+.wiki-prose h2:first-child,
+.wiki-prose h3:first-child {
+  margin-top: 0;
+}
+
+.wiki-prose p,
+.wiki-prose ul,
+.wiki-prose blockquote,
+.wiki-prose table {
+  margin: 0 0 1rem;
+}
+
+.wiki-prose ul {
+  padding-left: 1.35rem;
+}
+
+.wiki-prose blockquote {
+  padding: 0.2rem 0 0.2rem 1rem;
+  border-left: 3px solid rgba(184, 92, 56, 0.3);
+  color: var(--muted);
+}
+
+.wiki-prose table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.wiki-prose th,
+.wiki-prose td {
+  border: 1px solid var(--line);
+  padding: 10px 12px;
+  text-align: left;
+}
+
+.wiki-prose th {
+  background: rgba(219, 231, 223, 0.45);
+}
+
+.wiki-prose code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.92em;
+  padding: 0.12rem 0.34rem;
+  border-radius: 8px;
+  background: rgba(36, 49, 44, 0.08);
+}
+
 @media (max-width: 920px) {
   .mode-grid,
   .results-grid {
     grid-template-columns: 1fr;
   }
 
+  .wiki-filter-grid,
   .card-row,
   .cards-header,
   .response-header {
@@ -610,6 +808,12 @@ small {
 
   .spread-card-grid {
     grid-template-columns: repeat(auto-fit, minmax(132px, 1fr));
+  }
+
+  .wiki-section-header,
+  .wiki-detail-actions {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
@@ -652,5 +856,9 @@ small {
 
   .citation-card-image {
     width: 72px;
+  }
+
+  .wiki-card-grid {
+    grid-template-columns: 1fr;
   }
 }

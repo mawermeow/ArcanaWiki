@@ -20,6 +20,7 @@
     "eval:vector": "node lib/retrieval/cli/eval-vector.ts",
     "eval:hybrid": "node lib/retrieval/cli/eval-hybrid.ts",
     "typecheck": "tsc --noEmit",
+    "test:wiki": "node --import tsx --test tests/wiki/*.test.ts",
     "test:retrieval": "node --import tsx --test tests/retrieval/*.test.ts",
     "test:answer": "node --import tsx --test tests/answer/*.test.ts",
     "test:pwa": "node --import tsx --test tests/pwa/*.test.ts tests/pwa/*.test.tsx",

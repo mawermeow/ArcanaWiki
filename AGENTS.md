@@ -210,6 +210,9 @@ Install:
 Start dev app:
   pnpm dev
 
+Run public wiki tests:
+  pnpm test:wiki
+
 Build app:
   pnpm build
 

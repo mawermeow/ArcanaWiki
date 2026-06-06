@@ -1,0 +1,184 @@
+"use client";
+
+import React, { useMemo, useState } from "react";
+import { filterPublicWikiPages } from "../lib/wiki-public/search.ts";
+import {
+  PUBLIC_WIKI_CATEGORIES,
+  type PublicWikiBrowseData,
+  type PublicWikiCategory,
+  type PublicWikiPage
+} from "../lib/wiki-public/types.ts";
+
+const CATEGORY_LABELS: Record<PublicWikiCategory, string> = {
+  cards: "牌卡",
+  concepts: "概念",
+  emotions: "情緒",
+  relationships: "關係",
+  patterns: "模式與牌陣"
+};
+
+function renderEmptyCopy(category: PublicWikiCategory) {
+  switch (category) {
+    case "cards":
+      return "目前沒有可顯示的牌卡頁面。";
+    case "concepts":
+      return "概念頁仍在整理中。";
+    case "emotions":
+      return "情緒頁仍在整理中。";
+    case "relationships":
+      return "關係頁仍在整理中。";
+    case "patterns":
+      return "目前沒有可顯示的模式或牌陣頁面。";
+  }
+}
+
+function PageList({
+  pages,
+  category
+}: {
+  pages: PublicWikiPage[];
+  category: PublicWikiCategory;
+}) {
+  return (
+    <section className="panel wiki-section">
+      <div className="wiki-section-header">
+        <div>
+          <p className="eyebrow">Category</p>
+          <h2>{CATEGORY_LABELS[category]}</h2>
+        </div>
+        <p>{pages.length} 篇</p>
+      </div>
+
+      {pages.length === 0 ? (
+        <p className="wiki-empty">{renderEmptyCopy(category)}</p>
+      ) : (
+        <div className="wiki-card-grid">
+          {pages.map((page) => (
+            <article className="wiki-card" key={page.id}>
+              <p className="wiki-card-meta">{CATEGORY_LABELS[page.category]}</p>
+              <h3>
+                <a href={page.href}>{page.title}</a>
+              </h3>
+              {page.summary ? <p>{page.summary}</p> : <p>{page.contentText.slice(0, 120)}...</p>}
+              <div className="wiki-pill-row">
+                {(page.tags ?? []).slice(0, 3).map((tag) => (
+                  <span className="wiki-pill" key={tag}>
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </article>
+          ))}
+        </div>
+      )}
+    </section>
+  );
+}
+
+export function PublicWikiBrowser({
+  pages,
+  tags,
+  topics,
+  countsByCategory
+}: PublicWikiBrowseData) {
+  const [query, setQuery] = useState("");
+  const [category, setCategory] = useState<PublicWikiCategory | "all">("all");
+  const [tag, setTag] = useState("");
+  const [topic, setTopic] = useState("");
+
+  const filteredPages = useMemo(
+    () =>
+      filterPublicWikiPages(pages, {
+        category,
+        query,
+        tag,
+        topic
+      }),
+    [category, pages, query, tag, topic]
+  );
+
+  const groupedPages = useMemo(
+    () =>
+      PUBLIC_WIKI_CATEGORIES.map((currentCategory) => ({
+        category: currentCategory,
+        pages: filteredPages.filter((page) => page.category === currentCategory)
+      })),
+    [filteredPages]
+  );
+
+  return (
+    <div className="shell">
+      <section className="hero wiki-hero">
+        <p className="eyebrow">Public Tarot Wiki</p>
+        <h1>從牌義、概念與牌陣之間，慢慢讀出脈絡。</h1>
+        <p className="lede">
+          這裡只呈現可公開閱讀的 wiki 內容，不顯示 retrieval diagnostics、raw prompt、embedding 或內部備註。
+        </p>
+        <div className="wiki-category-row" aria-label="分類列表">
+          <button
+            className={`wiki-category-chip${category === "all" ? " active" : ""}`}
+            type="button"
+            onClick={() => setCategory("all")}
+          >
+            全部
+          </button>
+          {PUBLIC_WIKI_CATEGORIES.map((item) => (
+            <button
+              className={`wiki-category-chip${category === item ? " active" : ""}`}
+              key={item}
+              type="button"
+              onClick={() => setCategory(item)}
+            >
+              {CATEGORY_LABELS[item]} {countsByCategory[item]}
+            </button>
+          ))}
+        </div>
+      </section>
+
+      <section className="panel wiki-filters">
+        <div className="wiki-filter-grid">
+          <label className="field">
+            <span>搜尋</span>
+            <input
+              aria-label="搜尋 wiki"
+              placeholder="搜尋標題、摘要、tags、topics 或內文"
+              type="search"
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+            />
+          </label>
+
+          <label className="field">
+            <span>Tag</span>
+            <select aria-label="tags filter" value={tag} onChange={(event) => setTag(event.target.value)}>
+              <option value="">全部 tags</option>
+              {tags.map((item) => (
+                <option key={item} value={item}>
+                  {item}
+                </option>
+              ))}
+            </select>
+          </label>
+
+          <label className="field">
+            <span>Topic</span>
+            <select aria-label="topics filter" value={topic} onChange={(event) => setTopic(event.target.value)}>
+              <option value="">全部 topics</option>
+              {topics.map((item) => (
+                <option key={item} value={item}>
+                  {item}
+                </option>
+              ))}
+            </select>
+          </label>
+        </div>
+
+        <p className="muted">目前篩選後共有 {filteredPages.length} 篇公開頁面。</p>
+      </section>
+
+      {groupedPages.map((group) => (
+        <PageList category={group.category} key={group.category} pages={group.pages} />
+      ))}
+    </div>
+  );
+}

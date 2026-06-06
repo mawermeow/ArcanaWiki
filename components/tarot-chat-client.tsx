@@ -16,6 +16,7 @@ type CardDraft = {
 type TarotChatClientProps = {
   cardOptions: TarotCardOption[];
   debugEnabled: boolean;
+  initialCardId?: string;
   requestChat?: (payload: RequestInit) => Promise<Response>;
 };
 
@@ -29,11 +30,17 @@ const EMPTY_CARD = (): CardDraft => ({
 export function TarotChatClient({
   cardOptions,
   debugEnabled,
+  initialCardId,
   requestChat
 }: TarotChatClientProps) {
   const [question, setQuestion] = useState("");
   const [mode, setMode] = useState<"gentle" | "direct" | "reflective">("gentle");
-  const [cards, setCards] = useState<CardDraft[]>([EMPTY_CARD()]);
+  const [cards, setCards] = useState<CardDraft[]>(() => [
+    {
+      ...EMPTY_CARD(),
+      cardId: initialCardId?.trim() ?? ""
+    }
+  ]);
   const [debug, setDebug] = useState(false);
   const [autoDraw, setAutoDraw] = useState(false);
   const [result, setResult] = useState<ChatApiResponse | null>(null);
@@ -122,6 +129,11 @@ export function TarotChatClient({
         <h1>用可引用的 Tarot Wiki，整理一段比較清楚的回應。</h1>
         <p className="lede">
           這個介面只提供本機或小範圍測試使用。解讀偏向象徵、反思與行動選擇，不把牌義包裝成確定命運。
+        </p>
+        <p className="hero-link-row">
+          <a className="ghost-link" href="/wiki">
+            瀏覽 Public Tarot Wiki
+          </a>
         </p>
       </section>
 

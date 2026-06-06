@@ -35,6 +35,7 @@ pnpm eval:hybrid
 pnpm eval:hybrid -- --live-query-embedding
 pnpm dev
 pnpm build
+pnpm test:wiki
 pnpm test:pwa
 pnpm test:answer
 pnpm test
@@ -44,9 +45,27 @@ pnpm test
 
 - runtime：Next.js App Router + TypeScript
 - user entry：`/`
+- public wiki：`/wiki`、`/wiki/[category]/[pageId]`
 - chat API：`POST /api/chat`
 - developer retrieval inspector：`/dev/retrieval`，僅在 `TAROT_DEBUG_RETRIEVAL=true` 時可用
 - PWA assets：`public/manifest.webmanifest`、`app/icon.svg`
+
+### Public Wiki
+
+- public loader：`lib/wiki-public/`
+- source：直接讀取 `wiki/**/*.md`
+- scope：只輸出 public-safe wiki page data，不建立 CMS、不引入資料庫
+- render support：
+  - headings
+  - paragraphs
+  - lists
+  - blockquotes
+  - tables
+  - internal wiki links，例如 `[[major-00-fool]]`
+- safety boundaries：
+  - 不顯示 `source_refs`、`raw_refs`、raw file paths、retrieval diagnostics、prompt hints、embeddings、graph score、lint comments
+  - `<!-- internal --> ... <!-- /internal -->` 區塊不會對外顯示
+  - Public Wiki 只讀 compiled wiki，不讀 `embeddings/`、`relations/graph.json`、answer diagnostics
 
 ### Chat API Contract
 

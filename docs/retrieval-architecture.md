@@ -11,6 +11,7 @@
 
 仍不包含 graph DB、完整帳號系統、LINE Bot 後台。
 目前已包含第一版 Next.js PWA、chat route 與 dev-only retrieval inspector page。
+目前也包含第一版 Public Tarot Wiki，只讀 `wiki/**/*.md` 的 public-safe 視圖。
 
 ## Module Layout
 
@@ -64,6 +65,14 @@
   Next.js Route Handler。將 user request 導到 `answerTarotQuestion` pipeline。
 - `app/page.tsx` + `components/tarot-chat-client.tsx`
   第一版 Tarot PWA。提供問題輸入、可選牌卡、模式切換、回答與來源摘要。
+- `lib/wiki-public/loader.ts`
+  Public Wiki 專用 loader。讀取 `wiki/**/*.md`，解析 frontmatter、清除 internal-only fields、產生 public-safe page data。
+- `lib/wiki-public/markdown.ts`
+  Public Wiki 專用 markdown 清洗與 render。支援 headings、paragraphs、lists、blockquotes、tables 與 `[[page-id]]` 內部連結。
+- `components/public-wiki-browser.tsx`
+  client-side wiki search / filter UI。搜尋標題、摘要、tags、topics 與公開內文。
+- `app/wiki/page.tsx` + `app/wiki/[...slug]/page.tsx`
+  Public Tarot Wiki 列表與內容頁。只顯示公開安全資料，不暴露 diagnostics、embeddings、graph debug。
 - `app/dev/retrieval/page.tsx`
   只在 `TAROT_DEBUG_RETRIEVAL=true` 時可用的 developer retrieval inspector page。
 
@@ -209,9 +218,22 @@ PWA form
 -> render answer + selected source summary
 ```
 
+## Public Wiki Flow
+
+```txt
+wiki/**/*.md
+-> public loader
+-> filter internal-only frontmatter / markdown blocks
+-> render public-safe html
+-> /wiki list page
+-> client-side search / tag / topic filters
+-> /wiki/[category]/[pageId] detail page
+```
+
 - `debug=true` 不足以取得 diagnostics。
 - 只有在 `TAROT_DEBUG_RETRIEVAL=true` 時，web layer 才會把 diagnostics 往外回傳。
 - user-facing response 不回傳 raw prompt、完整 retrieval internals、API secrets、internal stack trace。
+- Public Wiki 也不讀取或回傳 `embeddings/`、`relations/graph.json`、retrieval diagnostics、prompt hints、raw file paths。
 
 ## Answer Safety Rules
 
