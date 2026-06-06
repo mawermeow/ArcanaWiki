@@ -5,10 +5,10 @@ import { formatAnswerForDisplay } from "../lib/answer/citation-validator.ts";
 import type { ChatApiResponse } from "../lib/pwa/chat-api.ts";
 import type { TarotCardOption } from "../lib/pwa/card-catalog.ts";
 import { AnswerBody } from "./answer-body.tsx";
+import { SiteBrand } from "./site-brand.tsx";
 import {
   cn,
   contentSectionTitleClass,
-  eyebrowClass,
   fieldClass,
   fieldLabelClass,
   ghostButtonClass,
@@ -146,7 +146,7 @@ export function TarotChatClient({
   return (
     <div className="grid gap-5">
       <section className={heroClass}>
-        <p className={eyebrowClass}>ArcanaWiki</p>
+        <SiteBrand />
         <h1>留下你的問題，從牌義與脈絡裡整理思緒。</h1>
         <p className={cn(mutedTextClass, "mt-0")}>
           解讀會依可查的塔羅牌義展開，協助你理解眼前的狀況。我們偏向象徵、反思與行動選擇，不會用命定式的語氣替你下結論。

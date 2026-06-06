@@ -2,6 +2,7 @@
 
 import React, { useMemo, useState } from "react";
 import { TarotCardThumb } from "./tarot-card-thumb.tsx";
+import { SiteBrand } from "./site-brand.tsx";
 import { filterPublicWikiPages } from "../lib/wiki-public/search.ts";
 import {
   PUBLIC_WIKI_CATEGORIES,
@@ -13,7 +14,6 @@ import {
 import {
   cn,
   contentSectionTitleClass,
-  eyebrowClass,
   fieldClass,
   fieldLabelClass,
   heroClass,
@@ -135,7 +135,7 @@ export function PublicWikiBrowser({
   return (
     <div className="grid gap-5">
       <section className={cn(heroClass, "grid gap-[18px]")}>
-        <p className={eyebrowClass}>Public Tarot Wiki</p>
+        <SiteBrand />
         <h1>從牌義、概念與牌陣之間，慢慢讀出脈絡。</h1>
         <p className={mutedTextClass}>
           這裡只呈現可公開閱讀的 wiki 內容，不顯示 retrieval diagnostics、raw prompt、embedding 或內部備註。

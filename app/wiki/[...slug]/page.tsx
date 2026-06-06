@@ -1,11 +1,11 @@
 import React from "react";
 import { TarotCardThumb } from "../../../components/tarot-card-thumb.tsx";
+import { SiteBrand } from "../../../components/site-brand.tsx";
 import { findPublicWikiPageBySlug, loadPublicWikiPages } from "../../../lib/wiki-public/loader.ts";
 import type { PublicWikiPage } from "../../../lib/wiki-public/types.ts";
 import {
   cn,
   contentSectionTitleClass,
-  eyebrowClass,
   ghostLinkClass,
   heroClass,
   mutedTextClass,
@@ -75,7 +75,7 @@ export default async function PublicWikiDetailPage({
       <main className={pageClass}>
         <div className="grid gap-5">
           <section className={cn(panelPaddingClass, "grid gap-[18px]")}>
-            <p className={eyebrowClass}>Public Tarot Wiki</p>
+            <SiteBrand />
             <h1>找不到這個頁面</h1>
             <p className={mutedTextClass}>這個連結可能已變更，或目前沒有對外公開。</p>
             <a className={cn(secondaryButtonClass, "no-underline")} href="/wiki">
@@ -109,7 +109,7 @@ export default async function PublicWikiDetailPage({
               </a>
             ) : null}
           </div>
-          <p className={eyebrowClass}>Public Tarot Wiki</p>
+          <SiteBrand />
           <div className="flex items-start gap-6 max-[640px]:flex-col">
             {page.category === "cards" ? (
               <TarotCardThumb cardId={page.id} className="shrink-0" size="lg" title={page.title} />

@@ -4,17 +4,13 @@ import React from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "ArcanaWiki Tarot PWA",
-  description: "本機與小範圍測試用的 Tarot Wiki ChatBot。",
+  title: "Public Tarot Wiki",
+  description: "從牌義、概念與牌陣之間，慢慢讀出脈絡。",
   manifest: "/manifest.webmanifest",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "ArcanaWiki"
-  },
-  icons: {
-    icon: "/icon.svg",
-    apple: "/icon.svg"
+    title: "Public Tarot Wiki"
   }
 };
 
