@@ -1,5 +1,6 @@
 import React from "react";
 import { getCardImageSrc } from "../lib/pwa/card-image.ts";
+import { cardThumbClass, cn } from "../lib/ui/classes.ts";
 
 type TarotCardThumbProps = {
   cardId: string;
@@ -19,18 +20,14 @@ export function TarotCardThumb({
     return null;
   }
 
-  const classes = [
-    "tarot-card-thumb",
-    orientation === "reversed" ? "reversed" : "",
-    className ?? ""
-  ]
-    .filter(Boolean)
-    .join(" ");
-
   return (
     <img
       alt={title ?? cardId}
-      className={classes}
+      className={cn(
+        cardThumbClass,
+        orientation === "reversed" && "rotate-180",
+        className
+      )}
       height={120}
       loading="lazy"
       src={src}

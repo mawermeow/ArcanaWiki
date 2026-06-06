@@ -211,13 +211,13 @@ test("auto draw option submits flag and renders generated reading", async () => 
 
   assert.match(seenBody, /"autoDraw":true/);
   assert.ok(view.getByText("目前關係狀態"));
-  assert.ok(view.container.querySelector(".orientation-badge.reversed"));
+  assert.ok(view.getAllByText("逆位").length >= 1);
   assert.equal(
     (view.getByAltText("聖杯二（Two of Cups）") as HTMLImageElement).getAttribute("src"),
     "/cards/Cups02.jpg"
   );
   assert.ok(
-    (view.getByAltText("聖杯二（Two of Cups）") as HTMLImageElement).className.includes("reversed")
+    (view.getByAltText("聖杯二（Two of Cups）") as HTMLImageElement).className.includes("rotate-180")
   );
 
   restore();

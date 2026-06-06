@@ -4,6 +4,20 @@ import React, { useMemo, useState, type FormEvent } from "react";
 import { formatAnswerForDisplay } from "../lib/answer/citation-validator.ts";
 import type { ChatApiResponse } from "../lib/pwa/chat-api.ts";
 import type { TarotCardOption } from "../lib/pwa/card-catalog.ts";
+import {
+  cn,
+  eyebrowClass,
+  fieldClass,
+  fieldLabelClass,
+  ghostButtonClass,
+  ghostLinkClass,
+  heroClass,
+  mutedTextClass,
+  panelPaddingClass,
+  primaryButtonClass,
+  secondaryButtonClass,
+  sectionEyebrowClass
+} from "../lib/ui/classes.ts";
 import { TarotCardThumb } from "./tarot-card-thumb.tsx";
 
 type CardDraft = {
@@ -127,24 +141,24 @@ export function TarotChatClient({
   }
 
   return (
-    <div className="shell">
-      <section className="hero">
-        <p className="eyebrow">ArcanaWiki PWA</p>
+    <div className="grid gap-5">
+      <section className={heroClass}>
+        <p className={eyebrowClass}>ArcanaWiki PWA</p>
         <h1>用可引用的 Tarot Wiki，整理一段比較清楚的回應。</h1>
-        <p className="lede">
+        <p className={cn(mutedTextClass, "mt-0")}>
           這個介面只提供本機或小範圍測試使用。解讀偏向象徵、反思與行動選擇，不把牌義包裝成確定命運。
         </p>
-        <p className="hero-link-row">
-          <a className="ghost-link" href="/wiki">
+        <p className="mt-[18px] mb-0">
+          <a className={ghostLinkClass} href="/wiki">
             瀏覽 Public Tarot Wiki
           </a>
         </p>
       </section>
 
-      <section className="panel">
-        <form className="chat-form" onSubmit={handleSubmit}>
-          <label className="field">
-            <span>問題</span>
+      <section className={panelPaddingClass}>
+        <form className="grid gap-[18px]" onSubmit={handleSubmit}>
+          <label className={fieldClass}>
+            <span className={fieldLabelClass}>問題</span>
             <textarea
               name="question"
               placeholder="例如：聖杯二逆位，對方最近很冷淡，我該怎麼理解這段關係？"
@@ -155,14 +169,23 @@ export function TarotChatClient({
             />
           </label>
 
-          <div className="mode-grid" role="radiogroup" aria-label="回答模式">
+          <div className="grid grid-cols-3 gap-3 max-[920px]:grid-cols-1" role="radiogroup" aria-label="回答模式">
             {[
               ["gentle", "gentle", "偏溫和，適合整理情緒。"],
               ["direct", "direct", "偏直接，聚焦目前張力。"],
               ["reflective", "reflective", "偏反思，保留更多自我觀察。"]
             ].map(([value, label, help]) => (
-              <label className={`mode-card${mode === value ? " active" : ""}`} key={value}>
+              <label
+                className={cn(
+                  "grid cursor-pointer gap-1.5 rounded-md border p-4",
+                  mode === value
+                    ? "border-accent/42 bg-accent-soft"
+                    : "border-line bg-surface-soft"
+                )}
+                key={value}
+              >
                 <input
+                  className="hidden"
                   type="radio"
                   name="mode"
                   value={value}
@@ -170,42 +193,54 @@ export function TarotChatClient({
                   onChange={() => setMode(value as "gentle" | "direct" | "reflective")}
                 />
                 <strong>{label}</strong>
-                <span>{help}</span>
+                <span className="text-[0.9rem] text-muted">{help}</span>
               </label>
             ))}
           </div>
 
-          <label className="auto-draw-card">
+          <label
+            className="grid grid-cols-[auto_1fr] items-start gap-3.5 rounded-md border border-line px-[18px] py-4"
+            style={{
+              background:
+                "linear-gradient(135deg, rgb(219 231 223 / 0.52), rgb(255 250 240 / 0.9))"
+            }}
+          >
             <input
+              className="mt-1 w-auto"
               checked={autoDraw}
               type="checkbox"
               onChange={(event) => setAutoDraw(event.target.checked)}
             />
             <div>
-              <strong>沒有手邊的牌，請系統幫我選牌陣並抽牌</strong>
-              <span>系統會根據問題挑一個合適的牌陣，再自動抽牌作為這次解讀的起點。</span>
+              <strong className="mb-1.5 block">沒有手邊的牌，請系統幫我選牌陣並抽牌</strong>
+              <span className="text-[0.94rem] text-muted">
+                系統會根據問題挑一個合適的牌陣，再自動抽牌作為這次解讀的起點。
+              </span>
             </div>
           </label>
 
-          <div className={`cards-block${autoDraw ? " disabled" : ""}`}>
-            <div className="cards-header">
+          <div className={cn("grid gap-[18px]", autoDraw && "opacity-[0.62]")}>
+            <div className="flex items-end justify-between gap-4 max-[920px]:flex-col max-[920px]:items-stretch">
               <div>
                 <h2>可選牌卡</h2>
-                <p>
+                <p className={mutedTextClass}>
                   {autoDraw
                     ? "已改用自動抽牌。若想手動輸入，先取消上方快捷選項。"
                     : "如果你已經抽牌，可以補上牌名、正逆位與位置。"}
                 </p>
               </div>
-              <button className="secondary-button" disabled={autoDraw} type="button" onClick={addCard}>
+              <button className={secondaryButtonClass} disabled={autoDraw} type="button" onClick={addCard}>
                 新增牌卡
               </button>
             </div>
 
             {cards.map((card, index) => (
-              <div className="card-row" key={card.id}>
-                <label className="field">
-                  <span>牌卡 {index + 1}</span>
+              <div
+                className="grid grid-cols-[minmax(0,2fr)_minmax(140px,0.8fr)_minmax(0,1fr)_auto] gap-3 rounded-md border border-line bg-surface-muted p-4 max-[920px]:grid-cols-1"
+                key={card.id}
+              >
+                <label className={fieldClass}>
+                  <span className={fieldLabelClass}>牌卡 {index + 1}</span>
                   <input
                     list="tarot-card-options"
                     value={card.cardId}
@@ -215,8 +250,8 @@ export function TarotChatClient({
                   />
                 </label>
 
-                <label className="field">
-                  <span>方向</span>
+                <label className={fieldClass}>
+                  <span className={fieldLabelClass}>方向</span>
                   <select
                     value={card.orientation}
                     disabled={autoDraw}
@@ -232,8 +267,8 @@ export function TarotChatClient({
                   </select>
                 </label>
 
-                <label className="field">
-                  <span>位置</span>
+                <label className={fieldClass}>
+                  <span className={fieldLabelClass}>位置</span>
                   <input
                     value={card.position}
                     disabled={autoDraw}
@@ -244,7 +279,7 @@ export function TarotChatClient({
 
                 <button
                   aria-label={`移除第 ${index + 1} 張牌`}
-                  className="ghost-button"
+                  className={ghostButtonClass}
                   disabled={cards.length === 1 || autoDraw}
                   type="button"
                   onClick={() => removeCard(card.id)}
@@ -264,62 +299,96 @@ export function TarotChatClient({
           </div>
 
           {debugEnabled ? (
-            <label className="debug-toggle">
-              <input checked={debug} type="checkbox" onChange={(event) => setDebug(event.target.checked)} />
+            <label className="inline-flex items-center gap-2.5 text-muted">
+              <input
+                className="w-auto"
+                checked={debug}
+                type="checkbox"
+                onChange={(event) => setDebug(event.target.checked)}
+              />
               <span>本機 debug mode</span>
             </label>
           ) : null}
 
-          <button className="primary-button" disabled={loading} type="submit">
+          <button className={primaryButtonClass} disabled={loading} type="submit">
             {loading ? "解讀中..." : "送出問題"}
           </button>
         </form>
       </section>
 
-      <section className="panel response-panel" aria-live="polite">
-        <div className="response-header">
+      <section className={cn(panelPaddingClass, "p-7 max-[640px]:p-5")} aria-live="polite">
+        <div className="flex items-start justify-between gap-4 border-b border-line pb-1.5 max-[920px]:flex-col max-[920px]:items-stretch">
           <div>
-            <p className="eyebrow">Reading</p>
+            <p className={eyebrowClass}>Reading</p>
             <h2>回應</h2>
           </div>
-          <p>先看你抽到的牌，再閱讀解讀與引用來源。</p>
+          <p className="m-0 max-w-[28ch] text-right leading-[1.55] text-muted max-[920px]:max-w-none max-[920px]:text-left">
+            先看你抽到的牌，再閱讀解讀與引用來源。
+          </p>
         </div>
 
-        {error ? <p className="error-banner">{error}</p> : null}
+        {error ? (
+          <p className="m-0 rounded-sm bg-accent/12 px-4 py-3.5 text-accent-strong">{error}</p>
+        ) : null}
 
         {loading ? (
-          <div className="response-placeholder response-loading" aria-busy="true">
-            <p className="response-placeholder-title">解讀整理中</p>
-            <p className="muted">系統正在整理牌義與可引用的 wiki 來源。</p>
+          <div
+            className="grid gap-2 rounded-md border border-dashed border-line/50 px-6 py-7 text-center"
+            style={{
+              background:
+                "linear-gradient(135deg, rgb(219 231 223 / 0.42), rgb(255 250 240 / 0.72)), rgb(255 255 255 / 0.42)"
+            }}
+            aria-busy="true"
+          >
+            <p className="m-0 font-serif text-[1.2rem] font-bold">解讀整理中</p>
+            <p className={mutedTextClass}>系統正在整理牌義與可引用的 wiki 來源。</p>
           </div>
         ) : null}
 
         {!loading && result ? (
-          <div className="response-content">
+          <div className="grid gap-[22px]">
             {result.generatedReading ? (
-              <article className="response-section spread-section">
-                <div className="response-section-heading">
-                  <p className="response-section-eyebrow">Spread</p>
+              <article
+                className="grid gap-4 rounded-md border border-line p-[22px] max-[640px]:p-[18px]"
+                style={{
+                  background:
+                    "linear-gradient(180deg, rgb(219 231 223 / 0.34), rgb(255 250 240 / 0.96)), var(--color-paper-strong)"
+                }}
+              >
+                <div className="grid gap-1">
+                  <p className={sectionEyebrowClass}>Spread</p>
                   <h3>這次自動抽到的牌陣</h3>
                 </div>
-                <div className="spread-meta">
-                  <span className="spread-badge">{result.generatedReading.spreadTitle}</span>
-                  <span className="spread-id">{result.generatedReading.spreadId}</span>
+                <div className="flex flex-wrap items-center gap-2.5">
+                  <span className="inline-flex items-center rounded-full bg-ink/8 px-3.5 py-2 font-bold text-ink">
+                    {result.generatedReading.spreadTitle}
+                  </span>
+                  <span className="text-[0.86rem] text-muted">{result.generatedReading.spreadId}</span>
                 </div>
-                <div className="spread-card-grid">
+                <div className="grid gap-3.5 [grid-template-columns:repeat(auto-fit,minmax(148px,1fr))] max-[920px]:[grid-template-columns:repeat(auto-fit,minmax(132px,1fr))] max-[640px]:flex max-[640px]:snap-x max-[640px]:snap-mandatory max-[640px]:gap-3 max-[640px]:overflow-x-auto max-[640px]:pb-1">
                   {result.generatedReading.cards.map((card) => (
-                    <div className="spread-card-tile" key={`${card.cardId}-${card.position}`}>
+                    <div
+                      className="grid gap-3 rounded-[18px] border border-line/50 bg-surface-soft p-3.5 max-[640px]:w-[min(72vw,180px)] max-[640px]:shrink-0 max-[640px]:snap-start"
+                      key={`${card.cardId}-${card.position}`}
+                    >
                       <TarotCardThumb
                         cardId={card.cardId}
-                        className="spread-card-image"
+                        className="mx-auto w-full max-w-[132px]"
                         orientation={card.orientation}
                         title={card.title}
                       />
-                      <div className="spread-card-copy">
-                        <span className="spread-card-position">{card.position ?? "未指定位置"}</span>
-                        <strong>{card.title}</strong>
+                      <div className="grid gap-1.5">
+                        <span className="text-[0.78rem] font-bold tracking-[0.08em] text-accent uppercase">
+                          {card.position ?? "未指定位置"}
+                        </span>
+                        <strong className="font-serif text-base leading-[1.35]">{card.title}</strong>
                         <span
-                          className={`orientation-badge${card.orientation === "reversed" ? " reversed" : ""}`}
+                          className={cn(
+                            "inline-flex self-start rounded-full px-2.5 py-1 text-[0.82rem] font-semibold",
+                            card.orientation === "reversed"
+                              ? "bg-accent/14 text-accent-strong"
+                              : "bg-sage-soft text-sage"
+                          )}
                         >
                           {card.orientation === "reversed" ? "逆位" : "正位"}
                         </span>
@@ -330,38 +399,46 @@ export function TarotChatClient({
               </article>
             ) : null}
 
-            <article className="response-section answer-section">
-              <div className="response-section-heading">
-                <p className="response-section-eyebrow">Interpretation</p>
+            <article
+              className="grid gap-4 rounded-md border border-accent/18 bg-paper-strong p-[22px] max-[640px]:p-[18px]"
+              style={{
+                background:
+                  "linear-gradient(135deg, rgb(184 92 56 / 0.05), rgb(255 250 240 / 0.98)), var(--color-paper-strong)"
+              }}
+            >
+              <div className="grid gap-1">
+                <p className={sectionEyebrowClass}>Interpretation</p>
                 <h3>直接解讀</h3>
               </div>
-              <div className="answer-body">
-                <p>{formatAnswerForDisplay(result.answer)}</p>
+              <div className="rounded-r-[14px] border-l-[3px] border-accent/42 bg-surface-muted px-5 py-[18px]">
+                <p className="m-0 font-serif text-[1.05rem] leading-[1.9] whitespace-pre-wrap">
+                  {formatAnswerForDisplay(result.answer)}
+                </p>
               </div>
             </article>
 
-            <article className="response-section sources-section">
-              <div className="response-section-heading">
-                <p className="response-section-eyebrow">Sources</p>
+            <article className="grid gap-4 rounded-md border border-line bg-surface-soft p-[22px] max-[640px]:p-[18px]">
+              <div className="grid gap-1">
+                <p className={sectionEyebrowClass}>Sources</p>
                 <h3>引用來源與摘要</h3>
               </div>
               {result.selectedSources.length > 0 ? (
-                <ul className="citation-list">
+                <ul className="m-0 grid list-none gap-3 p-0">
                   {result.selectedSources.map((source) => (
                     <li
-                      className="citation-item"
+                      className="grid grid-cols-[auto_minmax(0,1fr)] items-start gap-4 rounded-md border border-line/50 bg-bg-accent/28 p-4 max-[640px]:grid-cols-1"
                       key={`${source.pageId}-${source.sectionTitle ?? "overview"}`}
                     >
                       <TarotCardThumb
                         cardId={source.pageId}
-                        className="citation-card-image"
+                        className="w-16 max-[640px]:w-[72px]"
                         title={source.title}
                       />
-                      <div className="citation-copy">
-                        <div className="citation-meta">
-                          <strong>
+                      <div className="grid min-w-0 gap-2">
+                        <div className="grid gap-1">
+                          <strong className="font-serif text-base leading-[1.35]">
                             <a
-                              className="citation-link"
+                              className="border-b border-transparent no-underline hover:border-current"
                               href={buildPublicWikiHref(source.pageId)}
                               rel="noreferrer"
                               target="_blank"
@@ -369,39 +446,43 @@ export function TarotChatClient({
                               {source.title}
                             </a>
                           </strong>
-                          <span className="citation-section">
+                          <span className="text-[0.92rem] text-muted">
                             {source.sectionTitle ?? "Overview"}
                           </span>
                         </div>
-                        <span className="citation-ref">
+                        <span className="inline-flex self-start rounded-full bg-ink/6 px-2.5 py-1 font-mono text-[0.78rem] text-muted">
                           {source.pageId}
                           {source.chunkId ? `#${source.chunkId}` : ""}
                         </span>
-                        {source.summary ? <p className="citation-summary">{source.summary}</p> : null}
+                        {source.summary ? (
+                          <p className="m-0 pt-1 leading-[1.7] text-ink">{source.summary}</p>
+                        ) : null}
                       </div>
                     </li>
                   ))}
                 </ul>
               ) : (
-                <p className="response-empty-note">
+                <p className="m-0 rounded-sm bg-bg-accent/28 px-[18px] py-4 leading-[1.65] text-muted">
                   這次沒有足夠的選取來源，因此系統只回傳保守 fallback。
                 </p>
               )}
             </article>
 
             {debugEnabled && result.diagnostics ? (
-              <details className="debug-panel">
+              <details className="overflow-auto rounded-md bg-debug-bg p-4 text-debug">
                 <summary>Debug diagnostics</summary>
-                <pre>{JSON.stringify(result.diagnostics, null, 2)}</pre>
+                <pre className="m-0 text-[0.85rem] break-words whitespace-pre-wrap">
+                  {JSON.stringify(result.diagnostics, null, 2)}
+                </pre>
               </details>
             ) : null}
           </div>
         ) : null}
 
         {!loading && !result ? (
-          <div className="response-placeholder">
-            <p className="response-placeholder-title">等待你的問題</p>
-            <p className="muted">送出問題後，這裡會依序顯示牌陣、解讀與引用來源摘要。</p>
+          <div className="grid gap-2 rounded-md border border-dashed border-line/50 bg-surface-faint px-6 py-7 text-center">
+            <p className="m-0 font-serif text-[1.2rem] font-bold">等待你的問題</p>
+            <p className={mutedTextClass}>送出問題後，這裡會依序顯示牌陣、解讀與引用來源摘要。</p>
           </div>
         ) : null}
       </section>

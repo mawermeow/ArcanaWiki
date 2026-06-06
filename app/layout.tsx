@@ -31,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-Hant">
-      <body>{children}</body>
+      <body className="min-h-screen text-ink font-sans antialiased">{children}</body>
     </html>
   );
 }

@@ -1,6 +1,17 @@
 import React from "react";
 import { findPublicWikiPageBySlug, loadPublicWikiPages } from "../../../lib/wiki-public/loader.ts";
 import type { PublicWikiPage } from "../../../lib/wiki-public/types.ts";
+import {
+  cn,
+  eyebrowClass,
+  ghostLinkClass,
+  heroClass,
+  mutedTextClass,
+  pageClass,
+  panelPaddingClass,
+  secondaryButtonClass,
+  wikiProseClass
+} from "../../../lib/ui/classes.ts";
 
 function RelatedPages({
   relatedPageIds,
@@ -18,18 +29,22 @@ function RelatedPages({
   }
 
   return (
-    <section className="panel wiki-detail-section">
-      <div className="wiki-section-header">
+    <section className={cn(panelPaddingClass, "grid gap-[18px]")}>
+      <div className="flex items-start justify-between gap-3.5 max-[920px]:flex-col max-[920px]:items-start">
         <div>
-          <p className="eyebrow">Related</p>
+          <p className={eyebrowClass}>Related</p>
           <h2>相關頁面</h2>
         </div>
       </div>
-      <div className="wiki-related-list">
+      <div className="grid gap-3.5">
         {relatedPages.map((page) => (
-          <a className="wiki-related-link" href={page.href} key={page.id}>
-            <strong>{page.title}</strong>
-            <span>{page.summary ?? page.id}</span>
+          <a
+            className="grid gap-2.5 rounded-md border border-line bg-surface-muted p-[18px] no-underline"
+            href={page.href}
+            key={page.id}
+          >
+            <strong className="no-underline">{page.title}</strong>
+            <span className="text-muted">{page.summary ?? page.id}</span>
           </a>
         ))}
       </div>
@@ -47,13 +62,13 @@ export default async function PublicWikiDetailPage({
 
   if (!page) {
     return (
-      <main className="page">
-        <div className="shell">
-          <section className="panel wiki-missing-panel">
-            <p className="eyebrow">Public Tarot Wiki</p>
+      <main className={pageClass}>
+        <div className="grid gap-5">
+          <section className={cn(panelPaddingClass, "grid gap-[18px]")}>
+            <p className={eyebrowClass}>Public Tarot Wiki</p>
             <h1>找不到這個頁面</h1>
-            <p className="lede">這個連結可能已變更，或目前沒有對外公開。</p>
-            <a className="secondary-button wiki-inline-button" href="/wiki">
+            <p className={mutedTextClass}>這個連結可能已變更，或目前沒有對外公開。</p>
+            <a className={cn(secondaryButtonClass, "no-underline")} href="/wiki">
               回到列表
             </a>
           </section>
@@ -65,44 +80,49 @@ export default async function PublicWikiDetailPage({
   const allPages = await loadPublicWikiPages();
   const pagesById = new Map(allPages.map((item) => [item.id, item]));
 
+  const wikiChipClass = "rounded-full border border-line bg-surface-soft px-3.5 py-2 text-[0.92rem] text-ink";
+
   return (
-    <main className="page">
-      <div className="shell">
-        <section className="hero wiki-detail-hero">
-          <div className="wiki-detail-actions">
-            <a className="ghost-link" href="/wiki">
+    <main className={pageClass}>
+      <div className="grid gap-5">
+        <section className={cn(heroClass, "grid gap-[18px]")}>
+          <div className="flex items-start justify-between gap-3.5 max-[920px]:flex-col max-[920px]:items-start">
+            <a className={ghostLinkClass} href="/wiki">
               回到列表
             </a>
             {page.category === "cards" ? (
-              <a className="secondary-button wiki-inline-button" href={`/?cardId=${encodeURIComponent(page.id)}`}>
+              <a
+                className={cn(secondaryButtonClass, "no-underline")}
+                href={`/?cardId=${encodeURIComponent(page.id)}`}
+              >
                 用這張牌詢問
               </a>
             ) : null}
           </div>
-          <p className="eyebrow">Public Tarot Wiki</p>
+          <p className={eyebrowClass}>Public Tarot Wiki</p>
           <h1>{page.title}</h1>
-          {page.summary ? <p className="lede">{page.summary}</p> : null}
+          {page.summary ? <p className={mutedTextClass}>{page.summary}</p> : null}
 
-          <div className="wiki-pill-row">
+          <div className="flex flex-wrap gap-2.5">
             {(page.tags ?? []).map((tag) => (
-              <span className="wiki-pill" key={tag}>
+              <span className={wikiChipClass} key={tag}>
                 {tag}
               </span>
             ))}
           </div>
 
-          <div className="wiki-pill-row wiki-pill-row-topics">
+          <div className="flex flex-wrap gap-2.5">
             {(page.topics ?? []).map((topic) => (
-              <span className="wiki-pill wiki-pill-topic" key={topic}>
+              <span className={cn(wikiChipClass, "bg-bg-accent/58")} key={topic}>
                 {topic}
               </span>
             ))}
           </div>
         </section>
 
-        <section className="panel wiki-detail-content">
+        <section className={cn(panelPaddingClass, "grid gap-[18px]")}>
           <article
-            className="wiki-prose"
+            className={wikiProseClass}
             dangerouslySetInnerHTML={{
               __html: page.contentHtml
             }}

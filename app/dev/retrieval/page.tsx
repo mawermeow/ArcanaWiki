@@ -1,6 +1,16 @@
 import React from "react";
 import { inspectRetrievalQuery } from "../../../lib/retrieval-inspector/inspect-query.ts";
 import { isRetrievalDebugEnabled } from "../../../lib/pwa/env.ts";
+import {
+  cn,
+  eyebrowClass,
+  fieldClass,
+  fieldLabelClass,
+  mutedTextClass,
+  pageClass,
+  panelPaddingClass,
+  primaryButtonClass
+} from "../../../lib/ui/classes.ts";
 
 function renderList(values: string[]): string {
   return values.length > 0 ? values.join(" / ") : "(none)";
@@ -13,9 +23,11 @@ export default async function RetrievalInspectorPage({
 }) {
   if (!isRetrievalDebugEnabled()) {
     return (
-      <main className="page dev-page">
-        <section className="panel">
-          <p className="placeholder">Retrieval inspector is only available when `TAROT_DEBUG_RETRIEVAL=true`.</p>
+      <main className={cn(pageClass, "grid gap-5")}>
+        <section className={panelPaddingClass}>
+          <p className={mutedTextClass}>
+            Retrieval inspector is only available when `TAROT_DEBUG_RETRIEVAL=true`.
+          </p>
         </section>
       </main>
     );
@@ -34,16 +46,16 @@ export default async function RetrievalInspectorPage({
     : [];
 
   return (
-    <main className="page dev-page">
-      <section className="panel">
-        <p className="eyebrow">Developer Only</p>
+    <main className={cn(pageClass, "grid gap-5")}>
+      <section className={panelPaddingClass}>
+        <p className={eyebrowClass}>Developer Only</p>
         <h1>Retrieval Inspector</h1>
-        <form className="dev-form" action="/dev/retrieval" method="get">
-          <label className="field">
-            <span>Query</span>
+        <form className="grid gap-[18px]" action="/dev/retrieval" method="get">
+          <label className={fieldClass}>
+            <span className={fieldLabelClass}>Query</span>
             <input defaultValue={query ?? ""} name="q" placeholder="例如：對方最近很冷淡" />
           </label>
-          <button className="primary-button" type="submit">
+          <button className={primaryButtonClass} type="submit">
             Inspect
           </button>
         </form>
@@ -51,22 +63,28 @@ export default async function RetrievalInspectorPage({
 
       {inspection ? (
         <>
-          <section className="panel">
+          <section className={panelPaddingClass}>
             <h2>Hybrid Summary</h2>
             <p>Tokenized query: {renderList(inspection.tokenizedQuery)}</p>
             <p>Failure causes: {renderList(inspection.analysis.failureCauses)}</p>
             <p>Notes: {renderList(inspection.analysis.notes)}</p>
           </section>
 
-          <section className="panel">
+          <section className={panelPaddingClass}>
             <h2>Top Results</h2>
-            <div className="results-grid">
+            <div className="grid grid-cols-3 gap-3.5 max-[920px]:grid-cols-1">
               {resultGroups.map((group) => (
-                <article className="mini-panel" key={group.label}>
+                <article
+                  className="grid gap-3 rounded-md border border-line bg-paper-strong p-[18px]"
+                  key={group.label}
+                >
                   <h3>{group.label}</h3>
-                  <ul className="inspector-list">
+                  <ul className="m-0 grid list-none gap-3 p-0">
                     {group.results.map((result) => (
-                      <li key={`${group.label}-${result.chunkId}`}>
+                      <li
+                        className="grid grid-cols-[auto_minmax(0,1fr)] items-start gap-4 rounded-md border border-line/50 bg-bg-accent/28 p-4"
+                        key={`${group.label}-${result.chunkId}`}
+                      >
                         <strong>{result.title}</strong>
                         <span>{result.sectionTitle}</span>
                         <code>{result.pageId}</code>
@@ -79,19 +97,25 @@ export default async function RetrievalInspectorPage({
             </div>
           </section>
 
-          <section className="panel">
+          <section className={panelPaddingClass}>
             <h2>Score Breakdown</h2>
-            <pre className="debug-pre">{JSON.stringify(inspection.hybrid.scoreBreakdown, null, 2)}</pre>
+            <pre className="m-0 overflow-auto text-[0.85rem] break-words whitespace-pre-wrap">
+              {JSON.stringify(inspection.hybrid.scoreBreakdown, null, 2)}
+            </pre>
           </section>
 
-          <section className="panel">
+          <section className={panelPaddingClass}>
             <h2>Selected Chunks</h2>
-            <pre className="debug-pre">{JSON.stringify(inspection.hybrid.selectedChunksPreview, null, 2)}</pre>
+            <pre className="m-0 overflow-auto text-[0.85rem] break-words whitespace-pre-wrap">
+              {JSON.stringify(inspection.hybrid.selectedChunksPreview, null, 2)}
+            </pre>
           </section>
         </>
       ) : (
-        <section className="panel">
-          <p className="placeholder">輸入 query 後，這裡會顯示 BM25 / vector / hybrid 與 selected chunk 摘要。</p>
+        <section className={panelPaddingClass}>
+          <p className={mutedTextClass}>
+            輸入 query 後，這裡會顯示 BM25 / vector / hybrid 與 selected chunk 摘要。
+          </p>
         </section>
       )}
     </main>

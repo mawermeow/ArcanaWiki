@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "next dev",
+    "dev": "direnv allow && next dev",
     "build": "next build",
     "start": "next start",
     "index:bm25": "node lib/retrieval/cli/build-bm25-index.ts",
@@ -33,12 +33,15 @@
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.0",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",
     "@types/node": "^24.0.3",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "jsdom": "^26.1.0",
+    "postcss": "^8.5.15",
+    "tailwindcss": "^4.3.0",
     "tsx": "^4.20.1",
     "typescript": "^5.8.3"
   }
