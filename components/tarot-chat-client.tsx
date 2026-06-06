@@ -348,6 +348,12 @@ export function TarotChatClient({
                   </span>
                   <span className="text-[0.86rem] text-muted">{result.generatedReading.spreadId}</span>
                 </div>
+                {result.generatedReading.spreadSelectionReason ? (
+                  <p className="m-0 text-[0.95rem] leading-[1.7] text-muted">
+                    <strong className="font-semibold text-ink">為什麼選這個牌陣：</strong>
+                    {result.generatedReading.spreadSelectionReason}
+                  </p>
+                ) : null}
                 <div className="grid gap-3.5 [grid-template-columns:repeat(auto-fit,minmax(148px,1fr))] max-[920px]:[grid-template-columns:repeat(auto-fit,minmax(132px,1fr))] max-[640px]:flex max-[640px]:snap-x max-[640px]:snap-mandatory max-[640px]:gap-3 max-[640px]:overflow-x-auto max-[640px]:pb-1">
                   {result.generatedReading.cards.map((card) => (
                     <div

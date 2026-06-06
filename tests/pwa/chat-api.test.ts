@@ -185,6 +185,7 @@ test("auto draw generates spread and cards before calling answer service", async
       generateReading: async () => ({
         spreadId: "spread-love-tree",
         spreadTitle: "愛情樹牌陣",
+        spreadSelectionReason: "這個問題聚焦在關係互動，因此選用愛情樹牌陣。",
         cards: [
           {
             cardId: "cups-02",
@@ -205,6 +206,7 @@ test("auto draw generates spread and cards before calling answer service", async
   assert.deepEqual(payload.generatedReading, {
     spreadId: "spread-love-tree",
     spreadTitle: "愛情樹牌陣",
+    spreadSelectionReason: "這個問題聚焦在關係互動，因此選用愛情樹牌陣。",
     cards: [
       {
         cardId: "cups-02",

@@ -173,6 +173,7 @@ test("auto draw option submits flag and renders generated reading", async () => 
             generatedReading: {
               spreadId: "spread-love-tree",
               spreadTitle: "愛情樹牌陣",
+              spreadSelectionReason: "這個問題聚焦在關係互動，因此選用愛情樹牌陣。",
               cards: [
                 {
                   cardId: "cups-02",
@@ -207,6 +208,9 @@ test("auto draw option submits flag and renders generated reading", async () => 
   await waitFor(() => {
     assert.ok(view.getByText("愛情樹牌陣"));
   });
+
+  assert.ok(view.getByText(/為什麼選這個牌陣/));
+  assert.ok(view.getByText(/這個問題聚焦在關係互動，因此選用愛情樹牌陣。/));
 
   assert.match(seenBody, /"autoDraw":true/);
   assert.ok(view.getByText("目前關係狀態"));
