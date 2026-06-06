@@ -5,6 +5,7 @@
 .env
 .env.local
 .env.*.local
+.envrc
 
 # Node / package manager
 node_modules/

@@ -1,0 +1,4 @@
+# 複製為本機設定後再執行 `direnv allow`：
+#   cp .envrc.example .envrc
+
+source_env_if_exists ~/Secrets/ArcanaWiki/dev.env
