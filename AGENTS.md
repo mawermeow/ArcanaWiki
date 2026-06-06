@@ -235,6 +235,12 @@ Run BM25 evaluation:
 Build vector cache:
   pnpm index:vector
 
+Search vector cache:
+  pnpm search:vector -- "對方最近很冷淡" --live-query-embedding
+
+Run vector evaluation:
+  pnpm eval:vector
+
 Build all retrieval assets:
   pnpm index:build
 

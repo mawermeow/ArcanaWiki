@@ -1,7 +1,7 @@
 import path from "node:path";
 import { promises as fs } from "node:fs";
 
-import type { BM25Index } from "./types.ts";
+import type { BM25Index, VectorCache } from "./types.ts";
 
 export async function writeBm25Index(indexPath: string, index: BM25Index): Promise<void> {
   await fs.mkdir(path.dirname(indexPath), { recursive: true });
@@ -11,6 +11,16 @@ export async function writeBm25Index(indexPath: string, index: BM25Index): Promi
 export async function readBm25Index(indexPath: string): Promise<BM25Index> {
   const raw = await fs.readFile(indexPath, "utf8");
   return JSON.parse(raw) as BM25Index;
+}
+
+export async function writeVectorCache(cachePath: string, cache: VectorCache): Promise<void> {
+  await fs.mkdir(path.dirname(cachePath), { recursive: true });
+  await fs.writeFile(cachePath, JSON.stringify(cache, null, 2) + "\n", "utf8");
+}
+
+export async function readVectorCache(cachePath: string): Promise<VectorCache> {
+  const raw = await fs.readFile(cachePath, "utf8");
+  return JSON.parse(raw) as VectorCache;
 }
 
 export async function writeJsonFile(filePath: string, value: unknown): Promise<void> {

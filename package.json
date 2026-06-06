@@ -6,9 +6,12 @@
   "type": "module",
   "scripts": {
     "index:bm25": "node lib/retrieval/cli/build-bm25-index.ts",
+    "index:vector": "node lib/retrieval/cli/build-vector-index.ts",
     "search:bm25": "node lib/retrieval/cli/search-bm25.ts",
+    "search:vector": "node lib/retrieval/cli/search-vector.ts",
     "eval:bm25": "node lib/retrieval/cli/eval-bm25.ts",
-    "test:retrieval": "node --test tests/retrieval/bm25.test.ts",
+    "eval:vector": "node lib/retrieval/cli/eval-vector.ts",
+    "test:retrieval": "node --test tests/retrieval/*.test.ts",
     "test": "node --test"
   },
   "private": true

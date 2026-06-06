@@ -58,6 +58,18 @@ export type RetrievalDocument = {
   tokenCount: number;
 };
 
+export type RetrievalSource = "bm25" | "vector" | "graph";
+
+export type RetrievalResult = {
+  chunkId: string;
+  pageId: string;
+  score: number;
+  source: RetrievalSource;
+  title: string;
+  sectionTitle?: string;
+  metadata?: Record<string, unknown>;
+};
+
 export type BM25Posting = {
   documentId: string;
   frequency: number;
@@ -98,17 +110,13 @@ export type SearchOptions = {
   indexPath?: string;
 };
 
-export type SearchResult = {
-  score: number;
-  pageId: string;
-  chunkId: string;
-  title: string;
+export type SearchResult = RetrievalResult & {
   sectionTitle: string;
   matchedTerms: string[];
-  source: "bm25";
   tags: string[];
   topics: string[];
   path: string;
+  metadata?: Record<string, unknown>;
 };
 
 export type RejectedResult = {
@@ -135,6 +143,78 @@ export type SearchResponse = {
   query: string;
   results: SearchResult[];
   diagnostics: SearchDiagnostics;
+};
+
+export type VectorCacheDocument = {
+  chunkId: string;
+  pageId: string;
+  contentHash: string;
+  text: string;
+  title: string;
+  sectionTitle: string;
+  metadata: {
+    pageType: string;
+    path: string;
+    tags: string[];
+    topics: string[];
+    keywords: string[];
+    relatedCards: string[];
+    sectionPath: string[];
+    stale?: boolean;
+  };
+  vector: number[];
+};
+
+export type VectorCache = {
+  embeddingModel: string;
+  embeddingDimension: number;
+  generatedAt: string;
+  documents: VectorCacheDocument[];
+};
+
+export type VectorCacheBuildSummary = {
+  totalChunks: number;
+  reusedEmbeddings: number;
+  generatedEmbeddings: number;
+  staleEmbeddings: number;
+  embeddingModel: string;
+  dimension: number;
+};
+
+export type VectorSearchOptions = {
+  topK?: number;
+  minScore?: number;
+  cachePath?: string;
+  cache?: VectorCache;
+  queryVector?: number[];
+  liveQueryEmbedding?: boolean;
+  embeddingModel?: string;
+  embedQuery?: (text: string, model: string) => Promise<number[]>;
+};
+
+export type VectorSearchResult = RetrievalResult & {
+  sectionTitle: string;
+  source: "vector";
+  metadata: Record<string, unknown>;
+};
+
+export type VectorSearchDiagnostics = {
+  queryEmbeddingModel: string;
+  candidateCount: number;
+  rawScores: Array<{
+    pageId: string;
+    chunkId: string;
+    score: number;
+  }>;
+  rejectedResults: RejectedResult[];
+  topK: number;
+  minScore: number;
+};
+
+export type VectorSearchResponse = {
+  query: string;
+  results: VectorSearchResult[];
+  diagnostics: VectorSearchDiagnostics;
 };
 
 export type EvaluationEntry = {

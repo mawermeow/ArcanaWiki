@@ -11,3 +11,5 @@ export async function searchWiki(
   const index = options.index ?? (await readBm25Index(options.indexPath ?? DEFAULT_INDEX_PATH));
   return searchBm25Index(index, query, options);
 }
+
+export { searchWikiVector } from "./vector-search-api.ts";

@@ -98,7 +98,15 @@ export function searchBm25Index(
     source: "bm25",
     tags: item.document.tags,
     topics: item.document.topics,
-    path: item.document.path
+    path: item.document.path,
+    metadata: {
+      pageType: item.document.pageType,
+      path: item.document.path,
+      tags: item.document.tags,
+      topics: item.document.topics,
+      keywords: item.document.keywords,
+      relatedCards: item.document.relatedCards
+    }
   }));
 
   const rejectedResults = ranked

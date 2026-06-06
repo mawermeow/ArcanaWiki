@@ -2,7 +2,12 @@
 
 ## Scope
 
-目前只實作 `wiki -> BM25 -> retrieval`。不包含 vector search、graph DB、web server，也不直接串接 OpenAI API。
+目前實作：
+
+- `wiki -> BM25 -> retrieval`
+- `wiki chunks -> vector-cache -> vector search`
+
+仍不包含 graph DB、web server、hybrid merge、answer generation。
 
 ## Module Layout
 
@@ -18,6 +23,14 @@
   對 query 做 tokenize，計算 BM25 score，輸出 results 與 diagnostics。
 - `lib/retrieval/evaluation.ts`
   讀取 evaluation dataset，計算 top1 / top3 / keyword / topic recall。
+- `lib/retrieval/embedding-client.ts`
+  唯一直接呼叫 OpenAI embeddings API 的模組。
+- `lib/retrieval/vector-cache.ts`
+  建立 vector text、content hash、incremental cache plan 與 cache builder。
+- `lib/retrieval/vector-searcher.ts`
+  讀取 query vector 後做 cosine similarity 排序，輸出 vector results 與 diagnostics。
+- `lib/retrieval/vector-evaluation.ts`
+  讀取 evaluation dataset，計算 top1 / top3 / top5 / topic / card recall。
 
 ## Chunking Strategy
 
@@ -46,6 +59,27 @@
 - index metadata 不寫入 wall-clock timestamp。
 - 相同 wiki 輸入會生成相同 `embeddings/bm25-index.json`。
 
+## Vector Cache Strategy
+
+- vector cache 輸出到 `embeddings/vector-cache.json`。
+- 每個 chunk 的 embedding text 由 `title + section path + tags + topics + keywords + related cards + content` 組成。
+- `contentHash` 以 embedding text 計算。
+- incremental update 規則：
+  - 同一個 `chunkId` 且 `contentHash` 未變：reuse 舊 embedding。
+  - `contentHash` 改變：重新產生 embedding。
+  - chunk 消失：保留 cache entry，但標記 `stale: true`。
+- search 只讀取 active documents，不使用 stale entries。
+
+## Query Embedding Behavior
+
+- `index:vector` 一定需要 `OPENAI_API_KEY`。
+- library 層 `searchWikiVector()` 可接受：
+  - `queryVector`
+  - `liveQueryEmbedding: true`
+  - 自訂 `embedQuery`
+- CLI 層 `search:vector` 預設不打 API，必須明確傳 `--live-query-embedding`。
+- `eval:vector` 預設使用 live query embedding，因此也需要 `OPENAI_API_KEY`。
+
 ## Future Vector Retrieval
 
 未來若要接 vector retrieval，建議保持以下邊界：
@@ -54,3 +88,10 @@
 2. query diagnostics 保留 `bm25 topK` 與 `vector topK`。
 3. merge/rerank 在獨立模組完成，不回寫 BM25 index。
 4. relations/graph expansion 只在 BM25 + vector 合併後做有限擴張。
+
+## Hybrid Preparation
+
+- 共用型別：
+  - `RetrievalSource = "bm25" | "vector" | "graph"`
+  - `RetrievalResult`
+- BM25 與 vector results 都可直接進入未來的 merge/rerank 層。
