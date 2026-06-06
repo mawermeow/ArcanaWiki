@@ -241,6 +241,9 @@ Search vector cache:
 Search hybrid retrieval:
   pnpm search:hybrid -- "聖杯二逆位 感情"
 
+Generate tarot answer:
+  pnpm answer -- "聖杯二逆位，對方最近很冷淡，這段關係還有希望嗎？"
+
 Inspect single retrieval query:
   pnpm inspect:retrieval -- "對方最近很冷淡"
 
@@ -264,6 +267,9 @@ Run local LINE webhook:
 
 Run retrieval smoke test:
   pnpm test:retrieval
+
+Run answer generation tests:
+  pnpm test:answer
 ```
 
 ## Testing Expectations
@@ -398,15 +404,16 @@ All auto-generated commits must use Conventional Commits.
 
 ### Format
 
-```text
+```text id="e5zx5l"
 <type>(scope): <summary>
 ```
 
 ### Language Rules
 
-- Commit summary must be written in Traditional Chinese.
+- Commit summary must primarily use Traditional Chinese.
+- Technical terms, library names, framework names, product names, API names, database names, and other proper nouns should remain in English.
+- Do not forcibly translate industry-standard terminology.
 - Use concise and clear wording.
-- Do not mix Chinese and English unless necessary.
 - Keep summary under 72 characters.
 
 ### Allowed Types
@@ -420,22 +427,26 @@ All auto-generated commits must use Conventional Commits.
 
 ### Examples
 
-```text
-feat(retrieval): 新增 BM25 搜尋流程
-fix(vector): 修正 embedding cache 錯誤
-refactor(graph): 重構 relation builder
-docs(agent): 更新 Codex 工作流程說明
+```text id="i7ldfc"
+feat(retrieval): 新增 BM25 search 流程
+fix(vector): 修正 embedding cache mismatch 問題
+refactor(graph): 重構 relation builder 邏輯
+docs(agent): 更新 Codex workflow 說明
 test(search): 補上 hybrid search 測試
-chore(repo): 更新 eslint 與 prettier 設定
+chore(repo): 更新 ESLint 與 Prettier 設定
+feat(api): 新增 OpenAI rerank endpoint
+fix(nextjs): 修正 App Router hydration 問題
 ```
 
 ### Additional Rules
 
 - Choose the commit type based on the primary purpose of the change.
 - Prefer adding scope when possible.
-- Avoid generic messages like:
+- Analyze git diff before generating commit messages.
+- Avoid generic messages such as:
   - update
   - fix bug
   - misc changes
   - temporary commit
-- Analyze git diff before generating commit messages.
+- Use lowercase type and scope.
+- Keep commit messages readable and consistent across the repository.

@@ -7,8 +7,9 @@
 - `wiki -> BM25 -> retrieval`
 - `wiki chunks -> vector-cache -> vector search`
 - `BM25 + vector + relations/graph.json -> hybrid retrieval + rerank`
+- `hybrid retrieval -> prompt builder -> OpenAI answer -> citation validation`
 
-仍不包含 graph DB、web server、answer generation。
+仍不包含 graph DB、web server、LINE Bot、PWA UI。
 
 ## Module Layout
 
@@ -42,6 +43,20 @@
   執行 hybrid retrieval evaluation，輸出 report / summary，並可比對既有 BM25 / vector report。
 - `lib/retrieval-inspector/`
   developer-only retrieval diagnostics layer。整合 BM25 / vector / hybrid / graph expansion 結果，輸出 markdown report 與 JSON diagnostics。
+- `lib/answer/context-builder.ts`
+  根據 hybrid final results 選取最小足夠的 wiki chunks，建立 answer context 與 selected source contract。
+- `lib/answer/prompt-builder.ts`
+  建立 `SYSTEM / DEVELOPER / USER / WIKI CONTEXT` 分層 prompt。
+- `lib/answer/openai-client.ts`
+  封裝 OpenAI Chat API、timeout、retry、max completion tokens。
+- `lib/answer/citation-validator.ts`
+  驗證 answer 中的 `[來源: pageId#chunkId]` 是否只引用 selected sources。
+- `lib/answer/answer-validator.ts`
+  檢查絕對化、宿命論、操控或監控式語言。
+- `lib/answer/safety.ts`
+  偵測高風險 query，將 answer generation 降級到更嚴格的安全模式。
+- `lib/answer/diagnostics.ts`
+  整理 answer pipeline diagnostics，僅在 debug mode 回傳。
 
 ## Chunking Strategy
 
@@ -159,6 +174,35 @@ query
   - `weights`
   - `topK`
   - `timingMs`
+
+## Answer Generation Flow
+
+```txt
+question + optional cards/spread
+-> build answer query
+-> hybrid retrieval
+-> select top context chunks
+-> build prompt
+-> OpenAI Chat API
+-> citation validation
+-> answer safety validation
+-> final answer or safe fallback
+```
+
+## Answer Safety Rules
+
+- answer 只可依據 selected wiki context。
+- citation 格式固定為 `[來源: pageId#chunkId]`。
+- 若沒有 selected sources，不呼叫 OpenAI Chat API，直接回傳「目前資料不足以確認」 fallback。
+- 若 citation 缺失、引用不存在，或 answer 使用絕對化語言，直接回傳安全 fallback。
+- safety guardrails 會特別降級以下題型：
+  - 自傷
+  - 暴力
+  - 醫療診斷
+  - 法律判斷
+  - 財務投資建議
+  - 跟蹤 / 監控 / 操控他人
+  - 要求絕對判斷對方是否出軌、是否愛我
 
 ## Retrieval Inspector
 

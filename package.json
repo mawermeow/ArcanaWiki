@@ -7,6 +7,7 @@
   "scripts": {
     "index:bm25": "node lib/retrieval/cli/build-bm25-index.ts",
     "index:vector": "node lib/retrieval/cli/build-vector-index.ts",
+    "answer": "node lib/answer/cli/answer.ts",
     "search:bm25": "node lib/retrieval/cli/search-bm25.ts",
     "search:vector": "node lib/retrieval/cli/search-vector.ts",
     "search:hybrid": "node lib/retrieval/cli/search-hybrid.ts",
@@ -16,6 +17,7 @@
     "eval:vector": "node lib/retrieval/cli/eval-vector.ts",
     "eval:hybrid": "node lib/retrieval/cli/eval-hybrid.ts",
     "test:retrieval": "node --test tests/retrieval/*.test.ts",
+    "test:answer": "node --test tests/answer/*.test.ts",
     "test": "node --test"
   },
   "private": true

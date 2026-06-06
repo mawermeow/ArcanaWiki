@@ -21,6 +21,7 @@ Tarot LLM Wiki + retrieval playground。知識來源目前以 `wiki/` 為主，�
 ### Commands
 
 ```bash
+pnpm answer -- "聖杯二逆位，對方最近很冷淡，這段關係還有希望嗎？"
 pnpm index:bm25
 pnpm index:vector
 pnpm search:bm25 -- --query="聖杯二逆位"
@@ -32,8 +33,54 @@ pnpm eval:bm25
 pnpm eval:vector
 pnpm eval:hybrid
 pnpm eval:hybrid -- --live-query-embedding
+pnpm test:answer
 pnpm test
 ```
+
+## Answer Generation
+
+- module path：`lib/answer/`
+- scope：只處理 `Hybrid Retrieval -> Prompt Builder -> OpenAI Answer -> Citation Validation`
+- 不建立 LINE Bot、不建立 PWA UI、不做 streaming response
+- public API：`answerTarotQuestion(request)`
+- CLI：
+  - `pnpm answer -- "聖杯二逆位，對方最近很冷淡，這段關係還有希望嗎？"`
+  - `pnpm answer -- --debug "聖杯二逆位，對方最近很冷淡，這段關係還有希望嗎？"`
+
+### Pipeline
+
+```txt
+request
+-> hybrid retrieval
+-> select 5..8 wiki chunks
+-> build prompt with SYSTEM / DEVELOPER / USER layers
+-> call OpenAI Chat API
+-> validate citations
+-> validate safety language
+-> return answer / fallback / diagnostics
+```
+
+### Environment
+
+- `OPENAI_API_KEY`
+- `OPENAI_CHAT_MODEL`
+- `OPENAI_REQUEST_TIMEOUT_SECONDS`
+- `OPENAI_MAX_RETRIES`
+- `OPENAI_CHAT_MAX_COMPLETION_TOKENS`
+
+### Citation Contract
+
+- answer 中的引用格式固定為 `[來源: pageId#chunkId]`
+- cited source 必須存在於 selected sources
+- 若 citation 缺失或無效，pipeline 會回傳安全 fallback，而不是輸出可能幻覺內容
+
+### Safety Notes
+
+- answer 只能根據 selected wiki context 解讀
+- 不可對醫療、法律、財務、自傷、暴力做斷言
+- 不可聲稱知道對方真實想法
+- 不可提供操控、監控、報復、測試對方的建議
+- 若 context 不足，必須明確回覆目前資料不足
 
 ### Retrieval Inspector
 
