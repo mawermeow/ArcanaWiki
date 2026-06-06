@@ -309,6 +309,12 @@ select:focus {
   background: rgba(219, 231, 223, 0.4);
 }
 
+.source-summary {
+  margin: 2px 0 0;
+  color: var(--ink);
+  line-height: 1.65;
+}
+
 code,
 small {
   color: var(--muted);

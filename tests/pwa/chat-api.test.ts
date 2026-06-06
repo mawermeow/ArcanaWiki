@@ -81,7 +81,9 @@ test("chat API hides diagnostics by default", async () => {
     {
       pageId: "cups-02",
       title: "聖杯二（Two of Cups）",
-      sectionTitle: "逆位意義"
+      sectionTitle: "逆位意義",
+      chunkId: "cups-02::逆位意義",
+      summary: "關係中不和諧的因素,不平等的關係,溝通不暢,分離、分手。"
     }
   ]);
 });

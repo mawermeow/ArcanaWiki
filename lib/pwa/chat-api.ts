@@ -1,4 +1,5 @@
 import { answerTarotQuestion } from "../answer/index.ts";
+import { buildAnswerContext } from "../answer/context-builder.ts";
 import type {
   TarotAnswerRequest,
   TarotAnswerResponse,
@@ -6,6 +7,9 @@ import type {
 } from "../answer/types.ts";
 import { generateAutoReading, type GeneratedReading } from "./auto-reading.ts";
 import { isRetrievalDebugEnabled } from "./env.ts";
+import { readBm25Index } from "../retrieval/persistence.ts";
+
+const DEFAULT_INDEX_PATH = "embeddings/bm25-index.json";
 
 export type ChatApiRequest = {
   question: string;
@@ -22,6 +26,8 @@ export type ChatApiResponse = {
     pageId: string;
     title: string;
     sectionTitle?: string;
+    chunkId?: string;
+    summary?: string;
   }>;
   safety: TarotAnswerResponse["safety"];
   diagnostics?: TarotAnswerResponse["diagnostics"];
@@ -158,19 +164,89 @@ export function validateChatApiRequest(input: unknown): ValidationResult {
 function sanitizeAnswerResponse(
   response: TarotAnswerResponse,
   allowDiagnostics: boolean,
-  generatedReading?: GeneratedReading
+  generatedReading?: GeneratedReading,
+  sourceSummaries?: Map<string, string>
 ): ChatApiResponse {
   return {
     answer: response.answer,
     selectedSources: response.selectedSources.map((source) => ({
       pageId: source.pageId,
       title: source.title,
-      sectionTitle: source.sectionTitle
+      sectionTitle: source.sectionTitle,
+      chunkId: source.chunkId,
+      summary: sourceSummaries?.get(`${source.pageId}#${source.chunkId}`)
     })),
     safety: response.safety,
     diagnostics: allowDiagnostics ? response.diagnostics : undefined,
     generatedReading
   };
+}
+
+function summarizeChunk(content: string): string {
+  const normalized = content
+    .replace(/\s+/g, " ")
+    .replace(/\[[^\]]+\]\([^)]+\)/g, "")
+    .trim();
+
+  if (!normalized) {
+    return "";
+  }
+
+  const sentence = normalized.split(/(?<=[。！？.!?])\s+/u)[0] ?? normalized;
+  const compact = sentence.trim();
+
+  if (compact.length <= 90) {
+    return compact;
+  }
+
+  return `${compact.slice(0, 90).trimEnd()}...`;
+}
+
+async function buildSourceSummaries(
+  request: TarotAnswerRequest,
+  response: TarotAnswerResponse
+): Promise<Map<string, string>> {
+  if (response.selectedSources.length === 0) {
+    return new Map();
+  }
+
+  const index = await readBm25Index(DEFAULT_INDEX_PATH);
+  const pseudoRetrieval = {
+    query: request.question,
+    results: response.selectedSources.map((source) => ({
+      chunkId: source.chunkId,
+      pageId: source.pageId,
+      title: source.title,
+      sectionTitle: source.sectionTitle ?? "Overview",
+      finalScore: 0,
+      sourceScores: {},
+      sources: [],
+      metadata: {}
+    })),
+    diagnostics: {
+      bm25Results: [],
+      vectorResults: [],
+      normalizedScores: [],
+      mergedResults: [],
+      graphExpandedResults: [],
+      rejectedResults: [],
+      finalResults: [],
+      weights: { bm25: 0, vector: 0, graph: 0 },
+      topK: response.selectedSources.length,
+      timingMs: { bm25: 0, vector: 0, merge: 0, graph: 0, total: 0 },
+      queryTokens: []
+    }
+  };
+
+  const context = buildAnswerContext({
+    request,
+    index,
+    retrieval: pseudoRetrieval
+  });
+
+  return new Map(
+    context.chunks.map((chunk) => [`${chunk.pageId}#${chunk.chunkId}`, summarizeChunk(chunk.content)])
+  );
 }
 
 export async function handleChatRequest(
@@ -221,7 +297,18 @@ export async function handleChatRequest(
       debug: allowDiagnostics
     });
 
-    return jsonResponse(sanitizeAnswerResponse(response, allowDiagnostics, generatedReading));
+    const sourceSummaries = await buildSourceSummaries(
+      {
+        ...validation.value,
+        cards: generatedReading?.cards ?? validation.value.cards,
+        spreadId: generatedReading?.spreadId ?? validation.value.spreadId
+      },
+      response
+    );
+
+    return jsonResponse(
+      sanitizeAnswerResponse(response, allowDiagnostics, generatedReading, sourceSummaries)
+    );
   } catch (error) {
     const message = error instanceof Error ? error.message : "";
     const status = message.includes("OPENAI_API_KEY") ? 503 : 500;

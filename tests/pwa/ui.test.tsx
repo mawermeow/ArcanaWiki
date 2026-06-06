@@ -65,7 +65,9 @@ test("submit flow renders answer and selected source summary", async () => {
               {
                 pageId: "cups-02",
                 title: "聖杯二（Two of Cups）",
-                sectionTitle: "逆位意義"
+                sectionTitle: "逆位意義",
+                chunkId: "cups-02::逆位意義",
+                summary: "關係中不和諧的因素,不平等的關係,溝通不暢,分離、分手。"
               }
             ],
             safety: {
@@ -107,6 +109,8 @@ test("submit flow renders answer and selected source summary", async () => {
   assert.ok(seenBody.length > 0);
   assert.ok(view.getAllByText("聖杯二（Two of Cups）").length >= 1);
   assert.ok(view.getByText("逆位意義"));
+  assert.ok(view.getByText("關係中不和諧的因素,不平等的關係,溝通不暢,分離、分手。"));
+  assert.ok(view.getByText("[來源: cups-02#cups-02::逆位意義]"));
 
   restore();
 });

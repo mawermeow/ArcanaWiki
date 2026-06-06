@@ -296,14 +296,18 @@ export function TarotChatClient({
             ) : null}
 
             <article className="sources-card">
-              <h3>來源摘要</h3>
+              <h3>引用來源與摘要</h3>
               {result.selectedSources.length > 0 ? (
                 <ul className="source-list">
                   {result.selectedSources.map((source) => (
                     <li key={`${source.pageId}-${source.sectionTitle ?? "overview"}`}>
                       <strong>{source.title}</strong>
                       <span>{source.sectionTitle ?? "Overview"}</span>
-                      <code>{source.pageId}</code>
+                      <code>
+                        [來源: {source.pageId}
+                        {source.chunkId ? `#${source.chunkId}` : ""}]
+                      </code>
+                      {source.summary ? <p className="source-summary">{source.summary}</p> : null}
                     </li>
                   ))}
                 </ul>
