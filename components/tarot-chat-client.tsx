@@ -4,6 +4,7 @@ import React, { useMemo, useState, type FormEvent } from "react";
 import { formatAnswerForDisplay } from "../lib/answer/citation-validator.ts";
 import type { ChatApiResponse } from "../lib/pwa/chat-api.ts";
 import type { TarotCardOption } from "../lib/pwa/card-catalog.ts";
+import { AnswerBody } from "./answer-body.tsx";
 import {
   cn,
   eyebrowClass,
@@ -393,9 +394,7 @@ export function TarotChatClient({
                 <h3>直接解讀</h3>
               </div>
               <div className="rounded-r-[14px] border-l-[3px] border-accent/42 bg-surface-muted px-5 py-[18px]">
-                <p className="m-0 font-serif text-[1.05rem] leading-[1.9] whitespace-pre-wrap">
-                  {formatAnswerForDisplay(result.answer)}
-                </p>
+                <AnswerBody text={formatAnswerForDisplay(result.answer)} />
               </div>
             </article>
 
