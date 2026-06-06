@@ -175,6 +175,9 @@ Recommended environment variables:
 OPENAI_API_KEY=
 OPENAI_CHAT_MODEL=
 OPENAI_EMBEDDING_MODEL=
+OPENAI_REQUEST_TIMEOUT_SECONDS=
+OPENAI_MAX_RETRIES=
+OPENAI_CHAT_MAX_COMPLETION_TOKENS=
 
 LINE_CHANNEL_ACCESS_TOKEN=
 LINE_CHANNEL_SECRET=
@@ -189,6 +192,8 @@ TAROT_FINAL_CONTEXT_TOP_K=8
 
 Rules:
 - OPENAI_API_KEY 不加此前綴，方便與 SDK / CLI 相容。
+- `OPENAI_REQUEST_TIMEOUT_SECONDS`、`OPENAI_MAX_RETRIES`、`OPENAI_CHAT_MAX_COMPLETION_TOKENS` 供 answer generation 的 OpenAI Chat API 使用。
+- `OPENAI_EMBEDDING_MODEL` 供 vector index / vector search live query embedding 使用。
 - LINE secrets 不可提交。
 - LINE_ALLOWED_USER_IDS 可用逗號分隔。
 - 若未設定 LINE_ALLOWED_USER_IDS，LINE webhook 不應處理任何訊息。
@@ -398,55 +403,58 @@ source_env_if_exists ~/Secrets/ArcanaWiki/dev.env
 
 ---
 
-## Commit Message Rules
+## Commit Classification Rules
 
-All auto-generated commits must use Conventional Commits.
+Commit type must be determined by the PRIMARY impact of the git diff,
+not by the last edited file.
 
-### Format
+Priority order:
 
-```text id="e5zx5l"
-<type>(scope): <summary>
-```
+1. feat
+  - New functionality
+  - New behavior
+  - New API
+  - New workflow
 
-### Language Rules
+2. fix
+  - Bug fix
+  - Error handling
+  - Runtime issue correction
 
-- Commit summary must primarily use Traditional Chinese.
-- Technical terms, library names, framework names, product names, API names, database names, and other proper nouns should remain in English.
-- Do not forcibly translate industry-standard terminology.
-- Use concise and clear wording.
-- Keep summary under 72 characters.
+3. refactor
+  - Structural improvement
+  - Internal architecture changes
+  - No major feature addition
 
-### Allowed Types
+4. perf
+  - Performance optimization
 
-- feat
-- fix
-- refactor
-- docs
-- test
-- chore
+5. test
+  - Test-related changes
+
+6. docs
+  - Documentation-only changes
+  - Use docs ONLY if the commit contains no meaningful code changes
+
+7. chore
+  - Tooling
+  - Dependency updates
+  - Formatting
+  - Build/config changes
+
+### Important Rules
+
+- Do NOT use `docs` if the commit also contains significant code changes.
+- Documentation updates accompanying a feature should still use `feat`.
+- Documentation updates accompanying a refactor should still use `refactor`.
+- Determine the commit type from the overall purpose of the diff.
+- Analyze the entire git diff before generating the commit message.
 
 ### Examples
 
-```text id="i7ldfc"
-feat(retrieval): 新增 BM25 search 流程
-fix(vector): 修正 embedding cache mismatch 問題
-refactor(graph): 重構 relation builder 邏輯
-docs(agent): 更新 Codex workflow 說明
-test(search): 補上 hybrid search 測試
-chore(repo): 更新 ESLint 與 Prettier 設定
-feat(api): 新增 OpenAI rerank endpoint
-fix(nextjs): 修正 App Router hydration 問題
+```text id="jlwmv0"
+feat(retrieval): 新增 rerank pipeline 與相關文件
+refactor(graph): 重構 relation builder 並更新 README
+fix(api): 修正 vector cache 問題與補充使用說明
+docs(readme): 更新安裝與設定文件
 ```
-
-### Additional Rules
-
-- Choose the commit type based on the primary purpose of the change.
-- Prefer adding scope when possible.
-- Analyze git diff before generating commit messages.
-- Avoid generic messages such as:
-  - update
-  - fix bug
-  - misc changes
-  - temporary commit
-- Use lowercase type and scope.
-- Keep commit messages readable and consistent across the repository.
