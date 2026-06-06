@@ -35,6 +35,7 @@ tags:
 topics:
   - 感情
   - 工作
+  - 財務
   - 自我探索
   - 靈性
   - 小阿卡納
@@ -49,12 +50,13 @@ source_refs:
   - labyrinthos.co
 raw_refs:
   - raw/tarot/2026-06-06-tarot-lab-wands.md
+  - raw/tarot/2026-06-06-labyrinthos-page-of-wands.md
 updated: 2026-06-06
 ---
 # 權杖侍衛（Page of Wands）
 
 > Sources: tarot-lab / Labyrinthos, Unknown
-> Raw: [tarot-lab wands](../../raw/tarot/2026-06-06-tarot-lab-wands.md)
+> Raw: [tarot-lab wands](../../raw/tarot/2026-06-06-tarot-lab-wands.md); [labyrinthos page-of-wands](../../raw/tarot/2026-06-06-labyrinthos-page-of-wands.md)
 
 **Card ID:** `wands-page`
 **Suit:** 權杖（Wands）— 火元素、行動、熱情、創造、意志
@@ -88,21 +90,26 @@ updated: 2026-06-06
 
 ## 情境解讀
 
+
 ### 感情
 
-正位可能象徵怦然心動、試探性邀請；逆位則可能提醒三分钟热度。
+正位可能象徵怦然心動、試探性邀請，或關係充滿新鮮可能；也可能是一時燦爛的緣分。逆位則可能反映難以承諾、對象不夠可靠，或在感情中漫無方向。
 
 ### 工作
 
-正位可能代表新機會、熱情提案；逆位則可能暗示缺乏後續。
+正位可能代表新機會、創意提案或熱情使者帶來的消息。逆位則可能暗示缺乏後續、三分鐘熱度，或想法尚未落地。
+
+### 財務
+
+正位可能象徵新的財務想法或機會訊號，宜先小步驗證。逆位則可能反映衝動消費、缺乏理財規劃，或對金錢議題漫不經心。
 
 ### 自我探索
 
-這張牌邀請你保持好奇，也練習把想法落地。
+正位時，這張牌邀請你保持好奇，也練習把想法落地。逆位則可能反映熱情易起易落，宜培養持續力。
 
 ### 靈性
 
-可以理解為火之訊息，鼓勵勇敢嘗試。
+正位可以理解為火之訊息，鼓勵勇敢嘗試。逆位則可能提醒：探索需要耐心，而非只有起頭的興奮。
 
 ## 相關牌卡
 

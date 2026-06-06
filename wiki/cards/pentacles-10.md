@@ -51,12 +51,13 @@ source_refs:
   - labyrinthos.co
 raw_refs:
   - raw/tarot/2026-06-06-tarot-lab-pentacles.md
+  - raw/tarot/2026-06-06-labyrinthos-ten-of-pentacles.md
 updated: 2026-06-06
 ---
 # 星幣十（Ten of Pentacles）
 
 > Sources: tarot-lab / Labyrinthos, Unknown
-> Raw: [tarot-lab pentacles](../../raw/tarot/2026-06-06-tarot-lab-pentacles.md)
+> Raw: [Labyrinthos ten of pentacles](../../raw/tarot/2026-06-06-labyrinthos-ten-of-pentacles.md)
 
 **Card ID:** `pentacles-10`
 **Suit:** 星幣（Pentacles）— 土元素、物質、財務、工作、身體、穩定
@@ -78,7 +79,7 @@ updated: 2026-06-06
 
 ## 牌面象徵
 
-家主坐於莊園拱門，家族與狗圍繞；衣袍月牙與葡萄藤象徵靈性與物質結合。
+家主坐於莊園拱門，子女、孫輩與狗圍繞身旁；衣袍上的月牙與葡萄藤象徵靈性與物質結合，長期耕耘帶來世代安穩。
 
 ## 正位意義
 
@@ -92,19 +93,19 @@ updated: 2026-06-06
 
 ### 感情
 
-正位可能象徵婚姻、家庭財產、長期承諾；逆位則可能提醒家族糾紛或財產問題。
+正位可能象徵關係穩固、共同規劃置產或組成家庭；單身者或重視家族認同，尋求長期而非短暫的連結。逆位則可能提醒家族糾紛、財產問題，或傳統期待帶來壓力。
 
 ### 工作
 
-正位可能代表家族企業、退休金、長期資產；逆位則可能暗示破產或傳承動盪。
+正位可能代表家族企業、穩定大公司或長期職涯軌道；也可能象徵建立可延續的事業基礎。逆位則可能暗示破產、傳承動盪，或短期成功缺乏根基。
 
 ### 自我探索
 
-這張牌邀請你思考：你想留給身後什麼樣的根基？
+這張牌邀請你思考：你想留給身後什麼樣的根基？當下的選擇或影響未來世代。
 
 ### 靈性
 
-可以理解為物質與靈性傳承的交會。
+可以理解為物質與靈性傳承的交會——豐盛若能在家族與社群中流通，或更具意義。
 
 ## 相關牌卡
 

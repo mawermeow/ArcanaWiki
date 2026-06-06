@@ -34,6 +34,7 @@ tags:
 topics:
   - 感情
   - 工作
+  - 財務
   - 自我探索
   - 靈性
   - 小阿卡納
@@ -48,12 +49,13 @@ source_refs:
   - labyrinthos.co
 raw_refs:
   - raw/tarot/2026-06-06-tarot-lab-cups.md
+  - raw/tarot/2026-06-06-labyrinthos-six-of-cups.md
 updated: 2026-06-06
 ---
 # 聖杯六（Six of Cups）
 
 > Sources: tarot-lab / Labyrinthos, Unknown
-> Raw: [tarot-lab cups](../../raw/tarot/2026-06-06-tarot-lab-cups.md)
+> Raw: [tarot-lab cups](../../raw/tarot/2026-06-06-tarot-lab-cups.md); [labyrinthos six-of-cups](../../raw/tarot/2026-06-06-labyrinthos-six-of-cups.md)
 
 **Card ID:** `cups-06`
 **Suit:** 聖杯（Cups）— 水元素、情感、關係、直覺
@@ -87,21 +89,26 @@ updated: 2026-06-06
 
 ## 情境解讀
 
+
 ### 感情
 
-undefined
+正位可能象徵舊情復燃、懷念美好回憶，或分手後的療癒；也可能指向單純、無條件的給予。逆位則可能反映沉溺過去、難以前行，或無法活在當下。
 
 ### 工作
 
-undefined
+正位可能代表懷舊專案、舊同事重逢，或從過往經驗中獲得滋養。逆位則可能暗示過度依戀舊模式，或對現職缺乏投入。
+
+### 財務
+
+正位可能象徵來自家人或舊有連結的財務支持，或穩定、安全的資源。逆位則可能反映因懷舊或家庭議題影響財務決策。
 
 ### 自我探索
 
-undefined
+正位時，溫暖記憶可能帶來療癒；也宜問是否過度美化過去。逆位則可能反映需要獨立、離開熟悉的舒適圈。
 
 ### 靈性
 
-undefined
+正位可以理解為內在孩童的純真與記憶。逆位則可能提醒：懷舊是養分，不是避難所。
 
 ## 相關牌卡
 

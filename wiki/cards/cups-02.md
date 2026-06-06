@@ -35,6 +35,7 @@ tags:
 topics:
   - 感情
   - 工作
+  - 財務
   - 自我探索
   - 靈性
   - 小阿卡納
@@ -49,12 +50,13 @@ source_refs:
   - labyrinthos.co
 raw_refs:
   - raw/tarot/2026-06-06-tarot-lab-cups.md
+  - raw/tarot/2026-06-06-labyrinthos-two-of-cups.md
 updated: 2026-06-06
 ---
 # 聖杯二（Two of Cups）
 
 > Sources: tarot-lab / Labyrinthos, Unknown
-> Raw: [tarot-lab cups](../../raw/tarot/2026-06-06-tarot-lab-cups.md)
+> Raw: [tarot-lab cups](../../raw/tarot/2026-06-06-tarot-lab-cups.md); [labyrinthos two-of-cups](../../raw/tarot/2026-06-06-labyrinthos-two-of-cups.md)
 
 **Card ID:** `cups-02`
 **Suit:** 聖杯（Cups）— 水元素、情感、關係、直覺
@@ -88,21 +90,26 @@ updated: 2026-06-06
 
 ## 情境解讀
 
+
 ### 感情
 
-undefined
+正位可能象徵互選、平等互惠的連結，或夥伴關係中彼此尊重、願意合作。逆位則可能反映關係失衡、依賴，或溝通不暢、權力不對等。
 
 ### 工作
 
-undefined
+正位可能代表合作順利、雙方互補，或在工作場域建立互信夥伴關係。逆位則可能暗示合作失敗、各說各話，或一方付出明顯多於另一方。
+
+### 財務
+
+正位可能象徵共同理財、互惠的財務安排，或合作帶來穩定收益。逆位則可能反映金錢上的不平等，或財務決策缺乏共識。
 
 ### 自我探索
 
-undefined
+正位時，宜觀察關係中是否真正平等、是否都能被看見。逆位則可能反映需要重新協調界線與期待。
 
 ### 靈性
 
-undefined
+正位可以理解為兩股能量相遇、調和。逆位則可能提醒：連結需建立在真實，而非勉強配合。
 
 ## 相關牌卡
 

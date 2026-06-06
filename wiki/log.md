@@ -26,4 +26,7 @@
 
 ## [2026-06-06] schema | 升級 94 篇 wiki 為 retrieval-ready frontmatter
 
+## [2026-06-06] ingest | Labyrinthos 牌義（78 張）
+- Updated: 愚人（The Fool）至星幣國王（King of Pentacles）全牌組
+
 ## [2026-06-06] ingest | 塔羅牌陣（16 種）

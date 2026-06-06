@@ -50,12 +50,13 @@ source_refs:
   - labyrinthos.co
 raw_refs:
   - raw/tarot/2026-06-06-tarot-lab-pentacles.md
+  - raw/tarot/2026-06-06-labyrinthos-page-of-pentacles.md
 updated: 2026-06-06
 ---
 # 星幣侍衛（Page of Pentacles）
 
 > Sources: tarot-lab / Labyrinthos, Unknown
-> Raw: [tarot-lab pentacles](../../raw/tarot/2026-06-06-tarot-lab-pentacles.md)
+> Raw: [Labyrinthos page of pentacles](../../raw/tarot/2026-06-06-labyrinthos-page-of-pentacles.md)
 
 **Card ID:** `pentacles-page`
 **Suit:** 星幣（Pentacles）— 土元素、物質、財務、工作、身體、穩定
@@ -77,7 +78,7 @@ updated: 2026-06-06
 
 ## 牌面象徵
 
-青年立於田野凝視手中星幣；開墾田地與花木象徵自然、野心與感官。
+青年獨立立於開墾田野，凝視手中星幣；周遭花木與犁過的田地象徵自然、野心、感官與腳踏實地的學習起點。
 
 ## 正位意義
 
@@ -91,19 +92,19 @@ updated: 2026-06-06
 
 ### 感情
 
-正位可能象徵務實好感、願意用心經營；逆位則可能提醒不成熟、拖延。
+正位可能象徵務實、忠誠而勤奮的伴侶或好感對象；關係或需在日常中注入一些樂趣，避免過度強調實用而忽略熱情。逆位則可能提醒不成熟、拖延，或在感情中缺乏實際投入。
 
 ### 工作
 
-正位可能代表實習、學習機會；逆位則可能暗示錯過機會、懶散。
+正位可能代表實習、進修或建立事業基礎的階段；規劃與執行並重，或能帶來良好回報。逆位則可能暗示錯失機會、懶散，或任務過多卻不知求助。
 
 ### 自我探索
 
-這張牌邀請你專注當下可掌握的一步。
+這張牌邀請你專注當下可掌握的一步；小種子若用心培育，或能長成穩固的未來。
 
 ### 靈性
 
-可以理解為對大地與身體的虔敬學習。
+可以理解為對大地與身體的虔敬學習——從具體行動中認識自己。
 
 ## 相關牌卡
 

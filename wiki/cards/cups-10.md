@@ -32,6 +32,7 @@ tags:
 topics:
   - 感情
   - 工作
+  - 財務
   - 自我探索
   - 靈性
   - 小阿卡納
@@ -47,12 +48,13 @@ source_refs:
   - labyrinthos.co
 raw_refs:
   - raw/tarot/2026-06-06-tarot-lab-cups.md
+  - raw/tarot/2026-06-06-labyrinthos-ten-of-cups.md
 updated: 2026-06-06
 ---
 # 聖杯十（Ten of Cups）
 
 > Sources: tarot-lab / Labyrinthos, Unknown
-> Raw: [tarot-lab cups](../../raw/tarot/2026-06-06-tarot-lab-cups.md)
+> Raw: [tarot-lab cups](../../raw/tarot/2026-06-06-tarot-lab-cups.md); [labyrinthos ten-of-cups](../../raw/tarot/2026-06-06-labyrinthos-ten-of-cups.md)
 
 **Card ID:** `cups-10`
 **Suit:** 聖杯（Cups）— 水元素、情感、關係、直覺
@@ -74,6 +76,7 @@ updated: 2026-06-06
 
 ## 牌面象徵
 
+
 夫婦擁抱，孩童嬉戲，家園與河流；天上十杯成弧、彩虹象徵祝福與苦盡甘來。
 
 ## 正位意義
@@ -86,21 +89,26 @@ updated: 2026-06-06
 
 ## 情境解讀
 
+
 ### 感情
 
-undefined
+正位可能象徵承諾、關係邁向長期穩定，或家庭般的圓滿與和諧。逆位則可能反映家人干涉、短暫緣分，或外部因素影響關係。
 
 ### 工作
 
-undefined
+正位可能代表工作與生活平衡、團隊如家人般支持。逆位則可能暗示職場人際或家庭議題影響工作滿意度。
+
+### 財務
+
+正位可能象徵家庭財務穩定、共享資源，或為長遠生活規劃。逆位則可能反映家庭金錢爭議，或財務因外部因素動搖。
 
 ### 自我探索
 
-undefined
+正位時，這張牌可能指向歸屬感與情感圓滿。逆位則可能反映需釐清：你想要的「家」，是什麼樣子？
 
 ### 靈性
 
-undefined
+正位可以理解為情感與靈性的完整感。逆位則可能提醒：外在和諧若缺乏內在真實，仍可能空虛。
 
 ## 相關牌卡
 

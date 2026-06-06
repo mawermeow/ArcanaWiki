@@ -35,6 +35,7 @@ tags:
 topics:
   - 感情
   - 工作
+  - 財務
   - 自我探索
   - 靈性
   - 小阿卡納
@@ -49,12 +50,13 @@ source_refs:
   - labyrinthos.co
 raw_refs:
   - raw/tarot/2026-06-06-tarot-lab-cups.md
+  - raw/tarot/2026-06-06-labyrinthos-page-of-cups.md
 updated: 2026-06-06
 ---
 # 聖杯侍衛（Page of Cups）
 
 > Sources: tarot-lab / Labyrinthos, Unknown
-> Raw: [tarot-lab cups](../../raw/tarot/2026-06-06-tarot-lab-cups.md)
+> Raw: [tarot-lab cups](../../raw/tarot/2026-06-06-tarot-lab-cups.md); [labyrinthos page-of-cups](../../raw/tarot/2026-06-06-labyrinthos-page-of-cups.md)
 
 **Card ID:** `cups-page`
 **Suit:** 聖杯（Cups）— 水元素、情感、關係、直覺
@@ -88,21 +90,26 @@ updated: 2026-06-06
 
 ## 情境解讀
 
+
 ### 感情
 
-正位可能象徵情感訊息、暗恋或試探性的好感；逆位則可能提醒不成熟、防備心過強。
+正位可能象徵對愛情帶有新鮮、驚奇的心，或關係中出現敏感、害羞但真誠的能量。逆位則可能反映伴侶情緒不成熟、缺乏安全感，或你在浪漫中過於脆弱。
 
 ### 工作
 
-正位可能象徵新點子、學習機會；逆位則可能提醒想法不切實際。
+正位可能代表創意訊息、藝術或直覺相關的新機會。逆位則可能暗示缺乏跟進、情緒化影響工作，或對職涯方向仍感迷茫。
+
+### 財務
+
+正位可能象徵直覺性的財務靈感，或收到與資源相關的消息。逆位則可能反映財務上的天真未談，或對金錢議題過於敏感、迴避。
 
 ### 自我探索
 
-這張牌邀請你問：你收到什麼意外的情感或靈感訊號？
+正位時，這張牌邀請你以初心感受世界。逆位則可能反映情緒尚未成熟，宜溫柔地照顧內在小孩。
 
 ### 靈性
 
-可以理解為潛意識以象徵方式傳遞訊息。
+正位可以理解為靈性訊息的使者。逆位則可能提醒：敏感是禮物，也需界線保護。
 
 ## 相關牌卡
 

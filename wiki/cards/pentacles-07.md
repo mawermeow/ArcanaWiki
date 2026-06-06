@@ -49,12 +49,13 @@ source_refs:
   - labyrinthos.co
 raw_refs:
   - raw/tarot/2026-06-06-tarot-lab-pentacles.md
+  - raw/tarot/2026-06-06-labyrinthos-seven-of-pentacles.md
 updated: 2026-06-06
 ---
 # 星幣七（Seven of Pentacles）
 
 > Sources: tarot-lab / Labyrinthos, Unknown
-> Raw: [tarot-lab pentacles](../../raw/tarot/2026-06-06-tarot-lab-pentacles.md)
+> Raw: [Labyrinthos seven of pentacles](../../raw/tarot/2026-06-06-labyrinthos-seven-of-pentacles.md)
 
 **Card ID:** `pentacles-07`
 **Suit:** 星幣（Pentacles）— 土元素、物質、財務、工作、身體、穩定
@@ -76,7 +77,7 @@ updated: 2026-06-06
 
 ## 牌面象徵
 
-青年倚鏟凝望藤上七枚星幣，疲憊中評估成果；長期目標需持續培育。
+青年倚鏟凝望藤上七枚星幣，疲憊中評估成果；僅取一枚、其餘繼續培育，象徵長期目標需耐心而非急躁收割。
 
 ## 正位意義
 
@@ -90,19 +91,19 @@ updated: 2026-06-06
 
 ### 感情
 
-正位可能象徵評估關係長期投資是否值得；逆位則可能提醒急躁或回報不如預期。
+正位可能象徵感情需時間培育，長期友誼或許緩慢轉為愛意；關係中的日常瑣事與務實安排，也可能是愛的具體展現。逆位則可能提醒對回報感到不耐、努力方向需重新評估，或拖延讓關係停滯。
 
 ### 工作
 
-正位可能代表中期檢視、等待成果；逆位則可能暗示拖延或努力不足。
+正位可能代表進展雖慢但確實，或適合檢視哪些策略有效、哪些需調整；自雇者評估成果或能為未來成長奠基。逆位則可能暗示拖延、投入不足，或尚未到收穫時刻卻過於急躁。
 
 ### 自我探索
 
-這張牌邀請你耐心耕耘，並誠實評估進展。
+這張牌邀請你耐心耕耘，並誠實評估進展；失敗或延遲或許也在教你看清如何更有效地投資時間。
 
 ### 靈性
 
-可以理解為長期修行與收穫的節奏。
+可以理解為長期修行與收穫的節奏——有些成果需要季節，而非一夜。
 
 ## 相關牌卡
 

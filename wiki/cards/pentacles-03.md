@@ -48,12 +48,13 @@ source_refs:
   - labyrinthos.co
 raw_refs:
   - raw/tarot/2026-06-06-tarot-lab-pentacles.md
+  - raw/tarot/2026-06-06-labyrinthos-three-of-pentacles.md
 updated: 2026-06-06
 ---
 # 星幣三（Three of Pentacles）
 
 > Sources: tarot-lab / Labyrinthos, Unknown
-> Raw: [tarot-lab pentacles](../../raw/tarot/2026-06-06-tarot-lab-pentacles.md)
+> Raw: [Labyrinthos three of pentacles](../../raw/tarot/2026-06-06-labyrinthos-three-of-pentacles.md)
 
 **Card ID:** `pentacles-03`
 **Suit:** 星幣（Pentacles）— 土元素、物質、財務、工作、身體、穩定
@@ -75,7 +76,7 @@ updated: 2026-06-06
 
 ## 牌面象徵
 
-學徒在大教堂向牧師與貴族報告進度；圖紙與建造象徵集體成就。
+年輕學徒在大教堂向牧師與貴族展示建造圖紙並報告進度；兩位資深者認真傾聽，象徵不同知識匯聚、共同完成具體成果。
 
 ## 正位意義
 
@@ -89,19 +90,19 @@ updated: 2026-06-06
 
 ### 感情
 
-正位可能象徵共同規劃未來、務實經營；逆位則可能提醒合作不順、計畫不周。
+正位可能象徵與伴侶共同規劃未來、裝修家園或合作創作，在差異中形成互補；單身者或在工作、興趣協作中遇見緣分。逆位則可能提醒關係中一方付出過多、缺乏團隊感，或日常分工不均導致摩擦。
 
 ### 工作
 
-正位可能代表團隊專案、技能被認可；逆位則可能暗示缺乏協作。
+正位可能代表團隊專案、技能被認可，或正處於學習與累積資格的階段；不同專長匯聚可推動更大目標。逆位則可能暗示同事間競爭、溝通失誤或缺乏合作精神，學習動力也可能不足。
 
 ### 自我探索
 
-這張牌邀請你向他人學習，也貢獻你的專長。
+這張牌邀請你向他人學習，也貢獻你的專長；個人力量有限，協作或能成就超出想像的成果。
 
 ### 靈性
 
-可以理解為將靈感落實為可見的建造。
+可以理解為將靈感落實為可見的建造——知識與技藝在共同目標中獲得意義。
 
 ## 相關牌卡
 

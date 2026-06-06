@@ -49,12 +49,13 @@ source_refs:
   - labyrinthos.co
 raw_refs:
   - raw/tarot/2026-06-06-tarot-lab-pentacles.md
+  - raw/tarot/2026-06-06-labyrinthos-king-of-pentacles.md
 updated: 2026-06-06
 ---
 # 星幣國王（King of Pentacles）
 
 > Sources: tarot-lab / Labyrinthos, Unknown
-> Raw: [tarot-lab pentacles](../../raw/tarot/2026-06-06-tarot-lab-pentacles.md)
+> Raw: [Labyrinthos king of pentacles](../../raw/tarot/2026-06-06-labyrinthos-king-of-pentacles.md)
 
 **Card ID:** `pentacles-king`
 **Suit:** 星幣（Pentacles）— 土元素、物質、財務、工作、身體、穩定
@@ -76,7 +77,7 @@ updated: 2026-06-06
 
 ## 牌面象徵
 
-國王坐葡萄藤與牛頭飾寶座，持權杖與星幣；身後城堡象徵決心與成就。
+國王坐於葡萄藤與牛頭飾寶座，持權杖與星幣；身後城堡與環繞植物象徵從務實努力中建立的豐盛王國，兼具保護與供給。
 
 ## 正位意義
 
@@ -90,19 +91,19 @@ updated: 2026-06-06
 
 ### 感情
 
-正位可能象徵可靠供應者、長期承諾；逆位則可能提醒控制、物質主義。
+正位可能象徵可靠、慷慨而保護性的伴侶，以行動而非空話表達愛；關係或進入穩定、物質與情感皆安穩的階段。逆位則可能提醒控制、物質主義，或財務決策上的魯莽與佔有。
 
 ### 工作
 
-正位可能代表企業成功、穩健領導；逆位則可能暗示貪婪、理財失敗。
+正位可能代表企業成功、資深導師提攜，或職涯上達到備受尊重的位置；也可能象徵穩健的投資與儲蓄成果。逆位則可能暗示貪婪、理財失敗，或過度嚴苛的評斷。
 
 ### 自我探索
 
-這張牌邀請你以責任與遠見管理資源，而非僅追求累積。
+這張牌邀請你以責任與遠見管理資源，而非僅追求累積；在豐盛中練習慷慨與節制。
 
 ### 靈性
 
-可以理解為在豐盛中練習慷慨與節制。
+可以理解為在豐盛中練習慷慨與節制——真正的富足，或許包含分享與照顧。
 
 ## 相關牌卡
 

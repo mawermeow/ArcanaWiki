@@ -1,0 +1,708 @@
+{
+  "collectedDate": "2026-06-06",
+  "source": "raw/tarot-lab/TarotDB/cards.json",
+  "entries": [
+    {
+      "name": "The Fool 愚人",
+      "link": "Fool.jpg",
+      "slug": "the-fool",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/the-fool-meaning-major-arcana-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-the-fool.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.773Z"
+    },
+    {
+      "name": "The Magician 魔術師",
+      "link": "Magician.jpg",
+      "slug": "the-magician",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/the-magician-meaning-major-arcana-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-the-magician.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.773Z"
+    },
+    {
+      "name": "The High Priestess 女祭司",
+      "link": "High_Priestess.jpg",
+      "slug": "the-high-priestess",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/the-high-priestess-meaning-major-arcana-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-the-high-priestess.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.773Z"
+    },
+    {
+      "name": "The Empress 女皇",
+      "link": "Empress.jpg",
+      "slug": "the-empress",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/the-empress-meaning-major-arcana-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-the-empress.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.773Z"
+    },
+    {
+      "name": "The Emperor 皇帝",
+      "link": "Emperor.jpg",
+      "slug": "the-emperor",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/the-emperor-meaning-major-arcana-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-the-emperor.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.773Z"
+    },
+    {
+      "name": "The Hierophant 教皇",
+      "link": "Hierophant.jpg",
+      "slug": "the-hierophant",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/the-hierophant-meaning-major-arcana-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-the-hierophant.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.773Z"
+    },
+    {
+      "name": "The Lovers 戀人",
+      "link": "Lovers.jpg",
+      "slug": "the-lovers",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/the-lovers-meaning-major-arcana-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-the-lovers.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.773Z"
+    },
+    {
+      "name": "The Chariot 戰車",
+      "link": "Chariot.jpg",
+      "slug": "the-chariot",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/the-chariot-meaning-major-arcana-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-the-chariot.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.773Z"
+    },
+    {
+      "name": "Strength 力量",
+      "link": "Strength.jpg",
+      "slug": "strength",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/strength-meaning-major-arcana-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-strength.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.773Z"
+    },
+    {
+      "name": "The Hermit 隱士",
+      "link": "Hermit.jpg",
+      "slug": "the-hermit",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/the-hermit-meaning-major-arcana-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-the-hermit.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.774Z"
+    },
+    {
+      "name": "The Wheel of Fortune 命運之輪",
+      "link": "Wheel_of_Fortune.jpg",
+      "slug": "the-wheel-of-fortune",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/the-wheel-of-fortune-meaning-major-arcana-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-the-wheel-of-fortune.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.774Z"
+    },
+    {
+      "name": "Justice 正義",
+      "link": "Justice.jpg",
+      "slug": "justice",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/justice-meaning-major-arcana-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-justice.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.774Z"
+    },
+    {
+      "name": "The Hanged Man 倒吊人",
+      "link": "Hanged_Man.jpg",
+      "slug": "the-hanged-man",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/the-hanged-man-meaning-major-arcana-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-the-hanged-man.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.774Z"
+    },
+    {
+      "name": "Death 死亡",
+      "link": "Death.jpg",
+      "slug": "death",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/death-meaning-major-arcana-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-death.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.774Z"
+    },
+    {
+      "name": "Temperance 節制",
+      "link": "Temperance.jpg",
+      "slug": "temperance",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/temperance-meaning-major-arcana-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-temperance.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.774Z"
+    },
+    {
+      "name": "The Devil 魔鬼",
+      "link": "Devil.jpg",
+      "slug": "the-devil",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/the-devil-meaning-major-arcana-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-the-devil.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.774Z"
+    },
+    {
+      "name": "The Tower 高塔",
+      "link": "Tower.jpg",
+      "slug": "the-tower",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/the-tower-meaning-major-arcana-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-the-tower.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.774Z"
+    },
+    {
+      "name": "The Star 星星",
+      "link": "Star.jpg",
+      "slug": "the-star",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/the-star-meaning-major-arcana-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-the-star.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.774Z"
+    },
+    {
+      "name": "The Moon 月亮",
+      "link": "Moon.jpg",
+      "slug": "the-moon",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/the-moon-meaning-major-arcana-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-the-moon.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.774Z"
+    },
+    {
+      "name": "The Sun 太陽",
+      "link": "Sun.jpg",
+      "slug": "the-sun",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/the-sun-meaning-major-arcana-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-the-sun.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.774Z"
+    },
+    {
+      "name": "Judgement 審判",
+      "link": "Judgement.jpg",
+      "slug": "judgement",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/judgement-meaning-major-arcana-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-judgement.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.774Z"
+    },
+    {
+      "name": "The World 世界",
+      "link": "World.jpg",
+      "slug": "the-world",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/the-world-meaning-major-arcana-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-the-world.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.774Z"
+    },
+    {
+      "name": "Ace of Wands 權杖一",
+      "link": "Wands01.jpg",
+      "slug": "ace-of-wands",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/ace-of-wands-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-ace-of-wands.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.774Z"
+    },
+    {
+      "name": "Two of Wands 權杖二",
+      "link": "Wands02.jpg",
+      "slug": "two-of-wands",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/two-of-wands-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-two-of-wands.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.774Z"
+    },
+    {
+      "name": "Three of Wands 權杖三",
+      "link": "Wands03.jpg",
+      "slug": "three-of-wands",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/three-of-wands-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-three-of-wands.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.774Z"
+    },
+    {
+      "name": "Four of Wands 權杖四",
+      "link": "Wands04.jpg",
+      "slug": "four-of-wands",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/four-of-wands-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-four-of-wands.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.774Z"
+    },
+    {
+      "name": "Five of Wands 權杖五",
+      "link": "Wands05.jpg",
+      "slug": "five-of-wands",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/five-of-wands-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-five-of-wands.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.774Z"
+    },
+    {
+      "name": "Six of Wands 權杖六",
+      "link": "Wands06.jpg",
+      "slug": "six-of-wands",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/six-of-wands-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-six-of-wands.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.774Z"
+    },
+    {
+      "name": "Seven of Wands 權杖七",
+      "link": "Wands07.jpg",
+      "slug": "seven-of-wands",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/seven-of-wands-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-seven-of-wands.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.774Z"
+    },
+    {
+      "name": "Eight of Wands 權杖八",
+      "link": "Wands08.jpg",
+      "slug": "eight-of-wands",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/eight-of-wands-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-eight-of-wands.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.774Z"
+    },
+    {
+      "name": "Nine of Wands 權杖九",
+      "link": "Wands09.jpg",
+      "slug": "nine-of-wands",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/nine-of-wands-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-nine-of-wands.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.774Z"
+    },
+    {
+      "name": "Ten of Wands 權杖十",
+      "link": "Wands10.jpg",
+      "slug": "ten-of-wands",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/ten-of-wands-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-ten-of-wands.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.774Z"
+    },
+    {
+      "name": "Page of Wands 權杖侍衛",
+      "link": "Wands11.jpg",
+      "slug": "page-of-wands",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/page-of-wands-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-page-of-wands.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.774Z"
+    },
+    {
+      "name": "Knight of Wands 權杖騎士",
+      "link": "Wands12.jpg",
+      "slug": "knight-of-wands",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/knight-of-wands-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-knight-of-wands.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Queen of Wands 權杖王后",
+      "link": "Wands13.jpg",
+      "slug": "queen-of-wands",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/queen-of-wands-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-queen-of-wands.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "King of Wands 權杖國王",
+      "link": "Wands14.jpg",
+      "slug": "king-of-wands",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/king-of-wands-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-king-of-wands.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Ace of Cups 聖杯一",
+      "link": "Cups01.jpg",
+      "slug": "ace-of-cups",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/ace-of-cups-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-ace-of-cups.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Two of Cups 聖杯二",
+      "link": "Cups02.jpg",
+      "slug": "two-of-cups",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/two-of-cups-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-two-of-cups.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Three of Cups 聖杯三",
+      "link": "Cups03.jpg",
+      "slug": "three-of-cups",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/three-of-cups-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-three-of-cups.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Four of Cups 聖杯四",
+      "link": "Cups04.jpg",
+      "slug": "four-of-cups",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/four-of-cups-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-four-of-cups.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Five of Cups 聖杯五",
+      "link": "Cups05.jpg",
+      "slug": "five-of-cups",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/five-of-cups-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-five-of-cups.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Six of Cups 聖杯六",
+      "link": "Cups06.jpg",
+      "slug": "six-of-cups",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/six-of-cups-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-six-of-cups.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Seven of Cups 聖杯七",
+      "link": "Cups07.jpg",
+      "slug": "seven-of-cups",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/seven-of-cups-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-seven-of-cups.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Eight of Cups 聖杯八",
+      "link": "Cups08.jpg",
+      "slug": "eight-of-cups",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/eight-of-cups-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-eight-of-cups.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Nine of Cups 聖杯九",
+      "link": "Cups09.jpg",
+      "slug": "nine-of-cups",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/nine-of-cups-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-nine-of-cups.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Ten of Cups 聖杯十",
+      "link": "Cups10.jpg",
+      "slug": "ten-of-cups",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/ten-of-cups-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-ten-of-cups.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Page of Cups 聖杯侍衛",
+      "link": "Cups11.jpg",
+      "slug": "page-of-cups",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/page-of-cups-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-page-of-cups.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Knight of Cups 聖杯騎士",
+      "link": "Cups12.jpg",
+      "slug": "knight-of-cups",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/knight-of-cups-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-knight-of-cups.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Queen of Cups 聖杯王后",
+      "link": "Cups13.jpg",
+      "slug": "queen-of-cups",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/queen-of-cups-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-queen-of-cups.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "King of Cups 聖杯國王",
+      "link": "Cups14.jpg",
+      "slug": "king-of-cups",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/king-of-cups-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-king-of-cups.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Ace of Swords 寶劍一",
+      "link": "Swords01.jpg",
+      "slug": "ace-of-swords",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/ace-of-swords-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-ace-of-swords.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Two of Swords 寶劍二",
+      "link": "Swords02.jpg",
+      "slug": "two-of-swords",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/two-of-swords-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-two-of-swords.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Three of Swords 寶劍三",
+      "link": "Swords03.jpg",
+      "slug": "three-of-swords",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/three-of-swords-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-three-of-swords.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Four of Swords 寶劍四",
+      "link": "Swords04.jpg",
+      "slug": "four-of-swords",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/four-of-swords-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-four-of-swords.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Five of Swords 寶劍五",
+      "link": "Swords05.jpg",
+      "slug": "five-of-swords",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/five-of-swords-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-five-of-swords.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Six of Swords 寶劍六",
+      "link": "Swords06.jpg",
+      "slug": "six-of-swords",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/six-of-swords-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-six-of-swords.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Seven of Swords 寶劍七",
+      "link": "Swords07.jpg",
+      "slug": "seven-of-swords",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/seven-of-swords-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-seven-of-swords.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Eight of Swords 寶劍八",
+      "link": "Swords08.jpg",
+      "slug": "eight-of-swords",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/eight-of-swords-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-eight-of-swords.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Nine of Swords 寶劍九",
+      "link": "Swords09.jpg",
+      "slug": "nine-of-swords",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/nine-of-swords-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-nine-of-swords.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Ten of Swords 寶劍十",
+      "link": "Swords10.jpg",
+      "slug": "ten-of-swords",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/ten-of-swords-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-ten-of-swords.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Page of Swords 寶劍侍衛",
+      "link": "Swords11.jpg",
+      "slug": "page-of-swords",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/page-of-swords-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-page-of-swords.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Knight of Swords 寶劍騎士",
+      "link": "Swords12.jpg",
+      "slug": "knight-of-swords",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/knight-of-swords-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-knight-of-swords.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Queen of Swords 寶劍王后",
+      "link": "Swords13.jpg",
+      "slug": "queen-of-swords",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/queen-of-swords-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-queen-of-swords.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "King of Swords 寶劍國王",
+      "link": "Swords14.jpg",
+      "slug": "king-of-swords",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/king-of-swords-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-king-of-swords.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Ace of Pentacles 星幣一",
+      "link": "Pents01.jpg",
+      "slug": "ace-of-pentacles",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/ace-of-pentacles-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-ace-of-pentacles.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Two of Pentacles 星幣二",
+      "link": "Pents02.jpg",
+      "slug": "two-of-pentacles",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/two-of-pentacles-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-two-of-pentacles.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Three of Pentacles 星幣三",
+      "link": "Pents03.jpg",
+      "slug": "three-of-pentacles",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/three-of-pentacles-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-three-of-pentacles.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Four of Pentacles 星幣四",
+      "link": "Pents04.jpg",
+      "slug": "four-of-pentacles",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/four-of-pentacles-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-four-of-pentacles.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Five of Pentacles 星幣五",
+      "link": "Pents05.jpg",
+      "slug": "five-of-pentacles",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/five-of-pentacles-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-five-of-pentacles.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Six of Pentacles 星幣六",
+      "link": "Pents06.jpg",
+      "slug": "six-of-pentacles",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/six-of-pentacles-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-six-of-pentacles.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Seven of Pentacles 星幣七",
+      "link": "Pents07.jpg",
+      "slug": "seven-of-pentacles",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/seven-of-pentacles-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-seven-of-pentacles.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Eight of Pentacles 星幣八",
+      "link": "Pents08.jpg",
+      "slug": "eight-of-pentacles",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/eight-of-pentacles-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-eight-of-pentacles.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Nine of Pentacles 星幣九",
+      "link": "Pents09.jpg",
+      "slug": "nine-of-pentacles",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/nine-of-pentacles-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-nine-of-pentacles.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Ten of Pentacles 星幣十",
+      "link": "Pents10.jpg",
+      "slug": "ten-of-pentacles",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/ten-of-pentacles-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-ten-of-pentacles.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.775Z"
+    },
+    {
+      "name": "Page of Pentacles 星幣侍衛",
+      "link": "Pents11.jpg",
+      "slug": "page-of-pentacles",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/page-of-pentacles-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-page-of-pentacles.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.776Z"
+    },
+    {
+      "name": "Knight of Pentacles 星幣騎士",
+      "link": "Pents12.jpg",
+      "slug": "knight-of-pentacles",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/knight-of-pentacles-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-knight-of-pentacles.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.776Z"
+    },
+    {
+      "name": "Queen of Pentacles 星幣王后",
+      "link": "Pents13.jpg",
+      "slug": "queen-of-pentacles",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/queen-of-pentacles-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-queen-of-pentacles.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.776Z"
+    },
+    {
+      "name": "King of Pentacles 星幣國王",
+      "link": "Pents14.jpg",
+      "slug": "king-of-pentacles",
+      "sourceUrl": "https://labyrinthos.co/blogs/tarot-card-meanings-list/king-of-pentacles-meaning-tarot-card-meanings",
+      "rawFile": "raw/tarot/2026-06-06-labyrinthos-king-of-pentacles.md",
+      "status": "ok",
+      "fetchedAt": "2026-06-06T08:40:25.776Z"
+    }
+  ]
+}

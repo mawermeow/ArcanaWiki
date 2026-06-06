@@ -34,6 +34,7 @@ tags:
 topics:
   - 感情
   - 工作
+  - 財務
   - 自我探索
   - 靈性
   - 小阿卡納
@@ -48,12 +49,13 @@ source_refs:
   - labyrinthos.co
 raw_refs:
   - raw/tarot/2026-06-06-tarot-lab-wands.md
+  - raw/tarot/2026-06-06-labyrinthos-nine-of-wands.md
 updated: 2026-06-06
 ---
 # 權杖九（Nine of Wands）
 
 > Sources: tarot-lab / Labyrinthos, Unknown
-> Raw: [tarot-lab wands](../../raw/tarot/2026-06-06-tarot-lab-wands.md)
+> Raw: [tarot-lab wands](../../raw/tarot/2026-06-06-tarot-lab-wands.md); [labyrinthos nine-of-wands](../../raw/tarot/2026-06-06-labyrinthos-nine-of-wands.md)
 
 **Card ID:** `wands-09`
 **Suit:** 權杖（Wands）— 火元素、行動、熱情、創造、意志
@@ -87,21 +89,26 @@ updated: 2026-06-06
 
 ## 情境解讀
 
+
 ### 感情
 
-正位可能象徵受傷後仍願守護關係；逆位則可能提醒防備過強或放棄。
+正位可能象徵關係需要持續投入，愛並不總是輕鬆，但仍有堅守的價值；也可能指向自我成長。逆位則可能反映一方付出過多、關係仍難維繫，或努力未獲對等回應。
 
 ### 工作
 
-正位可能代表馬拉松式專案、最後衝刺；逆位則可能暗示倦怠崩潰。
+正位可能代表馬拉松式專案、接近成功但仍需警戒；受傷後仍願守護成果。逆位則可能暗示固執、拒絕變通，或倦怠到想放棄。
+
+### 財務
+
+正位可能象徵財務防線需守住，接近目標但不宜掉以輕心。逆位則可能反映因固執或過度防備而錯失調整時機。
 
 ### 自我探索
 
-這張牌邀請你問：堅持是勇氣，還是固執？
+正位時，你可能感到疲憊但仍未退；宜問：堅持是勇氣，還是固執？逆位則可能反映防備過強，或已到該適度放手的時刻。
 
 ### 靈性
 
-可以理解為傷痕中的韌性，接近終點的警戒。
+正位可以理解為傷痕中的韌性。逆位則可能提醒你，柔軟有時比硬撐更接近療癒。
 
 ## 相關牌卡
 

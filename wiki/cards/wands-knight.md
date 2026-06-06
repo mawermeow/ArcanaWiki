@@ -38,6 +38,7 @@ tags:
 topics:
   - 感情
   - 工作
+  - 財務
   - 自我探索
   - 靈性
   - 小阿卡納
@@ -52,12 +53,13 @@ source_refs:
   - labyrinthos.co
 raw_refs:
   - raw/tarot/2026-06-06-tarot-lab-wands.md
+  - raw/tarot/2026-06-06-labyrinthos-knight-of-wands.md
 updated: 2026-06-06
 ---
 # 權杖騎士（Knight of Wands）
 
 > Sources: tarot-lab / Labyrinthos, Unknown
-> Raw: [tarot-lab wands](../../raw/tarot/2026-06-06-tarot-lab-wands.md)
+> Raw: [tarot-lab wands](../../raw/tarot/2026-06-06-tarot-lab-wands.md); [labyrinthos knight-of-wands](../../raw/tarot/2026-06-06-labyrinthos-knight-of-wands.md)
 
 **Card ID:** `wands-knight`
 **Suit:** 權杖（Wands）— 火元素、行動、熱情、創造、意志
@@ -91,21 +93,26 @@ updated: 2026-06-06
 
 ## 情境解讀
 
+
 ### 感情
 
-正位可能象徵熱烈追求、快速進展；逆位則可能提醒急躁、不穩定。
+正位可能象徵熱烈追求、快速進展，或勇敢表達愛意；也可能較難安定、關係節奏起伏。逆位則可能反映逃避承諾、急躁，或關係不夠穩定。
 
 ### 工作
 
-正位可能代表衝刺、出差、果斷行動；逆位則可能暗示魯莽、易怒。
+正位可能代表衝刺、出差、果斷行動，推進力強。逆位則可能暗示魯莽、易怒，或因缺乏耐心而誤事。
+
+### 財務
+
+正位可能象徵果斷的財務行動或快速變動；宜評估是否過於衝動。逆位則可能反映魯莽投資、不耐等待，或財務決策缺乏周詳。
 
 ### 自我探索
 
-這張牌邀請你駕馭衝勁，而非被衝動牽著走。
+正位時，這張牌邀請你駕馭衝勁，而非被衝動牽著走。逆位則可能反映需要學習耐心與自我節制。
 
 ### 靈性
 
-可以理解為行動之火的騎士道，速度需配覺察。
+正位可以理解為行動之火的騎士道。逆位則可能提醒：速度需配覺察，否則易偏離方向。
 
 ## 相關牌卡
 

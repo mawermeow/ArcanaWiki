@@ -34,6 +34,7 @@ tags:
 topics:
   - 感情
   - 工作
+  - 財務
   - 自我探索
   - 靈性
   - 小阿卡納
@@ -48,12 +49,13 @@ source_refs:
   - labyrinthos.co
 raw_refs:
   - raw/tarot/2026-06-06-tarot-lab-cups.md
+  - raw/tarot/2026-06-06-labyrinthos-five-of-cups.md
 updated: 2026-06-06
 ---
 # 聖杯五（Five of Cups）
 
 > Sources: tarot-lab / Labyrinthos, Unknown
-> Raw: [tarot-lab cups](../../raw/tarot/2026-06-06-tarot-lab-cups.md)
+> Raw: [tarot-lab cups](../../raw/tarot/2026-06-06-tarot-lab-cups.md); [labyrinthos five-of-cups](../../raw/tarot/2026-06-06-labyrinthos-five-of-cups.md)
 
 **Card ID:** `cups-05`
 **Suit:** 聖杯（Cups）— 水元素、情感、關係、直覺
@@ -75,6 +77,7 @@ updated: 2026-06-06
 
 ## 牌面象徵
 
+
 黑斗篷人物低頭哀傷，五杯中三倒二立；身後仍有站立之杯與遠方城堡，河流隔開回家之路。
 
 ## 正位意義
@@ -87,21 +90,26 @@ updated: 2026-06-06
 
 ## 情境解讀
 
+
 ### 感情
 
-undefined
+正位可能象徵分手餘痛、關係中的悲傷與張力；宜允許自己哀悼，也記得身後仍有未倒的杯。逆位則可能反映開始走出過去、療癒舊傷，或看見關係中仍留存的部分。
 
 ### 工作
 
-undefined
+正位可能代表失望、計畫未如預期，或聚焦於失去而忽略所得。逆位則可能象徵從挫敗中恢復，重新看見可能性。
+
+### 財務
+
+正位可能反映財務上的失落感，或為過去決策感到懊悔。逆位則可能象徵財務狀況漸漸回穩，或開始看見尚未失去的資源。
 
 ### 自我探索
 
-undefined
+正位時，哀傷需要被看見；這張牌也提醒你轉身，可能還有支持與希望。逆位則可能反映你正從悲傷中走出，重拾信心。
 
 ### 靈性
 
-undefined
+正位可以理解為失去中的覺察練習。逆位則可能象徵療癒與放下的開始。
 
 ## 相關牌卡
 

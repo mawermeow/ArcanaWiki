@@ -49,12 +49,13 @@ source_refs:
   - labyrinthos.co
 raw_refs:
   - raw/tarot/2026-06-06-tarot-lab-pentacles.md
+  - raw/tarot/2026-06-06-labyrinthos-nine-of-pentacles.md
 updated: 2026-06-06
 ---
 # 星幣九（Nine of Pentacles）
 
 > Sources: tarot-lab / Labyrinthos, Unknown
-> Raw: [tarot-lab pentacles](../../raw/tarot/2026-06-06-tarot-lab-pentacles.md)
+> Raw: [Labyrinthos nine of pentacles](../../raw/tarot/2026-06-06-labyrinthos-nine-of-pentacles.md)
 
 **Card ID:** `pentacles-09`
 **Suit:** 星幣（Pentacles）— 土元素、物質、財務、工作、身體、穩定
@@ -76,7 +77,7 @@ updated: 2026-06-06
 
 ## 牌面象徵
 
-華服女子立於葡萄園，獵鷹在側；城堡背景、豐收金幣象徵自律與豐盛。
+華服女子立於葡萄園，左手獵鷹安詳停駐；身後城堡、豐收金幣與向日葵象徵自律努力帶來的豐盛與獨立。
 
 ## 正位意義
 
@@ -90,19 +91,19 @@ updated: 2026-06-06
 
 ### 感情
 
-正位可能象徵經濟獨立、享受單身或穩定自足；逆位則可能提醒物質依賴或揮霍。
+正位可能象徵生活富足、享受獨立，或關係中保有各自成就與空間；伴侶或需以實際行動增添你的幸福，而非消耗它。逆位則可能提醒過度防備、揮霍，或表面富足下的不穩定。
 
 ### 工作
 
-正位可能代表事業成功、生活優渥；逆位則可能暗示財務不穩或表面富足。
+正位可能代表事業成功、退休或度假的獎賞時刻；長期努力或已見回報。逆位則可能暗示財務不穩、生活超出能力，或成功缺乏深度。
 
 ### 自我探索
 
-這張牌邀請你享受自己創造的豐盛，也保持內在平靜。
+這張牌邀請你享受自己創造的豐盛，也保持內在平靜；獨立與連結或許可以並存。
 
 ### 靈性
 
-可以理解為自律與豐盛的整合。
+可以理解為自律與豐盛的整合——成功之後，也可能仍需留意分享與連結。
 
 ## 相關牌卡
 

@@ -49,12 +49,13 @@ source_refs:
   - labyrinthos.co
 raw_refs:
   - raw/tarot/2026-06-06-tarot-lab-pentacles.md
+  - raw/tarot/2026-06-06-labyrinthos-knight-of-pentacles.md
 updated: 2026-06-06
 ---
 # 星幣騎士（Knight of Pentacles）
 
 > Sources: tarot-lab / Labyrinthos, Unknown
-> Raw: [tarot-lab pentacles](../../raw/tarot/2026-06-06-tarot-lab-pentacles.md)
+> Raw: [Labyrinthos knight of pentacles](../../raw/tarot/2026-06-06-labyrinthos-knight-of-pentacles.md)
 
 **Card ID:** `pentacles-knight`
 **Suit:** 星幣（Pentacles）— 土元素、物質、財務、工作、身體、穩定
@@ -76,7 +77,7 @@ updated: 2026-06-06
 
 ## 牌面象徵
 
-騎士坐黑馬於田野，凝視手中金幣；選擇耕種而非冒險征途。
+騎士坐黑馬於田野，凝視手中金幣思索未來收成；選擇耕種而非冒險征途，象徵慢而穩的長期投資。
 
 ## 正位意義
 
@@ -90,19 +91,19 @@ updated: 2026-06-06
 
 ### 感情
 
-正位可能象徵可靠但較慢熱的伴侶；逆位則可能提醒固執、乏味或工作狂。
+正位可能象徵可靠、耐心但較慢熱的伴侶；關係或偏向穩定而非刺激，若你渴望承諾與安全感，這或許是令人安心的訊號。逆位則可能提醒固執、乏味、工作狂，或缺乏主動與冒險精神。
 
 ### 工作
 
-正位可能代表穩健執行、例行交付；逆位則可能暗示停滯或賭徒心態。
+正位可能代表穩健執行、例行交付，以耐心累積信譽；求職者或需展現可靠與 dedication。逆位則可能暗示停滯、懶惰，或從保守轉向不當的風險投資。
 
 ### 自我探索
 
-這張牌邀請你以耐心取代急躁，信任緩慢累積。
+這張牌邀請你以耐心取代急躁，信任緩慢累積；但也需留意完美主義是否變成自我苛責。
 
 ### 靈性
 
-可以理解為土元素騎士的持續之道。
+可以理解為土元素騎士的持續之道——在重複的日常中見證成長。
 
 ## 相關牌卡
 

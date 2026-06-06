@@ -49,12 +49,13 @@ source_refs:
   - labyrinthos.co
 raw_refs:
   - raw/tarot/2026-06-06-tarot-lab-pentacles.md
+  - raw/tarot/2026-06-06-labyrinthos-queen-of-pentacles.md
 updated: 2026-06-06
 ---
 # 星幣王后（Queen of Pentacles）
 
 > Sources: tarot-lab / Labyrinthos, Unknown
-> Raw: [tarot-lab pentacles](../../raw/tarot/2026-06-06-tarot-lab-pentacles.md)
+> Raw: [Labyrinthos queen of pentacles](../../raw/tarot/2026-06-06-labyrinthos-queen-of-pentacles.md)
 
 **Card ID:** `pentacles-queen`
 **Suit:** 星幣（Pentacles）— 土元素、物質、財務、工作、身體、穩定
@@ -76,7 +77,7 @@ updated: 2026-06-06
 
 ## 牌面象徵
 
-王后坐繁花寶座持金幣，兔躍腳邊象徵豐沛能量與生育力。
+王后坐於繁花與動物裝飾的寶座，手持金幣；腳邊兔子躍入畫面，象徵豐沛能量、生育力與自然繁榮，也提醒追逐成功時留意方向。
 
 ## 正位意義
 
@@ -90,19 +91,19 @@ updated: 2026-06-06
 
 ### 感情
 
-正位可能象徵溫暖照顧、務實支持；逆位則可能提醒嫉妒、物質焦慮。
+正位可能象徵溫暖、務實而慷慨的伴侶，或關係進入穩定豐盛的階段；單身者或對對象有較高標準，尋求同等 dedication 的人。逆位則可能提醒嫉妒、物質焦慮，或只重外在而忽略內在連結。
 
 ### 工作
 
-正位可能代表理財得當、後勤支援；逆位則可能暗示嚴苛或缺乏安全感。
+正位可能代表理財得當、商業頭腦，或遇到值得信賴的導師與合作者；她的建議或能幫助你務實前進。逆位則可能暗示嚴苛、缺乏安全感，或在金錢上過度控制。
 
 ### 自我探索
 
-這張牌邀請你滋養自己與他人，也照顧身體與家。
+這張牌邀請你滋養自己與他人，也照顧身體與家；在享受生活的同時，保持節制與品味。
 
 ### 靈性
 
-可以理解為大地母性的實際關懷。
+可以理解為大地母性的實際關懷——愛透過日常照顧具體呈現。
 
 ## 相關牌卡
 

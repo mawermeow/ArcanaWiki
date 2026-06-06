@@ -50,12 +50,13 @@ source_refs:
   - labyrinthos.co
 raw_refs:
   - raw/tarot/2026-06-06-tarot-lab-pentacles.md
+  - raw/tarot/2026-06-06-labyrinthos-four-of-pentacles.md
 updated: 2026-06-06
 ---
 # 星幣四（Four of Pentacles）
 
 > Sources: tarot-lab / Labyrinthos, Unknown
-> Raw: [tarot-lab pentacles](../../raw/tarot/2026-06-06-tarot-lab-pentacles.md)
+> Raw: [Labyrinthos four of pentacles](../../raw/tarot/2026-06-06-labyrinthos-four-of-pentacles.md)
 
 **Card ID:** `pentacles-04`
 **Suit:** 星幣（Pentacles）— 土元素、物質、財務、工作、身體、穩定
@@ -77,7 +78,7 @@ updated: 2026-06-06
 
 ## 牌面象徵
 
-人緊握星幣：一枚在頭頂、一枚在手中、兩枚踩腳下；防禦姿態使其難以移動。
+男子緊握星幣：一枚在頭頂、一枚在手中、兩枚踩腳下；防禦姿態使其難以移動，暗示緊抓資源可能反成束縛，金錢未必帶來自由。
 
 ## 正位意義
 
@@ -91,19 +92,19 @@ updated: 2026-06-06
 
 ### 感情
 
-正位可能象徵害怕失去、情感上較防備；逆位則可能代表願意分享、鬆開控制。
+正位可能象徵關係中的佔有、嫉妒或不安全感，或仍緊抓過往情傷而難以敞開；單身者或需先處理舊有 resentment 才能迎接新緣。逆位則可能代表過往不安全感正在療癒，或願意鬆開控制、重新信任。
 
 ### 工作
 
-正位可能暗示緊守預算、不願投資；逆位則可能提醒過度花費或財務不穩。
+正位可能暗示職場上感到不穩、難以合作，或為 paycheck 而留在不滿意的工作；也可能反映對點子過度防衛。逆位則可能代表願意與同事分享、給予肯定，但也需留意是否做出過於冒險的決策。
 
 ### 自我探索
 
-這張牌邀請你問：你在緊抓什麼？它是否限制了你的自由？
+這張牌邀請你問：你在緊抓什麼？它是否限制了你的自由？過度保守或過度執著，都可能讓能量停滯。
 
 ### 靈性
 
-可以理解為檢視對安全感的執著。
+可以理解為檢視對安全感的執著——守成與分享之間，或許需要找到新的平衡。
 
 ## 相關牌卡
 

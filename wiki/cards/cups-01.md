@@ -36,6 +36,7 @@ tags:
 topics:
   - 感情
   - 工作
+  - 財務
   - 自我探索
   - 靈性
   - 小阿卡納
@@ -50,12 +51,13 @@ source_refs:
   - labyrinthos.co
 raw_refs:
   - raw/tarot/2026-06-06-tarot-lab-cups.md
+  - raw/tarot/2026-06-06-labyrinthos-ace-of-cups.md
 updated: 2026-06-06
 ---
 # 聖杯一（Ace of Cups）
 
 > Sources: tarot-lab / Labyrinthos, Unknown
-> Raw: [tarot-lab cups](../../raw/tarot/2026-06-06-tarot-lab-cups.md)
+> Raw: [tarot-lab cups](../../raw/tarot/2026-06-06-tarot-lab-cups.md); [labyrinthos ace-of-cups](../../raw/tarot/2026-06-06-labyrinthos-ace-of-cups.md)
 
 **Card ID:** `cups-01`
 **Suit:** 聖杯（Cups）— 水元素、情感、關係、直覺
@@ -89,21 +91,26 @@ updated: 2026-06-06
 
 ## 情境解讀
 
+
 ### 感情
 
-undefined
+正位可能象徵新感情萌芽、友誼升溫，或關係進入更深層的親密；宜信任直覺，少過度分析。逆位則可能反映悲傷、分離感，或不安全感阻礙你敞開心扉。
 
 ### 工作
 
-undefined
+正位可能代表創意靈感、進修機會，或職場中出現讓你感到被啟發的連結。逆位則可能暗示創意受阻、情感低靡影響工作投入。
+
+### 財務
+
+正位可能象徵直覺帶來的財務靈感，或情感滿足使消費較為心甘；仍宜理性評估。逆位則可能反映情緒性消費，或對財務議題感到空虛、缺乏動力。
 
 ### 自我探索
 
-undefined
+正位時，這張牌邀請你傾聽內在情感泉源：什麼讓你的心真正活起來？逆位則可能反映與自身感受斷聯，宜溫柔地重新連結。
 
 ### 靈性
 
-undefined
+正位可以理解為靈性與情感的新開端。逆位則可能提醒：空杯才能再裝新水，先療癒再求滿溢。
 
 ## 相關牌卡
 

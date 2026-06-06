@@ -35,6 +35,7 @@ tags:
 topics:
   - 感情
   - 工作
+  - 財務
   - 自我探索
   - 靈性
   - 小阿卡納
@@ -49,12 +50,13 @@ source_refs:
   - labyrinthos.co
 raw_refs:
   - raw/tarot/2026-06-06-tarot-lab-wands.md
+  - raw/tarot/2026-06-06-labyrinthos-four-of-wands.md
 updated: 2026-06-06
 ---
 # 權杖四（Four of Wands）
 
 > Sources: tarot-lab / Labyrinthos, Unknown
-> Raw: [tarot-lab wands](../../raw/tarot/2026-06-06-tarot-lab-wands.md)
+> Raw: [tarot-lab wands](../../raw/tarot/2026-06-06-tarot-lab-wands.md); [labyrinthos four-of-wands](../../raw/tarot/2026-06-06-labyrinthos-four-of-wands.md)
 
 **Card ID:** `wands-04`
 **Suit:** 權杖（Wands）— 火元素、行動、熱情、創造、意志
@@ -91,19 +93,23 @@ updated: 2026-06-06
 
 ### 感情
 
-正位可能象徵訂婚、同居、家庭慶典；逆位則可能提醒缺乏支持或不穩定。
+正位可能象徵關係穩定、慶祝里程碑，或家庭／社群支持帶來安全感。逆位則可能反映缺乏支持、關係不穩，或慶祝背後仍有未解議題。
 
 ### 工作
 
-正位可能代表團隊慶功、辦公室安定；逆位則可能暗示根基動搖。
+正位可能代表團隊合作順利、專案階段性成功，或工作環境和諧。逆位則可能暗示職場缺乏歸屬感，或成果短暫、基礎不牢。
+
+### 財務
+
+正位可能象徵財務相對穩定，或因共享資源而受益。逆位則可能反映金錢壓力影響安全感，或家庭／合夥財務出現摩擦。
 
 ### 自我探索
 
-這張牌邀請你允許自己為成就喜悅，並與社群連結。
+正位時，宜感受支持與連結帶來的溫暖，也問自己：這份穩定是否真實？逆位則可能提醒你辨識表面和諧下的不安。
 
-### 靈性
+**行動提醒（正位）：** 可以與重要的人分享成果，強化彼此連結。
 
-可以理解為感恩與歸屬的儀式時刻。
+**行動提醒（逆位）：** 先處理缺乏支持感的根源，再追求外在慶祝。
 
 ## 相關牌卡
 

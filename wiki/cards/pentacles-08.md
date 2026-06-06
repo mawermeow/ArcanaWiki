@@ -48,12 +48,13 @@ source_refs:
   - labyrinthos.co
 raw_refs:
   - raw/tarot/2026-06-06-tarot-lab-pentacles.md
+  - raw/tarot/2026-06-06-labyrinthos-eight-of-pentacles.md
 updated: 2026-06-06
 ---
 # 星幣八（Eight of Pentacles）
 
 > Sources: tarot-lab / Labyrinthos, Unknown
-> Raw: [tarot-lab pentacles](../../raw/tarot/2026-06-06-tarot-lab-pentacles.md)
+> Raw: [Labyrinthos eight of pentacles](../../raw/tarot/2026-06-06-labyrinthos-eight-of-pentacles.md)
 
 **Card ID:** `pentacles-08`
 **Suit:** 星幣（Pentacles）— 土元素、物質、財務、工作、身體、穩定
@@ -75,7 +76,7 @@ updated: 2026-06-06
 
 ## 牌面象徵
 
-青年在八枚星幣上雕刻五角星；遠離城鎮干擾，全心投入工藝。
+青年專注在八枚金幣上雕刻五角星，遠離城鎮干擾；象徵全心沉浸於技藝，以隔絕換取精益求精。
 
 ## 正位意義
 
@@ -89,19 +90,19 @@ updated: 2026-06-06
 
 ### 感情
 
-正位可能象徵為關係付出具體努力、打磨相處之道；逆位則可能提醒敷衍或過勞。
+正位可能象徵愛如技藝需持續打磨——同理心、耐心與自我成長；長期相處或仍能發現伴侶新面向。逆位則可能提醒工作過度影響親密關係，或對感情敷衍、缺乏投入。
 
 ### 工作
 
-正位可能代表技能提升、專注工作；逆位則可能暗示品質不佳、缺乏動力。
+正位可能代表技能提升、升遷或專業被認可；求職者或需展現自信與勝任力。逆位則可能暗示品質不佳、缺乏動力，或陷入無前景的重複勞動。
 
 ### 自我探索
 
-這張牌邀請你沉浸在學習中，享受精進的過程。
+這張牌邀請你沉浸在學習中，享受精進的過程；專注本身或許就是一種修煉。
 
 ### 靈性
 
-可以理解為以日常工藝修煉覺察。
+可以理解為以日常工藝修煉覺察——在重複中看見成長。
 
 ## 相關牌卡
 

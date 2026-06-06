@@ -34,6 +34,7 @@ tags:
 topics:
   - 感情
   - 工作
+  - 財務
   - 自我探索
   - 靈性
   - 小阿卡納
@@ -47,12 +48,13 @@ source_refs:
   - labyrinthos.co
 raw_refs:
   - raw/tarot/2026-06-06-tarot-lab-cups.md
+  - raw/tarot/2026-06-06-labyrinthos-knight-of-cups.md
 updated: 2026-06-06
 ---
 # 聖杯騎士（Knight of Cups）
 
 > Sources: tarot-lab / Labyrinthos, Unknown
-> Raw: [tarot-lab cups](../../raw/tarot/2026-06-06-tarot-lab-cups.md)
+> Raw: [tarot-lab cups](../../raw/tarot/2026-06-06-tarot-lab-cups.md); [labyrinthos knight-of-cups](../../raw/tarot/2026-06-06-labyrinthos-knight-of-cups.md)
 
 **Card ID:** `cups-knight`
 **Suit:** 聖杯（Cups）— 水元素、情感、關係、直覺
@@ -86,21 +88,26 @@ updated: 2026-06-06
 
 ## 情境解讀
 
+
 ### 感情
 
-正位可能象徵浪漫邀請、溫柔追求；逆位則可能暗示情緒化、不切實際或承諾不穩。
+正位可能象徵浪漫、吸引、調情，或「愛上愛情」的理想化；也可能期待過高。逆位則可能反映逃避衝突、被動攻擊，或感情來去太快、表面大於實質。
 
 ### 工作
 
-正位可能代表提案、創意展示或以魅力推進；逆位則可能暗示情緒影響專業判斷。
+正位可能代表創意提案、藝術或人際導向的工作進展。逆位則可能暗示情緒化決策、缺乏跟進，或職場中言行不一。
+
+### 財務
+
+正位可能象徵跟隨直覺的財務決定，或為理想投入資源。逆位則可能反映情緒性消費，或財務承諾不夠踏實。
 
 ### 自我探索
 
-這張牌邀請你問：你如何以溫和而非衝動的方式表達情感？
+正位時，宜享受浪漫，也留意是否過度理想化。逆位則可能反映需要更誠實面對自己的感受與需求。
 
 ### 靈性
 
-可以理解為以浪漫與美承載靈性邀請。
+正位可以理解為心靈的騎士，追尋美與意義。逆位則可能提醒：理想需落地，才是真愛。
 
 ## 相關牌卡
 

@@ -48,12 +48,13 @@ source_refs:
   - labyrinthos.co
 raw_refs:
   - raw/tarot/2026-06-06-tarot-lab-pentacles.md
+  - raw/tarot/2026-06-06-labyrinthos-six-of-pentacles.md
 updated: 2026-06-06
 ---
 # 星幣六（Six of Pentacles）
 
 > Sources: tarot-lab / Labyrinthos, Unknown
-> Raw: [tarot-lab pentacles](../../raw/tarot/2026-06-06-tarot-lab-pentacles.md)
+> Raw: [Labyrinthos six of pentacles](../../raw/tarot/2026-06-06-labyrinthos-six-of-pentacles.md)
 
 **Card ID:** `pentacles-06`
 **Suit:** 星幣（Pentacles）— 土元素、物質、財務、工作、身體、穩定
@@ -75,7 +76,7 @@ updated: 2026-06-06
 
 ## 牌面象徵
 
-紅袍富人持天平分施金幣予乞丐；天平象徵公正與因果。
+紫袍富人持天平分施金幣予跪地乞丐；天平象徵公正與因果，暗示你或已處於足以分享而不損自身穩定的位置。
 
 ## 正位意義
 
@@ -89,19 +90,19 @@ updated: 2026-06-06
 
 ### 感情
 
-正位可能象徵一方給予較多、需評估是否公平；逆位則可能提醒施受不平等。
+正位可能象徵關係中的支持與慷慨，伴侶或在情感與物質上給予協助；單身者或透過分享時間、精力而開展緣分。逆位則可能提醒權力失衡、一方過度依賴，或施予背後帶有隱藏條件。
 
 ### 工作
 
-正位可能代表獎金分配、導師提攜；逆位則可能暗示條件式幫助。
+正位可能代表資深同事或導師的提攜，職場認可你的貢獻；也可能象徵投資人或社群願意支持你的計畫。逆位則可能暗示職場中有人以幫助為名行控制之實，或資源分配不公。
 
 ### 自我探索
 
-這張牌邀請你在有能力時分享，也坦然接受支援。
+這張牌邀請你在有能力時分享，也坦然接受支援；施與受應保持平衡，而非單向消耗。
 
 ### 靈性
 
-可以理解為因果與慷慨的物質實踐。
+可以理解為因果與慷慨的物質實踐——真正的給予，或許來自無私而非證明自己。
 
 ## 相關牌卡
 

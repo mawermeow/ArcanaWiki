@@ -35,6 +35,7 @@ tags:
 topics:
   - 感情
   - 工作
+  - 財務
   - 自我探索
   - 靈性
   - 小阿卡納
@@ -49,12 +50,13 @@ source_refs:
   - labyrinthos.co
 raw_refs:
   - raw/tarot/2026-06-06-tarot-lab-cups.md
+  - raw/tarot/2026-06-06-labyrinthos-four-of-cups.md
 updated: 2026-06-06
 ---
 # 聖杯四（Four of Cups）
 
 > Sources: tarot-lab / Labyrinthos, Unknown
-> Raw: [tarot-lab cups](../../raw/tarot/2026-06-06-tarot-lab-cups.md)
+> Raw: [tarot-lab cups](../../raw/tarot/2026-06-06-tarot-lab-cups.md); [labyrinthos four-of-cups](../../raw/tarot/2026-06-06-labyrinthos-four-of-cups.md)
 
 **Card ID:** `cups-04`
 **Suit:** 聖杯（Cups）— 水元素、情感、關係、直覺
@@ -75,6 +77,7 @@ updated: 2026-06-06
 
 ## 牌面象徵
 
+
 青年坐樹下冥想，三杯在草地，雲手遞來第四杯卻未被看見；象徵對現有與禮物的盲視。
 
 ## 正位意義
@@ -87,21 +90,26 @@ updated: 2026-06-06
 
 ## 情境解讀
 
+
 ### 感情
 
-undefined
+正位可能象徵對感情感到無聊、缺乏新鮮感，或心不在焉、忽略已擁有的好。逆位則可能反映開始覺醒、願意重新投入，或對愛有新的理解。
 
 ### 工作
 
-undefined
+正位可能代表對工作倦怠、缺乏動力，或錯過眼前機會。逆位則可能象徵重新找到熱情，或願意接受新的提案與挑戰。
+
+### 財務
+
+正位可能反映對財務議題漠不關心，或忽略已存在的資源與機會。逆位則可能象徵開始正視財務、願意接受新的理財建議。
 
 ### 自我探索
 
-undefined
+正位時，這張牌邀請你問：是否因習慣而對生命禮物視而不見？逆位則可能反映覺察提升，願意重新連結當下。
 
 ### 靈性
 
-undefined
+正位可以理解為內在的停滯與冥想期。逆位則可能象徵雲開霧散，再次看見靈性邀請。
 
 ## 相關牌卡
 

@@ -35,6 +35,7 @@ tags:
 topics:
   - 感情
   - 工作
+  - 財務
   - 自我探索
   - 靈性
   - 小阿卡納
@@ -49,12 +50,13 @@ source_refs:
   - labyrinthos.co
 raw_refs:
   - raw/tarot/2026-06-06-tarot-lab-wands.md
+  - raw/tarot/2026-06-06-labyrinthos-three-of-wands.md
 updated: 2026-06-06
 ---
 # 權杖三（Three of Wands）
 
 > Sources: tarot-lab / Labyrinthos, Unknown
-> Raw: [tarot-lab wands](../../raw/tarot/2026-06-06-tarot-lab-wands.md)
+> Raw: [tarot-lab wands](../../raw/tarot/2026-06-06-tarot-lab-wands.md); [labyrinthos three-of-wands](../../raw/tarot/2026-06-06-labyrinthos-three-of-wands.md)
 
 **Card ID:** `wands-03`
 **Suit:** 權杖（Wands）— 火元素、行動、熱情、創造、意志
@@ -90,19 +92,23 @@ updated: 2026-06-06
 
 ### 感情
 
-正位可能象徵關係進入新階段、遠距或擴展；逆位則可能提醒進展受阻。
+正位可能象徵關係進入展望未來的階段，或雙方對共同方向較有信心。逆位則可能反映進展受阻、期待落空，或對關係前景感到挫折。
 
 ### 工作
 
-正位可能代表業務擴張、等待回報；逆位則可能暗示延誤、挫折。
+正位可能代表計畫開始見效、前景明朗，或合作與擴張順利。逆位則可能暗示延誤、障礙，或對成果過度樂觀而忽略風險。
+
+### 財務
+
+正位可能象徵長期布局逐步回報，或看見財務成長的跡象。逆位則可能反映投資或收入不如預期，需要調整策略。
 
 ### 自我探索
 
-這張牌邀請你信任已播下的種子，並持續投入。
+正位時，你可能感到信心與遠見提升。逆位則可能反映需要回到當下，檢視哪些期待需要修正。
 
-### 靈性
+**行動提醒（正位）：** 持續把計畫付諸行動，同時保持對現實條件的覺察。
 
-可以理解為信心與遠見支撐的擴張之道。
+**行動提醒（逆位）：** 先處理眼前的障礙，再談更大的擴張。
 
 ## 相關牌卡
 

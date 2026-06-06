@@ -34,6 +34,7 @@ tags:
 topics:
   - 感情
   - 工作
+  - 財務
   - 自我探索
   - 靈性
   - 小阿卡納
@@ -48,12 +49,13 @@ source_refs:
   - labyrinthos.co
 raw_refs:
   - raw/tarot/2026-06-06-tarot-lab-cups.md
+  - raw/tarot/2026-06-06-labyrinthos-seven-of-cups.md
 updated: 2026-06-06
 ---
 # 聖杯七（Seven of Cups）
 
 > Sources: tarot-lab / Labyrinthos, Unknown
-> Raw: [tarot-lab cups](../../raw/tarot/2026-06-06-tarot-lab-cups.md)
+> Raw: [tarot-lab cups](../../raw/tarot/2026-06-06-tarot-lab-cups.md); [labyrinthos seven-of-cups](../../raw/tarot/2026-06-06-labyrinthos-seven-of-cups.md)
 
 **Card ID:** `cups-07`
 **Suit:** 聖杯（Cups）— 水元素、情感、關係、直覺
@@ -87,21 +89,26 @@ updated: 2026-06-06
 
 ## 情境解讀
 
+
 ### 感情
 
-undefined
+正位可能象徵感情選項眾多、難以抉擇，或需警惕一廂情願的幻想。逆位則可能反映感情混亂漸清，或開始看清真正想要的是什麼。
 
 ### 工作
 
-undefined
+正位可能代表選項太多、目標模糊，或對多個方向難以取捨。逆位則可能象徵聚焦、做出決定，或從混亂中理清優先順序。
+
+### 財務
+
+正位可能反映太多財務幻想或不切實際的投資想像。逆位則可能象徵釐清財務目標，停止分散注意力。
 
 ### 自我探索
 
-undefined
+正位時，這張牌邀請你分辨夢想與幻覺。逆位則可能反映你正從迷茫中走出，願意做出選擇。
 
 ### 靈性
 
-undefined
+正位可以理解為想像力豐沛，但需落地。逆位則可能象徵迷霧散去，內心答案漸明。
 
 ## 相關牌卡
 

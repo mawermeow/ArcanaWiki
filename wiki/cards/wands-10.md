@@ -32,6 +32,7 @@ tags:
 topics:
   - 感情
   - 工作
+  - 財務
   - 自我探索
   - 靈性
   - 小阿卡納
@@ -46,12 +47,13 @@ source_refs:
   - labyrinthos.co
 raw_refs:
   - raw/tarot/2026-06-06-tarot-lab-wands.md
+  - raw/tarot/2026-06-06-labyrinthos-ten-of-wands.md
 updated: 2026-06-06
 ---
 # 權杖十（Ten of Wands）
 
 > Sources: tarot-lab / Labyrinthos, Unknown
-> Raw: [tarot-lab wands](../../raw/tarot/2026-06-06-tarot-lab-wands.md)
+> Raw: [tarot-lab wands](../../raw/tarot/2026-06-06-tarot-lab-wands.md); [labyrinthos ten-of-wands](../../raw/tarot/2026-06-06-labyrinthos-ten-of-wands.md)
 
 **Card ID:** `wands-10`
 **Suit:** 權杖（Wands）— 火元素、行動、熱情、創造、意志
@@ -85,21 +87,26 @@ updated: 2026-06-06
 
 ## 情境解讀
 
+
 ### 感情
 
-正位可能象徵承擔過多關係責任；逆位則可能提醒需分擔或放下。
+正位可能象徵愛帶來責任與負擔，壓力可能影響關係互動；宜看見彼此是否分擔。逆位則可能反映未能與伴侶分享重擔，或開始尋求情感支持。
 
 ### 工作
 
-正位可能代表過勞、責任過重；逆位則可能暗示委派與釋壓。
+正位可能代表責任過重、過勞，成功近在咫尺卻感到精疲力竭。逆位則可能象徵學會委派、釋放部分重擔，或意識到獨撐已不可持續。
+
+### 財務
+
+正位可能反映財務義務沉重，需承擔較多支出或責任。逆位則可能象徵重新分配財務負擔，或放下不必要的金錢壓力。
 
 ### 自我探索
 
-這張牌邀請你檢視：哪些重擔其實可以放下？
+正位時，這張牌邀請你檢視：哪些重擔其實可以放下？逆位則可能反映你正學習請求協助、不再獨扛一切。
 
 ### 靈性
 
-可以理解為成就與負擔的一體兩面，學習取捨。
+正位可以理解為成就與負擔的一體兩面。逆位則可能提醒取捨與放下的智慧。
 
 ## 相關牌卡
 
