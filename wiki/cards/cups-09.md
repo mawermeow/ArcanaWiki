@@ -1,3 +1,54 @@
+---
+id: cups-09
+pageId: cups-09
+type: card
+title: 聖杯九（Nine of Cups）
+titleEn: Nine of Cups
+titleZh: 聖杯九
+arcana: minor
+suit: cups
+rank: 09
+summary: 願望滿足與成就感；表面圓滿之際，也宜問：這份滿足是否觸及內心深處。
+tags:
+  - 聖杯九
+  - Nine of Cups
+  - cups-09
+  - 小阿卡納
+  - 聖杯
+  - cups
+  - 成功
+  - 夢想成真
+  - 滿足
+  - 享樂
+  - 成就感
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 榮耀
+  - 不快樂
+  - 缺乏成就感
+  - 失望
+  - 然而並不會成功。
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - cups
+related_cards:
+  - cups-10
+  - cups-07
+  - cups-08
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-cups.md
+updated: 2026-06-06
+---
 # 聖杯九（Nine of Cups）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

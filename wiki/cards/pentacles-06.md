@@ -1,3 +1,55 @@
+---
+id: pentacles-06
+pageId: pentacles-06
+type: card
+title: 星幣六（Six of Pentacles）
+titleEn: Six of Pentacles
+titleZh: 星幣六
+arcana: minor
+suit: pentacles
+rank: 06
+summary: 施與受的平衡；慷慨分享，也宜覺察是否公平或有條件。
+tags:
+  - 星幣六
+  - Six of Pentacles
+  - pentacles-06
+  - 小阿卡納
+  - 星幣
+  - pentacles
+  - 慷慨
+  - 慈善
+  - 幫助
+  - 分享
+  - 感恩
+  - 公平
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 支持
+  - 吝嗇
+  - 過於慷慨
+  - 有條件的好處
+  - 不平等
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - pentacles
+related_cards:
+  - major-11-justice
+  - pentacles-05
+  - pentacles-07
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-pentacles.md
+updated: 2026-06-06
+---
 # 星幣六（Six of Pentacles）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

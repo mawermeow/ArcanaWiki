@@ -1,3 +1,56 @@
+---
+id: swords-02
+pageId: swords-02
+type: card
+title: 寶劍二（Two of Swords）
+titleEn: Two of Swords
+titleZh: 寶劍二
+arcana: minor
+suit: swords
+rank: 02
+summary: 進退兩難的僵局；蒙眼持雙劍，宜以理性釐清，而非逃避選擇。
+tags:
+  - 寶劍二
+  - Two of Swords
+  - swords-02
+  - 小阿卡納
+  - 寶劍
+  - swords
+  - 僵局
+  - 艱難選擇
+  - 逃避
+  - 抗拒
+  - 蒙蔽
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 困難的選擇
+  - 被蒙蔽
+  - 猶豫不決
+  - 焦慮不安
+  - 信息太多
+  - 沒有正確的選擇
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - swords
+related_cards:
+  - major-06-lovers
+  - major-18-moon
+  - swords-01
+  - swords-03
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-swords.md
+updated: 2026-06-06
+---
 # 寶劍二（Two of Swords）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

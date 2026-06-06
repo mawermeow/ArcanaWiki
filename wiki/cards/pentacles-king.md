@@ -1,3 +1,56 @@
+---
+id: pentacles-king
+pageId: pentacles-king
+type: card
+title: 星幣國王（King of Pentacles）
+titleEn: King of Pentacles
+titleZh: 星幣國王
+arcana: minor
+suit: pentacles
+rank: king
+summary: 物質成功與穩健領導；雄心與勤奮帶來豐盛，也需留意貪婪或僵化。
+tags:
+  - 星幣國王
+  - King of Pentacles
+  - pentacles-king
+  - 小阿卡納
+  - 星幣
+  - pentacles
+  - 富足
+  - 繁榮
+  - 安穩
+  - 雄心
+  - 可靠
+  - 事業有成
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 雄心勃勃
+  - 持之以恆
+  - 勤奮刻苦
+  - 貪婪
+  - 自私
+  - 物質(adj.)
+  - 大男子主義
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - pentacles
+related_cards:
+  - major-04-emperor
+  - pentacles-queen
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-pentacles.md
+updated: 2026-06-06
+---
 # 星幣國王（King of Pentacles）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

@@ -1,3 +1,37 @@
+---
+id: spread-lovers-pyramid
+pageId: spread-lovers-pyramid
+type: spread
+title: 戀人金字塔
+titleZh: 戀人金字塔
+summary: 簡潔直接的戀愛牌陣，涵蓋兩人相戀的核心要素，牌面相對易懂。
+tags:
+  - 戀人金字塔
+  - spread-lovers-pyramid
+  - 牌陣
+  - spread
+  - 塔羅
+  - tarot
+  - 戀愛
+  - 情侶
+  - 簡潔
+  - 關係要素
+  - 感情
+  - 關係
+topics:
+  - 感情
+  - 關係
+  - 戀愛
+related_cards: []
+related_spreads:
+  - spread-love-greater-cross
+  - spread-venus
+source_refs:
+  - tarot-lab/spreads_db.json
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-spreads.md
+updated: 2026-06-06
+---
 # 戀人金字塔
 
 > Sources: tarot-lab, Unknown

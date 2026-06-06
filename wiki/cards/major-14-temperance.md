@@ -1,3 +1,50 @@
+---
+id: major-14-temperance
+pageId: major-14-temperance
+type: card
+title: 節制（Temperance）
+titleEn: Temperance
+titleZh: 節制
+arcana: major
+summary: 節制象徵調和、耐心與意識的融合。天使一腳在水中、一腳在陸地，兩杯之水交匯流動——這張牌可能提醒你：平衡不是壓制兩極，而是讓對立面向緩慢整合。
+tags:
+  - 節制
+  - Temperance
+  - major-14-temperance
+  - 大阿卡納
+  - 平衡
+  - 和平
+  - 耐心
+  - 和諧
+  - 調和
+  - 溝通
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 平靜
+  - 安寧
+  - 偏執
+  - 極端
+  - 不節制
+  - 不和諧
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 大阿卡納
+related_cards:
+  - major-13-death
+  - major-15-devil
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-major-arcana-11-16.md
+updated: 2026-06-06
+---
 # 節制（Temperance）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

@@ -1,3 +1,39 @@
+---
+id: spread-love-greater-cross
+pageId: spread-love-greater-cross
+type: spread
+title: 愛情大十字
+titleZh: 愛情大十字
+summary: 注重內心情感的愛情牌陣，適合洞悉雙方關係中的情感狀況。
+tags:
+  - 愛情大十字
+  - spread-love-greater-cross
+  - 牌陣
+  - spread
+  - 塔羅
+  - tarot
+  - 愛情
+  - 情感
+  - 情侶
+  - 內心
+  - 關係分析
+  - 感情
+  - 關係
+  - 戀愛
+topics:
+  - 感情
+  - 關係
+  - 戀愛
+related_cards: []
+related_spreads:
+  - spread-lovers-pyramid
+  - spread-lover-reunion
+source_refs:
+  - tarot-lab/spreads_db.json
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-spreads.md
+updated: 2026-06-06
+---
 # 愛情大十字
 
 > Sources: tarot-lab, Unknown

@@ -1,3 +1,50 @@
+---
+id: major-04-emperor
+pageId: major-04-emperor
+type: card
+title: 皇帝（The Emperor）
+titleEn: The Emperor
+titleZh: 皇帝
+arcana: major
+summary: 皇帝象徵結構、權威、紀律與務實的守護。他手持權杖與王國球體，身後荒山顯示以決心建立秩序——這張牌可能提醒你：穩定需要責任，而權力也需要覺察其陰影。
+tags:
+  - 皇帝
+  - The Emperor
+  - major-04-emperor
+  - 大阿卡納
+  - 世俗力量
+  - 自律
+  - 穩定
+  - 實用
+  - 權威
+  - 控制
+  - 紀律
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 暴君
+  - 霸道
+  - 死板
+  - 固執
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 大阿卡納
+related_cards:
+  - major-03-empress
+  - major-00-fool
+  - major-05-hierophant
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-major-arcana-00-04.md
+updated: 2026-06-06
+---
 # 皇帝（The Emperor）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

@@ -1,3 +1,54 @@
+---
+id: major-00-fool
+pageId: major-00-fool
+type: card
+title: 愚人（The Fool）
+titleEn: The Fool
+titleZh: 愚人
+arcana: major
+summary: 愚人象徵一段尚未展開的旅程：帶著輕盈與好奇踏出第一步，同時也面臨對環境缺乏警覺的風險。這張牌提醒你，新的開始需要勇氣，也需要留意腳下的懸崖。
+tags:
+  - 愚人
+  - The Fool
+  - major-00-fool
+  - 大阿卡納
+  - 新開始
+  - 旅程
+  - 自由
+  - 純真
+  - 潛力
+  - 冒險
+  - 理想主義
+  - 自發性
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 新的開始
+  - 新的旅程
+  - 無限潛力
+  - 魯莽
+  - 粗心
+  - 心煩意亂
+  - 幼稚
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 大阿卡納
+related_cards:
+  - major-01-magician
+  - major-21-world
+  - major-04-emperor
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-major-arcana-00-04.md
+updated: 2026-06-06
+---
 # 愚人（The Fool）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

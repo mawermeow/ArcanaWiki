@@ -1,3 +1,56 @@
+---
+id: swords-07
+pageId: swords-07
+type: card
+title: 寶劍七（Seven of Swords）
+titleEn: Seven of Swords
+titleZh: 寶劍七
+arcana: minor
+suit: swords
+rank: 07
+summary: 策略、隱密或欺瞞；可能象徵智取，也可能提醒誠實與後果。
+tags:
+  - 寶劍七
+  - Seven of Swords
+  - swords-07
+  - 小阿卡納
+  - 寶劍
+  - swords
+  - 謊言
+  - 詭計
+  - 策略
+  - 狡猾
+  - 隱密
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 陰謀
+  - 戰略
+  - 可能失敗的計劃
+  - 陰險
+  - 懺悔
+  - 良心發現
+  - 合作商討
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - swords
+related_cards:
+  - major-15-devil
+  - swords-08
+  - swords-06
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-swords.md
+updated: 2026-06-06
+---
 # 寶劍七（Seven of Swords）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

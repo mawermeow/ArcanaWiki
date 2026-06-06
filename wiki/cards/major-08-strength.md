@@ -1,3 +1,51 @@
+---
+id: major-08-strength
+pageId: major-08-strength
+type: card
+title: 力量（Strength）
+titleEn: Strength
+titleZh: 力量
+arcana: major
+summary: 力量象徵以溫和、慈悲與內在平靜駕馭本能。女子從容握住獅子下顎，不靠蠻力——這張牌可能提醒你：真正的勇氣，往往來自對恐懼與慾望的溫柔覺察。
+tags:
+  - 力量
+  - Strength
+  - major-08-strength
+  - 大阿卡納
+  - 內心平靜
+  - 柔和的力量
+  - 愛的力量
+  - 勇氣
+  - 信心
+  - 同情心
+  - 自信
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 內心平靜而柔和的力量
+  - 理智的力量
+  - 軟弱
+  - 恐懼
+  - 無力感
+  - 缺乏自信
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 大阿卡納
+related_cards:
+  - major-07-chariot
+  - major-09-hermit
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-major-arcana-05-10.md
+updated: 2026-06-06
+---
 # 力量（Strength）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

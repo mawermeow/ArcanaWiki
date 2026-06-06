@@ -1,3 +1,56 @@
+---
+id: cups-04
+pageId: cups-04
+type: card
+title: 聖杯四（Four of Cups）
+titleEn: Four of Cups
+titleZh: 聖杯四
+arcana: minor
+suit: cups
+rank: 04
+summary: 情緒倦怠與心不在焉；可能忽略已擁有的，或對新機會視而不見。
+tags:
+  - 聖杯四
+  - Four of Cups
+  - cups-04
+  - 小阿卡納
+  - 聖杯
+  - cups
+  - 冷漠
+  - 沉思
+  - 失去連結
+  - 憂鬱
+  - 拒絕
+  - 漠不關心
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 沈思
+  - 無聊
+  - 清醒
+  - 覺察
+  - 接受
+  - 重燃熱情
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - cups
+related_cards:
+  - cups-05
+  - major-09-hermit
+  - cups-03
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-cups.md
+updated: 2026-06-06
+---
 # 聖杯四（Four of Cups）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

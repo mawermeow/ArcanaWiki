@@ -1,3 +1,56 @@
+---
+id: cups-page
+pageId: cups-page
+type: card
+title: 聖杯侍衛（Page of Cups）
+titleEn: Page of Cups
+titleZh: 聖杯侍衛
+arcana: minor
+suit: cups
+rank: page
+summary: 情感訊息與意外靈感；天真好奇，也可能尚未成熟到能穩穩承接感受。
+tags:
+  - 聖杯侍衛
+  - Page of Cups
+  - cups-page
+  - 小阿卡納
+  - 聖杯
+  - cups
+  - 理想主義
+  - 好奇
+  - 想象力
+  - 天真
+  - 情感訊息
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 情感細膩
+  - 想象力豐富
+  - 純真
+  - 情感脆弱
+  - 不成熟
+  - 天馬行空而不切實際
+  - 因缺乏安全感而過度提防
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - cups
+related_cards:
+  - cups-knight
+  - major-00-fool
+  - cups-10
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-cups.md
+updated: 2026-06-06
+---
 # 聖杯侍衛（Page of Cups）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

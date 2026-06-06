@@ -1,3 +1,51 @@
+---
+id: major-21-world
+pageId: major-21-world
+type: card
+title: 世界（The World）
+titleEn: The World
+titleZh: 世界
+arcana: major
+summary: 世界象徵完成、整合與動態中的和諧。舞者一腳交叉、雙手持杖，四角四固定星座呼應命運之輪——這張牌可能提醒你：一個週期圓滿落幕，但完滿不是靜止，而是帶著平衡繼續演化。
+tags:
+  - 世界
+  - The World
+  - major-21-world
+  - 大阿卡納
+  - 完成
+  - 完滿
+  - 和諧
+  - 內心滿足
+  - 持久成功
+  - 整合
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 發自內心的快樂滿足和持久的成功
+  - 可能暗示旅行
+  - 不完滿
+  - 空虛
+  - 不持久的成功
+  - 旅行（未完成感）
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 大阿卡納
+related_cards:
+  - major-10-wheel-of-fortune
+  - major-00-fool
+  - major-20-judgement
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-major-arcana-17-21.md
+updated: 2026-06-06
+---
 # 世界（The World）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

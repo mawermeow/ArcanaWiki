@@ -1,3 +1,37 @@
+---
+id: spread-lover-reunion
+pageId: spread-lover-reunion
+type: spread
+title: 情人復合牌陣
+titleZh: 情人復合牌陣
+summary: 對照彼此內心感受，適合仍念念不忘、想釐清前緣未了的情況。
+tags:
+  - 情人復合牌陣
+  - spread-lover-reunion
+  - 牌陣
+  - spread
+  - 塔羅
+  - tarot
+  - 復合
+  - 前緣
+  - 彼此感受
+  - 迷離
+  - 感情
+  - 關係
+topics:
+  - 感情
+  - 關係
+  - 復合
+related_cards: []
+related_spreads:
+  - spread-love-greater-cross
+  - spread-love-tree
+source_refs:
+  - tarot-lab/spreads_db.json
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-spreads.md
+updated: 2026-06-06
+---
 # 情人復合牌陣
 
 > Sources: tarot-lab, Unknown

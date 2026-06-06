@@ -1,3 +1,57 @@
+---
+id: swords-queen
+pageId: swords-queen
+type: card
+title: 寶劍王后（Queen of Swords）
+titleEn: Queen of Swords
+titleZh: 寶劍王后
+arcana: minor
+suit: swords
+rank: queen
+summary: 清晰判斷與獨立理智；誠實直接，也需留意過度嚴苛。
+tags:
+  - 寶劍王后
+  - Queen of Swords
+  - swords-queen
+  - 小阿卡納
+  - 寶劍
+  - swords
+  - 誠實
+  - 獨立
+  - 公平
+  - 冷靜
+  - 洞察力
+  - 決斷
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 有原則
+  - 冷靜理智
+  - 批評建議
+  - 悲觀
+  - 苛刻
+  - 痛苦
+  - 鐵石心腸
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - swords
+related_cards:
+  - major-11-justice
+  - swords-king
+  - swords-knight
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-swords.md
+updated: 2026-06-06
+---
 # 寶劍王后（Queen of Swords）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

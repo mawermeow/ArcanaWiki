@@ -1,3 +1,54 @@
+---
+id: swords-09
+pageId: swords-09
+type: card
+title: 寶劍九（Nine of Swords）
+titleEn: Nine of Swords
+titleZh: 寶劍九
+arcana: minor
+suit: swords
+rank: 09
+summary: 焦慮、噩夢與精神壓力；恐懼在夜裡放大，白天仍需溫柔面對。
+tags:
+  - 寶劍九
+  - Nine of Swords
+  - swords-09
+  - 小阿卡納
+  - 寶劍
+  - swords
+  - 恐懼
+  - 焦慮
+  - 消極
+  - 崩潰
+  - 噩夢
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 絕望
+  - 噩夢結束
+  - 恢復精神
+  - 重拾信心
+  - 學會應對恐懼
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - swords
+related_cards:
+  - major-18-moon
+  - swords-08
+  - swords-10
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-swords.md
+updated: 2026-06-06
+---
 # 寶劍九（Nine of Swords）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

@@ -1,3 +1,55 @@
+---
+id: pentacles-03
+pageId: pentacles-03
+type: card
+title: 星幣三（Three of Pentacles）
+titleEn: Three of Pentacles
+titleZh: 星幣三
+arcana: minor
+suit: pentacles
+rank: 03
+summary: 團隊協作與技藝展現；不同知識匯聚，共同完成具體成果。
+tags:
+  - 星幣三
+  - Three of Pentacles
+  - pentacles-03
+  - 小阿卡納
+  - 星幣
+  - pentacles
+  - 團隊合作
+  - 協作
+  - 學徒制
+  - 計劃
+  - 技藝
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 共同目標
+  - 知識和經驗
+  - 缺乏凝聚力
+  - 缺乏團隊精神
+  - 團隊不和
+  - 經驗或能力不足
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - pentacles
+related_cards:
+  - pentacles-02
+  - pentacles-08
+  - pentacles-04
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-pentacles.md
+updated: 2026-06-06
+---
 # 星幣三（Three of Pentacles）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

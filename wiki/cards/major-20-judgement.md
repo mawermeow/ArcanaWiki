@@ -1,3 +1,50 @@
+---
+id: major-20-judgement
+pageId: major-20-judgement
+type: card
+title: 審判（Judgement）
+titleEn: Judgement
+titleZh: 審判
+arcana: major
+summary: 審判象徵覺醒、自我評估與生命的召喚。人們從墓中起身，回應加百列號角——這張牌可能提醒你：是時候為過往經驗做出結論，並以清晰的判斷力邁向新階段。（此處「審判」多指自我覺察，而非外在定罪。）
+tags:
+  - 審判
+  - Judgement
+  - major-20-judgement
+  - 大阿卡納
+  - 自我評判
+  - 覺醒
+  - 更新
+  - 清算
+  - 清晰判斷力
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 清晰的判斷力
+  - 將過去經驗做出結論
+  - 抗拒人生轉變
+  - 抗拒命運召喚
+  - 可能做出錯誤決定或錯過重要訊息
+  - 需多加留意
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 大阿卡納
+related_cards:
+  - major-13-death
+  - major-21-world
+  - major-19-sun
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-major-arcana-17-21.md
+updated: 2026-06-06
+---
 # 審判（Judgement）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

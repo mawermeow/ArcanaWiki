@@ -1,3 +1,55 @@
+---
+id: cups-07
+pageId: cups-07
+type: card
+title: 聖杯七（Seven of Cups）
+titleEn: Seven of Cups
+titleZh: 聖杯七
+arcana: minor
+suit: cups
+rank: 07
+summary: 眾多幻想與選項令人迷茫；宜分辨夢想與幻覺，釐清真正想要的是什麼。
+tags:
+  - 聖杯七
+  - Seven of Cups
+  - cups-07
+  - 小阿卡納
+  - 聖杯
+  - cups
+  - 幻象
+  - 夢境
+  - 幻想
+  - 選擇
+  - 迷茫
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 不切實際的幻想
+  - 許多選擇
+  - 缺乏目標
+  - 混亂
+  - 分心
+  - 雲開霧散
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - cups
+related_cards:
+  - major-18-moon
+  - cups-08
+  - cups-06
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-cups.md
+updated: 2026-06-06
+---
 # 聖杯七（Seven of Cups）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

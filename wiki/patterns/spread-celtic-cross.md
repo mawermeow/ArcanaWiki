@@ -1,3 +1,38 @@
+---
+id: spread-celtic-cross
+pageId: spread-celtic-cross
+type: spread
+title: 凱爾特牌陣
+titleZh: 凱爾特牌陣
+summary: 塔羅最經典牌陣之一，結構嚴謹，可從宏觀角度審視事件並輔助決策。
+tags:
+  - 凱爾特牌陣
+  - spread-celtic-cross
+  - 牌陣
+  - spread
+  - 塔羅
+  - tarot
+  - 經典
+  - 宏觀
+  - 決策
+  - 總結
+  - 規劃
+  - 宏觀分析
+  - 通用
+topics:
+  - 決策
+  - 宏觀分析
+  - 通用
+related_cards: []
+related_spreads:
+  - spread-hexagram
+  - spread-either-or
+source_refs:
+  - tarot-lab/spreads_db.json
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-spreads.md
+updated: 2026-06-06
+---
 # 凱爾特牌陣
 
 > Sources: tarot-lab, Unknown

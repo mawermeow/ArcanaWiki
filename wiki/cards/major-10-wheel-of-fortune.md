@@ -1,3 +1,49 @@
+---
+id: major-10-wheel-of-fortune
+pageId: major-10-wheel-of-fortune
+type: card
+title: 命運之輪（The Wheel of Fortune）
+titleEn: The Wheel of Fortune
+titleZh: 命運之輪
+arcana: major
+summary: 命運之輪象徵週期、轉變與時機。輪上符號繁複，四固定星座生物、獅身人面像與阿努比斯交替升降——這張牌可能提醒你：變化是常態，關鍵在於你如何回應轉動的時刻。
+tags:
+  - 命運之輪
+  - The Wheel of Fortune
+  - major-10-wheel-of-fortune
+  - 大阿卡納
+  - 改變
+  - 新的開始
+  - 命運
+  - 時來運轉
+  - 意外事件
+  - 週期
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 時機未到
+  - 壞運氣
+  - 當前課題尚未完成
+  - 重複
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 大阿卡納
+related_cards:
+  - major-09-hermit
+  - major-00-fool
+  - major-11-justice
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-major-arcana-05-10.md
+updated: 2026-06-06
+---
 # 命運之輪（The Wheel of Fortune）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

@@ -1,3 +1,56 @@
+---
+id: swords-05
+pageId: swords-05
+type: card
+title: 寶劍五（Five of Swords）
+titleEn: Five of Swords
+titleZh: 寶劍五
+arcana: minor
+suit: swords
+rank: 05
+summary: 爭勝後的空虛；可能贏了論點卻輸了關係，宜反思衝突的代價。
+tags:
+  - 寶劍五
+  - Five of Swords
+  - swords-05
+  - 小阿卡納
+  - 寶劍
+  - swords
+  - 爭論
+  - 衝突
+  - 敵意
+  - 自私
+  - 欺凌
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 糾紛
+  - 攻擊
+  - 恐嚇
+  - 和解
+  - 妥協
+  - 報復
+  - 失敗
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - swords
+related_cards:
+  - major-07-chariot
+  - swords-06
+  - swords-04
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-swords.md
+updated: 2026-06-06
+---
 # 寶劍五（Five of Swords）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

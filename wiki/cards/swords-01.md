@@ -1,3 +1,55 @@
+---
+id: swords-01
+pageId: swords-01
+type: card
+title: 寶劍一（Ace of Swords）
+titleEn: Ace of Swords
+titleZh: 寶劍一
+arcana: minor
+suit: swords
+rank: 01
+summary: 清晰思維與真理的突破；新的洞見或決心，也可能帶來尖銳的對立。
+tags:
+  - 寶劍一
+  - Ace of Swords
+  - swords-01
+  - 小阿卡納
+  - 寶劍
+  - swords
+  - 視野
+  - 力量
+  - 專注
+  - 決心
+  - 真理
+  - 突破
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 廣闊的視野
+  - 敵意
+  - 爭吵
+  - 傷害
+  - 破壞
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - swords
+related_cards:
+  - major-11-justice
+  - major-01-magician
+  - swords-02
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-swords.md
+updated: 2026-06-06
+---
 # 寶劍一（Ace of Swords）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

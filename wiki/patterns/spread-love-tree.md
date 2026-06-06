@@ -1,3 +1,38 @@
+---
+id: spread-love-tree
+pageId: spread-love-tree
+type: spread
+title: 愛情樹牌陣
+titleZh: 愛情樹牌陣
+summary: 適合溯本求源，在感情困境時尋找癥結，突出重圍。
+tags:
+  - 愛情樹牌陣
+  - spread-love-tree
+  - 牌陣
+  - spread
+  - 塔羅
+  - tarot
+  - 感情困境
+  - 溯源
+  - 癥結
+  - 改善關係
+  - 感情
+  - 關係
+  - 困境
+topics:
+  - 感情
+  - 關係
+  - 困境
+related_cards: []
+related_spreads:
+  - spread-sacred-triangle
+  - spread-lover-reunion
+source_refs:
+  - tarot-lab/spreads_db.json
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-spreads.md
+updated: 2026-06-06
+---
 # 愛情樹牌陣
 
 > Sources: tarot-lab, Unknown

@@ -1,3 +1,56 @@
+---
+id: wands-06
+pageId: wands-06
+type: card
+title: 權杖六（Six of Wands）
+titleEn: Six of Wands
+titleZh: 權杖六
+arcana: minor
+suit: wands
+rank: 06
+summary: 勝利與認可；努力被看見，自信凱旋而歸。
+tags:
+  - 權杖六
+  - Six of Wands
+  - wands-06
+  - 小阿卡納
+  - 權杖
+  - wands
+  - 自信
+  - 成功
+  - 勝利
+  - 認可
+  - 讚美
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 凱旋
+  - 好消息
+  - 好的進展
+  - 失敗
+  - 缺乏認可
+  - 缺乏成就感
+  - 過度驕傲自滿
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - wands
+related_cards:
+  - wands-07
+  - major-19-sun
+  - wands-05
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-wands.md
+updated: 2026-06-06
+---
 # 權杖六（Six of Wands）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

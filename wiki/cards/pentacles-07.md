@@ -1,3 +1,56 @@
+---
+id: pentacles-07
+pageId: pentacles-07
+type: card
+title: 星幣七（Seven of Pentacles）
+titleEn: Seven of Pentacles
+titleZh: 星幣七
+arcana: minor
+suit: pentacles
+rank: 07
+summary: 耕耘後的等待與評估；耐心看待長期回報，而非急躁收割。
+tags:
+  - 星幣七
+  - Seven of Pentacles
+  - pentacles-07
+  - 小阿卡納
+  - 星幣
+  - pentacles
+  - 收穫
+  - 回報
+  - 成長
+  - 耐心
+  - 耕耘
+  - 進步
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 結果
+  - 毅力
+  - 未完成的工作
+  - 拖延
+  - 缺少努力
+  - 浪費
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - pentacles
+related_cards:
+  - pentacles-08
+  - wands-03
+  - pentacles-06
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-pentacles.md
+updated: 2026-06-06
+---
 # 星幣七（Seven of Pentacles）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

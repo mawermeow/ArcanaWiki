@@ -1,3 +1,48 @@
+---
+id: major-05-hierophant
+pageId: major-05-hierophant
+type: card
+title: 教皇（The Hierophant）
+titleEn: The Hierophant
+titleZh: 教皇
+arcana: major
+summary: 教皇象徵傳統、制度與知識的傳承。他端坐於信眾之前，以祝福之手與三重皇冠連結身心靈——這張牌可能提醒你：在既有規範中學習，或思考何時需要走出自己的路。
+tags:
+  - 教皇
+  - The Hierophant
+  - major-05-hierophant
+  - 大阿卡納
+  - 傳統
+  - 社會規範
+  - 教育
+  - 知識
+  - 信仰
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 叛逆
+  - 打破常規
+  - 不循規蹈矩
+  - 新方法
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 大阿卡納
+related_cards:
+  - major-04-emperor
+  - major-02-high-priestess
+  - major-06-lovers
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-major-arcana-05-10.md
+updated: 2026-06-06
+---
 # 教皇（The Hierophant）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

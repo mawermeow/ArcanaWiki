@@ -1,3 +1,47 @@
+---
+id: major-13-death
+pageId: major-13-death
+type: card
+title: 死亡（Death）
+titleEn: Death
+titleZh: 死亡
+arcana: major
+summary: 死亡象徵結束、轉化與重生。死神騎白馬、黑旗白玫瑰，國王與貧民同卧塵土，遠方太陽升起——這張牌可能提醒你：某些階段需要放手，才能迎接新的開始。（此牌多指象徵性轉變，而非字面死亡預言。）
+tags:
+  - 死亡
+  - Death
+  - major-13-death
+  - 大阿卡納
+  - 結局
+  - 新生
+  - 放手
+  - 順從於改變
+  - 轉化
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 畏懼改變
+  - 抵制變化
+  - 不肯放手
+  - 停滯不前
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 大阿卡納
+related_cards:
+  - major-12-hanged-man
+  - major-14-temperance
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-major-arcana-11-16.md
+updated: 2026-06-06
+---
 # 死亡（Death）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

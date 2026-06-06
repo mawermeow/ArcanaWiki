@@ -1,3 +1,54 @@
+---
+id: cups-knight
+pageId: cups-knight
+type: card
+title: 聖杯騎士（Knight of Cups）
+titleEn: Knight of Cups
+titleZh: 聖杯騎士
+arcana: minor
+suit: cups
+rank: knight
+summary: 浪漫信使與優雅前行；帶著情感與理想緩緩接近，也需留意情緒化與不切實際。
+tags:
+  - 聖杯騎士
+  - Knight of Cups
+  - cups-knight
+  - 小阿卡納
+  - 聖杯
+  - cups
+  - 浪漫
+  - 優雅
+  - 藝術
+  - 夢想家
+  - 信使
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 理想主義者
+  - 迷人
+  - 失望
+  - 發脾氣
+  - 情緒化
+  - 虛榮
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - cups
+related_cards:
+  - cups-page
+  - cups-queen
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-cups.md
+updated: 2026-06-06
+---
 # 聖杯騎士（Knight of Cups）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

@@ -1,3 +1,57 @@
+---
+id: wands-07
+pageId: wands-07
+type: card
+title: 權杖七（Seven of Wands）
+titleEn: Seven of Wands
+titleZh: 權杖七
+arcana: minor
+suit: wands
+rank: 07
+summary: 捍衛立場、面對挑戰；處於劣勢仍願反擊，需要勇氣與韌性。
+tags:
+  - 權杖七
+  - Seven of Wands
+  - wands-07
+  - 小阿卡納
+  - 權杖
+  - wands
+  - 挑戰
+  - 反對
+  - 自衛
+  - 捍衛
+  - 韌性
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 面臨挑戰
+  - 遭到反對
+  - 衝突對立的局面
+  - 自衛反擊
+  - 陷入焦慮
+  - 優柔寡斷
+  - 沒用勇氣面對挑戰
+  - 不利的局勢
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - wands
+related_cards:
+  - wands-06
+  - wands-09
+  - wands-08
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-wands.md
+updated: 2026-06-06
+---
 # 權杖七（Seven of Wands）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

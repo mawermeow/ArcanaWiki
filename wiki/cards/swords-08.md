@@ -1,3 +1,57 @@
+---
+id: swords-08
+pageId: swords-08
+type: card
+title: 寶劍八（Eight of Swords）
+titleEn: Eight of Swords
+titleZh: 寶劍八
+arcana: minor
+suit: swords
+rank: 08
+summary: 感到被困與無助；限制多半來自視角，摘掉眼罩可能看見出路。
+tags:
+  - 寶劍八
+  - Eight of Swords
+  - swords-08
+  - 小阿卡納
+  - 寶劍
+  - swords
+  - 被困
+  - 限制
+  - 無助
+  - 蒙蔽
+  - 看不到出路
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 被限制
+  - 被陷害
+  - 被蒙蔽
+  - 看不到可能的出路
+  - 自由
+  - 釋放
+  - 覺醒
+  - 掌控局面
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - swords
+related_cards:
+  - major-12-hanged-man
+  - swords-09
+  - swords-07
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-swords.md
+updated: 2026-06-06
+---
 # 寶劍八（Eight of Swords）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

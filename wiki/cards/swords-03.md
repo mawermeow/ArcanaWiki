@@ -1,3 +1,55 @@
+---
+id: swords-03
+pageId: swords-03
+type: card
+title: 寶劍三（Three of Swords）
+titleEn: Three of Swords
+titleZh: 寶劍三
+arcana: minor
+suit: swords
+rank: 03
+summary: 心碎與情感創傷；痛苦需要被承認，也可能開啟療癒之路。
+tags:
+  - 寶劍三
+  - Three of Swords
+  - swords-03
+  - 小阿卡納
+  - 寶劍
+  - swords
+  - 心碎
+  - 分離
+  - 悲傷
+  - 孤立
+  - 損失
+  - 創傷
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 愈合
+  - 寬恕
+  - 恢復
+  - 和解
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - swords
+related_cards:
+  - cups-05
+  - major-16-tower
+  - swords-02
+  - swords-04
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-swords.md
+updated: 2026-06-06
+---
 # 寶劍三（Three of Swords）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

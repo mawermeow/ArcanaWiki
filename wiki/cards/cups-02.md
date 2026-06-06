@@ -1,3 +1,56 @@
+---
+id: cups-02
+pageId: cups-02
+type: card
+title: 聖杯二（Two of Cups）
+titleEn: Two of Cups
+titleZh: 聖杯二
+arcana: minor
+suit: cups
+rank: 02
+summary: 平等互惠的連結；戀愛、夥伴或合作建立在尊重與平衡之上。
+tags:
+  - 聖杯二
+  - Two of Cups
+  - cups-02
+  - 小阿卡納
+  - 聖杯
+  - cups
+  - 團結
+  - 夥伴
+  - 戀愛
+  - 相互吸引
+  - 尊重
+  - 聯合
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 夥伴關係
+  - 聯繫
+  - 關係中不和諧的因素
+  - 不平等的關係
+  - 溝通不暢
+  - 分離
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - cups
+related_cards:
+  - major-06-lovers
+  - cups-03
+  - cups-01
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-cups.md
+updated: 2026-06-06
+---
 # 聖杯二（Two of Cups）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

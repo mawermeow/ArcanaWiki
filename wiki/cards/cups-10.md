@@ -1,3 +1,54 @@
+---
+id: cups-10
+pageId: cups-10
+type: card
+title: 聖杯十（Ten of Cups）
+titleEn: Ten of Cups
+titleZh: 聖杯十
+arcana: minor
+suit: cups
+rank: 10
+summary: 情感圓滿與家庭和諧；彩虹之後的幸福，也可能映照對「完美家庭」的期待。
+tags:
+  - 聖杯十
+  - Ten of Cups
+  - cups-10
+  - 小阿卡納
+  - 聖杯
+  - cups
+  - 幸福
+  - 歸家
+  - 團圓
+  - 家庭和睦
+  - 情感和諧
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 家庭不和
+  - 關係不和
+  - 或是個人脫離團體
+  - 離群索居
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - cups
+related_cards:
+  - major-06-lovers
+  - major-03-empress
+  - cups-09
+  - cups-page
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-cups.md
+updated: 2026-06-06
+---
 # 聖杯十（Ten of Cups）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

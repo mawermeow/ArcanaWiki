@@ -1,3 +1,56 @@
+---
+id: wands-03
+pageId: wands-03
+type: card
+title: 權杖三（Three of Wands）
+titleEn: Three of Wands
+titleZh: 權杖三
+arcana: minor
+suit: wands
+rank: 03
+summary: 計畫進入執行階段；遠見與信心支撐向前擴張。
+tags:
+  - 權杖三
+  - Three of Wands
+  - wands-03
+  - 小阿卡納
+  - 權杖
+  - wands
+  - 勢頭
+  - 信心
+  - 擴張
+  - 遠見
+  - 付諸實踐
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 前進的勢頭
+  - 增長
+  - 向前看
+  - 限制
+  - 局限
+  - 缺乏進展
+  - 障礙
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - wands
+related_cards:
+  - wands-02
+  - wands-08
+  - wands-04
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-wands.md
+updated: 2026-06-06
+---
 # 權杖三（Three of Wands）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

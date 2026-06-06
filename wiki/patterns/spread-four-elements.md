@@ -1,3 +1,40 @@
+---
+id: spread-four-elements
+pageId: spread-four-elements
+type: spread
+title: 四元素牌陣
+titleZh: 四元素牌陣
+summary: 透過火／風／水／土（行動、理性、情感、物質）四面向審視問題。
+tags:
+  - 四元素牌陣
+  - spread-four-elements
+  - 牌陣
+  - spread
+  - 塔羅
+  - tarot
+  - 四元素
+  - 感性
+  - 理性
+  - 物質
+  - 行動
+  - 多角度
+  - 多面向
+  - 自我探索
+  - 靈性
+topics:
+  - 多面向
+  - 自我探索
+  - 靈性
+related_cards:
+  - major-01-magician
+related_spreads:
+  - spread-hexagram
+source_refs:
+  - tarot-lab/spreads_db.json
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-spreads.md
+updated: 2026-06-06
+---
 # 四元素牌陣
 
 > Sources: tarot-lab, Unknown

@@ -1,3 +1,56 @@
+---
+id: wands-page
+pageId: wands-page
+type: card
+title: 權杖侍衛（Page of Wands）
+titleEn: Page of Wands
+titleZh: 權杖侍衛
+arcana: minor
+suit: wands
+rank: page
+summary: 熱情使者與新點子；天真坦率，想法尚待落地實踐。
+tags:
+  - 權杖侍衛
+  - Page of Wands
+  - wands-page
+  - 小阿卡納
+  - 權杖
+  - wands
+  - 冒險
+  - 興奮
+  - 新想法
+  - 熱情
+  - 精力充沛
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 新鮮的想法
+  - 開朗
+  - 活潑
+  - 三分鐘熱度
+  - 頑皮
+  - 缺乏想法
+  - 懶惰
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - wands
+related_cards:
+  - major-00-fool
+  - wands-knight
+  - wands-10
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-wands.md
+updated: 2026-06-06
+---
 # 權杖侍衛（Page of Wands）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

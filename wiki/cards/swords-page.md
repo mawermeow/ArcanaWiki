@@ -1,3 +1,56 @@
+---
+id: swords-page
+pageId: swords-page
+type: card
+title: 寶劍侍衛（Page of Swords）
+titleEn: Page of Swords
+titleZh: 寶劍侍衛
+arcana: minor
+suit: swords
+rank: page
+summary: 好奇與敏捷思維；新想法或訊息到來，也需留意言詞過於尖銳。
+tags:
+  - 寶劍侍衛
+  - Page of Swords
+  - swords-page
+  - 小阿卡納
+  - 寶劍
+  - swords
+  - 好奇
+  - 機智
+  - 溝通
+  - 靈感
+  - 警覺
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 思維敏捷
+  - 健談
+  - 善於溝通
+  - 散漫
+  - 憤世嫉俗
+  - 諷刺
+  - 流言蜚語
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - swords
+related_cards:
+  - major-01-magician
+  - swords-knight
+  - swords-10
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-swords.md
+updated: 2026-06-06
+---
 # 寶劍侍衛（Page of Swords）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

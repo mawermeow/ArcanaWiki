@@ -1,3 +1,39 @@
+---
+id: spread-hexagram
+pageId: spread-hexagram
+type: spread
+title: 六芒星牌陣
+titleZh: 六芒星牌陣
+summary: 可分析潛意識與顯意識的表達，對事情走向有較深度的象徵性指引。
+tags:
+  - 六芒星牌陣
+  - spread-hexagram
+  - 牌陣
+  - spread
+  - 塔羅
+  - tarot
+  - 走向
+  - 潛意識
+  - 顯意識
+  - 深度分析
+  - 指導
+  - 決策
+  - 自我探索
+  - 靈性
+topics:
+  - 決策
+  - 自我探索
+  - 靈性
+related_cards: []
+related_spreads:
+  - spread-celtic-cross
+  - spread-four-elements
+source_refs:
+  - tarot-lab/spreads_db.json
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-spreads.md
+updated: 2026-06-06
+---
 # 六芒星牌陣
 
 > Sources: tarot-lab, Unknown

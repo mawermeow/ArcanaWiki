@@ -1,3 +1,52 @@
+---
+id: pentacles-02
+pageId: pentacles-02
+type: card
+title: 星幣二（Two of Pentacles）
+titleEn: Two of Pentacles
+titleZh: 星幣二
+arcana: minor
+suit: pentacles
+rank: 02
+summary: 在變動中保持平衡；靈活應對生活起伏，也可能感到分身乏術。
+tags:
+  - 星幣二
+  - Two of Pentacles
+  - pentacles-02
+  - 小阿卡納
+  - 星幣
+  - pentacles
+  - 平衡
+  - 適應
+  - 足智多謀
+  - 靈活
+  - 娛樂
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 失衡
+  - 無組織
+  - 不知所措
+  - 混亂
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - pentacles
+related_cards:
+  - pentacles-01
+  - pentacles-03
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-pentacles.md
+updated: 2026-06-06
+---
 # 星幣二（Two of Pentacles）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

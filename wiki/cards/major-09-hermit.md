@@ -1,3 +1,47 @@
+---
+id: major-09-hermit
+pageId: major-09-hermit
+type: card
+title: 隱士（The Hermit）
+titleEn: The Hermit
+titleZh: 隱士
+arcana: major
+summary: 隱士象徵獨處、內省與智慧的追尋。他站在山頂，燈籠內的所羅門封印照亮幽微之處——這張牌可能提醒你：有些答案需要暫離喧囂，在靜默中慢慢浮現。
+tags:
+  - 隱士
+  - The Hermit
+  - major-09-hermit
+  - 大阿卡納
+  - 獨處
+  - 內省
+  - 沉思
+  - 尋找自我
+  - 尋找智慧
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 缺乏省思
+  - 迷失方向
+  - 孤獨
+  - 回歸社會
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 大阿卡納
+related_cards:
+  - major-08-strength
+  - major-10-wheel-of-fortune
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-major-arcana-05-10.md
+updated: 2026-06-06
+---
 # 隱士（The Hermit）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

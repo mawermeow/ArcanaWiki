@@ -1,3 +1,53 @@
+---
+id: cups-03
+pageId: cups-03
+type: card
+title: 聖杯三（Three of Cups）
+titleEn: Three of Cups
+titleZh: 聖杯三
+arcana: minor
+suit: cups
+rank: 03
+summary: 友誼、團聚與慶祝；共享喜悅的時刻，也可能提醒團體和諧需要維護。
+tags:
+  - 聖杯三
+  - Three of Cups
+  - cups-03
+  - 小阿卡納
+  - 聖杯
+  - cups
+  - 友誼
+  - 團聚
+  - 聚會
+  - 慶祝
+  - 分享
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 慶祝活動
+  - 流言蜚語
+  - 醜聞
+  - 孤立
+  - 孤獨
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - cups
+related_cards:
+  - cups-02
+  - cups-04
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-cups.md
+updated: 2026-06-06
+---
 # 聖杯三（Three of Cups）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

@@ -1,3 +1,53 @@
+---
+id: wands-10
+pageId: wands-10
+type: card
+title: 權杖十（Ten of Wands）
+titleEn: Ten of Wands
+titleZh: 權杖十
+arcana: minor
+suit: wands
+rank: 10
+summary: 負擔過重、責任壓頂；成功近在咫尺，卻感到精疲力竭。
+tags:
+  - 權杖十
+  - Ten of Wands
+  - wands-10
+  - 小阿卡納
+  - 權杖
+  - wands
+  - 負擔
+  - 責任
+  - 壓力
+  - 義務
+  - 精疲力竭
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 職責
+  - 承擔過多的責任
+  - 壓力過大
+  - 崩潰
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - wands
+related_cards:
+  - wands-09
+  - major-04-emperor
+  - wands-page
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-wands.md
+updated: 2026-06-06
+---
 # 權杖十（Ten of Wands）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

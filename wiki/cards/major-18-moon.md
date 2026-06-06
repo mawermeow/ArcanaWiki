@@ -1,3 +1,49 @@
+---
+id: major-18-moon
+pageId: major-18-moon
+type: card
+title: 月亮（The Moon）
+titleEn: The Moon
+titleZh: 月亮
+arcana: major
+summary: 月亮象徵潛意識、迷霧與不確定。狼與狗守在小路兩側，龍蝦從深水中浮現——這張牌可能提醒你：有些恐懼來自尚未照亮的內在，宜透過夢境、想像或溫和自省慢慢釐清。
+tags:
+  - 月亮
+  - The Moon
+  - major-18-moon
+  - 大阿卡納
+  - 恐懼
+  - 不安
+  - 錯覺
+  - 不確定性
+  - 混亂
+  - 潛意識
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 引導透過夢或想像探索潛意識
+  - 拒絕探索潛意識
+  - 認識停留表面
+  - 隱藏事物逐漸浮現
+  - 恐懼與不安有所減弱
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 大阿卡納
+related_cards:
+  - major-17-star
+  - major-19-sun
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-major-arcana-17-21.md
+updated: 2026-06-06
+---
 # 月亮（The Moon）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

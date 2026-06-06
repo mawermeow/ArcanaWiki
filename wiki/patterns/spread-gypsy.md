@@ -1,3 +1,39 @@
+---
+id: spread-gypsy
+pageId: spread-gypsy
+type: spread
+title: 吉普賽牌陣
+titleZh: 吉普賽牌陣
+summary: 探索雙方內心想法，尋找合適相處方式，適合釋放情感困獸。
+tags:
+  - 吉普賽牌陣
+  - spread-gypsy
+  - 牌陣
+  - spread
+  - 塔羅
+  - tarot
+  - 婚姻
+  - 愛情
+  - 內心
+  - 相處方式
+  - 情感
+  - 感情
+  - 關係
+topics:
+  - 感情
+  - 關係
+  - 婚姻
+related_cards: []
+related_spreads:
+  - spread-venus
+  - spread-love-greater-cross
+  - spread-finding-partner
+source_refs:
+  - tarot-lab/spreads_db.json
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-spreads.md
+updated: 2026-06-06
+---
 # 吉普賽牌陣
 
 > Sources: tarot-lab, Unknown

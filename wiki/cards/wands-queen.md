@@ -1,3 +1,57 @@
+---
+id: wands-queen
+pageId: wands-queen
+type: card
+title: 權杖王后（Queen of Wands）
+titleEn: Queen of Wands
+titleZh: 權杖王后
+arcana: minor
+suit: wands
+rank: queen
+summary: 自信陽光與魅力領導；熱情堅定，腳下黑貓暗示直覺與神秘面。
+tags:
+  - 權杖王后
+  - Queen of Wands
+  - wands-queen
+  - 小阿卡納
+  - 權杖
+  - wands
+  - 自信
+  - 熱情
+  - 魅力
+  - 樂觀
+  - 直覺
+  - 內在力量
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 堅定
+  - 有魅力
+  - 陽光開朗
+  - 專橫
+  - 善妒
+  - 欺軟怕硬
+  - 不夠自信
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - wands
+related_cards:
+  - major-03-empress
+  - wands-king
+  - wands-knight
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-wands.md
+updated: 2026-06-06
+---
 # 權杖王后（Queen of Wands）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

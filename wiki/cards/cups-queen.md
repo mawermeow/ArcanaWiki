@@ -1,3 +1,55 @@
+---
+id: cups-queen
+pageId: cups-queen
+type: card
+title: 聖杯王后（Queen of Cups）
+titleEn: Queen of Cups
+titleZh: 聖杯王后
+arcana: minor
+suit: cups
+rank: queen
+summary: 情感智慧與慈悲直覺；溫暖療癒，也需留意過度付出或情緒淹沒。
+tags:
+  - 聖杯王后
+  - Queen of Cups
+  - cups-queen
+  - 小阿卡納
+  - 聖杯
+  - cups
+  - 憐憫
+  - 溫暖
+  - 直覺
+  - 敏感
+  - 療癒
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 仁慈
+  - 敏感細膩
+  - 不安全感
+  - 付出太多
+  - 過度敏感
+  - 情緒化
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - cups
+related_cards:
+  - major-02-high-priestess
+  - cups-king
+  - cups-knight
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-cups.md
+updated: 2026-06-06
+---
 # 聖杯王后（Queen of Cups）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

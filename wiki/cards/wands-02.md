@@ -1,3 +1,57 @@
+---
+id: wands-02
+pageId: wands-02
+type: card
+title: 權杖二（Two of Wands）
+titleEn: Two of Wands
+titleZh: 權杖二
+arcana: minor
+suit: wands
+rank: 02
+summary: 站在高處眺望未來；制定計畫、評估風險，準備離開舒適區。
+tags:
+  - 權杖二
+  - Two of Wands
+  - wands-02
+  - 小阿卡納
+  - 權杖
+  - wands
+  - 計劃
+  - 第一步
+  - 決定
+  - 冒險
+  - 離開舒適區
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 制定計劃
+  - 邁出第一步
+  - 做出決定
+  - 承擔風險
+  - 糟糕的計劃
+  - 過度分析
+  - 不採取行動
+  - 謹慎行事
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - wands
+related_cards:
+  - wands-03
+  - major-07-chariot
+  - wands-01
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-wands.md
+updated: 2026-06-06
+---
 # 權杖二（Two of Wands）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

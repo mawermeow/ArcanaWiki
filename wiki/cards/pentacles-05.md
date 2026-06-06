@@ -1,3 +1,55 @@
+---
+id: pentacles-05
+pageId: pentacles-05
+type: card
+title: 星幣五（Five of Pentacles）
+titleEn: Five of Pentacles
+titleZh: 星幣五
+arcana: minor
+suit: pentacles
+rank: 05
+summary: 物質困境與孤立感；艱難時刻，也可能提醒求助與相互扶持。
+tags:
+  - 星幣五
+  - Five of Pentacles
+  - pentacles-05
+  - 小阿卡納
+  - 星幣
+  - pentacles
+  - 困難
+  - 損失
+  - 逆境
+  - 掙扎
+  - 被拋棄感
+  - 相互扶持
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 失業
+  - 混亂
+  - 毀滅
+  - 絕望
+  - 化險為夷
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - pentacles
+related_cards:
+  - pentacles-06
+  - cups-05
+  - pentacles-04
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-pentacles.md
+updated: 2026-06-06
+---
 # 星幣五（Five of Pentacles）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

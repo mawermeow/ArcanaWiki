@@ -1,3 +1,50 @@
+---
+id: major-15-devil
+pageId: major-15-devil
+type: card
+title: 魔鬼（The Devil）
+titleEn: The Devil
+titleZh: 魔鬼
+arcana: major
+summary: 魔鬼象徵束縛、成癮與慾望的陰影。巴弗滅腳下的男女被鎖鏈拴住，卻仍有可能鬆脫——這張牌可能提醒你：有些枷鎖是習慣與執著所織成，覺察即是鬆綁的第一步。
+tags:
+  - 魔鬼
+  - The Devil
+  - major-15-devil
+  - 大阿卡納
+  - 慾望枷鎖
+  - 束縛
+  - 成癮
+  - 痴迷
+  - 無力感
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 慾望的枷鎖
+  - 不純粹或被束縛的關係
+  - 窒息或無力感
+  - 獨立
+  - 自由
+  - 釋放
+  - 奪回掌控權
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 大阿卡納
+related_cards:
+  - major-14-temperance
+  - major-16-tower
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-major-arcana-11-16.md
+updated: 2026-06-06
+---
 # 魔鬼（The Devil）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

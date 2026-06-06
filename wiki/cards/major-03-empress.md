@@ -1,3 +1,55 @@
+---
+id: major-03-empress
+pageId: major-03-empress
+type: card
+title: 女皇（The Empress）
+titleEn: The Empress
+titleZh: 女皇
+arcana: major
+summary: 女皇象徵豐饒、孕育與感官的生命力。她坐於自然之中，金星符號與石榴圖案強調創造、美感與滋養——這張牌可能提醒你關照自己與所珍視之物的成長。
+tags:
+  - 女皇
+  - The Empress
+  - major-03-empress
+  - 大阿卡納
+  - 神聖女性
+  - 活力
+  - 感官
+  - 生育
+  - 孕育
+  - 創造力
+  - 美
+  - 豐富
+  - 自然
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 神聖的女性
+  - 充足的活力
+  - 感官的享受
+  - 生育能力
+  - 不安全感
+  - 霸道
+  - 過強的控制欲
+  - 疏忽
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 大阿卡納
+related_cards:
+  - major-02-high-priestess
+  - major-04-emperor
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-major-arcana-00-04.md
+updated: 2026-06-06
+---
 # 女皇（The Empress）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

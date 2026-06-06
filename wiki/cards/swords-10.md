@@ -1,3 +1,56 @@
+---
+id: swords-10
+pageId: swords-10
+type: card
+title: 寶劍十（Ten of Swords）
+titleEn: Ten of Swords
+titleZh: 寶劍十
+arcana: minor
+suit: swords
+rank: 10
+summary: 谷底與終局感；最黑暗之後太陽仍升起，象徵結束也可能是新循環起點。
+tags:
+  - 寶劍十
+  - Ten of Swords
+  - swords-10
+  - 小阿卡納
+  - 寶劍
+  - swords
+  - 毀滅
+  - 失敗
+  - 崩潰
+  - 受害
+  - 背叛
+  - 終局
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 苦澀
+  - 幸存
+  - 改善
+  - 痊癒
+  - 吸取經驗教訓
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - swords
+related_cards:
+  - major-13-death
+  - major-16-tower
+  - swords-09
+  - swords-page
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-swords.md
+updated: 2026-06-06
+---
 # 寶劍十（Ten of Swords）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

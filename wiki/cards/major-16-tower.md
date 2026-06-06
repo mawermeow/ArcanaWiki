@@ -1,3 +1,51 @@
+---
+id: major-16-tower
+pageId: major-16-tower
+type: card
+title: 高塔（The Tower）
+titleEn: The Tower
+titleZh: 高塔
+arcana: major
+summary: 高塔象徵驟然的動盪與舊結構的崩塌。閃電擊塔、人們從窗躍下——這張牌可能提醒你：建立在錯誤前提上的野心終將動搖，動盪雖劇烈，也可能為新路清空場域。
+tags:
+  - 高塔
+  - The Tower
+  - major-16-tower
+  - 大阿卡納
+  - 突然改變
+  - 破壞性事件
+  - 災難
+  - 混亂
+  - 崩塌
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 突然的
+  - 無可避免的改變
+  - 破壞性
+  - 爆發性的事件
+  - 可能表示抗拒改變
+  - 拒絕放開所壓抑的東西
+  - 但這可能帶來更大的爆發
+  - 改變遲早要發生
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 大阿卡納
+related_cards:
+  - major-15-devil
+  - major-17-star
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-major-arcana-11-16.md
+updated: 2026-06-06
+---
 # 高塔（The Tower）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

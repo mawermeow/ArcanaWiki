@@ -1,3 +1,56 @@
+---
+id: wands-08
+pageId: wands-08
+type: card
+title: 權杖八（Eight of Wands）
+titleEn: Eight of Wands
+titleZh: 權杖八
+arcana: minor
+suit: wands
+rank: 08
+summary: 快速進展與訊息流動；能量自由飛行，事情加速推進。
+tags:
+  - 權杖八
+  - Eight of Wands
+  - wands-08
+  - 小阿卡納
+  - 權杖
+  - wands
+  - 迅速
+  - 自由
+  - 旅行
+  - 流動
+  - 不受約束
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 自由流動
+  - 不受約束的能量
+  - 進展過於迅速而失控
+  - 準備不充分
+  - 欲速則不達
+  - 進展受阻
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - wands
+related_cards:
+  - wands-03
+  - swords-knight
+  - wands-07
+  - wands-09
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-wands.md
+updated: 2026-06-06
+---
 # 權杖八（Eight of Wands）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

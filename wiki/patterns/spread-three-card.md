@@ -1,3 +1,38 @@
+---
+id: spread-three-card
+pageId: spread-three-card
+type: spread
+title: 三張牌占卜法
+titleZh: 三張牌占卜法
+summary: 最通用的彈性牌陣，三張牌可自由定義位置，適用於多種場合與獨立事項分析。
+tags:
+  - 三張牌占卜法
+  - spread-three-card
+  - 牌陣
+  - spread
+  - 塔羅
+  - tarot
+  - 通用
+  - 彈性
+  - 多用途
+  - 自由定義
+  - 決策
+  - 多面向
+topics:
+  - 通用
+  - 決策
+  - 多面向
+related_cards: []
+related_spreads:
+  - spread-time-flow
+  - spread-either-or
+  - spread-sacred-triangle
+source_refs:
+  - tarot-lab/spreads_db.json
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-spreads.md
+updated: 2026-06-06
+---
 # 三張牌占卜法
 
 > Sources: tarot-lab, Unknown

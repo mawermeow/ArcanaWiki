@@ -1,3 +1,54 @@
+---
+id: pentacles-01
+pageId: pentacles-01
+type: card
+title: 星幣一（Ace of Pentacles）
+titleEn: Ace of Pentacles
+titleZh: 星幣一
+arcana: minor
+suit: pentacles
+rank: 01
+summary: 物質與機會的新種子；財富、穩定與實際資源的可能開端。
+tags:
+  - 星幣一
+  - Ace of Pentacles
+  - pentacles-01
+  - 小阿卡納
+  - 星幣
+  - pentacles
+  - 新機會
+  - 資源
+  - 財富
+  - 繁榮
+  - 安全
+  - 穩定
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 豐富
+  - 錯失機會
+  - 稀缺
+  - 匱乏
+  - 不穩定
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - pentacles
+related_cards:
+  - major-03-empress
+  - pentacles-02
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-pentacles.md
+updated: 2026-06-06
+---
 # 星幣一（Ace of Pentacles）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

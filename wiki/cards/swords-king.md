@@ -1,3 +1,54 @@
+---
+id: swords-king
+pageId: swords-king
+type: card
+title: 寶劍國王（King of Swords）
+titleEn: King of Swords
+titleZh: 寶劍國王
+arcana: minor
+suit: swords
+rank: king
+summary: 理性權威與道德紀律；以清晰思維領導，權力伴隨責任。
+tags:
+  - 寶劍國王
+  - King of Swords
+  - swords-king
+  - 小阿卡納
+  - 寶劍
+  - swords
+  - 理智
+  - 權威
+  - 紀律
+  - 誠信
+  - 道德
+  - 嚴肅
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 律法
+  - 不理智
+  - 獨裁
+  - 壓迫
+  - 不人道
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - swords
+related_cards:
+  - major-04-emperor
+  - swords-queen
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-swords.md
+updated: 2026-06-06
+---
 # 寶劍國王（King of Swords）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

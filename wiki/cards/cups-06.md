@@ -1,3 +1,55 @@
+---
+id: cups-06
+pageId: cups-06
+type: card
+title: 聖杯六（Six of Cups）
+titleEn: Six of Cups
+titleZh: 聖杯六
+arcana: minor
+suit: cups
+rank: 06
+summary: 懷舊、童年純真與無條件的給予；溫暖記憶，也可能提示勿沉溺過去。
+tags:
+  - 聖杯六
+  - Six of Cups
+  - cups-06
+  - 小阿卡納
+  - 聖杯
+  - cups
+  - 童年
+  - 懷舊
+  - 回憶
+  - 思鄉
+  - 照顧
+  - 安全
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 安全和保障
+  - 沈溺於過去
+  - 不安
+  - 被拋棄
+  - 被忽視
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - cups
+related_cards:
+  - cups-05
+  - major-03-empress
+  - cups-07
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-cups.md
+updated: 2026-06-06
+---
 # 聖杯六（Six of Cups）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

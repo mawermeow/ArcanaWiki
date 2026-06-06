@@ -1,3 +1,54 @@
+---
+id: wands-01
+pageId: wands-01
+type: card
+title: 權杖一（Ace of Wands）
+titleEn: Ace of Wands
+titleZh: 權杖一
+arcana: minor
+suit: wands
+rank: 01
+summary: 靈感與行動力的火花；新計畫、新熱情正在萌芽。
+tags:
+  - 權杖一
+  - Ace of Wands
+  - wands-01
+  - 小阿卡納
+  - 權杖
+  - wands
+  - 靈感
+  - 創意
+  - 新計劃
+  - 熱情
+  - 活力
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 新激情
+  - 延緩
+  - 阻礙
+  - 缺乏激情
+  - 缺乏活力
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - wands
+related_cards:
+  - major-01-magician
+  - major-00-fool
+  - wands-02
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-wands.md
+updated: 2026-06-06
+---
 # 權杖一（Ace of Wands）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

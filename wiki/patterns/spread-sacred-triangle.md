@@ -1,3 +1,37 @@
+---
+id: spread-sacred-triangle
+pageId: spread-sacred-triangle
+type: spread
+title: 聖三角牌陣
+titleZh: 聖三角牌陣
+summary: 時間流牌陣的變形，更注重事物內在原因，適合依因由判斷走向。
+tags:
+  - 聖三角牌陣
+  - spread-sacred-triangle
+  - 牌陣
+  - spread
+  - 塔羅
+  - tarot
+  - 因果
+  - 前因後果
+  - 內在原因
+  - 時間流變形
+  - 時間
+  - 分析
+topics:
+  - 因果
+  - 時間
+  - 分析
+related_cards: []
+related_spreads:
+  - spread-time-flow
+  - spread-love-tree
+source_refs:
+  - tarot-lab/spreads_db.json
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-spreads.md
+updated: 2026-06-06
+---
 # 聖三角牌陣
 
 > Sources: tarot-lab, Unknown

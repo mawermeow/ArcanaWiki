@@ -1,3 +1,39 @@
+---
+id: spread-either-or
+pageId: spread-either-or
+type: spread
+title: 二選一牌陣
+titleZh: 二選一牌陣
+summary: 適合面對兩種選項時的抉擇占卜，用途相對廣泛。
+tags:
+  - 二選一牌陣
+  - spread-either-or
+  - 牌陣
+  - spread
+  - 塔羅
+  - tarot
+  - 抉擇
+  - 二選一
+  - 猶豫
+  - 感情
+  - 事業
+  - 學業
+  - 決策
+  - 工作
+topics:
+  - 決策
+  - 工作
+  - 感情
+related_cards: []
+related_spreads:
+  - spread-three-card
+  - spread-celtic-cross
+source_refs:
+  - tarot-lab/spreads_db.json
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-spreads.md
+updated: 2026-06-06
+---
 # 二選一牌陣
 
 > Sources: tarot-lab, Unknown

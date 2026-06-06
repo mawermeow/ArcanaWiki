@@ -1,3 +1,53 @@
+---
+id: major-02-high-priestess
+pageId: major-02-high-priestess
+type: card
+title: 女祭司（The High Priestess）
+titleEn: The High Priestess
+titleZh: 女祭司
+arcana: major
+summary: 女祭司坐於雅斤與波阿斯兩柱之間，象徵在二元對立中尋找平衡，並傾聽內在的智慧。她提醒你：有些答案不在外在行動，而在靜默、直覺與深層覺察之中。
+tags:
+  - 女祭司
+  - The High Priestess
+  - major-02-high-priestess
+  - 大阿卡納
+  - 直覺
+  - 神秘
+  - 靈性
+  - 內在聲音
+  - 平衡
+  - 調和
+  - 智慧
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 更高的力量
+  - 更高的智慧
+  - 內心的聲音
+  - 被壓抑的直覺
+  - 隱藏的動機
+  - 膚淺
+  - 混亂
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 大阿卡納
+related_cards:
+  - major-01-magician
+  - major-03-empress
+  - major-05-hierophant
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-major-arcana-00-04.md
+updated: 2026-06-06
+---
 # 女祭司（The High Priestess）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

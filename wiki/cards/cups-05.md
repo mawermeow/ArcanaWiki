@@ -1,3 +1,55 @@
+---
+id: cups-05
+pageId: cups-05
+type: card
+title: 聖杯五（Five of Cups）
+titleEn: Five of Cups
+titleZh: 聖杯五
+arcana: minor
+suit: cups
+rank: 05
+summary: 聚焦於失落，卻可能忽略仍留存的支持與希望；哀傷需要被看見，也值得轉身。
+tags:
+  - 聖杯五
+  - Five of Cups
+  - cups-05
+  - 小阿卡納
+  - 聖杯
+  - cups
+  - 悲傷
+  - 失落
+  - 失望
+  - 悔恨
+  - 仍存希望
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 失望。但提醒我們意識到身後仍有退路（支持
+  - 希望）。
+  - 當事人意識到自己仍保有的部分
+  - 從悲傷中走出來投入新的生活
+  - 重拾信心
+  - 看見積極的方面
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - cups
+related_cards:
+  - cups-06
+  - major-13-death
+  - cups-04
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-cups.md
+updated: 2026-06-06
+---
 # 聖杯五（Five of Cups）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

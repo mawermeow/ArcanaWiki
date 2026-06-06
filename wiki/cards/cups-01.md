@@ -1,3 +1,57 @@
+---
+id: cups-01
+pageId: cups-01
+type: card
+title: 聖杯一（Ace of Cups）
+titleEn: Ace of Cups
+titleZh: 聖杯一
+arcana: minor
+suit: cups
+rank: 01
+summary: 情感與靈性的新泉源；傾聽內在聲音，可能帶來純粹的喜悅與連結。
+tags:
+  - 聖杯一
+  - Ace of Cups
+  - cups-01
+  - 小阿卡納
+  - 聖杯
+  - cups
+  - 情感滿足
+  - 新情感
+  - 創造力
+  - 靈性
+  - 直覺
+  - 喜悅
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 情感上的滿足
+  - 新情感的開端
+  - 收穫快樂
+  - 冷漠
+  - 空虛
+  - 情感挫折
+  - 創造力受阻
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - cups
+related_cards:
+  - major-06-lovers
+  - major-02-high-priestess
+  - cups-02
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-cups.md
+updated: 2026-06-06
+---
 # 聖杯一（Ace of Cups）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

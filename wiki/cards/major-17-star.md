@@ -1,3 +1,49 @@
+---
+id: major-17-star
+pageId: major-17-star
+type: card
+title: 星星（The Star）
+titleEn: The Star
+titleZh: 星星
+arcana: major
+summary: 星星象徵動盪之後的希望與療癒。女子將水滋養乾涸大地，一腳在水、一腳在陸——這張牌可能提醒你：在脆弱中仍可以溫柔地澆灌生命力，靈感與平靜會慢慢回來。
+tags:
+  - 星星
+  - The Star
+  - major-17-star
+  - 大阿卡納
+  - 希望
+  - 靈感
+  - 寧靜
+  - 和平
+  - 療癒
+  - 創造力
+  - 生命力
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 失去潛意識能量
+  - 失去內在平和與信心
+  - 失去創造力與靈感
+  - 失去希望
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 大阿卡納
+related_cards:
+  - major-16-tower
+  - major-18-moon
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-major-arcana-17-21.md
+updated: 2026-06-06
+---
 # 星星（The Star）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

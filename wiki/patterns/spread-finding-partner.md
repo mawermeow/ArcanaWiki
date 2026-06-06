@@ -1,3 +1,38 @@
+---
+id: spread-finding-partner
+pageId: spread-finding-partner
+type: spread
+title: 尋找對象牌陣
+titleZh: 尋找對象牌陣
+summary: 適合單身人士，幫助健全對意中人的願景，釐清感情目標。
+tags:
+  - 尋找對象牌陣
+  - spread-finding-partner
+  - 牌陣
+  - spread
+  - 塔羅
+  - tarot
+  - 單身
+  - 意中人
+  - 願景
+  - 目標
+  - 自我釐清
+  - 感情
+  - 關係
+topics:
+  - 感情
+  - 關係
+  - 單身
+related_cards: []
+related_spreads:
+  - spread-venus
+  - spread-gypsy
+source_refs:
+  - tarot-lab/spreads_db.json
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-spreads.md
+updated: 2026-06-06
+---
 # 尋找對象牌陣
 
 > Sources: tarot-lab, Unknown

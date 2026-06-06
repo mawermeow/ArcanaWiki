@@ -1,3 +1,56 @@
+---
+id: wands-04
+pageId: wands-04
+type: card
+title: 權杖四（Four of Wands）
+titleEn: Four of Wands
+titleZh: 權杖四
+arcana: minor
+suit: wands
+rank: 04
+summary: 慶祝與歸屬；里程碑達成，社群與家庭帶來穩定喜悅。
+tags:
+  - 權杖四
+  - Four of Wands
+  - wands-04
+  - 小阿卡納
+  - 權杖
+  - wands
+  - 社群
+  - 家庭
+  - 慶祝
+  - 團聚
+  - 穩定
+  - 歸屬感
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 慶祝活動
+  - 聚會
+  - 缺乏支持
+  - 不穩定
+  - 不受歡迎
+  - 短暫性
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - wands
+related_cards:
+  - cups-10
+  - wands-03
+  - wands-05
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-wands.md
+updated: 2026-06-06
+---
 # 權杖四（Four of Wands）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

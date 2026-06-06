@@ -1,3 +1,57 @@
+---
+id: pentacles-page
+pageId: pentacles-page
+type: card
+title: 星幣侍衛（Page of Pentacles）
+titleEn: Page of Pentacles
+titleZh: 星幣侍衛
+arcana: minor
+suit: pentacles
+rank: page
+summary: 務實學習與新機會；腳踏實地、專注於物質與技能的起點。
+tags:
+  - 星幣侍衛
+  - Page of Pentacles
+  - pentacles-page
+  - 小阿卡納
+  - 星幣
+  - pentacles
+  - 雄心
+  - 勤奮
+  - 目標導向
+  - 腳踏實地
+  - 可靠
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 雄心勃勃
+  - 計劃性強
+  - 始終如一
+  - 勤奮好學
+  - 愚蠢
+  - 不成熟
+  - 不負責任
+  - 懶惰
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - pentacles
+related_cards:
+  - pentacles-knight
+  - pentacles-01
+  - pentacles-10
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-pentacles.md
+updated: 2026-06-06
+---
 # 星幣侍衛（Page of Pentacles）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

@@ -1,3 +1,48 @@
+---
+id: major-11-justice
+pageId: major-11-justice
+type: card
+title: 正義（Justice）
+titleEn: Justice
+titleZh: 正義
+arcana: major
+summary: 正義象徵公平、真理與因果承擔。左手天平、右手雙刃劍，王冠上的正方形代表清晰思路——這張牌可能提醒你：行動有其後果，誠實面對選擇，才能找回平衡。
+tags:
+  - 正義
+  - Justice
+  - major-11-justice
+  - 大阿卡納
+  - 公正
+  - 誠實
+  - 平衡
+  - 法律
+  - 真理
+  - 承擔責任
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 不公正
+  - 不誠實
+  - 腐敗
+  - 不平衡
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 大阿卡納
+related_cards:
+  - major-10-wheel-of-fortune
+  - major-12-hanged-man
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-major-arcana-11-16.md
+updated: 2026-06-06
+---
 # 正義（Justice）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

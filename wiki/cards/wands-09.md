@@ -1,3 +1,55 @@
+---
+id: wands-09
+pageId: wands-09
+type: card
+title: 權杖九（Nine of Wands）
+titleEn: Nine of Wands
+titleZh: 權杖九
+arcana: minor
+suit: wands
+rank: 09
+summary: 疲憊但仍在堅持；接近終點的最後防線，韌性與警戒並存。
+tags:
+  - 權杖九
+  - Nine of Wands
+  - wands-09
+  - 小阿卡納
+  - 權杖
+  - wands
+  - 最後一搏
+  - 堅持
+  - 勇氣
+  - 韌性
+  - 疲勞
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 毅力
+  - 接近成功
+  - 固執
+  - 死板
+  - 防禦
+  - 拒絕妥協
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - wands
+related_cards:
+  - wands-10
+  - major-08-strength
+  - wands-08
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-wands.md
+updated: 2026-06-06
+---
 # 權杖九（Nine of Wands）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

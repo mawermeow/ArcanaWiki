@@ -1,3 +1,57 @@
+---
+id: pentacles-04
+pageId: pentacles-04
+type: card
+title: 星幣四（Four of Pentacles）
+titleEn: Four of Pentacles
+titleZh: 星幣四
+arcana: minor
+suit: pentacles
+rank: 04
+summary: 緊抓資源與安全感；穩定守成，也可能因執著而限制流動。
+tags:
+  - 星幣四
+  - Four of Pentacles
+  - pentacles-04
+  - 小阿卡納
+  - 星幣
+  - pentacles
+  - 佔有
+  - 不安全感
+  - 囤積
+  - 節儉
+  - 守成
+  - 穩定
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 佔有欲
+  - 警戒
+  - 吝嗇
+  - 慷慨
+  - 給予
+  - 支出
+  - 開放
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - pentacles
+related_cards:
+  - pentacles-05
+  - major-04-emperor
+  - pentacles-03
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-pentacles.md
+updated: 2026-06-06
+---
 # 星幣四（Four of Pentacles）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

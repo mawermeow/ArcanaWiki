@@ -1,3 +1,56 @@
+---
+id: pentacles-knight
+pageId: pentacles-knight
+type: card
+title: 星幣騎士（Knight of Pentacles）
+titleEn: Knight of Pentacles
+titleZh: 星幣騎士
+arcana: minor
+suit: pentacles
+rank: knight
+summary: 穩健勤勉的實干者；慢而可靠，關注長遠收成而非冒險。
+tags:
+  - 星幣騎士
+  - Knight of Pentacles
+  - pentacles-knight
+  - 小阿卡納
+  - 星幣
+  - pentacles
+  - 實事求是
+  - 可靠
+  - 勤奮
+  - 耐心
+  - 保守
+  - 投入
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 高效
+  - 堅忍不拔
+  - 慢條斯理
+  - 工作狂
+  - 懶惰
+  - 沈悶
+  - 無聊
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - pentacles
+related_cards:
+  - pentacles-page
+  - pentacles-queen
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-pentacles.md
+updated: 2026-06-06
+---
 # 星幣騎士（Knight of Pentacles）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

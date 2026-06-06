@@ -1,3 +1,38 @@
+---
+id: spread-wealth-numbers
+pageId: spread-wealth-numbers
+type: spread
+title: 財富之數
+titleZh: 財富之數
+summary: 象徵財富的生成與脈動，對求財可能有象徵性指導意義。
+tags:
+  - 財富之數
+  - spread-wealth-numbers
+  - 牌陣
+  - spread
+  - 塔羅
+  - tarot
+  - 財富
+  - 求財
+  - 物質
+  - 指導
+  - 脈搏
+  - 工作
+  - 財務
+topics:
+  - 工作
+  - 財務
+  - 物質
+related_cards:
+  - pentacles-01
+related_spreads:
+  - spread-four-elements
+source_refs:
+  - tarot-lab/spreads_db.json
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-spreads.md
+updated: 2026-06-06
+---
 # 財富之數
 
 > Sources: tarot-lab, Unknown

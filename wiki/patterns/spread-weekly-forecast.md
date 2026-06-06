@@ -1,3 +1,37 @@
+---
+id: spread-weekly-forecast
+pageId: spread-weekly-forecast
+type: spread
+title: 周運勢牌陣
+titleZh: 周運勢牌陣
+summary: 周運占卜專用牌陣，亦可套用於有七天期限的主題。
+tags:
+  - 周運勢牌陣
+  - spread-weekly-forecast
+  - 牌陣
+  - spread
+  - 塔羅
+  - tarot
+  - 周運
+  - 七天
+  - 運勢
+  - 期限
+  - 時間
+  - 規劃
+topics:
+  - 時間
+  - 運勢
+  - 規劃
+related_cards: []
+related_spreads:
+  - spread-time-flow
+  - spread-three-card
+source_refs:
+  - tarot-lab/spreads_db.json
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-spreads.md
+updated: 2026-06-06
+---
 # 周運勢牌陣
 
 > Sources: tarot-lab, Unknown

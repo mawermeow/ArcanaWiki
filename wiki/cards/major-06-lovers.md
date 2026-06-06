@@ -1,3 +1,50 @@
+---
+id: major-06-lovers
+pageId: major-06-lovers
+type: card
+title: 戀人（The Lovers）
+titleEn: The Lovers
+titleZh: 戀人
+arcana: major
+summary: 戀人象徵選擇、連結與價值對齊。天使拉斐爾的祝福籠罩著這對戀人，風元素強調溝通——這張牌可能提醒你：關係的品質，往往建立在誠實對話與有意識的選擇之上。
+tags:
+  - 戀人
+  - The Lovers
+  - major-06-lovers
+  - 大阿卡納
+  - 被祝福的愛
+  - 平衡
+  - 調和
+  - 浪漫
+  - 選擇
+  - 溝通
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 平衡調和的關係
+  - 可能象徵新關係或關係新階段的開展
+  - 不和諧
+  - 不平衡的關係
+  - 停滯
+  - 衝突
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 大阿卡納
+related_cards:
+  - major-05-hierophant
+  - major-07-chariot
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-major-arcana-05-10.md
+updated: 2026-06-06
+---
 # 戀人（The Lovers）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

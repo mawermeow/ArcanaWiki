@@ -1,3 +1,55 @@
+---
+id: swords-knight
+pageId: swords-knight
+type: card
+title: 寶劍騎士（Knight of Swords）
+titleEn: Knight of Swords
+titleZh: 寶劍騎士
+arcana: minor
+suit: swords
+rank: knight
+summary: 迅疾的理性行動；直接、果斷，也可能顯得急躁或好勝。
+tags:
+  - 寶劍騎士
+  - Knight of Swords
+  - swords-knight
+  - 小阿卡納
+  - 寶劍
+  - swords
+  - 自信
+  - 直接
+  - 急性子
+  - 聰明
+  - 專注
+  - 雄心
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 大膽
+  - 粗魯
+  - 蠻橫
+  - 欺凌
+  - 侵略性
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - swords
+related_cards:
+  - major-07-chariot
+  - swords-queen
+  - swords-page
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-swords.md
+updated: 2026-06-06
+---
 # 寶劍騎士（Knight of Swords）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

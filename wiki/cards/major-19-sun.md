@@ -1,3 +1,50 @@
+---
+id: major-19-sun
+pageId: major-19-sun
+type: card
+title: 太陽（The Sun）
+titleEn: The Sun
+titleZh: 太陽
+arcana: major
+summary: 太陽象徵光明、活力與真實的自我表達。赤裸的孩子騎白馬快樂玩耍——這張牌可能提醒你：當與內在真實一致時，喜悅與滿足會自然浮現，無需刻意隱藏。
+tags:
+  - 太陽
+  - The Sun
+  - major-19-sun
+  - 大阿卡納
+  - 光明
+  - 幸福
+  - 成功
+  - 樂觀
+  - 活力
+  - 歡樂
+  - 純真
+  - 滿足
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 過度熱情
+  - 悲觀
+  - 不切實際的期望
+  - 自負
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 大阿卡納
+related_cards:
+  - major-18-moon
+  - major-20-judgement
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-major-arcana-17-21.md
+updated: 2026-06-06
+---
 # 太陽（The Sun）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

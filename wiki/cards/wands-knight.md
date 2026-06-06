@@ -1,3 +1,59 @@
+---
+id: wands-knight
+pageId: wands-knight
+type: card
+title: 權杖騎士（Knight of Wands）
+titleEn: Knight of Wands
+titleZh: 權杖騎士
+arcana: minor
+suit: wands
+rank: knight
+summary: 衝勁十足的行動派；勇敢迷人，也可能急躁魯莽。
+tags:
+  - 權杖騎士
+  - Knight of Wands
+  - wands-knight
+  - 小阿卡納
+  - 權杖
+  - wands
+  - 勇敢
+  - 迷人
+  - 火熱
+  - 行動派
+  - 自由精神
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 勇敢的
+  - 迷人的
+  - 英雄氣概的
+  - 自由的精神
+  - 性格火熱
+  - 充滿活力的行動派
+  - 傲慢的
+  - 魯莽的
+  - 沒有耐心的
+  - 缺乏自我控制
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - wands
+related_cards:
+  - major-07-chariot
+  - wands-queen
+  - wands-page
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-wands.md
+updated: 2026-06-06
+---
 # 權杖騎士（Knight of Wands）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

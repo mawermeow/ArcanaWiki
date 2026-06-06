@@ -24,4 +24,6 @@
 
 ## [2026-06-06] lint | 6 issues found, 1 auto-fixed
 
+## [2026-06-06] schema | 升級 94 篇 wiki 為 retrieval-ready frontmatter
+
 ## [2026-06-06] ingest | 塔羅牌陣（16 種）

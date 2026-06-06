@@ -1,3 +1,38 @@
+---
+id: spread-time-flow
+pageId: spread-time-flow
+type: spread
+title: 時間流牌陣
+titleZh: 時間流牌陣
+summary: 平行時間流向的解析法，事件如平鋪於時間之上，從過去延伸至未來。
+tags:
+  - 時間流牌陣
+  - spread-time-flow
+  - 牌陣
+  - spread
+  - 塔羅
+  - tarot
+  - 時間
+  - 過去
+  - 現在
+  - 未來
+  - 流向
+  - 趨勢
+  - 因果
+topics:
+  - 時間
+  - 趨勢
+  - 因果
+related_cards: []
+related_spreads:
+  - spread-sacred-triangle
+  - spread-three-card
+source_refs:
+  - tarot-lab/spreads_db.json
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-spreads.md
+updated: 2026-06-06
+---
 # 時間流牌陣
 
 > Sources: tarot-lab, Unknown

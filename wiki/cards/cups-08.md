@@ -1,3 +1,56 @@
+---
+id: cups-08
+pageId: cups-08
+type: card
+title: 聖杯八（Eight of Cups）
+titleEn: Eight of Cups
+titleZh: 聖杯八
+arcana: minor
+suit: cups
+rank: 08
+summary: 離開已不滿足的成就或關係，追尋更深意義；放手需要勇氣，也可能是成長之路。
+tags:
+  - 聖杯八
+  - Eight of Cups
+  - cups-08
+  - 小阿卡納
+  - 聖杯
+  - cups
+  - 拋棄
+  - 放手
+  - 過渡
+  - 追尋
+  - 自我成長
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 跳脫出舊有的功績（或束縛）
+  - 追尋更高的境界
+  - 停滯不前
+  - 單調乏味
+  - 拒絕突破
+  - 拒絕離開現有的環境
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - cups
+related_cards:
+  - major-09-hermit
+  - cups-05
+  - cups-07
+  - cups-09
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-cups.md
+updated: 2026-06-06
+---
 # 聖杯八（Eight of Cups）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

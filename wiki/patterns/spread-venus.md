@@ -1,3 +1,38 @@
+---
+id: spread-venus
+pageId: spread-venus
+type: spread
+title: 維納斯牌陣
+titleZh: 維納斯牌陣
+summary: 分析愛情未來的牌陣，可看見雙方未來狀況，適合感情未來指向。
+tags:
+  - 維納斯牌陣
+  - spread-venus
+  - 牌陣
+  - spread
+  - 塔羅
+  - tarot
+  - 婚姻
+  - 戀愛
+  - 未來
+  - 雙方狀況
+  - 愛情
+  - 感情
+  - 關係
+topics:
+  - 感情
+  - 關係
+  - 未來
+related_cards: []
+related_spreads:
+  - spread-lovers-pyramid
+  - spread-gypsy
+source_refs:
+  - tarot-lab/spreads_db.json
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-spreads.md
+updated: 2026-06-06
+---
 # 維納斯牌陣
 
 > Sources: tarot-lab, Unknown

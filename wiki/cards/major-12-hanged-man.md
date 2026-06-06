@@ -1,3 +1,49 @@
+---
+id: major-12-hanged-man
+pageId: major-12-hanged-man
+type: card
+title: 倒吊人（The Hanged Man）
+titleEn: The Hanged Man
+titleZh: 倒吊人
+arcana: major
+summary: 倒吊人象徵自願的暫停與視角翻轉。他平靜地倒吊於世界樹，一腳束縛、一腳自由——這張牌可能提醒你：有時候等待與犧牲，是為了看見先前忽略的真相。
+tags:
+  - 倒吊人
+  - The Hanged Man
+  - major-12-hanged-man
+  - 大阿卡納
+  - 換角度看問題
+  - 靜心省思
+  - 等待
+  - 犧牲
+  - 平靜從容
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 換個角度看問題
+  - 順從命運安排
+  - 停滯不前
+  - 不感興趣
+  - 視角受限
+  - 鑽牛角尖
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 大阿卡納
+related_cards:
+  - major-11-justice
+  - major-13-death
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-major-arcana-11-16.md
+updated: 2026-06-06
+---
 # 倒吊人（The Hanged Man）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

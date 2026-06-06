@@ -1,3 +1,55 @@
+---
+id: cups-king
+pageId: cups-king
+type: card
+title: 聖杯國王（King of Cups）
+titleEn: King of Cups
+titleZh: 聖杯國王
+arcana: minor
+suit: cups
+rank: king
+summary: 情感成熟與平衡調和；以慈悲與耐心駕馭情緒，而非壓抑或失控。
+tags:
+  - 聖杯國王
+  - King of Cups
+  - cups-king
+  - 小阿卡納
+  - 聖杯
+  - cups
+  - 慈愛
+  - 情感成熟
+  - 寬容
+  - 平衡
+  - 智慧
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 溫和體貼
+  - 慷慨
+  - 奉獻
+  - 不知所措
+  - 焦慮
+  - 冷漠
+  - 壓抑
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - cups
+related_cards:
+  - cups-queen
+  - major-04-emperor
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-cups.md
+updated: 2026-06-06
+---
 # 聖杯國王（King of Cups）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

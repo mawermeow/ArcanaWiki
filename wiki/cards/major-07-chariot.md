@@ -1,3 +1,49 @@
+---
+id: major-07-chariot
+pageId: major-07-chariot
+type: card
+title: 戰車（The Chariot）
+titleEn: The Chariot
+titleZh: 戰車
+arcana: major
+summary: 戰車象徵意志力、前進與對立力量的調和。黑白獅身人面獸拉動戰車，戰車夫以純粹意志駕馭——這張牌可能提醒你：成功需要整合內在衝突，並記得為何出發。
+tags:
+  - 戰車
+  - The Chariot
+  - major-07-chariot
+  - 大阿卡納
+  - 訓練有素的心智
+  - 前進
+  - 守護初心
+  - 協調衝突
+  - 成功
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 前進的力量
+  - 控制相互對抗的力量
+  - 未解決的衝突
+  - 矛盾
+  - 情緒失衡
+  - 受到阻礙
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 大阿卡納
+related_cards:
+  - major-06-lovers
+  - major-08-strength
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-major-arcana-05-10.md
+updated: 2026-06-06
+---
 # 戰車（The Chariot）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

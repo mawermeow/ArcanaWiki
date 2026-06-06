@@ -1,3 +1,50 @@
+---
+id: major-01-magician
+pageId: major-01-magician
+type: card
+title: 魔術師（The Magician）
+titleEn: The Magician
+titleZh: 魔術師
+arcana: major
+summary: 魔術師象徵意志、專注與資源整合。一手指天、一手指地，桌上四元素齊備，暗示你已具備將想法落實的條件——關鍵在於如何運用注意力與行動。
+tags:
+  - 魔術師
+  - The Magician
+  - major-01-magician
+  - 大阿卡納
+  - 意志力
+  - 慾望
+  - 足智多謀
+  - 技巧
+  - 注意力
+  - 積極行動
+  - 願望實現
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 強大的技巧與能力
+  - 操縱
+  - 狡猾
+  - 詭計
+  - 幻覺
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 大阿卡納
+related_cards:
+  - major-00-fool
+  - major-02-high-priestess
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-major-arcana-00-04.md
+updated: 2026-06-06
+---
 # 魔術師（The Magician）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

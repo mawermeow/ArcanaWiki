@@ -1,3 +1,58 @@
+---
+id: pentacles-10
+pageId: pentacles-10
+type: card
+title: 星幣十（Ten of Pentacles）
+titleEn: Ten of Pentacles
+titleZh: 星幣十
+arcana: minor
+suit: pentacles
+rank: 10
+summary: 家族、遺產與長期穩定；物質與精神傳承，根基深厚的圓滿。
+tags:
+  - 星幣十
+  - Ten of Pentacles
+  - pentacles-10
+  - 小阿卡納
+  - 星幣
+  - pentacles
+  - 遺產
+  - 家庭
+  - 根基
+  - 繼承
+  - 富裕
+  - 穩定
+  - 持久
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 根基穩固
+  - 祖先
+  - 家庭糾紛
+  - 破產
+  - 債務
+  - 轉瞬即逝的成功
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - pentacles
+related_cards:
+  - cups-10
+  - wands-04
+  - pentacles-09
+  - pentacles-page
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-pentacles.md
+updated: 2026-06-06
+---
 # 星幣十（Ten of Pentacles）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

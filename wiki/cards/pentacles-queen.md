@@ -1,3 +1,56 @@
+---
+id: pentacles-queen
+pageId: pentacles-queen
+type: card
+title: 星幣王后（Queen of Pentacles）
+titleEn: Queen of Pentacles
+titleZh: 星幣王后
+arcana: minor
+suit: pentacles
+rank: queen
+summary: 務實滋養與富足照顧；溫暖慷慨，擅長理財與營造舒適生活。
+tags:
+  - 星幣王后
+  - Queen of Pentacles
+  - pentacles-queen
+  - 小阿卡納
+  - 星幣
+  - pentacles
+  - 慷慨
+  - 養育
+  - 戀家
+  - 理財
+  - 實用
+  - 繁榮
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 有愛心
+  - 良好的商業意識
+  - 自私
+  - 嫉妒
+  - 缺乏安全感
+  - 貪婪
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - pentacles
+related_cards:
+  - major-03-empress
+  - pentacles-king
+  - pentacles-knight
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-pentacles.md
+updated: 2026-06-06
+---
 # 星幣王后（Queen of Pentacles）
 
 > Sources: tarot-lab / Labyrinthos, Unknown

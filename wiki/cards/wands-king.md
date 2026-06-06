@@ -1,3 +1,54 @@
+---
+id: wands-king
+pageId: wands-king
+type: card
+title: 權杖國王（King of Wands）
+titleEn: King of Wands
+titleZh: 權杖國王
+arcana: minor
+suit: wands
+rank: king
+summary: 遠見型領導與創造力；以熱情與權威推動大局，需留意專橫或能量耗竭。
+tags:
+  - 權杖國王
+  - King of Wands
+  - wands-king
+  - 小阿卡納
+  - 權杖
+  - wands
+  - 領導力
+  - 遠見
+  - 野心
+  - 幹勁
+  - 創造力
+  - 塔羅
+  - tarot
+  - 正位
+  - 逆位
+  - 大局觀
+  - 控制
+  - 大膽的決定
+  - 一個可能是暴虐也可能萎靡的人
+  - 但終究是因為自己內心能量不足
+  - 無法掌控身邊的事物。
+topics:
+  - 感情
+  - 工作
+  - 自我探索
+  - 靈性
+  - 小阿卡納
+  - wands
+related_cards:
+  - major-04-emperor
+  - wands-queen
+related_spreads: []
+source_refs:
+  - tarot-lab/cards.json
+  - labyrinthos.co
+raw_refs:
+  - raw/tarot/2026-06-06-tarot-lab-wands.md
+updated: 2026-06-06
+---
 # 權杖國王（King of Wands）
 
 > Sources: tarot-lab / Labyrinthos, Unknown
