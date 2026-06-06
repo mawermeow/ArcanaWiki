@@ -4,13 +4,13 @@ import React from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Public Tarot Wiki",
-  description: "從牌義、概念與牌陣之間，慢慢讀出脈絡。",
+  title: "ArcanaWiki",
+  description: "塔羅 LLM Wiki 與可引用的塔羅解讀。",
   manifest: "/manifest.webmanifest",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Public Tarot Wiki"
+    title: "ArcanaWiki"
   }
 };
 

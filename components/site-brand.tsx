@@ -16,7 +16,7 @@ export function SiteBrand({ className }: SiteBrandProps) {
         src="/brand-mark.svg"
         width={32}
       />
-      <p className={cn(eyebrowClass, "mb-0")}>Public Tarot Wiki</p>
+      <p className={cn(eyebrowClass, "mb-0")}>ArcanaWiki</p>
     </div>
   );
 }

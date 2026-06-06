@@ -1,7 +1,7 @@
 {
-  "name": "Public Tarot Wiki",
-  "short_name": "Tarot Wiki",
-  "description": "從牌義、概念與牌陣之間，慢慢讀出脈絡。",
+  "name": "ArcanaWiki",
+  "short_name": "ArcanaWiki",
+  "description": "塔羅 LLM Wiki 與可引用的塔羅解讀。",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f5efe1",

@@ -18,7 +18,7 @@ export default async function HomePage({
     <main className={pageClass}>
       <nav className="flex justify-end px-0 pt-1 pb-4">
         <a className={ghostLinkClass} href="/wiki">
-          Public Tarot Wiki
+          Wiki
         </a>
       </nav>
       <TarotChatClient

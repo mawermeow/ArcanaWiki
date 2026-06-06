@@ -48,7 +48,7 @@ test("UI basic render shows form and guidance", async () => {
     />
   );
 
-  assert.ok(view.getByText("Public Tarot Wiki"));
+  assert.ok(view.getByText("ArcanaWiki"));
   assert.ok(view.getByRole("textbox", { name: "問題" }));
   assert.ok(view.getByRole("button", { name: "送出問題" }));
 
