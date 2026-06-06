@@ -34,6 +34,14 @@ export const fieldClass = "grid gap-2";
 
 export const fieldLabelClass = "text-[0.94rem] font-semibold";
 
+export const fieldControlClass =
+  "h-12 w-full rounded-md border border-line bg-surface px-4 py-0 leading-normal text-ink";
+
+export const fieldSelectClass = cn(
+  fieldControlClass,
+  "appearance-none bg-size-[1rem] bg-position-[right_1rem_center] bg-no-repeat pr-10"
+);
+
 export const cardThumbClass =
   "aspect-[5/8.6] w-[72px] rounded-[10px] border border-line bg-cream object-cover shadow-card";
 

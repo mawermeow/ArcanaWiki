@@ -18,6 +18,7 @@ import {
   secondaryButtonClass,
   sectionEyebrowClass
 } from "../lib/ui/classes.ts";
+import { PanelSectionHeader } from "./panel-section-header.tsx";
 import { TarotCardThumb } from "./tarot-card-thumb.tsx";
 
 type CardDraft = {
@@ -143,23 +144,19 @@ export function TarotChatClient({
   return (
     <div className="grid gap-5">
       <section className={heroClass}>
-        <p className={eyebrowClass}>ArcanaWiki PWA</p>
-        <h1>用可引用的 Tarot Wiki，整理一段比較清楚的回應。</h1>
+        <p className={eyebrowClass}>ArcanaWiki</p>
+        <h1>留下你的問題，從牌義與脈絡裡整理思緒。</h1>
         <p className={cn(mutedTextClass, "mt-0")}>
-          這個介面只提供本機或小範圍測試使用。解讀偏向象徵、反思與行動選擇，不把牌義包裝成確定命運。
-        </p>
-        <p className="mt-[18px] mb-0">
-          <a className={ghostLinkClass} href="/wiki">
-            瀏覽 Public Tarot Wiki
-          </a>
+          解讀會依可查的塔羅牌義展開，協助你理解眼前的狀況。我們偏向象徵、反思與行動選擇，不會用命定式的語氣替你下結論。
         </p>
       </section>
 
       <section className={panelPaddingClass}>
+        <PanelSectionHeader eyebrow="Question" title="問題" titleId="tarot-question-heading" />
         <form className="grid gap-[18px]" onSubmit={handleSubmit}>
           <label className={fieldClass}>
-            <span className={fieldLabelClass}>問題</span>
             <textarea
+              aria-labelledby="tarot-question-heading"
               name="question"
               placeholder="例如：聖杯二逆位，對方最近很冷淡，我該怎麼理解這段關係？"
               rows={5}
@@ -199,14 +196,14 @@ export function TarotChatClient({
           </div>
 
           <label
-            className="grid grid-cols-[auto_1fr] items-start gap-3.5 rounded-md border border-line px-[18px] py-4"
-            style={{
-              background:
-                "linear-gradient(135deg, rgb(219 231 223 / 0.52), rgb(255 250 240 / 0.9))"
-            }}
+            className={cn(
+              "grid grid-cols-[auto_1fr] items-center gap-3.5 rounded-md border px-[18px] py-4",
+              autoDraw
+                ? "border-accent/42 bg-accent-soft"
+                : "border-line bg-surface-soft"
+            )}
           >
             <input
-              className="mt-1 w-auto"
               checked={autoDraw}
               type="checkbox"
               onChange={(event) => setAutoDraw(event.target.checked)}
@@ -236,18 +233,23 @@ export function TarotChatClient({
 
             {cards.map((card, index) => (
               <div
-                className="grid grid-cols-[minmax(0,2fr)_minmax(140px,0.8fr)_minmax(0,1fr)_auto] gap-3 rounded-md border border-line bg-surface-muted p-4 max-[920px]:grid-cols-1"
+                className="grid grid-cols-[minmax(0,2fr)_minmax(140px,0.8fr)_minmax(0,1fr)_auto] items-end gap-3 rounded-md border border-line bg-surface-muted p-4 max-[920px]:grid-cols-1"
                 key={card.id}
               >
                 <label className={fieldClass}>
                   <span className={fieldLabelClass}>牌卡 {index + 1}</span>
-                  <input
-                    list="tarot-card-options"
+                  <select
                     value={card.cardId}
                     disabled={autoDraw}
                     onChange={(event) => updateCard(card.id, { cardId: event.target.value })}
-                    placeholder="例如：cups-02"
-                  />
+                  >
+                    <option value="">選擇牌卡</option>
+                    {cardOptions.map((option) => (
+                      <option key={option.cardId} value={option.cardId}>
+                        {option.displayLabel}
+                      </option>
+                    ))}
+                  </select>
                 </label>
 
                 <label className={fieldClass}>
@@ -289,23 +291,11 @@ export function TarotChatClient({
               </div>
             ))}
 
-            <datalist id="tarot-card-options">
-              {cardOptions.map((option) => (
-                <option key={option.cardId} value={option.cardId}>
-                  {option.title}
-                </option>
-              ))}
-            </datalist>
           </div>
 
           {debugEnabled ? (
             <label className="inline-flex items-center gap-2.5 text-muted">
-              <input
-                className="w-auto"
-                checked={debug}
-                type="checkbox"
-                onChange={(event) => setDebug(event.target.checked)}
-              />
+              <input checked={debug} type="checkbox" onChange={(event) => setDebug(event.target.checked)} />
               <span>本機 debug mode</span>
             </label>
           ) : null}
@@ -317,15 +307,7 @@ export function TarotChatClient({
       </section>
 
       <section className={cn(panelPaddingClass, "p-7 max-[640px]:p-5")} aria-live="polite">
-        <div className="flex items-start justify-between gap-4 border-b border-line pb-1.5 max-[920px]:flex-col max-[920px]:items-stretch">
-          <div>
-            <p className={eyebrowClass}>Reading</p>
-            <h2>回應</h2>
-          </div>
-          <p className="m-0 max-w-[28ch] text-right leading-[1.55] text-muted max-[920px]:max-w-none max-[920px]:text-left">
-            先看你抽到的牌，再閱讀解讀與引用來源。
-          </p>
-        </div>
+        <PanelSectionHeader eyebrow="Reading" title="回應" />
 
         {error ? (
           <p className="m-0 rounded-sm bg-accent/12 px-4 py-3.5 text-accent-strong">{error}</p>

@@ -1,6 +1,7 @@
 import { randomInt } from "node:crypto";
 
 import { readBm25Index } from "../retrieval/persistence.ts";
+import { isSelectableTarotCardDocument } from "./card-display.ts";
 import type { TarotCardInput } from "../answer/types.ts";
 
 const DEFAULT_INDEX_PATH = "embeddings/bm25-index.json";
@@ -98,7 +99,7 @@ export async function generateAutoReading(options: {
 }): Promise<GeneratedReading> {
   const index = await readBm25Index(options.indexPath ?? DEFAULT_INDEX_PATH);
   const plan = chooseSpreadPlan({ question: options.question });
-  const cardDocuments = index.documents.filter((document) => document.pageType === "card");
+  const cardDocuments = index.documents.filter((document) => isSelectableTarotCardDocument(document));
   const spreadDocument = index.documents.find(
     (document) => document.pageType === "spread" && document.pageId === plan.spreadId
   );

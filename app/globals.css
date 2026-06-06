@@ -58,7 +58,7 @@
   }
 
   h1 {
-    @apply max-w-[12ch] text-[clamp(2.1rem,5vw,4rem)];
+    @apply text-[clamp(2.1rem,5vw,4rem)] text-balance;
   }
 
   h2 {
@@ -79,7 +79,34 @@
   textarea,
   input:not([type="checkbox"]):not([type="radio"]),
   select {
-    @apply w-full rounded-md border border-line bg-surface px-4 py-3.5 text-ink;
+    @apply w-full rounded-md border border-line bg-surface px-4 text-ink;
+  }
+
+  textarea {
+    @apply py-3.5;
+  }
+
+  input:not([type="checkbox"]):not([type="radio"]),
+  select {
+    @apply h-12 py-0 leading-normal;
+  }
+
+  select {
+    @apply appearance-none bg-size-[1rem] bg-position-[right_1rem_center] bg-no-repeat pr-10;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%235f6d67' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3E%3C/svg%3E");
+  }
+
+  input[type="checkbox"] {
+    @apply size-6 shrink-0 cursor-pointer appearance-none rounded-xs border border-line bg-surface transition duration-150;
+  }
+
+  input[type="checkbox"]:checked {
+    @apply border-accent bg-accent bg-size-[0.95rem] bg-center bg-no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M3.5 8.5 6.5 11.5 12.5 4.5' stroke='%23fffdf8' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  }
+
+  input[type="checkbox"]:focus-visible {
+    @apply outline-2 outline-accent/25 outline-offset-2;
   }
 
   textarea:focus,

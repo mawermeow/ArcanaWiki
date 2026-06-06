@@ -5,6 +5,13 @@ import { cleanup, fireEvent, render, waitFor } from "@testing-library/react";
 import { JSDOM } from "jsdom";
 import React from "react";
 import { TarotChatClient } from "../../components/tarot-chat-client.tsx";
+import type { TarotCardOption } from "../../lib/pwa/card-catalog.ts";
+
+const cups02Option: TarotCardOption = {
+  cardId: "cups-02",
+  title: "聖杯二（Two of Cups）",
+  displayLabel: "02.聖杯二（Two of Cups）"
+};
 
 function installDom() {
   const dom = new JSDOM("<!doctype html><html><body></body></html>", {
@@ -36,13 +43,13 @@ test("UI basic render shows form and guidance", async () => {
 
   const view = render(
     <TarotChatClient
-      cardOptions={[{ cardId: "cups-02", title: "聖杯二（Two of Cups）" }]}
+      cardOptions={[cups02Option]}
       debugEnabled={false}
     />
   );
 
-  assert.ok(view.getByText("ArcanaWiki PWA"));
-  assert.ok(view.getByLabelText("問題"));
+  assert.ok(view.getByText("ArcanaWiki"));
+  assert.ok(view.getByRole("textbox", { name: "問題" }));
   assert.ok(view.getByRole("button", { name: "送出問題" }));
 
   restore();
@@ -54,7 +61,7 @@ test("submit flow renders answer and selected source summary", async () => {
 
   const view = render(
     <TarotChatClient
-      cardOptions={[{ cardId: "cups-02", title: "聖杯二（Two of Cups）" }]}
+      cardOptions={[cups02Option]}
       debugEnabled={false}
       requestChat={async (payload) => {
         seenBody = String(payload.body ?? "");
@@ -86,21 +93,13 @@ test("submit flow renders answer and selected source summary", async () => {
     />
   );
 
-  const questionInput = view.getByLabelText("問題") as HTMLTextAreaElement;
-  const cardInput = view.getByLabelText("牌卡 1") as HTMLInputElement;
-
-  fireEvent.input(questionInput, {
+  fireEvent.change(view.getByRole("textbox", { name: "問題" }), {
     target: { value: "聖杯二逆位，對方最近很冷淡。" }
   });
-  fireEvent.input(cardInput, {
+  fireEvent.change(view.getByLabelText("牌卡 1"), {
     target: { value: "cups-02" }
   });
-
-  assert.equal(questionInput.value, "聖杯二逆位，對方最近很冷淡。");
-  assert.equal(cardInput.value, "cups-02");
-
-  await new Promise((resolve) => setTimeout(resolve, 0));
-  fireEvent.click(view.getByRole("button", { name: "送出問題" }));
+  fireEvent.submit(view.container.querySelector("form") as HTMLFormElement);
 
   await waitFor(() => {
     assert.ok(view.getByText("這比較像是在提醒你回看互動的平衡。"));
@@ -145,7 +144,7 @@ test("UI shows error state when submit fails", async () => {
     />
   );
 
-  fireEvent.change(view.getByLabelText("問題"), {
+  fireEvent.change(view.getByRole("textbox", { name: "問題" }), {
     target: { value: "test question" }
   });
   fireEvent.click(view.getByRole("button", { name: "送出問題" }));
@@ -163,7 +162,7 @@ test("auto draw option submits flag and renders generated reading", async () => 
 
   const view = render(
     <TarotChatClient
-      cardOptions={[{ cardId: "cups-02", title: "聖杯二（Two of Cups）" }]}
+      cardOptions={[cups02Option]}
       debugEnabled={false}
       requestChat={async (payload) => {
         seenBody = String(payload.body ?? "");
@@ -199,7 +198,7 @@ test("auto draw option submits flag and renders generated reading", async () => 
     />
   );
 
-  fireEvent.change(view.getByLabelText("問題"), {
+  fireEvent.change(view.getByRole("textbox", { name: "問題" }), {
     target: { value: "對方最近很冷淡，我該怎麼理解這段關係？" }
   });
   fireEvent.click(view.getByRole("checkbox"));

@@ -1,8 +1,15 @@
+import {
+  compareTarotCardOptions,
+  enrichTarotCardOption,
+  isSelectableTarotCardDocument,
+  sortTarotCardOptions
+} from "./card-display.ts";
 import { readBm25Index } from "../retrieval/persistence.ts";
 
 export type TarotCardOption = {
   cardId: string;
   title: string;
+  displayLabel: string;
 };
 
 const DEFAULT_INDEX_PATH = "embeddings/bm25-index.json";
@@ -15,16 +22,20 @@ export async function readTarotCardOptions(
   const options: TarotCardOption[] = [];
 
   for (const document of index.documents) {
-    if (document.pageType !== "card" || seen.has(document.pageId)) {
+    if (!isSelectableTarotCardDocument(document) || seen.has(document.pageId)) {
       continue;
     }
 
     seen.add(document.pageId);
-    options.push({
-      cardId: document.pageId,
-      title: document.title
-    });
+    options.push(
+      enrichTarotCardOption({
+        cardId: document.pageId,
+        title: document.title
+      })
+    );
   }
 
-  return options.sort((left, right) => left.title.localeCompare(right.title, "zh-Hant"));
+  return sortTarotCardOptions(options);
 }
+
+export { compareTarotCardOptions, sortTarotCardOptions };
