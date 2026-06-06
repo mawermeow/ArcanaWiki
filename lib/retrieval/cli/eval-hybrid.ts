@@ -1,6 +1,14 @@
 import { runHybridEvaluation } from "../hybrid-evaluation.ts";
 
+function parseArgs(argv: string[]) {
+  const args = new Set(argv);
+  return {
+    liveQueryEmbedding: args.has("--live-query-embedding")
+  };
+}
+
 async function main(): Promise<void> {
+  const { liveQueryEmbedding } = parseArgs(process.argv.slice(2));
   const report = await runHybridEvaluation({
     datasetPath: "eval/retrieval/bm25-evaluation-dataset.json",
     indexPath: "embeddings/bm25-index.json",
@@ -9,7 +17,7 @@ async function main(): Promise<void> {
     reportPath: "reports/hybrid-eval.json",
     summaryPath: "reports/hybrid-summary.md",
     inspectorPath: "debug/retrieval/hybrid-eval-traces.json",
-    liveQueryEmbedding: true
+    liveQueryEmbedding
   });
   console.log(JSON.stringify(report, null, 2));
 }

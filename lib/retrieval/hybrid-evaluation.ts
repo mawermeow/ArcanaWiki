@@ -171,6 +171,7 @@ export async function runHybridEvaluation(options: {
   const report = {
     datasetPath: options.datasetPath,
     embeddingModel: cache.embeddingModel,
+    evaluationMode: options.liveQueryEmbedding ? "hybrid_with_live_query_embeddings" : "hybrid_offline_bm25_plus_graph",
     metrics: {
       queryCount: totalQueries,
       top1HitRate: Number((totalTop1Hits / (totalQueries || 1)).toFixed(4)),
@@ -225,6 +226,7 @@ export async function runHybridEvaluation(options: {
     "",
     `- Dataset: \`${options.datasetPath}\``,
     `- Embedding Model: ${cache.embeddingModel}`,
+    `- Mode: ${report.evaluationMode}`,
     `- Queries: ${totalQueries}`,
     `- Top1 Hit Rate: ${report.metrics.top1HitRate}`,
     `- Average Top3 Recall: ${report.metrics.averageTop3Recall}`,

@@ -88,6 +88,11 @@
   - 自訂 `embedQuery`
 - CLI 層 `search:vector` 預設不打 API，必須明確傳 `--live-query-embedding`。
 - `eval:vector` 預設使用 live query embedding，因此也需要 `OPENAI_API_KEY`。
+- `eval:hybrid` 預設不打 API。
+- 只有 `pnpm eval:hybrid -- --live-query-embedding` 才會替 evaluation queries 產生新的 embeddings。
+- 因此：
+  - 離線 `eval:hybrid` 比較接近 `BM25 + graph` 的回歸檢查
+  - live `eval:hybrid` 才是完整 `BM25 + vector + graph` 評估
 
 ## Hybrid Retrieval Flow
 

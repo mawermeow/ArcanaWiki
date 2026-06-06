@@ -28,6 +28,7 @@ pnpm search:hybrid -- "聖杯二逆位 感情"
 pnpm eval:bm25
 pnpm eval:vector
 pnpm eval:hybrid
+pnpm eval:hybrid -- --live-query-embedding
 pnpm test
 ```
 
@@ -77,6 +78,20 @@ pnpm test
   - rejected results
   - final results
   - weights / topK / timing
+
+### Hybrid Evaluation
+
+- `pnpm eval:hybrid` 預設為離線模式。
+- 離線模式不會替 evaluation queries 產生新的 embeddings，因此不會打 embedding API。
+- 離線模式主要用來檢查：
+  - BM25 + graph merge/rerank 是否穩定
+  - diagnostics / report 輸出格式是否正確
+- 如果要評估真正的 hybrid `BM25 + vector + graph` 效果，必須明確執行：
+  - `pnpm eval:hybrid -- --live-query-embedding`
+- `--live-query-embedding` 會對 evaluation dataset 中的每個 query 做 embedding，因此需要：
+  - `OPENAI_API_KEY`
+  - 可用的 embedding API 網路環境
+- 小型測試專案通常先跑 `search:hybrid` spot checks，加上 `pnpm test:retrieval` 就足夠；不一定需要先跑 live `eval:hybrid`。
 
 ### Boundaries
 

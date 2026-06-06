@@ -247,6 +247,9 @@ Run vector evaluation:
 Run hybrid evaluation:
   pnpm eval:hybrid
 
+Run full hybrid evaluation with live query embeddings:
+  pnpm eval:hybrid -- --live-query-embedding
+
 Build all retrieval assets:
   pnpm index:build
 
