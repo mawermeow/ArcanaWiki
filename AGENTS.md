@@ -241,6 +241,12 @@ Search vector cache:
 Search hybrid retrieval:
   pnpm search:hybrid -- "聖杯二逆位 感情"
 
+Inspect single retrieval query:
+  pnpm inspect:retrieval -- "對方最近很冷淡"
+
+Inspect retrieval eval dataset:
+  pnpm inspect:retrieval:eval
+
 Run vector evaluation:
   pnpm eval:vector
 
@@ -383,3 +389,53 @@ source_env_if_exists ~/Secrets/ArcanaWiki/dev.env
 ## Installed Skills
 
 - karpathy-llm-wiki
+
+---
+
+## Commit Message Rules
+
+All auto-generated commits must use Conventional Commits.
+
+### Format
+
+```text
+<type>(scope): <summary>
+```
+
+### Language Rules
+
+- Commit summary must be written in Traditional Chinese.
+- Use concise and clear wording.
+- Do not mix Chinese and English unless necessary.
+- Keep summary under 72 characters.
+
+### Allowed Types
+
+- feat
+- fix
+- refactor
+- docs
+- test
+- chore
+
+### Examples
+
+```text
+feat(retrieval): 新增 BM25 搜尋流程
+fix(vector): 修正 embedding cache 錯誤
+refactor(graph): 重構 relation builder
+docs(agent): 更新 Codex 工作流程說明
+test(search): 補上 hybrid search 測試
+chore(repo): 更新 eslint 與 prettier 設定
+```
+
+### Additional Rules
+
+- Choose the commit type based on the primary purpose of the change.
+- Prefer adding scope when possible.
+- Avoid generic messages like:
+  - update
+  - fix bug
+  - misc changes
+  - temporary commit
+- Analyze git diff before generating commit messages.

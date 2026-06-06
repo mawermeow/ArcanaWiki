@@ -10,6 +10,8 @@
     "search:bm25": "node lib/retrieval/cli/search-bm25.ts",
     "search:vector": "node lib/retrieval/cli/search-vector.ts",
     "search:hybrid": "node lib/retrieval/cli/search-hybrid.ts",
+    "inspect:retrieval": "node lib/retrieval/cli/inspect-retrieval.ts",
+    "inspect:retrieval:eval": "node lib/retrieval/cli/inspect-retrieval-eval.ts",
     "eval:bm25": "node lib/retrieval/cli/eval-bm25.ts",
     "eval:vector": "node lib/retrieval/cli/eval-vector.ts",
     "eval:hybrid": "node lib/retrieval/cli/eval-hybrid.ts",

@@ -15,6 +15,7 @@ Tarot LLM Wiki + retrieval playground。知識來源目前以 `wiki/` 為主，�
 - evaluation reports：`reports/bm25-eval.json`、`reports/bm25-summary.md`
 - vector reports：`reports/vector-eval.json`、`reports/vector-summary.md`
 - hybrid reports：`reports/hybrid-eval.json`、`reports/hybrid-summary.md`
+- inspector reports：`reports/inspector/latest-query.md`、`reports/inspector/latest-query.json`、`reports/inspector/retrieval-eval-inspection.md`、`reports/inspector/retrieval-eval-inspection.json`
 - inspector output：`debug/retrieval/latest-search.json`、`debug/retrieval/eval-traces.json`、`debug/retrieval/latest-vector-search.json`、`debug/retrieval/latest-hybrid-search.json`
 
 ### Commands
@@ -25,12 +26,42 @@ pnpm index:vector
 pnpm search:bm25 -- --query="聖杯二逆位"
 pnpm search:vector -- "對方最近很冷淡" --live-query-embedding
 pnpm search:hybrid -- "聖杯二逆位 感情"
+pnpm inspect:retrieval -- "對方最近很冷淡"
+pnpm inspect:retrieval:eval
 pnpm eval:bm25
 pnpm eval:vector
 pnpm eval:hybrid
 pnpm eval:hybrid -- --live-query-embedding
 pnpm test
 ```
+
+### Retrieval Inspector
+
+- module path：`lib/retrieval-inspector/`
+- scope：只做 developer diagnostics，不接正式 chat response、不接 LINE Bot
+- single query output：
+  - `reports/inspector/latest-query.md`
+  - `reports/inspector/latest-query.json`
+- eval output：
+  - `reports/inspector/retrieval-eval-inspection.md`
+  - `reports/inspector/retrieval-eval-inspection.json`
+- `inspect:retrieval` 會輸出：
+  - query / tokenized query
+  - BM25 / Vector / Hybrid / Graph-expanded results
+  - rejected results
+  - score breakdown / matched terms
+  - selected chunk previews
+  - possible issues
+- `inspect:retrieval:eval` 會輸出：
+  - expected cards / topics / keywords
+  - BM25 / Vector / Hybrid hit status
+  - top1 / top3 / top5 comparison
+  - failure cases and likely causes
+- vector mode：
+  - 預設 `auto`
+  - 若有 `OPENAI_API_KEY`，會嘗試做 query embedding 以檢查 vector / hybrid
+  - 若沒有 API key，會退回離線模式，report 仍會保留 vector unavailable diagnostics
+  - 可顯式使用 `--live-query-embedding` 或 `--offline`
 
 ### Chunking Strategy
 

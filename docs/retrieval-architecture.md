@@ -40,6 +40,8 @@
   執行 hybrid search、score normalization、merge、dedupe、rerank、graph expansion、diagnostics。
 - `lib/retrieval/hybrid-evaluation.ts`
   執行 hybrid retrieval evaluation，輸出 report / summary，並可比對既有 BM25 / vector report。
+- `lib/retrieval-inspector/`
+  developer-only retrieval diagnostics layer。整合 BM25 / vector / hybrid / graph expansion 結果，輸出 markdown report 與 JSON diagnostics。
 
 ## Chunking Strategy
 
@@ -157,6 +159,45 @@ query
   - `weights`
   - `topK`
   - `timingMs`
+
+## Retrieval Inspector
+
+- inspector 不呼叫 OpenAI Chat API，也不接 LINE Bot。
+- inspector 只讀取：
+  - `embeddings/bm25-index.json`
+  - `embeddings/vector-cache.json`
+  - `relations/graph.json`
+  - `eval/retrieval/bm25-evaluation-dataset.json`
+- single-query inspection：
+  - CLI：`pnpm inspect:retrieval -- "對方最近很冷淡"`
+  - 輸出：`reports/inspector/latest-query.md`、`reports/inspector/latest-query.json`
+- eval inspection：
+  - CLI：`pnpm inspect:retrieval:eval`
+  - 輸出：`reports/inspector/retrieval-eval-inspection.md`、`reports/inspector/retrieval-eval-inspection.json`
+- single-query report 至少包含：
+  - query / tokenized query
+  - BM25 top results
+  - Vector top results
+  - Hybrid final results
+  - Graph-expanded results
+  - rejected results
+  - score breakdown
+  - matched terms
+  - selected chunks preview
+  - possible issues
+- eval inspection 會聚合：
+  - expected cards / topics / keywords
+  - BM25 / Vector / Hybrid hit status
+  - top1 / top3 / top5 比較
+  - failure cases / likely cause
+- failure cause taxonomy：
+  - `missing-wiki-content`
+  - `bad-tokenization`
+  - `bad-metadata`
+  - `weak-vector-match`
+  - `bad-score-normalization`
+  - `graph-noise`
+  - `unknown`
 
 ## Determinism
 
