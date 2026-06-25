@@ -48,6 +48,12 @@ const EMPTY_CARD = (): CardDraft => ({
   position: ""
 });
 
+const MODE_OPTIONS = [
+  { value: "gentle", label: "gentle", description: "偏溫和，適合整理情緒。" },
+  { value: "direct", label: "direct", description: "偏直接，聚焦目前張力。" },
+  { value: "reflective", label: "reflective", description: "偏反思，保留更多自我觀察。" }
+] as const;
+
 export function TarotChatClient({
   cardOptions,
   debugEnabled,
@@ -168,34 +174,19 @@ export function TarotChatClient({
             />
           </label>
 
-          <div className="grid grid-cols-3 gap-3 max-[920px]:grid-cols-1" role="radiogroup" aria-label="回答模式">
-            {[
-              ["gentle", "gentle", "偏溫和，適合整理情緒。"],
-              ["direct", "direct", "偏直接，聚焦目前張力。"],
-              ["reflective", "reflective", "偏反思，保留更多自我觀察。"]
-            ].map(([value, label, help]) => (
-              <label
-                className={cn(
-                  "grid cursor-pointer gap-1.5 rounded-md border p-4",
-                  mode === value
-                    ? "border-accent/42 bg-accent-soft"
-                    : "border-line bg-surface-soft"
-                )}
-                key={value}
-              >
-                <input
-                  className="hidden"
-                  type="radio"
-                  name="mode"
-                  value={value}
-                  checked={mode === value}
-                  onChange={() => setMode(value as "gentle" | "direct" | "reflective")}
-                />
-                <strong>{label}</strong>
-                <span className="text-[0.9rem] text-muted">{help}</span>
-              </label>
-            ))}
-          </div>
+          <label className={fieldClass}>
+            <select
+              name="mode"
+              value={mode}
+              onChange={(event) => setMode(event.target.value as typeof mode)}
+            >
+              {MODE_OPTIONS.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label} — {option.description}
+                </option>
+              ))}
+            </select>
+          </label>
 
           <label
             className={cn(
@@ -218,82 +209,78 @@ export function TarotChatClient({
             </div>
           </label>
 
-          <div className={cn("grid gap-[18px]", autoDraw && "opacity-[0.62]")}>
-            <div className="flex items-end justify-between gap-4 max-[920px]:flex-col max-[920px]:items-stretch">
-              <div>
-                <h2>可選牌卡</h2>
-                <p className={mutedTextClass}>
-                  {autoDraw
-                    ? "已改用自動抽牌。若想手動輸入，先取消上方快捷選項。"
-                    : "如果你已經抽牌，可以補上牌名、正逆位與位置。"}
-                </p>
-              </div>
-              <button className={secondaryButtonClass} disabled={autoDraw} type="button" onClick={addCard}>
-                新增牌卡
-              </button>
-            </div>
-
-            {cards.map((card, index) => (
-              <div
-                className="grid grid-cols-[minmax(0,2fr)_minmax(140px,0.8fr)_minmax(0,1fr)_auto] items-end gap-3 rounded-md border border-line bg-surface-muted p-4 max-[920px]:grid-cols-1"
-                key={card.id}
-              >
-                <label className={fieldClass}>
-                  <span className={fieldLabelClass}>牌卡 {index + 1}</span>
-                  <select
-                    value={card.cardId}
-                    disabled={autoDraw}
-                    onChange={(event) => updateCard(card.id, { cardId: event.target.value })}
-                  >
-                    <option value="">選擇牌卡</option>
-                    {cardOptions.map((option) => (
-                      <option key={option.cardId} value={option.cardId}>
-                        {option.displayLabel}
-                      </option>
-                    ))}
-                  </select>
-                </label>
-
-                <label className={fieldClass}>
-                  <span className={fieldLabelClass}>方向</span>
-                  <select
-                    value={card.orientation}
-                    disabled={autoDraw}
-                    onChange={(event) =>
-                      updateCard(card.id, {
-                        orientation: event.target.value as CardDraft["orientation"]
-                      })
-                    }
-                  >
-                    <option value="unknown">未知</option>
-                    <option value="upright">正位</option>
-                    <option value="reversed">逆位</option>
-                  </select>
-                </label>
-
-                <label className={fieldClass}>
-                  <span className={fieldLabelClass}>位置</span>
-                  <input
-                    value={card.position}
-                    disabled={autoDraw}
-                    onChange={(event) => updateCard(card.id, { position: event.target.value })}
-                    placeholder="例如：現況"
-                  />
-                </label>
-
-                <button
-                  aria-label={`移除第 ${index + 1} 張牌`}
-                  className={ghostButtonClass}
-                  disabled={cards.length === 1 || autoDraw}
-                  type="button"
-                  onClick={() => removeCard(card.id)}
-                >
-                  移除
+          {!autoDraw ? (
+            <div className="grid gap-[18px]">
+              <div className="flex items-end justify-between gap-4 max-[920px]:flex-col max-[920px]:items-stretch">
+                <div>
+                  <h2>可選牌卡</h2>
+                  <p className={mutedTextClass}>
+                    如果你已經抽牌，可以補上牌名、正逆位與位置。
+                  </p>
+                </div>
+                <button className={secondaryButtonClass} type="button" onClick={addCard}>
+                  新增牌卡
                 </button>
               </div>
-            ))}
 
-          </div>
+              {cards.map((card, index) => (
+                <div
+                  className="grid grid-cols-[minmax(0,2fr)_minmax(140px,0.8fr)_minmax(0,1fr)_auto] items-end gap-3 rounded-md border border-line bg-surface-muted p-4 max-[920px]:grid-cols-1"
+                  key={card.id}
+                >
+                  <label className={fieldClass}>
+                    <span className={fieldLabelClass}>牌卡 {index + 1}</span>
+                    <select
+                      value={card.cardId}
+                      onChange={(event) => updateCard(card.id, { cardId: event.target.value })}
+                    >
+                      <option value="">選擇牌卡</option>
+                      {cardOptions.map((option) => (
+                        <option key={option.cardId} value={option.cardId}>
+                          {option.displayLabel}
+                        </option>
+                      ))}
+                    </select>
+                  </label>
+
+                  <label className={fieldClass}>
+                    <span className={fieldLabelClass}>方向</span>
+                    <select
+                      value={card.orientation}
+                      onChange={(event) =>
+                        updateCard(card.id, {
+                          orientation: event.target.value as CardDraft["orientation"]
+                        })
+                      }
+                    >
+                      <option value="unknown">未知</option>
+                      <option value="upright">正位</option>
+                      <option value="reversed">逆位</option>
+                    </select>
+                  </label>
+
+                  <label className={fieldClass}>
+                    <span className={fieldLabelClass}>位置</span>
+                    <input
+                      value={card.position}
+                      onChange={(event) => updateCard(card.id, { position: event.target.value })}
+                      placeholder="例如：現況"
+                    />
+                  </label>
+
+                  <button
+                    aria-label={`移除第 ${index + 1} 張牌`}
+                    className={ghostButtonClass}
+                    disabled={cards.length === 1}
+                    type="button"
+                    onClick={() => removeCard(card.id)}
+                  >
+                    移除
+                  </button>
+                </div>
+              ))}
+            </div>
+          ) : null}
 
           {debugEnabled ? (
             <label className="inline-flex items-center gap-2.5 text-muted">
