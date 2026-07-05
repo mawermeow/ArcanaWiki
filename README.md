@@ -233,5 +233,6 @@ Retrieval / answer 相關測試會使用 repo 內的 fixtures 與 `embeddings/` 
 
 ## 相關文件
 
+- [docs/slides/](docs/slides/)：專案簡報（GitHub Pages）
 - [AGENTS.md](AGENTS.md)：Agent / 開發規則、資料契約、測試期待
 - [docs/retrieval-architecture.md](docs/retrieval-architecture.md)：retrieval / answer / PWA 模組說明

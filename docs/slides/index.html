@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ArcanaWiki — 可引用問答與 Hybrid Search</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css" />
+    <style>
+      :root {
+        --r-background-color: #f5efe1;
+        --r-main-font: "Avenir Next", "Segoe UI", sans-serif;
+        --r-heading-font: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+        --r-main-color: #24312c;
+        --r-heading-color: #24312c;
+        --r-link-color: #b85c38;
+        --r-selection-background-color: rgba(184, 92, 56, 0.2);
+        --ink: #24312c;
+        --muted: #5f6d67;
+        --accent: #b85c38;
+        --accent-strong: #8e4021;
+        --sage: #3f5d4f;
+        --sage-soft: rgba(98, 135, 117, 0.16);
+        --paper: rgba(255, 252, 245, 0.88);
+        --line: rgba(36, 49, 44, 0.14);
+      }
+
+      .reveal {
+        background:
+          radial-gradient(circle at top left, rgba(184, 92, 56, 0.14), transparent 30%),
+          radial-gradient(circle at top right, rgba(98, 135, 117, 0.18), transparent 28%),
+          linear-gradient(180deg, #f5efe1 0%, #f8f2e8 100%);
+      }
+
+      .reveal .slides section {
+        text-align: left;
+      }
+
+      .reveal h1,
+      .reveal h2,
+      .reveal h3 {
+        font-weight: 700;
+        letter-spacing: -0.02em;
+      }
+
+      .reveal h1 {
+        font-size: 2.4em;
+        line-height: 1.05;
+      }
+
+      .reveal h2 {
+        font-size: 1.55em;
+        color: var(--sage);
+        margin-bottom: 0.6em;
+      }
+
+      .reveal h3 {
+        font-size: 1.05em;
+        color: var(--accent-strong);
+        margin-bottom: 0.35em;
+      }
+
+      .reveal p,
+      .reveal li {
+        font-size: 0.82em;
+        line-height: 1.55;
+        color: var(--ink);
+      }
+
+      .reveal .muted {
+        color: var(--muted);
+      }
+
+      .reveal .eyebrow {
+        display: inline-block;
+        font-size: 0.55em;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 0.8em;
+      }
+
+      .reveal .hero {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 2rem;
+        align-items: center;
+      }
+
+      .reveal .hero-copy .tagline {
+        font-size: 1.05em;
+        color: var(--muted);
+        margin-top: 0.5em;
+        max-width: 28em;
+      }
+
+      .reveal .hero-mark {
+        justify-self: end;
+        width: min(220px, 40vw);
+        filter: drop-shadow(0 18px 40px rgba(36, 49, 44, 0.12));
+      }
+
+      .reveal .links {
+        margin-top: 1.4em;
+        font-size: 0.72em;
+      }
+
+      .reveal .links a {
+        color: var(--accent);
+        text-decoration: none;
+        border-bottom: 1px solid rgba(184, 92, 56, 0.35);
+      }
+
+      .reveal .card-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.9rem;
+        margin-top: 0.8rem;
+      }
+
+      .reveal .card {
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 0.9rem 1rem;
+        box-shadow: 0 10px 28px rgba(36, 49, 44, 0.06);
+      }
+
+      .reveal .card strong {
+        display: block;
+        font-size: 0.78em;
+        color: var(--sage);
+        margin-bottom: 0.35em;
+      }
+
+      .reveal .card p {
+        margin: 0;
+        font-size: 0.72em;
+      }
+
+      .reveal .decision-list {
+        margin: 0;
+        padding-left: 1.1em;
+      }
+
+      .reveal .decision-list li {
+        margin-bottom: 0.45em;
+        font-size: 0.76em;
+      }
+
+      .reveal .decision-list li strong {
+        color: var(--accent-strong);
+      }
+
+      .reveal .shot-layout {
+        display: grid;
+        grid-template-columns: 1fr 1.15fr;
+        gap: 1.4rem;
+        align-items: center;
+      }
+
+      .reveal .shot-copy h2 {
+        margin-top: 0;
+      }
+
+      .reveal .shot-copy p {
+        font-size: 0.76em;
+      }
+
+      .reveal .shot-frame {
+        background: rgba(255, 255, 255, 0.72);
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        padding: 0.55rem;
+        box-shadow: 0 18px 44px rgba(36, 49, 44, 0.1);
+      }
+
+      .reveal .shot-frame img {
+        display: block;
+        width: 100%;
+        border-radius: 16px;
+      }
+
+      .reveal .shot-caption {
+        margin-top: 0.55em;
+        font-size: 0.62em;
+        color: var(--muted);
+        text-align: center;
+      }
+
+      .reveal .two-shot {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+        align-items: start;
+      }
+
+      .reveal .two-shot .shot-frame img {
+        max-height: 52vh;
+        object-fit: contain;
+        object-position: top;
+        background: #fffaf0;
+      }
+
+      .reveal .pipeline {
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 0.58em;
+        line-height: 1.45;
+        background: rgba(36, 49, 44, 0.92);
+        color: #eef2ee;
+        border-radius: 16px;
+        padding: 1rem 1.1rem;
+        white-space: pre;
+        margin: 0.6rem 0 0;
+      }
+
+      .reveal table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.68em;
+        margin-top: 0.6rem;
+      }
+
+      .reveal th,
+      .reveal td {
+        border: 1px solid var(--line);
+        padding: 0.45rem 0.55rem;
+        vertical-align: top;
+        text-align: left;
+      }
+
+      .reveal th {
+        background: var(--sage-soft);
+        color: var(--sage);
+      }
+
+      .reveal .status-list {
+        margin: 0.8rem 0 0;
+        padding-left: 1.1em;
+      }
+
+      .reveal .status-list li {
+        font-size: 0.74em;
+        margin-bottom: 0.35em;
+      }
+
+      .reveal .section-title {
+        text-align: center !important;
+      }
+
+      .reveal .section-title h2 {
+        font-size: 2em;
+        color: var(--ink);
+      }
+
+      .reveal .section-title p {
+        text-align: center;
+        color: var(--muted);
+        font-size: 0.85em;
+      }
+
+      .reveal .closing {
+        text-align: center !important;
+      }
+
+      .reveal .closing h2 {
+        text-align: center;
+        color: var(--ink);
+      }
+
+      .reveal .closing p {
+        text-align: center;
+        max-width: 34em;
+        margin: 0.6em auto 0;
+      }
+
+      .reveal .closing .links {
+        text-align: center;
+      }
+
+      @media (max-width: 900px) {
+        .reveal .hero,
+        .reveal .shot-layout,
+        .reveal .card-grid,
+        .reveal .two-shot {
+          grid-template-columns: 1fr;
+        }
+
+        .reveal .hero-mark {
+          justify-self: start;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- Title -->
+        <section>
+          <div class="hero">
+            <div class="hero-copy">
+              <div class="eyebrow">Side Project</div>
+              <h1>ArcanaWiki</h1>
+              <p class="tagline">
+                有限知識庫 + Hybrid Search + 強制引用——<br />
+                用塔羅驗證「回答可對應、可回頭查證」的問答系統。
+              </p>
+              <div class="links">
+                <a href="https://github.com/mawermeow/ArcanaWiki" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </div>
+            <img class="hero-mark" src="./assets/brand-mark.svg" alt="ArcanaWiki" />
+          </div>
+        </section>
+
+        <!-- Overview -->
+        <section>
+          <h2>這個專案在驗證什麼</h2>
+          <div class="card-grid">
+            <div class="card">
+              <strong>動機</strong>
+              <p>親手實作 Hybrid Search，驗證 Karpathy LLM Wiki 的「編譯知識層 + runtime 檢索」做法。</p>
+            </div>
+            <div class="card">
+              <strong>命題</strong>
+              <p>塔羅——知識範圍有限、結構固定，適合練這套架構；零 DB、檔案型索引。</p>
+            </div>
+            <div class="card">
+              <strong>核心展示</strong>
+              <p>問答 + citation 參考文本：回答必須對應整理過的 wiki，使用者可點擊驗證來源。</p>
+            </div>
+            <div class="card">
+              <strong>可複製性</strong>
+              <p>不限塔羅——客服機器人、內部 SOP、產品說明等有限知識系統都適用同一套做法。</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section: Why -->
+        <section class="section-title">
+          <h2>為什麼做</h2>
+          <p>從個人動機出發，不是市場分析</p>
+        </section>
+
+        <section>
+          <h2>想練的技術，剛好有個好命題</h2>
+          <p>
+            起點很單純：我想<strong>親手實作 Hybrid Search</strong>，並實際驗證
+            <a href="https://github.com/karpathy/llm-wiki" target="_blank" rel="noreferrer">Karpathy LLM Wiki</a>
+            這套「把知識編譯成 wiki、runtime 再檢索」的做法，做起來效果到底如何。
+          </p>
+          <p style="margin-top: 0.8em">
+            我沒有打算長期維護會經常變動的資料庫，所以刻意選了<strong>檔案型知識庫</strong>。
+            命題則選了塔羅——當時女友很喜歡塔羅牌，知識範圍有限、結構也相對固定，很適合拿來練習。
+          </p>
+          <p class="muted" style="margin-top: 0.8em; font-size: 0.72em">
+            從產品構想、架構決策到實作皆一人完成；開發過程主要借助 Codex 協作，方向與程式審閱由我主導。
+          </p>
+        </section>
+
+        <!-- Section: Problem -->
+        <section class="section-title">
+          <h2>核心問題</h2>
+          <p>直接丟 LLM 不夠「客觀」</p>
+        </section>
+
+        <section>
+          <h2>同樣的問題，每次答案可以天差地遠</h2>
+          <p>
+            過去我會直接把問題和牌面一起丟給 LLM 解讀——不只是塔羅，上升星座、紫薇命盤或其他占卜形式也試過。
+            結果都受限於 LLM 的生成方式，顯得<strong>很不穩定</strong>。
+          </p>
+          <p style="margin-top: 0.8em">
+            這對我來說不是一個客觀的系統。我想要的是：<strong>回答必須能對應到我整理過的知識</strong>，
+            而且使用者可以回頭查證依據，而不是每次都在賭模型當下的「靈感」。
+          </p>
+        </section>
+
+        <!-- Section: Product -->
+        <section class="section-title">
+          <h2>產品長什麼樣</h2>
+          <p>問答流程才是示範重點</p>
+        </section>
+
+        <section>
+          <div class="shot-layout">
+            <div class="shot-copy">
+              <h2>PWA 問答首頁</h2>
+              <p>輸入問題、選擇語氣模式（gentle / direct / reflective），可手動選牌或讓系統自動抽牌陣。</p>
+            </div>
+            <div>
+              <div class="shot-frame">
+                <img src="./assets/cover.png" alt="Tarot PWA 問答首頁" />
+              </div>
+              <p class="shot-caption">PWA 首頁</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="shot-layout">
+            <div class="shot-copy">
+              <h2>自動抽牌與分層解讀</h2>
+              <p>系統依問題自動選擇三張牌陣，產生簡短總結、牌面象徵與各牌說明。</p>
+            </div>
+            <div>
+              <div class="shot-frame">
+                <img src="./assets/interpretation.png" alt="自動抽牌與解讀回應" />
+              </div>
+              <p class="shot-caption">解讀回應</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="shot-layout">
+            <div class="shot-copy">
+              <h2>引用來源與摘要</h2>
+              <p>
+                每次回答附帶 <code>selectedSources</code>，列出引用的 wiki chunk、牌卡縮圖與摘要。
+                支援點擊 citation 驗證來源——這才是我想展示的核心。
+              </p>
+            </div>
+            <div>
+              <div class="shot-frame">
+                <img src="./assets/sources.png" alt="引用來源與摘要" />
+              </div>
+              <p class="shot-caption">citation 與來源摘要</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>公開 Wiki：知識層的附屬產物</h2>
+          <p class="muted" style="font-size: 0.74em; margin-bottom: 0.8em">
+            <code>/wiki</code> 可獨立瀏覽牌義與概念頁；對我而言真正有示範價值的是問答流程本身。
+          </p>
+          <div class="two-shot">
+            <div>
+              <div class="shot-frame">
+                <img src="./assets/link-wiki.png" alt="公開 Wiki 牌卡詳情頁" />
+              </div>
+              <p class="shot-caption">牌卡詳情：frontmatter 驅動的摘要與象徵</p>
+            </div>
+            <div>
+              <div class="shot-frame">
+                <img src="./assets/link-wiki2.png" alt="Wiki 情境解讀與相關牌卡" />
+              </div>
+              <p class="shot-caption">情境解讀分類與內部連結</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section: Decisions -->
+        <section class="section-title">
+          <h2>三個關鍵決策</h2>
+          <p>當時想解決什麼 → 為什麼沒選 → 最後怎麼選 → 代價</p>
+        </section>
+
+        <section>
+          <h3>1. LLM Wiki 分層，而不是直接餵 raw 資料</h3>
+          <ul class="decision-list">
+            <li><strong>想解決：</strong>穩定、可版本控制的知識來源，而不是每次從零生成。</li>
+            <li><strong>沒選：</strong>直接爬牌義丟 LLM，或 runtime 查 raw 檔——格式雜亂、難做有效 chunk 與索引。</li>
+            <li><strong>最後選：</strong><code>raw/</code> 不可變原始資料，<code>wiki/</code> 是 compiled layer；知識更新時重新 compile 與建 index。</li>
+            <li><strong>代價：</strong>需維護 compile pipeline；wiki 品質直接決定回答上限。</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>2. 零資料庫、檔案型索引</h3>
+          <ul class="decision-list">
+            <li><strong>想解決：</strong>不想為 side project 長期維護會頻繁變動的 DB。</li>
+            <li><strong>沒選：</strong>PostgreSQL + pgvector、OpenSearch——對 105 篇 wiki、78 張牌，運維成本遠大於收益。</li>
+            <li><strong>最後選：</strong><code>wiki/**/*.md</code> + BM25 / vector cache / graph.json，全部檔案化、可重建。</li>
+            <li><strong>代價：</strong>corpus 成長後 JSON index 載入變慢；上 production 規模還是得遷移。</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>3. 寧可 fallback，也要 citation 硬驗證</h3>
+          <ul class="decision-list">
+            <li><strong>想解決：</strong>同樣輸入得到穩定、可驗證的輸出——對「客觀系統」的最低要求。</li>
+            <li><strong>沒選：</strong>讓 LLM 自由發揮——聽起來合理，但無法確認依據，每次結果還可能不同。</li>
+            <li><strong>最後選：</strong>只能引用檢索到的 chunks，格式 <code>[來源: pageId#chunkId]</code>，回答後硬驗證；失敗回 safety fallback。</li>
+            <li><strong>代價：</strong>回答率較低——驗證失敗時使用者看到 fallback，而不是「總是有話說」。</li>
+          </ul>
+        </section>
+
+        <!-- Section: Deep Dive -->
+        <section class="section-title">
+          <h2>Hybrid Retrieval</h2>
+          <p>中文口語查詢 vs 結構化 wiki</p>
+        </section>
+
+        <section>
+          <h2>語意 chunking + hybrid rerank + phrase-aware tokenizer</h2>
+          <p>
+            使用者常以口語中文提問（如「他對我是真心的嗎」），但 wiki 是結構化牌義；
+            固定字數 chunking 會切碎語意，純 BM25 也難命中「聖杯二逆位」這類塔羅片語。
+          </p>
+          <ul class="decision-list" style="margin-top: 0.8em">
+            <li>依 <code>##</code> / <code>###</code> headings 切分；<code>情境解讀</code> 再拆成感情 / 工作 / 自我探索 / 靈性子 chunk</li>
+            <li>保護塔羅片語；中文保留 2-gram / 3-gram</li>
+            <li>BM25 與 vector 各取 topK，加權合併（bm25=0.45, vector=0.55, graph=0.15），不用 LLM reranker</li>
+            <li>可選 1-hop graph expansion；用 CLI 與 inspector 離線 eval，改權重後馬上看到差異</li>
+          </ul>
+          <p class="muted" style="margin-top: 0.8em; font-size: 0.7em">
+            沒上 Elasticsearch 或 LLM reranker，是因為想保持可控、可測試、零 DB。
+          </p>
+        </section>
+
+        <!-- Section: Tech -->
+        <section class="section-title">
+          <h2>技術一覽</h2>
+          <p>架構與規模</p>
+        </section>
+
+        <section>
+          <h2>Pipeline</h2>
+          <pre class="pipeline">raw/ → wiki/ → embeddings/ (BM25 + vector) + graph.json
+                    │
+        ┌───────────┴───────────┐
+        ▼                       ▼
+  PWA 問答                  公開 Wiki
+  POST /api/chat            /wiki（只讀）
+        │
+        ▼
+  Hybrid Retrieval → Prompt → OpenAI → Citation 驗證 → Safety 驗證</pre>
+          <table>
+            <thead>
+              <tr>
+                <th>項目</th>
+                <th>內容</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>前端</td>
+                <td>Next.js 15 App Router PWA；gentle / direct / reflective 三種語氣</td>
+              </tr>
+              <tr>
+                <td>知識規模</td>
+                <td>105 篇 wiki、78 張塔羅牌（concepts、emotions、relationships、patterns）</td>
+              </tr>
+              <tr>
+                <td>測試</td>
+                <td>17 個 test 檔，覆蓋 retrieval、answer、safety、citation、PWA UI</td>
+              </tr>
+              <tr>
+                <td>規模</td>
+                <td>約 10k 行 TypeScript；production dependencies 僅 Next / React</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Section: Trade-offs -->
+        <section class="section-title">
+          <h2>取捨與下一步</h2>
+        </section>
+
+        <section>
+          <h2>我優先做了什麼</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>優先</th>
+                <th>刻意沒做</th>
+                <th>若條件改變</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>可追溯（citation 硬驗證）</td>
+                <td>追求高回答率</td>
+                <td>corpus 大時遷移 pgvector</td>
+              </tr>
+              <tr>
+                <td>可控的中文檢索</td>
+                <td>直接用 Elasticsearch</td>
+                <td>需要時加 LLM reranker</td>
+              </tr>
+              <tr>
+                <td>零 DB 運維</td>
+                <td>大規模部署能力</td>
+                <td>加 auth、rate limit、budget guard</td>
+              </tr>
+              <tr>
+                <td>驗證架構可複製性</td>
+                <td>Streaming chat 體驗</td>
+                <td>加 streaming 改善 UX</td>
+              </tr>
+            </tbody>
+          </table>
+          <ul class="status-list">
+            <li>✅ 78 張牌 wiki + 混合檢索 + 可引用問答 pipeline</li>
+            <li>✅ 公開 Wiki、PWA 手動/自動抽牌、CLI + inspector 離線 eval</li>
+            <li>⏳ 尚無正式 production deploy</li>
+          </ul>
+        </section>
+
+        <!-- Closing -->
+        <section class="closing">
+          <h2>最重要的產出</h2>
+          <p>
+            不是「做了一個塔羅 App」，而是驗證了一套可以搬到其他場景的做法：
+            <strong>有限知識庫 + hybrid retrieval + 強制引用</strong>。
+            若下一步有時間，會優先補 answer quality eval dataset，讓穩定性可以用數據說話。
+          </p>
+          <div class="links">
+            <a href="https://github.com/mawermeow/ArcanaWiki" target="_blank" rel="noreferrer">GitHub</a>
+            ·
+            <a href="https://github.com/mawermeow/ArcanaWiki/blob/main/docs/retrieval-architecture.md" target="_blank" rel="noreferrer">Retrieval Architecture</a>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        slideNumber: "c/t",
+        width: 1280,
+        height: 720,
+        margin: 0.08,
+        transition: "fade",
+        backgroundTransition: "fade",
+      });
+    </script>
+  </body>
+</html>
